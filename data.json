@@ -727,5 +727,173 @@
  "summary": {
   "asOf": "2026-10-14",
   "text": "Koruna drží 24,37 za euro, za tři měsíce je slabší o 0,4 %. Odpoledne ve 14:30 vyjde americká inflace, trh čeká 3,6 %; vyšší číslo by posílilo dolar."
+ },
+ "outlook": {
+  "asOf": "2026-10-14",
+  "note": "Horizonty jsou přiřazeny k nejbližšímu konci čtvrtletí.",
+  "cnb": {
+   "EUR/CZK": {
+    "3M": "24,3",
+    "12M": "24,4"
+   }
+  },
+  "pairs": {
+   "EUR/CZK": {
+    "3M": {
+     "label": "4Q26",
+     "est": [
+      {
+       "src": "ČBA Prognóza (konsenzus bank)",
+       "date": "2026-08-19",
+       "url": "https://www.cbamonitor.cz/statistika/prognoza-menovy-kurz-vuci-euru",
+       "v": 24.2
+      },
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 24.4
+      }
+     ]
+    },
+    "6M": {
+     "label": "1Q27",
+     "est": [
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 24.2
+      }
+     ]
+    },
+    "12M": {
+     "label": "3Q27",
+     "est": [
+      {
+       "src": "Šetření ČNB mezi analytiky (18 respondentů)",
+       "date": "2026-09-23",
+       "url": "https://www.cnb.cz/cs/financni-trhy/inflacni-ocekavani-ft/",
+       "v": 24.09,
+       "lo": 23.4,
+       "hi": 24.4
+      },
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 23.8,
+       "note": "3Q27"
+      }
+     ]
+    }
+   },
+   "USD/CZK": {
+    "3M": {
+     "label": "4Q26",
+     "est": [
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 21.79
+      }
+     ]
+    },
+    "6M": {
+     "label": "1Q27",
+     "est": [
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 21.23
+      }
+     ]
+    },
+    "12M": {
+     "label": "3Q27",
+     "est": [
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 20.17
+      }
+     ]
+    }
+   },
+   "EUR/USD": {
+    "3M": {
+     "label": "4Q26",
+     "est": [
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 1.12
+      }
+     ]
+    },
+    "6M": {
+     "label": "1Q27",
+     "est": [
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 1.14
+      }
+     ]
+    },
+    "12M": {
+     "label": "3Q27",
+     "est": [
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 1.18
+      }
+     ]
+    }
+   },
+   "PLN/CZK": {
+    "3M": {
+     "label": "4Q26",
+     "est": [
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 5.583
+      }
+     ]
+    },
+    "6M": {
+     "label": "1Q27",
+     "est": [
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 5.576
+      }
+     ]
+    },
+    "12M": {
+     "label": "3Q27",
+     "est": [
+      {
+       "src": "MUFG Monthly FX Outlook",
+       "date": "2026-10-01",
+       "url": "https://www.mufgresearch.com/fx/monthly-foreign-exchange-outlook-october-2026/",
+       "v": 5.573
+      }
+     ]
+    }
+   }
+  },
+  "cnbNote": "Prognóza ČNB udává průměrný kurz roku (2026 ve sloupci 3M, 2027 ve sloupci 12M)."
  }
 }

@@ -153,6 +153,8 @@ tr:last-child td{border-bottom:0}
 .explain{display:grid;gap:8px;margin-top:4px}
 .explain p{margin:0;font-size:13.5px;line-height:1.5;color:var(--muted)}
 .explain b{color:var(--ink);font-weight:600}
+.outt{font-size:13px}.outt th,.outt td{padding-left:3px;padding-right:3px}
+.outt td:first-child{white-space:normal}
 .risk{display:grid;gap:12px}
 .risk div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:baseline}
 .risk p{grid-column:1/-1;margin:0;font-size:12.5px;color:var(--muted)}
@@ -207,7 +209,7 @@ footer{font-size:12px;color:var(--muted);padding-block:6px 0;display:grid;gap:4p
 
   <!-- TRH -->
   <main class="view gut" id="v-market" hidden>
-    <section class="panel"><h2 class="label">Region CEE vůči euru</h2><div class="tbl" id="cee"></div><p class="note" id="ceeNote"></p></section>
+    <section class="panel" aria-labelledby="outL"><h2 class="label" id="outL">Výhled kurzu</h2><div class="tabs2" id="outPairs" role="group" aria-label="Měnový pár" style="margin-bottom:10px"></div><div id="outlook"></div></section>
     <section class="panel" aria-labelledby="czbL"><h2 class="label" id="czbL">Česko vs. Německo · 10leté dluhopisy</h2><div id="czb"></div></section>
     <section class="panel"><h2 class="label">Úrokový diferenciál CZK–EUR</h2><div class="chartBox small" id="diffBox"><svg id="diffChart" role="img" aria-label="3M PRIBOR a 3M EURIBOR"></svg></div><div class="legend"><span><i></i>3M PRIBOR</span><span><i class="b"></i>3M EURIBOR</span></div><p class="note" id="diffNote"></p></section>
     <section class="panel"><h2 class="label">Rizikové ukazatele</h2><div class="risk" id="risk"></div></section>
@@ -421,13 +423,7 @@ function renderWatch(){
 
 /* ---------- TRH ---------- */
 function renderMarket(){
-  const d=state.days;
-  if(d.length>70&&Number.isFinite(d.at(-1).HUF)){const back=n=>{const t=pd(d.at(-1).date);t.setDate(t.getDate()-n);let r=d[0];for(const x of d){if(pd(x.date)<=t)r=x}return r};
-    const r1=back(30),r3=back(91),L=d.at(-1);
-    $('#cee').innerHTML=`<table><thead><tr><th>Pár</th><th>Kurz</th><th>1M</th><th>3M</th></tr></thead><tbody>${[['EUR/CZK','CZK',3],['EUR/PLN','PLN',4],['EUR/HUF','HUF',2]].map(([n,k,dec])=>{const c1=(L[k]/r1[k]-1)*100,c3=(L[k]/r3[k]-1)*100;return`<tr><td>${n}</td><td class="num">${fmt(L[k],dec)}</td><td class="num ${cls(-c1)}">${pct(c1)}</td><td class="num ${cls(-c3)}">${pct(c3)}</td></tr>`}).join('')}</tbody></table>`;
-    const c3=['CZK','PLN','HUF'].map(k=>(L[k]/r3[k]-1)*100);const same=c3.every(x=>x>0)||c3.every(x=>x<0);
-    $('#ceeNote').textContent='Kladné číslo = měna vůči euru oslabila. '+(same?(c3[0]>0?'Za 3 měsíce oslabil celý region, spíš globální vliv.':'Za 3 měsíce posílil celý region, spíš globální vliv.'):'Měny regionu se rozcházejí, roli hrají domácí faktory.')}
-  else{$('#cee').innerHTML='<div class="empty">Čekám na kurzy…</div>';$('#ceeNote').textContent=''}
+  renderOutlook();
   const s=state.data.diff?.series||[];
   if(s.length>1){drawLines('#diffChart','#diffBox',[{rows:s.map(r=>({date:r.date,v:r.cz}))},{rows:s.map(r=>({date:r.date,v:r.ea})),color:'#8A9BAD',width:1.6}],{dec:2,padR:40});
     const L=s.at(-1),F=s[0],dl=L.cz-L.ea,d0=F.cz-F.ea;$('#diffNote').textContent=`Rozdíl ${fmt(dl,2)} p. b. (před rokem ${fmt(d0,2)} p. b.). ${dl<d0?'Výnosová výhoda koruny slábne.':'Výnosová výhoda koruny roste.'}`}
@@ -449,6 +445,32 @@ function renderMarket(){
     return`<div><b style="font-weight:600">${esc(i.label)}</b><span class="num">${fmt(i.value,i.value<50?2:1)}${u}</span><p>${ch}${esc(i.why||'')}</p></div>`}).join('')+`<p class="note">Spready BTP–Bund a OAT–Bund měří, o kolik víc platí Itálie a Francie za desetiletý dluh než Německo. Rozšiřování znamená napětí v eurozóně a obvykle oslabuje euro. Stav k ${dCZ(r.asOf)}.</p>`:'<div class="empty">Načítám…</div>';
   const cb=PAIRS[state.pair].cb.join(' / ');$('#pairRiskL').textContent='Rizika páru '+state.pair;
   $('#pairRisk').innerHTML=[['Sazby',`Rozhodnutí ${cb} mění úrokový diferenciál a forwardové body.`],['Makro','Inflace, mzdy, maloobchod a PMI posouvají očekávání sazeb. Rozhoduje rozdíl proti konsenzu.'],['Sentiment','CZK a PLN obvykle slábnou při averzi k riziku (VIX nad 20–25, širší spready).'],['Energie','Drahý plyn a ropa zhoršují obchodní bilanci regionu a tlačí na korunu i zlotý.']].map(([a,b])=>`<div><b style="font-weight:600">${a}</b><span></span><p>${esc(b)}</p></div>`).join('');
+}
+
+function renderOutlook(){
+  $('#outPairs').innerHTML=Object.keys(PAIRS).map(k=>`<button type="button" data-pair="${k}" aria-pressed="${k===state.pair}">${k}</button>`).join('');
+  $('#outPairs').querySelectorAll('button').forEach(b=>b.onclick=()=>{state.pair=b.dataset.pair;remember();renderPairDependent()});
+  const o=state.data.outlook,p=PAIRS[state.pair],h=o?.pairs?.[state.pair];const box=$('#outlook');
+  if(!h){box.innerHTML='<div class="empty">Výhled pro tento pár zatím není k dispozici.</div>';return}
+  const H=['3M','6M','12M'];const calc=H.map(k=>{const x=h[k];if(!x?.est?.length)return null;const v=x.est.map(e=>e.v).filter(Number.isFinite);if(!v.length)return null;
+    const avg=v.reduce((a,b)=>a+b,0)/v.length;const lo=Math.min(...x.est.map(e=>Number.isFinite(e.lo)?e.lo:e.v)),hi=Math.max(...x.est.map(e=>Number.isFinite(e.hi)?e.hi:e.v));return{k,label:x.label,avg,lo,hi,n:x.est.length}});
+  const cnb=o.cnb?.[state.pair]||{};const lq=liveQuote(state.pair),st=stats(state.pair);const now=lq?lq.v:st?.last;
+  const cell=(c,f)=>c?f(c):'<span class="flat">—</span>';
+  let html=`<div class="tbl"><table class="outt"><thead><tr><th></th>${H.map((k,i)=>`<th>${k}${calc[i]?.label?`<span style="text-transform:none;letter-spacing:0"> · ${esc(calc[i].label)}</span>`:''}</th>`).join('')}</tr></thead><tbody>
+    <tr><td>Konsenzus</td>${calc.map(c=>`<td class="num"><b style="font-weight:700">${cell(c,c=>fmt(c.avg,p.dec))}</b></td>`).join('')}</tr>
+    <tr><td>Rozpětí</td>${calc.map(c=>`<td class="num flat">${cell(c,c=>c.hi>c.lo?`${fmt(c.lo,p.dec>3?3:2)}–${fmt(c.hi,p.dec>3?3:2)}`:'1 zdroj')}</td>`).join('')}</tr>
+    ${Object.keys(cnb).length?`<tr><td>Prognóza ČNB</td>${H.map(k=>`<td class="num">${cnb[k]?esc(cnb[k]):'<span class="flat">—</span>'}</td>`).join('')}</tr>`:''}
+  </tbody></table></div>`;
+  const c12=calc[2]||calc[1]||calc[0];
+  if(c12&&Number.isFinite(now)){const ch=(c12.avg/now-1)*100;const base=p.base,q=p.quote;
+    const dir=Math.abs(ch)<0.3?`zhruba beze změny`:ch>0?(q==='CZK'?`oslabení koruny o ${fmt(Math.abs(ch),1)} %`:`posílení eura o ${fmt(Math.abs(ch),1)} %`):(q==='CZK'?`posílení koruny o ${fmt(Math.abs(ch),1)} %`:`oslabení eura o ${fmt(Math.abs(ch),1)} %`);
+    html+=`<p class="comment" style="color:var(--ink)">Proti dnešnímu kurzu ${fmt(now,p.dec)} čekají analytici v horizontu ${c12.k} ${dir}.</p>`}
+  const srcs=[];H.forEach(k=>(h[k]?.est||[]).forEach(e=>{if(!srcs.find(x=>x.src===e.src))srcs.push(e)}));
+  html+=`<details style="margin-top:8px"><summary style="cursor:pointer;font-size:13.5px;font-weight:600;padding:4px 0">Zdroje a jak to číst</summary><div class="explain" style="margin-top:6px">
+    <p>${srcs.map(e=>{const u=safeUrl(e.url);return`${u?`<a href="${esc(u)}" target="_blank" rel="noopener" style="text-decoration:none">${esc(e.src)}</a>`:esc(e.src)} (${esc(dCZ(e.date))})`}).join(' · ')}</p>
+    <p><b>Konsenzus</b> je průměr dostupných odhadů, <b>rozpětí</b> ukazuje nejnižší a nejvyšší odhad (u šetření ČNB i rozptyl mezi respondenty). ${esc(o.note||'')} ${esc(o.cnbNote||'')}</p>
+    <p>Výhledy analytiků se často mýlí, nejsou to sliby. Berte je jako obraz toho, s čím trh počítá; když se kurz vydá jinam, je to signál, že se změnilo něco podstatného.</p></div></details>`;
+  box.innerHTML=html;
 }
 
 /* ---------- ZPRÁVY ---------- */
