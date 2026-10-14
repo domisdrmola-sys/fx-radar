@@ -325,8 +325,10 @@
   "calib": {
    "EUR/CZK": {
     "date": "2026-10-14",
-    "src": "12M forward 24,47 bez marže při spotu 24,368",
+    "src": "Kotace banky bez marže při spotu 24,368: 3M 24,40, 6M 24,41, 12M 24,47",
     "pts": {
+     "3M": 0.032,
+     "6M": 0.042,
      "12M": 0.102
     }
    }
