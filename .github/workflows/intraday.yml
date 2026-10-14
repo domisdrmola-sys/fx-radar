@@ -13,11 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           sparse-checkout: scripts
       - name: Stáhnout kurzy
-        run: mkdir -p out && python3 scripts/intraday.py out/intraday.json
+        run: |
+          mkdir -p out
+          curl -fsS "https://raw.githubusercontent.com/${{ github.repository }}/live/intraday.json" -o prev.json || echo '{}' > prev.json
+          python3 scripts/intraday.py out/intraday.json prev.json
       - name: Publikovat do větve live
         run: |
           cd out
