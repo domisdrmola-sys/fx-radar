@@ -238,8 +238,9 @@ footer{font-size:12px;color:var(--muted);display:grid;gap:4px}
     </div>
 
     <div class="sub">
-      <h3>Forwardové kurzy (orientačně)</h3>
+      <h3>Forwardové kurzy</h3>
       <div class="tbl" id="fwdTable"><div class="empty">Čekám na kurzy a sazby…</div></div>
+      <div id="calibBox"></div>
       <p class="note" id="fwdNote">Výpočet z mezibankových sazeb přes krytou úrokovou paritu. Kotace banky se liší o marži a cross-currency basis.</p>
     </div>
 
@@ -311,9 +312,9 @@ const PERIOD_DAYS={"1M":31,"3M":92,"6M":183,"1R":366};
 const TENORS=[["1M",30],["3M",91],["6M",182],["12M",365]];
 const FLAG={CZ:"CZ",EA:"EU",DE:"DE",US:"US",PL:"PL"};
 const $=s=>document.querySelector(s);
-const state={days:[],data:{},pair:"EUR/CZK",period:"3M",tab:"news",calAll:false,loading:false,offline:false,fetchedAt:0,budgets:{}};
-try{const s=JSON.parse(localStorage.getItem('fxradar')||'{}');if(PAIRS[s.pair])state.pair=s.pair;if(PERIOD_DAYS[s.period])state.period=s.period;if(['news','cal','banks','hol','risks'].includes(s.tab))state.tab=s.tab;state.budgets=s.budgets||{};state.calAll=!!s.calAll}catch(e){}
-function remember(){try{localStorage.setItem('fxradar',JSON.stringify({pair:state.pair,period:state.period,tab:state.tab,budgets:state.budgets,calAll:state.calAll}))}catch(e){}}
+const state={days:[],data:{},pair:"EUR/CZK",period:"3M",tab:"news",calAll:false,calib:{},loading:false,offline:false,fetchedAt:0,budgets:{}};
+try{const s=JSON.parse(localStorage.getItem('fxradar')||'{}');if(PAIRS[s.pair])state.pair=s.pair;if(PERIOD_DAYS[s.period])state.period=s.period;if(['news','cal','banks','hol','risks'].includes(s.tab))state.tab=s.tab;state.budgets=s.budgets||{};state.calAll=!!s.calAll;state.calib=s.calib||{}}catch(e){}
+function remember(){try{localStorage.setItem('fxradar',JSON.stringify({pair:state.pair,period:state.period,tab:state.tab,budgets:state.budgets,calAll:state.calAll,calib:state.calib}))}catch(e){}}
 
 /* ---------- formatting ---------- */
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -337,12 +338,25 @@ function spot(){const r=series(state.pair);return r.at(-1)}
 
 /* ---------- forwards ---------- */
 function mmRate(ccy,tenor){const m=state.data.mm?.[ccy];const v=m?.r?.[tenor];return Number.isFinite(v)?{r:v/100,basis:m.basis||360}:null}
-function forwards(){
-  const s=spot();if(!s)return null;const p=PAIRS[state.pair];
-  return TENORS.map(([t,days])=>{const b=mmRate(p.base,t),q=mmRate(p.quote,t);if(!b||!q)return{t,days,F:NaN};
-    const F=s.v*(1+q.r*days/q.basis)/(1+b.r*days/b.basis);return{t,days,F,pts:(F-s.v)*p.ptsMul,carry:(F/s.v-1)*365/days*100}});
+/* Calibration: bank forward points (price units) per tenor; local entry overrides the team-wide one in data.json. */
+function calibFor(pair){const loc=state.calib[pair],t=state.data.mm?.calib?.[pair];
+  if(loc&&Object.keys(loc.pts||{}).length)return{...loc,pts:{...(t?.pts||{}),...loc.pts},scope:'local'};
+  return t&&Object.keys(t.pts||{}).length?{...t,scope:'team'}:null}
+function theo(S,b,q,days){return S*(1+q.r*days/q.basis)/(1+b.r*days/b.basis)}
+function basisCurve(){
+  const p=PAIRS[state.pair],s=spot(),c=calibFor(state.pair);if(!s||!c)return null;
+  const pts=[];TENORS.forEach(([t,days])=>{const v=c.pts?.[t];const b=mmRate(p.base,t),q=mmRate(p.quote,t);if(!Number.isFinite(v)||!b||!q)return;
+    const impl=((1+v/s.v)*(1+b.r*days/b.basis)-1)*q.basis/days;pts.push({days,bp:impl-q.r})});
+  return pts.length?{pts:pts.sort((a,b)=>a.days-b.days),calib:c}:null;
 }
-
+function basisAt(curve,days){if(!curve)return 0;const P=curve.pts;if(days<=P[0].days)return P[0].bp;if(days>=P.at(-1).days)return P.at(-1).bp;
+  for(let i=1;i<P.length;i++)if(days<=P[i].days){const a=P[i-1],b=P[i];return a.bp+(b.bp-a.bp)*(days-a.days)/(b.days-a.days)}return 0}
+function forwards(){
+  const s=spot();if(!s)return null;const p=PAIRS[state.pair];const curve=basisCurve();
+  return TENORS.map(([t,days])=>{const b=mmRate(p.base,t),q=mmRate(p.quote,t);if(!b||!q)return{t,days,F:NaN};
+    const Ft=theo(s.v,b,q,days);const bs=basisAt(curve,days);const F=theo(s.v,b,{r:q.r+bs,basis:q.basis},days);
+    return{t,days,F,Ft,bs,pts:(F-s.v)*p.ptsMul,carry:(F/s.v-1)*365/days*100}});
+}
 /* ---------- holidays ---------- */
 function easter(y){const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;return new Date(y,mo-1,da,12)}
 const addD=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x};
@@ -465,11 +479,32 @@ function renderForwards(){
   const p=PAIRS[state.pair],fw=forwards(),box=$('#fwdTable');
   if(!fw){box.innerHTML='<div class="empty">Čekám na kurzy…</div>';return}
   if(!fw.some(f=>Number.isFinite(f.F))){box.innerHTML=`<div class="empty">Chybí sazby pro ${p.base} nebo ${p.quote}. Doplní je další aktualizace.</div>`;return}
+  const curve=basisCurve();
   box.innerHTML=`<table><thead><tr><th>Splatnost</th><th>Forward</th><th>Body</th><th>p.a.</th></tr></thead><tbody>${fw.map(f=>`<tr><td>${f.t}</td><td class="num">${fmt(f.F,p.dec)}</td><td class="num">${sgn(f.pts,1)}</td><td class="num">${pct(f.carry,2)}</td></tr>`).join('')}</tbody></table>`;
-  const m=state.data.mm||{};const bm=m[p.base],qm=m[p.quote];const f3=fw.find(f=>f.t==='12M');
-  const sellTxt=Number.isFinite(f3?.pts)?(f3.pts>0?`Prodej ${p.base} na termín vychází výhodněji než spot (body ${p.ptsUnit} kladné), nákup naopak dráž.`:`Nákup ${p.base} na termín vychází levněji než spot, prodej naopak hůř.`):'';
-  $('#fwdNote').textContent=`${sellTxt} Sazby: ${bm?.src||p.base} ${bm?.date?dShort(bm.date):''}, ${qm?.src||p.quote} ${qm?.date?dShort(qm.date):''}. Body v ${p.ptsUnit}. Kotace banky se liší o marži a cross-currency basis.`;
+  const m=state.data.mm||{};const bm=m[p.base],qm=m[p.quote];const f12=fw.find(f=>f.t==='12M');
+  const dirTxt=Number.isFinite(f12?.pts)?(f12.pts>0?`Prodej ${p.base} na termín vychází výhodněji než spot, nákup naopak dráž.`:`Nákup ${p.base} na termín vychází levněji než spot, prodej naopak hůř.`):'';
+  $('#fwdNote').textContent=`${dirTxt} Sazby: ${bm?.src||p.base} ${bm?.date?dCZ(bm.date):''} a ${qm?.src||p.quote} ${qm?.date?dCZ(qm.date):''}; body v ${p.ptsUnit} Kotace banky obsahuje navíc marži.`;
+  renderCalib(curve,fw);
 }
+function renderCalib(curve,fw){
+  const p=PAIRS[state.pair],box=$('#calibBox');const c=curve?.calib;
+  let info;
+  if(curve){const age=Math.floor((Date.now()-pd(c.date))/864e5);
+    info=`<div class="verdict ${age>7?'bad':'good'}">Upraveno o basis podle ${c.scope==='local'?'vaší kotace':'kotace týmu'} z ${dCZ(c.date)}: ${curve.pts.map(x=>`${TENORS.find(t=>t[1]===x.days)[0]} ${sgn(x.bp*1e4,0)} bb`).join(', ')} p.a. v ${p.quote}. Bez basis by 12M vycházel ${fmt(fw?.find(f=>f.t==='12M')?.Ft??NaN,p.dec)}.${age>7?' Kotace je starší než týden, zadejte novou.':''}${c.src?' '+esc(c.src)+'.':''}</div>`}
+  else info=`<div class="verdict bad">Bez kalibrace. Výpočet z čistých sazeb nezohledňuje cross-currency basis; u koruny bývá forward výrazně níž. Zadejte kotaci banky.</div>`;
+  box.innerHTML=info+`<form class="form" id="calibForm" autocomplete="off" style="margin-top:8px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+    <label>Splatnost<select id="cTenor">${TENORS.map(([t])=>`<option${t==='12M'?' selected':''}>${t}</option>`).join('')}</select></label>
+    <label>Forward od banky<input id="cRate" inputmode="decimal" placeholder="bez marže"></label>
+    <button type="submit" style="grid-column:1/-1;border:1px solid var(--ink);background:var(--invert-bg);color:var(--invert-ink);border-radius:10px;padding:9px 12px;font-weight:600;cursor:pointer">Kalibrovat podle banky</button>
+  </form>${state.calib[state.pair]?'<button type="button" id="cClear" class="link" style="background:none;border:0;border-bottom:1px solid var(--line);padding:0;margin-top:6px;cursor:pointer">Smazat moji kalibraci</button>':''}
+  <p class="note" style="margin-top:6px">Kotace se přepočte na body proti aktuálnímu spotu ${fmt(spot()?.v??NaN,p.dec)}. Uloží se jen v tomto telefonu a má přednost před kotací týmu.</p>`;
+  $('#calibForm').onsubmit=e=>{e.preventDefault();const v=parseNum($('#cRate').value);const s=spot();if(!Number.isFinite(v)||!s)return;
+    if(Math.abs(v/s.v-1)>0.1){$('#cRate').setCustomValidity('Zadejte forwardový kurz, ne body.');$('#cRate').reportValidity();return}
+    const cur=state.calib[state.pair]||{pts:{}};cur.pts={...cur.pts,[$('#cTenor').value]:v-s.v};cur.date=isoDay(new Date());cur.src='';state.calib[state.pair]=cur;remember();renderHedge()};
+  $('#cRate').oninput=()=>$('#cRate').setCustomValidity('');
+  const cl=$('#cClear');if(cl)cl.onclick=()=>{delete state.calib[state.pair];remember();renderHedge()};
+}
+function renderHedge(){renderForwards();renderBudget();renderBand()}
 function renderBand(){
   const p=PAIRS[state.pair],rows=series(state.pair),box=$('#bandTable');
   const yr=windowed(rows,'1R').map(r=>r.v);const vol=annVol(yr);const fw=forwards();
