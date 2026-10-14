@@ -264,5 +264,436 @@
     "source": "RPP/NBP – říjnové rozhodnutí 7. 10. 2026 a harmonogram MPC 2026"
    }
   ]
+ },
+ "cnb": {
+  "date": "2026-10-13",
+  "source": "ČNB – kurzy devizového trhu",
+  "rates": {
+   "EUR": 24.375,
+   "USD": 21.788,
+   "PLN": 5.569,
+   "HUF100": 6.69
+  }
+ },
+ "mm": {
+  "asOf": "2026-10-13",
+  "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
+  "CZK": {
+   "src": "PRIBOR",
+   "date": "2026-10-06",
+   "basis": 360,
+   "r": {
+    "1M": 3.81,
+    "3M": 3.89,
+    "6M": 4.04,
+    "12M": 4.24
+   }
+  },
+  "EUR": {
+   "src": "EURIBOR",
+   "date": "2026-10-12",
+   "basis": 360,
+   "r": {
+    "1M": 2.444,
+    "3M": 2.632,
+    "6M": 2.892,
+    "12M": 3.177
+   }
+  },
+  "USD": {
+   "src": "US T-bill",
+   "date": "2026-10-13",
+   "basis": 365,
+   "r": {
+    "1M": 3.98,
+    "3M": 4.19,
+    "6M": 4.35,
+    "12M": 4.47
+   }
+  },
+  "PLN": {
+   "src": "WIBOR",
+   "date": "2026-10-12",
+   "basis": 365,
+   "r": {
+    "1M": 3.79,
+    "3M": 3.88,
+    "6M": 3.94,
+    "12M": 3.98
+   }
+  }
+ },
+ "diff": {
+  "label": "3M PRIBOR vs. 3M EURIBOR",
+  "note": "Hodnoty k prvnímu pracovnímu dni měsíce.",
+  "series": [
+   {
+    "date": "2025-10-01",
+    "cz": 3.52,
+    "ea": 2.017
+   },
+   {
+    "date": "2025-11-03",
+    "cz": 3.54,
+    "ea": 2.023
+   },
+   {
+    "date": "2025-12-01",
+    "cz": 3.55,
+    "ea": 2.06
+   },
+   {
+    "date": "2026-01-02",
+    "cz": 3.52,
+    "ea": 2.029
+   },
+   {
+    "date": "2026-02-02",
+    "cz": 3.46,
+    "ea": 2.022
+   },
+   {
+    "date": "2026-03-02",
+    "cz": 3.48,
+    "ea": 2.026
+   },
+   {
+    "date": "2026-04-01",
+    "cz": 3.56,
+    "ea": 2.075
+   },
+   {
+    "date": "2026-05-04",
+    "cz": 3.56,
+    "ea": 2.2
+   },
+   {
+    "date": "2026-06-01",
+    "cz": 3.57,
+    "ea": 2.245
+   },
+   {
+    "date": "2026-07-01",
+    "cz": 3.82,
+    "ea": 2.312
+   },
+   {
+    "date": "2026-08-03",
+    "cz": 3.84,
+    "ea": 2.461
+   },
+   {
+    "date": "2026-09-01",
+    "cz": 3.86,
+    "ea": 2.608
+   },
+   {
+    "date": "2026-10-01",
+    "cz": 3.88,
+    "ea": 2.589
+   }
+  ]
+ },
+ "risk": {
+  "asOf": "2026-10-14",
+  "items": [
+   {
+    "id": "brent",
+    "label": "Brent",
+    "value": 105.99,
+    "unit": "USD/bbl",
+    "chg1d": 0.28,
+    "chg1m": -2.54,
+    "why": "Dražší ropa zhoršuje obchodní bilanci ČR i eurozóny a zvyšuje inflaci."
+   },
+   {
+    "id": "ttf",
+    "label": "Plyn TTF",
+    "value": 85.05,
+    "unit": "EUR/MWh",
+    "chg1d": -2.48,
+    "chg1m": 6.24,
+    "why": "Koruna i zlotý jsou citlivé na ceny energií; drahý plyn je oslabuje."
+   },
+   {
+    "id": "btp",
+    "label": "Spread BTP–Bund 10Y",
+    "value": 110,
+    "unit": "bb",
+    "prev1m": 85,
+    "date": "2026-10-13",
+    "why": "Měřítko fiskálního rizika eurozóny; rozšiřování tlačí na euro."
+   },
+   {
+    "id": "oat",
+    "label": "Spread OAT–Bund 10Y",
+    "value": 139.5,
+    "unit": "bb",
+    "prev1m": 89.8,
+    "date": "2026-10-12",
+    "why": "Francouzské fiskální napětí je teď hlavní evropské riziko pro EUR."
+   },
+   {
+    "id": "vix",
+    "label": "VIX",
+    "value": 15.18,
+    "unit": "",
+    "chg1d": null,
+    "why": "Index strachu na akciích; nad 20–25 obvykle slábnou CZK, PLN a HUF."
+   }
+  ]
+ },
+ "calendar": {
+  "asOf": "2026-10-14",
+  "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
+  "items": [
+   {
+    "at": "2026-10-14T10:00",
+    "country": "CZ",
+    "event": "Běžný účet (srpen)",
+    "consensus": "−25,4 mld. Kč",
+    "previous": "−34,2 mld. Kč",
+    "actual": "",
+    "importance": 1
+   },
+   {
+    "at": "2026-10-14T14:30",
+    "country": "US",
+    "event": "Inflace CPI r/r (září)",
+    "consensus": "3,6 %",
+    "previous": "3,4 %",
+    "actual": "",
+    "importance": 3
+   },
+   {
+    "at": "2026-10-14T14:30",
+    "country": "US",
+    "event": "Jádrová inflace CPI r/r (září)",
+    "consensus": "2,5 %",
+    "previous": "2,4 %",
+    "actual": "",
+    "importance": 3
+   },
+   {
+    "at": "2026-10-15T11:00",
+    "country": "EA",
+    "event": "Průmyslová výroba m/m (srpen)",
+    "consensus": "0,0 %",
+    "previous": "−0,1 %",
+    "actual": "",
+    "importance": 1
+   },
+   {
+    "at": "2026-10-15T14:30",
+    "country": "US",
+    "event": "Maloobchodní tržby m/m (září)",
+    "consensus": "0,3 %",
+    "previous": "1,2 %",
+    "actual": "",
+    "importance": 2
+   },
+   {
+    "at": "2026-10-15T14:30",
+    "country": "US",
+    "event": "Ceny výrobců PPI r/r (září)",
+    "consensus": "5,3 %",
+    "previous": "5,4 %",
+    "actual": "",
+    "importance": 2
+   },
+   {
+    "at": "2026-10-15T14:30",
+    "country": "US",
+    "event": "Nové žádosti o podporu",
+    "consensus": "200 tis.",
+    "previous": "197 tis.",
+    "actual": "",
+    "importance": 1
+   },
+   {
+    "at": "2026-10-16T09:00",
+    "country": "CZ",
+    "event": "Ceny průmyslových výrobců r/r (září)",
+    "consensus": "3,4 %",
+    "previous": "2,0 %",
+    "actual": "",
+    "importance": 1
+   },
+   {
+    "at": "2026-10-16T11:00",
+    "country": "EA",
+    "event": "Inflace HICP – finální (září)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 2
+   },
+   {
+    "at": "2026-10-16T15:15",
+    "country": "US",
+    "event": "Průmyslová výroba m/m (září)",
+    "consensus": "0,4 %",
+    "previous": "0,0 %",
+    "actual": "",
+    "importance": 1
+   },
+   {
+    "at": "2026-10-20T10:00",
+    "country": "PL",
+    "event": "Mzdy a průmyslová výroba (září)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 2
+   },
+   {
+    "at": "2026-10-20T11:00",
+    "country": "DE",
+    "event": "Index ZEW (říjen)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 2
+   },
+   {
+    "at": "2026-10-22T10:00",
+    "country": "PL",
+    "event": "Maloobchodní tržby (září)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 1
+   },
+   {
+    "at": "2026-10-23T10:00",
+    "country": "EA",
+    "event": "PMI flash (říjen)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 2
+   },
+   {
+    "at": "2026-10-23T15:45",
+    "country": "US",
+    "event": "PMI flash (říjen)",
+    "consensus": "",
+    "previous": "58,4 (kompozitní)",
+    "actual": "",
+    "importance": 2
+   },
+   {
+    "at": "2026-10-26T08:00",
+    "country": "CZ",
+    "event": "Podnikatelská a spotřebitelská důvěra (říjen)",
+    "consensus": "",
+    "previous": "98,4 / 105,1",
+    "actual": "",
+    "importance": 1
+   },
+   {
+    "at": "2026-10-28T19:00",
+    "country": "US",
+    "event": "Fed: rozhodnutí o sazbách",
+    "consensus": "",
+    "previous": "3,75–4,00 %",
+    "actual": "",
+    "importance": 3
+   },
+   {
+    "at": "2026-10-29T14:15",
+    "country": "EA",
+    "event": "ECB: rozhodnutí o sazbách",
+    "consensus": "depo 2,50 %",
+    "previous": "2,50 %",
+    "actual": "",
+    "importance": 3
+   },
+   {
+    "at": "2026-10-30T09:00",
+    "country": "CZ",
+    "event": "HDP předběžný odhad (3. čtvrtletí)",
+    "consensus": "",
+    "previous": "0,3 % q/q, 1,8 % r/r",
+    "actual": "",
+    "importance": 3
+   },
+   {
+    "at": "2026-10-30T10:00",
+    "country": "PL",
+    "event": "Inflace CPI – rychlý odhad (říjen)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 2
+   },
+   {
+    "at": "2026-10-30T11:00",
+    "country": "EA",
+    "event": "HDP rychlý odhad (3. čtvrtletí) a nezaměstnanost",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 2
+   },
+   {
+    "at": "2026-11-04T00:00",
+    "country": "PL",
+    "event": "NBP: rozhodnutí o sazbách",
+    "consensus": "",
+    "previous": "3,75 %",
+    "actual": "",
+    "importance": 3
+   },
+   {
+    "at": "2026-11-05T14:30",
+    "country": "CZ",
+    "event": "ČNB: rozhodnutí o sazbách a nová prognóza",
+    "consensus": "",
+    "previous": "3,75 %",
+    "actual": "",
+    "importance": 3
+   },
+   {
+    "at": "2026-11-06T14:30",
+    "country": "US",
+    "event": "Zaměstnanost mimo zemědělství (říjen)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 3
+   }
+  ]
+ },
+ "forecast": {
+  "cnb": {
+   "label": "Prognóza ČNB – léto 2026",
+   "published": "2026-08-06",
+   "url": "https://www.cnb.cz/cs/menova-politika/prognoza/",
+   "rows": [
+    {
+     "year": 2026,
+     "cpi": 2.0,
+     "gdp": 2.2,
+     "pribor3m": 3.7,
+     "eurczk": 24.3
+    },
+    {
+     "year": 2027,
+     "cpi": 2.5,
+     "gdp": 2.7,
+     "pribor3m": 3.9,
+     "eurczk": 24.4
+    },
+    {
+     "year": 2028,
+     "cpi": 2.4,
+     "gdp": 2.5,
+     "pribor3m": 3.7,
+     "eurczk": 24.3
+    }
+   ],
+   "note": "Další prognóza vyjde s rozhodnutím 5. 11. 2026."
+  }
  }
 }

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#111111">
-<meta name="description" content="SAB FX RADAR: EUR/CZK, USD/CZK, EUR/USD, PLN/CZK, zprávy a centrální banky">
+<meta name="description" content="SAB FX RADAR: EUR/CZK, USD/CZK, EUR/USD, PLN/CZK – kurzy, zajištění, zprávy a centrální banky">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -17,14 +17,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
 <style>
-html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--bg)}
-body{margin:0}
-.fresh{cursor:pointer}
-/* Layout: phone-first trading card stack; two columns from 900px. Monochrome ink like the team's original, plus semantic up/down. */
+/* Layout: phone-first card stack; two columns from 900px. Monochrome ink plus semantic up/down. */
 :root{
   --bg:#eeeeec; --surface:#ffffff; --surface-2:#f5f5f3; --ink:#111111; --muted:#64645f; --line:#dadad6;
   --invert-bg:#141414; --invert-ink:#f2f2f0; --invert-muted:#a8a8a3;
-  --up:#1d7a4c; --down:#b23a2e; --chart-fill:rgba(17,17,17,.08);
+  --up:#1d7a4c; --down:#b23a2e; --warn:#9a6a00; --chart-fill:rgba(17,17,17,.08); --band:rgba(17,17,17,.06);
+  --line-2:#8a8a85;
   --font-sans:"IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --r:16px;
@@ -32,18 +30,19 @@ body{margin:0}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0d0d0d; --surface:#181818; --surface-2:#202020; --ink:#ededea; --muted:#9a9a95; --line:#2e2e2c;
   --invert-bg:#ededea; --invert-ink:#121212; --invert-muted:#5c5c58;
-  --up:#4cc38a; --down:#f07a6c; --chart-fill:rgba(237,237,234,.09); color-scheme:dark}}
+  --up:#4cc38a; --down:#f07a6c; --warn:#e0b44a; --chart-fill:rgba(237,237,234,.09); --band:rgba(237,237,234,.07); --line-2:#77776f; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0d0d0d; --surface:#181818; --surface-2:#202020; --ink:#ededea; --muted:#9a9a95; --line:#2e2e2c;
   --invert-bg:#ededea; --invert-ink:#121212; --invert-muted:#5c5c58;
-  --up:#4cc38a; --down:#f07a6c; --chart-fill:rgba(237,237,234,.09); color-scheme:dark}
+  --up:#4cc38a; --down:#f07a6c; --warn:#e0b44a; --chart-fill:rgba(237,237,234,.09); --band:rgba(237,237,234,.07); --line-2:#77776f; color-scheme:dark}
 
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--font-sans);font-size:15px;line-height:1.45;
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-sans);font-size:15px;line-height:1.45;
   padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px));padding-block:0 32px}
 .num{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
 a{color:inherit}
-button{font:inherit;color:inherit}
+button,input,select{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 
 .wrap{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
@@ -53,9 +52,9 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background
 .mark svg{width:24px;height:24px}
 .mark path{stroke:var(--invert-ink)} .mark circle{fill:var(--invert-ink)}
 .brand{min-width:0;flex:1}
-.brand h1{margin:0;font-size:19px;letter-spacing:-.3px;line-height:1.1}
+.brand h1{margin:0;font-size:19px;letter-spacing:-.2px;line-height:1.1}
 .brand p{margin:2px 0 0;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.fresh{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 10px;background:var(--surface);flex:none}
+.fresh{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 10px;background:var(--surface);flex:none;cursor:pointer}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--muted)}
 .dot.live{background:var(--up)} .dot.stale{background:var(--down)}
 
@@ -66,26 +65,51 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background
 .pair .pn{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
 .pair .pv{font-size:22px;font-weight:500;letter-spacing:-.5px}
 .pair .pc{font-size:12px}
-.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--muted)}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--muted)} .warn{color:var(--warn)}
 .pair.active .pc.flat{color:var(--invert-muted)}
-.pair.active .up,.pair.active .down{filter:none}
 
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;min-width:0}
 .card h2{margin:0;font-size:13px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.card h3{margin:0 0 6px;font-size:14px;font-weight:600}
+.sub{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:14px;margin-top:14px}
 .chartHead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px;margin-bottom:10px}
 .bigv{font-size:34px;font-weight:500;letter-spacing:-1px;line-height:1.05;margin-top:4px}
 .bigc{font-size:13px;margin-top:2px}
-.seg{display:inline-flex;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px}
+.seg{display:inline-flex;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px;flex-wrap:wrap}
 .seg button{all:unset;cursor:pointer;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;color:var(--muted)}
 .seg button[aria-pressed="true"]{background:var(--invert-bg);color:var(--invert-ink)}
 .seg button:focus-visible{outline:2px solid var(--ink)}
 .chartBox{position:relative;height:230px;touch-action:pan-y;user-select:none}
+.chartBox.small{height:170px}
 .chartBox svg{width:100%;height:100%;display:block;overflow:visible}
 .scrub{position:absolute;top:0;pointer-events:none;background:var(--invert-bg);color:var(--invert-ink);font-size:12px;border-radius:8px;padding:5px 8px;white-space:nowrap;transform:translateX(-50%)}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px;border-top:1px solid var(--line);padding-top:12px}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:0;border-top:2px solid var(--ink);vertical-align:middle;margin-right:5px}
+.legend i.dash{border-top-style:dashed}
+.legend i.l2{border-color:var(--line-2)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:12px 0 0;border-top:1px solid var(--line);padding-top:12px}
 .stats div{min-width:0}
 .stats dt{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
 .stats dd{margin:2px 0 0;font-size:14px}
+
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:right;padding:4px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left;padding-left:0}
+td{text-align:right;padding:7px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.note{font-size:12px;color:var(--muted);margin:0}
+.kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.kv div{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:8px 10px;min-width:0}
+.kv span{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.kv b{display:block;font-weight:500;font-size:15px;margin-top:2px}
+
+.form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.form label{display:grid;gap:3px;font-size:12px;color:var(--muted);min-width:0}
+.form input,.form select{width:100%;min-width:0;border:1px solid var(--line);background:var(--surface-2);border-radius:10px;padding:8px 10px;font-size:15px;color:var(--ink)}
+.form input{font-family:var(--font-mono)}
+.verdict{border-left:3px solid var(--line-2);padding:4px 0 4px 10px;font-size:14px}
+.verdict.good{border-color:var(--up)} .verdict.bad{border-color:var(--down)}
 
 .signals{display:grid;gap:12px;margin-top:12px}
 .sig{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:baseline}
@@ -94,30 +118,50 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background
 .sig p{grid-column:1/-1;margin:0;font-size:12.5px;color:var(--muted)}
 .range{grid-column:1/-1;height:6px;border-radius:3px;background:var(--surface-2);border:1px solid var(--line);position:relative;margin-top:4px}
 .range i{position:absolute;top:-4px;width:3px;height:12px;border-radius:2px;background:var(--ink);transform:translateX(-50%)}
-.note{font-size:12px;color:var(--muted);margin:12px 0 0}
 
-.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
-.tabs button{all:unset;cursor:pointer;flex:none;font-size:14px;font-weight:600;padding:8px 12px;border-bottom:2px solid transparent;color:var(--muted)}
+.risk{display:grid;gap:10px}
+.riskRow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:baseline}
+.riskRow b{font-weight:500}
+.riskRow p{grid-column:1/-1;margin:0;font-size:12.5px;color:var(--muted)}
+
+.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{all:unset;cursor:pointer;flex:none;font-size:14px;font-weight:600;padding:8px 10px;border-bottom:2px solid transparent;margin-bottom:-1px;color:var(--muted)}
 .tabs button[aria-selected="true"]{color:var(--ink);border-color:var(--ink)}
 .tabs button:focus-visible{outline:2px solid var(--ink)}
 .panel{margin-top:12px;display:grid;gap:10px}
 .news{border-top:1px solid var(--line);padding-top:10px;display:grid;gap:4px}
-.news:first-child{border-top:0;padding-top:0}
-.news .src{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-.news h3{margin:0;font-size:15px;line-height:1.3;text-wrap:balance}
+.news:first-of-type{border-top:0;padding-top:0}
+.src{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.news h4{margin:0;font-size:15px;line-height:1.3;text-wrap:balance}
 .news p{margin:0;font-size:13.5px;color:var(--muted);max-width:65ch}
 .news .why{color:var(--ink)}
-.news a{font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--line);justify-self:start;padding-bottom:1px}
+.news a,.link{font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--line);justify-self:start;padding-bottom:1px}
 .bank{border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:6px;background:var(--surface-2)}
 .bankTop{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
 .bankTop b{font-size:15px}
 .bankRate{font-size:22px;font-weight:500}
-.meet{display:inline-flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;border-radius:999px;padding:4px 10px;background:var(--invert-bg);color:var(--invert-ink);justify-self:start}
+.chip{display:inline-flex;gap:6px;align-items:center;font-size:12px;font-weight:600;border-radius:999px;padding:3px 9px;background:var(--invert-bg);color:var(--invert-ink);justify-self:start;white-space:nowrap}
+.chip.soft{background:var(--surface-2);color:var(--muted);border:1px solid var(--line)}
 .bank p{margin:0;font-size:13px;color:var(--muted)}
 .bank details summary{cursor:pointer;font-size:13px;font-weight:600}
-.risk{display:grid;gap:8px}
-.risk div{border-left:3px solid var(--ink);padding:2px 0 2px 10px;font-size:14px}
-.empty{padding:20px 4px;color:var(--muted);font-size:14px}
+.day{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-top:6px}
+.ev{display:grid;grid-template-columns:44px 30px minmax(0,1fr);gap:2px 8px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--line)}
+.ev.past{opacity:.55}
+.ev .t{font-size:13px}
+.ev .c{font-size:11px;font-weight:600;color:var(--muted)}
+.ev .e{font-size:14px;min-width:0}
+.ev .e b{font-weight:600}
+.ev .m{grid-column:3;font-size:12.5px;color:var(--muted)}
+.imp{display:inline-flex;gap:2px;margin-left:6px;vertical-align:middle}
+.imp i{width:5px;height:5px;border-radius:50%;background:var(--line)}
+.imp i.on{background:var(--ink)}
+.hol{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 10px;padding:7px 0;border-bottom:1px solid var(--line)}
+.hol .d{font-size:13px}
+.hol p{margin:0;grid-column:2;font-size:12.5px;color:var(--muted)}
+.risktext{display:grid;gap:8px}
+.risktext div{border-left:3px solid var(--ink);padding:2px 0 2px 10px;font-size:14px}
+.empty{padding:16px 2px;color:var(--muted);font-size:14px}
 footer{font-size:12px;color:var(--muted);display:grid;gap:4px}
 
 @media (min-width:900px){
@@ -125,12 +169,16 @@ footer{font-size:12px;color:var(--muted);display:grid;gap:4px}
   header.top,.pairs,footer{grid-column:1/-1}
   .pairs{grid-template-columns:repeat(4,minmax(0,1fr))}
   .chartBox{height:300px}
-  .side{grid-row:span 2}
 }
-@media (max-width:380px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.bigv{font-size:30px}}
+@media (max-width:420px){
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bigv{font-size:30px}
+  .form{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .form label.wide{grid-column:1/-1}
+  .kv{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
 @media (prefers-reduced-motion:no-preference){.pair,.seg button,.tabs button{transition:background .15s,color .15s}}
 </style>
-
 </head>
 <body>
 <div class="wrap">
@@ -142,6 +190,7 @@ footer{font-size:12px;color:var(--muted);display:grid;gap:4px}
 
   <nav class="pairs" id="pairs" aria-label="Měnové páry"></nav>
 
+  <!-- Chart -->
   <section class="card" aria-labelledby="chartTitle">
     <div class="chartHead">
       <div>
@@ -157,7 +206,8 @@ footer{font-size:12px;color:var(--muted);display:grid;gap:4px}
       </div>
     </div>
     <div class="chartBox" id="chartBox"><svg id="chart" role="img" aria-label="Graf kurzu"></svg><div class="scrub num" id="scrub" hidden></div></div>
-    <dl class="stats" id="stats">
+    <div class="legend" id="chartLegend" hidden></div>
+    <dl class="stats">
       <div><dt>Min</dt><dd class="num" id="sMin">—</dd></div>
       <div><dt>Max</dt><dd class="num" id="sMax">—</dd></div>
       <div><dt>Průměr</dt><dd class="num" id="sAvg">—</dd></div>
@@ -165,58 +215,205 @@ footer{font-size:12px;color:var(--muted);display:grid;gap:4px}
     </dl>
   </section>
 
-  <section class="card side" aria-labelledby="sigTitle">
-    <h2 id="sigTitle">Signály z kurzu</h2>
-    <div class="signals" id="signals"><div class="empty">Signály se spočítají po načtení kurzů.</div></div>
-    <p class="note">Počítáno z denních fixingů ECB. Popisuje dosavadní pohyb, nepředpovídá ho; nejde o obchodní doporučení.</p>
+  <!-- Hedging -->
+  <section class="card" aria-labelledby="hedgeTitle">
+    <h2 id="hedgeTitle">Zajištění</h2>
+
+    <div class="sub" style="border-top:0;padding-top:10px;margin-top:0">
+      <h3>Kurz ČNB vs. fixing ECB</h3>
+      <div class="kv" id="cnbBox"><div><span>ČNB</span><b class="num">—</b></div><div><span>ECB</span><b class="num">—</b></div><div><span>Rozdíl</span><b class="num">—</b></div></div>
+      <p class="note" id="cnbNote">Kurz ČNB je účetní kurz pro přecenění v CZK.</p>
+    </div>
+
+    <div class="sub">
+      <h3>Rozpočtový a cílový kurz</h3>
+      <form class="form" id="budgetForm" autocomplete="off">
+        <label class="wide">Pozice
+          <select id="bRole"></select>
+        </label>
+        <label>Rozpočtový kurz<input id="bBudget" inputmode="decimal" placeholder="např. 24,30"></label>
+        <label>Cíl pro zajištění<input id="bTarget" inputmode="decimal" placeholder="nepovinné"></label>
+      </form>
+      <div id="budgetOut"><p class="note">Zadejte rozpočtový kurz. Uloží se jen v tomto telefonu.</p></div>
+    </div>
+
+    <div class="sub">
+      <h3>Forwardové kurzy (orientačně)</h3>
+      <div class="tbl" id="fwdTable"><div class="empty">Čekám na kurzy a sazby…</div></div>
+      <p class="note" id="fwdNote">Výpočet z mezibankových sazeb přes krytou úrokovou paritu. Kotace banky se liší o marži a cross-currency basis.</p>
+    </div>
+
+    <div class="sub">
+      <h3>Očekávané pásmo kurzu</h3>
+      <div class="tbl" id="bandTable"><div class="empty">Čekám na kurzy…</div></div>
+      <p class="note">Pásmo kolem forwardu z roční historické volatility. Statistický odhad, ne předpověď.</p>
+    </div>
   </section>
 
-  <section class="card" aria-label="Zprávy, centrální banky a rizika">
+  <!-- Signals -->
+  <section class="card" aria-labelledby="sigTitle">
+    <h2 id="sigTitle">Signály z kurzu</h2>
+    <div class="signals" id="signals"><div class="empty">Signály se spočítají po načtení kurzů.</div></div>
+    <p class="note" style="margin-top:12px">Počítáno z denních fixingů ECB. Popisuje dosavadní pohyb, nepředpovídá ho.</p>
+  </section>
+
+  <!-- Market -->
+  <section class="card" aria-labelledby="mktTitle">
+    <h2 id="mktTitle">Trh a rizika</h2>
+
+    <div class="sub" style="border-top:0;padding-top:10px;margin-top:0">
+      <h3>Region CEE vůči euru</h3>
+      <div class="tbl" id="ceeTable"><div class="empty">Čekám na kurzy…</div></div>
+      <p class="note" id="ceeNote">Kladné číslo = měna vůči euru oslabila.</p>
+    </div>
+
+    <div class="sub">
+      <h3 id="diffTitle">Úrokový diferenciál CZK–EUR</h3>
+      <div class="chartBox small" id="diffBox"><svg id="diffChart" role="img" aria-label="Graf úrokového diferenciálu"></svg></div>
+      <div class="legend"><span><i></i>3M PRIBOR</span><span><i class="l2"></i>3M EURIBOR</span></div>
+      <p class="note" id="diffNote"></p>
+    </div>
+
+    <div class="sub">
+      <h3>Rizikové ukazatele</h3>
+      <div class="risk" id="riskBox"><div class="empty">Načítám…</div></div>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <section class="card" aria-label="Zprávy, kalendář, banky a svátky" style="grid-column:1/-1">
     <div class="tabs" role="tablist" id="tabs">
       <button type="button" role="tab" data-t="news" aria-selected="true">Zprávy</button>
+      <button type="button" role="tab" data-t="cal" aria-selected="false">Kalendář</button>
       <button type="button" role="tab" data-t="banks" aria-selected="false">Centrální banky</button>
-      <button type="button" role="tab" data-t="risks" aria-selected="false">Rizika</button>
+      <button type="button" role="tab" data-t="hol" aria-selected="false">Svátky</button>
+      <button type="button" role="tab" data-t="risks" aria-selected="false">Rizika páru</button>
     </div>
-    <div class="panel" id="panel" role="tabpanel"><div class="empty">Zprávy se načítají…</div></div>
+    <div class="panel" id="panel" role="tabpanel"><div class="empty">Načítám…</div></div>
   </section>
 
   <footer>
-    <span id="footSrc">Kurzy: denní referenční kurzy ECB přes Frankfurter API (fixing kolem 16:00 SEČ, jen pracovní dny). Data se obnoví při každém otevření, klepnutím na štítek vpravo nahoře ručně.</span>
-    <span>Data jsou indikativní. Pro obchodování ověřte kotace u banky nebo brokera.</span>
+    <span>Kurzy: denní referenční kurzy ECB přes Frankfurter API (fixing kolem 16:00, jen pracovní dny), obnoví se při každém otevření. Kurz ČNB, sazby, rizika, kalendář a zprávy se aktualizují 4× denně.</span>
+    <span>Data jsou indikativní. Pro obchodování ověřte kotace u banky.</span>
   </footer>
 </div>
 
 <script>
 'use strict';
+/* ---------- configuration ---------- */
 const PAIRS={
-  "EUR/CZK":{dec:3,calc:d=>d.CZK,quote:"CZK",cb:["ECB","CNB"]},
-  "USD/CZK":{dec:3,calc:d=>d.CZK/d.USD,quote:"CZK",cb:["Fed","CNB"]},
-  "EUR/USD":{dec:4,calc:d=>d.USD,quote:"USD",cb:["ECB","Fed"]},
-  "PLN/CZK":{dec:4,calc:d=>d.CZK/d.PLN,quote:"CZK",cb:["NBP","CNB"]}
+  "EUR/CZK":{base:"EUR",quote:"CZK",dec:3,calc:d=>d.CZK,cb:["ECB","CNB"],cal:["CZ","EA","DE"],ptsMul:100,ptsUnit:"hal."},
+  "USD/CZK":{base:"USD",quote:"CZK",dec:3,calc:d=>d.CZK/d.USD,cb:["Fed","CNB"],cal:["US","CZ"],ptsMul:100,ptsUnit:"hal."},
+  "EUR/USD":{base:"EUR",quote:"USD",dec:4,calc:d=>d.USD,cb:["ECB","Fed"],cal:["US","EA","DE"],ptsMul:10000,ptsUnit:"pipů"},
+  "PLN/CZK":{base:"PLN",quote:"CZK",dec:4,calc:d=>d.CZK/d.PLN,cb:["NBP","CNB"],cal:["PL","CZ"],ptsMul:100,ptsUnit:"hal."}
 };
 const PERIOD_DAYS={"1M":31,"3M":92,"6M":183,"1R":366};
+const TENORS=[["1M",30],["3M",91],["6M",182],["12M",365]];
+const FLAG={CZ:"CZ",EA:"EU",DE:"DE",US:"US",PL:"PL"};
 const $=s=>document.querySelector(s);
-const state={days:[],news:null,banks:null,pair:"EUR/CZK",period:"3M",tab:"news",dbMissing:false};
-try{const s=JSON.parse(localStorage.getItem('fxradar')||'{}');if(PAIRS[s.pair])state.pair=s.pair;if(PERIOD_DAYS[s.period])state.period=s.period;if(['news','banks','risks'].includes(s.tab))state.tab=s.tab;}catch(e){}
-function remember(){try{localStorage.setItem('fxradar',JSON.stringify({pair:state.pair,period:state.period,tab:state.tab}))}catch(e){}}
+const state={days:[],data:{},pair:"EUR/CZK",period:"3M",tab:"news",calAll:false,loading:false,offline:false,fetchedAt:0,budgets:{}};
+try{const s=JSON.parse(localStorage.getItem('fxradar')||'{}');if(PAIRS[s.pair])state.pair=s.pair;if(PERIOD_DAYS[s.period])state.period=s.period;if(['news','cal','banks','hol','risks'].includes(s.tab))state.tab=s.tab;state.budgets=s.budgets||{};state.calAll=!!s.calAll}catch(e){}
+function remember(){try{localStorage.setItem('fxradar',JSON.stringify({pair:state.pair,period:state.period,tab:state.tab,budgets:state.budgets,calAll:state.calAll}))}catch(e){}}
 
+/* ---------- formatting ---------- */
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeUrl=u=>/^https:\/\//i.test(String(u||''))?String(u):'';
 const fmt=(n,d)=>Number.isFinite(n)?n.toLocaleString('cs-CZ',{minimumFractionDigits:d,maximumFractionDigits:d}):'—';
-const pct=(n,d=2)=>Number.isFinite(n)?(n>0?'+':n<0?'−':'')+Math.abs(n).toLocaleString('cs-CZ',{minimumFractionDigits:d,maximumFractionDigits:d})+' %':'—';
+const sgn=(n,d)=>Number.isFinite(n)?(n>0?'+':n<0?'−':'')+Math.abs(n).toLocaleString('cs-CZ',{minimumFractionDigits:d,maximumFractionDigits:d}):'—';
+const pct=(n,d=2)=>Number.isFinite(n)?sgn(n,d)+' %':'—';
 const cls=n=>n>0?'up':n<0?'down':'flat';
-const dCZ=iso=>new Date(iso+'T12:00:00').toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:'numeric'});
-const dShort=iso=>new Date(iso+'T12:00:00').toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric'});
+const pd=iso=>new Date(String(iso).slice(0,10)+'T12:00:00');
+const dCZ=iso=>iso?pd(iso).toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:'numeric'}):'—';
+const dShort=iso=>pd(iso).toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric'});
+const isoDay=d=>{const z=new Date(d.getTime()-d.getTimezoneOffset()*6e4);return z.toISOString().slice(0,10)};
+const parseNum=s=>{const v=parseFloat(String(s||'').replace(/\s/g,'').replace(',','.'));return Number.isFinite(v)&&v>0?v:NaN};
 
+/* ---------- series & stats ---------- */
 function series(pair){const f=PAIRS[pair].calc;return state.days.map(d=>({date:d.date,v:f(d)})).filter(r=>Number.isFinite(r.v))}
-function windowed(rows,period){if(!rows.length)return rows;const last=new Date(rows.at(-1).date+'T12:00:00');const from=new Date(last);from.setDate(from.getDate()-PERIOD_DAYS[period]);return rows.filter(r=>new Date(r.date+'T12:00:00')>=from)}
-/* Direction words: for xxx/CZK a rising pair means a weaker koruna. */
-function moveWord(pair,ch){if(!ch)return'beze změny';const q=PAIRS[pair].quote, b=pair.split('/')[0];return ch>0?`${b} posiluje vůči ${q}`:`${q} posiluje vůči ${b}`}
+function windowed(rows,period){if(!rows.length)return rows;const last=pd(rows.at(-1).date);const from=new Date(last);from.setDate(from.getDate()-PERIOD_DAYS[period]);return rows.filter(r=>pd(r.date)>=from)}
+function annVol(v){const r=[];for(let i=1;i<v.length;i++)r.push(Math.log(v[i]/v[i-1]));if(r.length<10)return NaN;const m=r.reduce((a,b)=>a+b,0)/r.length;return Math.sqrt(r.reduce((a,b)=>a+(b-m)**2,0)/(r.length-1))*Math.sqrt(252)}
+function moveWord(pair,ch){if(!ch)return'beze změny';const p=PAIRS[pair];return ch>0?`${p.base} posiluje vůči ${p.quote}`:`${p.quote} posiluje vůči ${p.base}`}
+function spot(){const r=series(state.pair);return r.at(-1)}
 
+/* ---------- forwards ---------- */
+function mmRate(ccy,tenor){const m=state.data.mm?.[ccy];const v=m?.r?.[tenor];return Number.isFinite(v)?{r:v/100,basis:m.basis||360}:null}
+function forwards(){
+  const s=spot();if(!s)return null;const p=PAIRS[state.pair];
+  return TENORS.map(([t,days])=>{const b=mmRate(p.base,t),q=mmRate(p.quote,t);if(!b||!q)return{t,days,F:NaN};
+    const F=s.v*(1+q.r*days/q.basis)/(1+b.r*days/b.basis);return{t,days,F,pts:(F-s.v)*p.ptsMul,carry:(F/s.v-1)*365/days*100}});
+}
+
+/* ---------- holidays ---------- */
+function easter(y){const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;return new Date(y,mo-1,da,12)}
+const addD=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x};
+const nthWd=(y,m,wd,n)=>{const d=new Date(y,m,1,12);const off=(wd-d.getDay()+7)%7;return new Date(y,m,1+off+(n-1)*7,12)};
+const lastWd=(y,m,wd)=>{const d=new Date(y,m+1,0,12);const off=(d.getDay()-wd+7)%7;return new Date(y,m,d.getDate()-off,12)};
+function holidays(y){
+  const E=easter(y),D=(m,d)=>new Date(y,m-1,d,12),out=[];
+  const add=(mk,d,name)=>out.push({mk,date:isoDay(d),name});
+  [[1,1,'Nový rok'],[5,1,'Svátek práce'],[5,8,'Den vítězství'],[7,5,'Cyril a Metoděj'],[7,6,'Jan Hus'],[9,28,'Den české státnosti'],[10,28,'Vznik Československa'],[11,17,'Den boje za svobodu'],[12,24,'Štědrý den'],[12,25,'1. svátek vánoční'],[12,26,'2. svátek vánoční']].forEach(([m,d,n])=>add('CZ',D(m,d),n));
+  add('CZ',addD(E,-2),'Velký pátek');add('CZ',addD(E,1),'Velikonoční pondělí');
+  [[1,1,'Nový rok'],[5,1,'Svátek práce'],[12,25,'Vánoce'],[12,26,'Vánoce']].forEach(([m,d,n])=>add('T2',D(m,d),n));
+  add('T2',addD(E,-2),'Velký pátek');add('T2',addD(E,1),'Velikonoční pondělí');
+  const us=(d,n)=>{if(d.getDay()===0)d=addD(d,1);if(d.getDay()!==6)add('US',d,n)};
+  us(D(1,1),'New Year');us(nthWd(y,0,1,3),'Martin Luther King Jr. Day');us(nthWd(y,1,1,3),'Presidents Day');us(lastWd(y,4,1),'Memorial Day');us(D(6,19),'Juneteenth');us(D(7,4),'Independence Day');us(nthWd(y,8,1,1),'Labor Day');us(nthWd(y,9,1,2),'Columbus Day');us(D(11,11),'Veterans Day');us(nthWd(y,10,4,4),'Thanksgiving');us(D(12,25),'Christmas');
+  [[1,1,'Nowy Rok'],[1,6,'Trzech Króli'],[5,1,'Święto Pracy'],[5,3,'Święto Konstytucji'],[8,15,'Wniebowzięcie'],[11,1,'Wszystkich Świętych'],[11,11,'Święto Niepodległości'],[12,24,'Wigilia'],[12,25,'Boże Narodzenie'],[12,26,'Boże Narodzenie']].forEach(([m,d,n])=>add('PL',D(m,d),n));
+  add('PL',addD(E,1),'Poniedziałek Wielkanocny');add('PL',addD(E,60),'Boże Ciało');
+  return out.filter(h=>{const wd=pd(h.date).getDay();return wd!==0&&wd!==6});
+}
+const MK={CZ:{label:'ČR',ccy:'CZK',txt:'Platby v CZK a česká valuta neprobíhají.'},T2:{label:'TARGET2',ccy:'EUR',txt:'Platby v EUR se nevypořádávají, valuta EUR se posouvá.'},US:{label:'USA',ccy:'USD',txt:'Fedwire zavřený, valuta USD se posouvá.'},PL:{label:'Polsko',ccy:'PLN',txt:'Platby v PLN neprobíhají.'}};
+
+/* ---------- chart ---------- */
+function drawLines(svgId,boxId,lines,opts={}){
+  const svg=$(svgId),box=$(boxId);const W=box.clientWidth||600,H=box.clientHeight||230;
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.innerHTML='';
+  const main=lines[0]?.rows||[];
+  if(main.length<2){svg.innerHTML=`<text x="8" y="28" fill="var(--muted)" font-size="13">${esc(opts.empty||'Načítám…')}</text>`;return null}
+  const dec=opts.dec??2,padL=4,padR=opts.padR??58,padT=22,padB=24;
+  let vals=lines.flatMap(l=>l.rows.map(r=>r.v));(opts.hlines||[]).forEach(h=>{if(Number.isFinite(h.v))vals.push(h.v)});
+  if(opts.band)vals.push(...opts.band.flatMap(b=>[b.lo,b.hi]));
+  const min=Math.min(...vals),max=Math.max(...vals),span=(max-min)||max*0.001,lo=min-span*.08,hi=max+span*.08;
+  const n=main.length,x=i=>padL+i*(W-padL-padR)/(n-1),y=v=>padT+(hi-v)/(hi-lo)*(H-padT-padB);
+  const NS='http://www.w3.org/2000/svg';
+  const el=(t,a,txt)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;svg.appendChild(e);return e};
+  for(let i=0;i<4;i++){const v=hi-(hi-lo)*(i+.5)/4,yy=y(v);el('line',{x1:padL,x2:W-padR,y1:yy,y2:yy,stroke:'var(--line)','stroke-width':1});el('text',{x:W-padR+8,y:yy+4,fill:'var(--muted)','font-size':11,'font-family':'IBM Plex Mono, monospace'},fmt(v,dec))}
+  const ticks=W<500?3:5;
+  for(let i=0;i<ticks;i++){const idx=Math.round(i*(n-1)/(ticks-1));el('text',{x:x(idx),y:H-6,fill:'var(--muted)','font-size':11,'text-anchor':i===0?'start':i===ticks-1?'end':'middle'},opts.tickFmt?opts.tickFmt(main[idx].date):dShort(main[idx].date))}
+  (opts.hlines||[]).forEach(h=>{if(!Number.isFinite(h.v))return;const yy=y(h.v);el('line',{x1:padL,x2:W-padR,y1:yy,y2:yy,stroke:h.color||'var(--muted)','stroke-width':1.5,'stroke-dasharray':h.dash||'5 4'});el('text',{x:padL+4,y:yy-5,fill:h.color||'var(--muted)','font-size':11},h.label)});
+  lines.forEach((l,li)=>{const path=l.rows.map((r,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(r.v).toFixed(1)).join(' ');
+    if(li===0&&opts.fill)el('path',{d:path+` L${x(n-1)} ${H-padB} L${x(0)} ${H-padB} Z`,fill:'var(--chart-fill)',stroke:'none'});
+    el('path',{d:path,fill:'none',stroke:l.color||'var(--ink)','stroke-width':l.width||2,'stroke-linejoin':'round','stroke-linecap':'round'});
+    el('circle',{cx:x(l.rows.length-1),cy:y(l.rows.at(-1).v),r:3.5,fill:l.color||'var(--ink)'})});
+  return {svg,el,x,y,W,H,padL,padR,padT,padB,n,rows:main,dec};
+}
+
+function renderChart(){
+  const all=series(state.pair);const rows=windowed(all,state.period);const p=PAIRS[state.pair];const dec=p.dec;
+  $('#chartTitle').textContent=state.pair+' · '+state.period;
+  document.querySelectorAll('#periods button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.p===state.period));
+  const last=rows.at(-1),first=rows[0];
+  $('#bigValue').textContent=last?fmt(last.v,dec):'—';
+  if(last&&first){const ch=(last.v/first.v-1)*100;$('#bigChange').className='bigc num '+cls(ch);$('#bigChange').textContent=`${pct(ch)} za ${state.period} · ${moveWord(state.pair,ch)}`}else $('#bigChange').innerHTML='&nbsp;';
+  if(rows.length){const v=rows.map(r=>r.v);const avg=v.reduce((a,b)=>a+b,0)/v.length;$('#sMin').textContent=fmt(Math.min(...v),dec);$('#sMax').textContent=fmt(Math.max(...v),dec);$('#sAvg').textContent=fmt(avg,dec);const ch=(last.v/first.v-1)*100;$('#sChg').textContent=pct(ch);$('#sChg').className='num '+cls(ch)}
+  const b=state.budgets[state.pair]||{};const bv=parseNum(b.budget),tv=parseNum(b.target);
+  const hl=[];if(Number.isFinite(bv))hl.push({v:bv,label:'Rozpočet '+fmt(bv,dec),color:'var(--warn)'});if(Number.isFinite(tv))hl.push({v:tv,label:'Cíl '+fmt(tv,dec),color:'var(--up)',dash:'2 3'});
+  const lg=$('#chartLegend');lg.hidden=!hl.length;lg.innerHTML=hl.map(h=>`<span><i class="dash" style="border-color:${h.color}"></i>${esc(h.label)}</span>`).join('');
+  const c=drawLines('#chart','#chartBox',[{rows}],{dec,fill:true,hlines:hl,empty:state.offline&&!rows.length?'Kurzy se nepodařilo načíst. Zkontrolujte připojení.':'Načítám kurzy…'});
+  $('#scrub').hidden=true;if(!c)return;
+  const guide=c.el('line',{x1:0,x2:0,y1:c.padT-6,y2:c.H-c.padB,stroke:'var(--muted)','stroke-width':1,'stroke-dasharray':'3 3',visibility:'hidden'});
+  const dot=c.el('circle',{cx:0,cy:0,r:5,fill:'var(--ink)',stroke:'var(--surface)','stroke-width':2,visibility:'hidden'});
+  const tip=$('#scrub');
+  const move=e=>{const rect=c.svg.getBoundingClientRect();const px=(e.clientX-rect.left)*c.W/rect.width;let i=Math.round((px-c.padL)/(c.W-c.padL-c.padR)*(c.n-1));i=Math.max(0,Math.min(c.n-1,i));
+    const cx=c.x(i),cy=c.y(rows[i].v);guide.setAttribute('x1',cx);guide.setAttribute('x2',cx);guide.setAttribute('visibility','visible');dot.setAttribute('cx',cx);dot.setAttribute('cy',cy);dot.setAttribute('visibility','visible');
+    tip.hidden=false;tip.textContent=`${dCZ(rows[i].date)} · ${fmt(rows[i].v,dec)}`;tip.style.left=Math.max(70,Math.min(rect.width-70,cx*rect.width/c.W))+'px'};
+  const leave=()=>{guide.setAttribute('visibility','hidden');dot.setAttribute('visibility','hidden');tip.hidden=true};
+  c.svg.onpointermove=move;c.svg.onpointerdown=move;c.svg.onpointerleave=leave;c.svg.onpointerup=e=>{if(e.pointerType!=='mouse')leave()};
+}
+
+/* ---------- header & pairs ---------- */
 function renderFresh(){
   const el=$('#freshText'),dot=$('#freshDot');
-  if(state.loading&&!state.days.length){el.textContent='Načítám…';dot.className='dot';return}
-  if(state.loading){el.textContent='Aktualizuji…';dot.className='dot';return}
+  if(state.loading){el.textContent=state.days.length?'Aktualizuji…':'Načítám…';dot.className='dot';return}
   const last=state.days.at(-1);
   if(!last){el.textContent='Bez dat';dot.className='dot stale';return}
   const age=(Date.now()-new Date(last.date+'T16:00:00'))/864e5;
@@ -224,134 +421,186 @@ function renderFresh(){
   dot.className='dot '+(!state.offline&&age<=3.5?'live':'stale');
   $('#fresh').title='Poslední fixing ECB: '+dCZ(last.date)+(state.fetchedAt?' · staženo '+new Date(state.fetchedAt).toLocaleString('cs-CZ'):'');
 }
-
 function renderPairs(){
   const nav=$('#pairs');nav.innerHTML='';
   Object.keys(PAIRS).forEach(k=>{
-    const rows=series(k), last=rows.at(-1), prev=rows.at(-2);
-    const ch=last&&prev?(last.v/prev.v-1)*100:NaN;
-    const b=document.createElement('button');b.type='button';b.className='pair'+(k===state.pair?' active':'');
-    b.setAttribute('aria-pressed',k===state.pair);
+    const rows=series(k),last=rows.at(-1),prev=rows.at(-2);const ch=last&&prev?(last.v/prev.v-1)*100:NaN;
+    const b=document.createElement('button');b.type='button';b.className='pair'+(k===state.pair?' active':'');b.setAttribute('aria-pressed',k===state.pair);
     b.innerHTML=`<span class="pn">${k}</span><span class="pv num">${last?fmt(last.v,PAIRS[k].dec):'—'}</span><span class="pc num ${cls(ch)}">${Number.isFinite(ch)?(ch>0?'▲ ':ch<0?'▼ ':'')+pct(ch)+' za den':'&nbsp;'}</span>`;
-    b.onclick=()=>{state.pair=k;remember();renderAll()};
-    nav.appendChild(b);
+    b.onclick=()=>{state.pair=k;remember();renderAll()};nav.appendChild(b);
   });
 }
 
-let chartRows=[];
-function drawChart(){
-  const svg=$('#chart'),box=$('#chartBox');const W=box.clientWidth||600,H=box.clientHeight||230;
-  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.innerHTML='';$('#scrub').hidden=true;
-  const rows=chartRows;const dec=PAIRS[state.pair].dec;
-  if(rows.length<2){svg.innerHTML=`<text x="8" y="28" fill="var(--muted)" font-size="13">${state.dbMissing?'Kurzy se nepodařilo načíst. Zkontrolujte připojení.':'Načítám kurzy…'}</text>`;return}
-  const padL=4,padR=58,padT=26,padB=24;
-  const vals=rows.map(r=>r.v),min=Math.min(...vals),max=Math.max(...vals),span=(max-min)||max*0.001,lo=min-span*.08,hi=max+span*.08;
-  const x=i=>padL+i*(W-padL-padR)/(rows.length-1), y=v=>padT+(hi-v)/(hi-lo)*(H-padT-padB);
-  const NS='http://www.w3.org/2000/svg';
-  const el=(n,a,t)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);if(t!=null)e.textContent=t;svg.appendChild(e);return e};
-  for(let i=0;i<4;i++){const v=hi-(hi-lo)*(i+.5)/4,yy=y(v);el('line',{x1:padL,x2:W-padR,y1:yy,y2:yy,stroke:'var(--line)','stroke-width':1});el('text',{x:W-padR+8,y:yy+4,fill:'var(--muted)','font-size':11,'font-family':'IBM Plex Mono, monospace'},fmt(v,dec))}
-  const ticks=W<500?3:5;
-  for(let i=0;i<ticks;i++){const idx=Math.round(i*(rows.length-1)/(ticks-1));el('text',{x:x(idx),y:H-6,fill:'var(--muted)','font-size':11,'text-anchor':i===0?'start':i===ticks-1?'end':'middle'},dShort(rows[idx].date))}
-  const line=rows.map((r,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(r.v).toFixed(1)).join(' ');
-  el('path',{d:line+` L${x(rows.length-1)} ${H-padB} L${x(0)} ${H-padB} Z`,fill:'var(--chart-fill)',stroke:'none'});
-  el('path',{d:line,fill:'none',stroke:'var(--ink)','stroke-width':2,'stroke-linejoin':'round','stroke-linecap':'round'});
-  const iMin=vals.indexOf(min),iMax=vals.indexOf(max);
-  [[iMax,'max'],[iMin,'min']].forEach(([i])=>el('circle',{cx:x(i),cy:y(rows[i].v),r:3,fill:'var(--surface)',stroke:'var(--ink)','stroke-width':1.5}));
-  const li=rows.length-1;el('circle',{cx:x(li),cy:y(rows[li].v),r:4.5,fill:'var(--ink)'});
-  const guide=el('line',{x1:0,x2:0,y1:padT-6,y2:H-padB,stroke:'var(--muted)','stroke-width':1,'stroke-dasharray':'3 3',visibility:'hidden'});
-  const dot=el('circle',{cx:0,cy:0,r:5,fill:'var(--ink)',stroke:'var(--surface)','stroke-width':2,visibility:'hidden'});
-  const tip=$('#scrub');
-  const move=e=>{const rect=svg.getBoundingClientRect();const px=(e.clientX-rect.left)*W/rect.width;let i=Math.round((px-padL)/(W-padL-padR)*(rows.length-1));i=Math.max(0,Math.min(rows.length-1,i));
-    const cx=x(i),cy=y(rows[i].v);guide.setAttribute('x1',cx);guide.setAttribute('x2',cx);guide.setAttribute('visibility','visible');dot.setAttribute('cx',cx);dot.setAttribute('cy',cy);dot.setAttribute('visibility','visible');
-    tip.hidden=false;tip.textContent=`${dCZ(rows[i].date)} · ${fmt(rows[i].v,dec)}`;const left=Math.max(70,Math.min(rect.width-70,cx*rect.width/W));tip.style.left=left+'px'};
-  const leave=()=>{guide.setAttribute('visibility','hidden');dot.setAttribute('visibility','hidden');tip.hidden=true};
-  svg.onpointermove=move;svg.onpointerdown=move;svg.onpointerleave=leave;svg.onpointerup=e=>{if(e.pointerType!=='mouse')leave()};
+/* ---------- hedging ---------- */
+function cnbFor(pair){const r=state.data.cnb?.rates;if(!r)return NaN;return pair==='EUR/CZK'?r.EUR:pair==='USD/CZK'?r.USD:pair==='PLN/CZK'?r.PLN:pair==='EUR/USD'?r.EUR/r.USD:NaN}
+function renderCnb(){
+  const p=PAIRS[state.pair],c=cnbFor(state.pair),cd=state.data.cnb?.date;
+  const ecbRow=cd?series(state.pair).find(r=>r.date===cd):null;const e=ecbRow?.v??spot()?.v;
+  const diff=Number.isFinite(c)&&Number.isFinite(e)?c-e:NaN;
+  $('#cnbBox').innerHTML=`<div><span>ČNB ${cd?dShort(cd):''}</span><b class="num">${fmt(c,p.dec)}</b></div><div><span>ECB ${ecbRow?dShort(ecbRow.date):spot()?dShort(spot().date):''}</span><b class="num">${fmt(e,p.dec)}</b></div><div><span>Rozdíl</span><b class="num">${Number.isFinite(diff)?sgn(diff*p.ptsMul,1)+' '+p.ptsUnit:'—'}</b></div>`;
+  $('#cnbNote').textContent=state.pair==='EUR/USD'?'Kurz ČNB pro EUR/USD je křížový (EUR/CZK ÷ USD/CZK). ČNB vyhlašuje ve 14:30, ECB kolem 16:00.':'Kurz ČNB je účetní kurz pro přecenění v CZK. ČNB vyhlašuje ve 14:30, ECB kolem 16:00.'+(ecbRow?'':' Fixing ECB je z jiného dne.');
+}
+function renderBudgetForm(){
+  const p=PAIRS[state.pair],b=state.budgets[state.pair]||{};
+  $('#bRole').innerHTML=`<option value="sell">Prodávám ${p.base} (např. exportér)</option><option value="buy">Kupuji ${p.base} (např. importér)</option>`;
+  $('#bRole').value=b.role||'sell';$('#bBudget').value=b.budget||'';$('#bTarget').value=b.target||'';
+  $('#bBudget').placeholder='např. '+fmt(spot()?.v??NaN,p.dec).replace('—','');
+}
+function saveBudget(){state.budgets[state.pair]={role:$('#bRole').value,budget:$('#bBudget').value.trim(),target:$('#bTarget').value.trim()};remember();renderBudget();renderChart()}
+function renderBudget(){
+  const p=PAIRS[state.pair],b=state.budgets[state.pair]||{},s=spot(),out=$('#budgetOut');
+  const bv=parseNum(b.budget),tv=parseNum(b.target),sell=(b.role||'sell')==='sell';
+  if(!Number.isFinite(bv)||!s){out.innerHTML='<p class="note">Zadejte rozpočtový kurz. Uloží se jen v tomto telefonu.</p>';return}
+  const good=v=>sell?v>=bv:v<=bv;const fw=forwards()||[];
+  const rows=[['Spot',s.v],...fw.filter(f=>['3M','6M','12M'].includes(f.t)).map(f=>['Forward '+f.t,f.F])];
+  const lines=rows.map(([l,v])=>{if(!Number.isFinite(v))return`<tr><td>${l}</td><td class="num">—</td><td></td></tr>`;const d=v-bv,ok=good(v);
+    return`<tr><td>${l}</td><td class="num">${fmt(v,p.dec)}</td><td class="num ${ok?'up':'down'}">${sgn(d*p.ptsMul,1)} ${p.ptsUnit} · ${ok?'lepší':'horší'}</td></tr>`}).join('');
+  let verdict='';const sOk=good(s.v);
+  verdict=`<div class="verdict ${sOk?'good':'bad'}">${sOk?`Spot je pro vás lepší než rozpočet o ${fmt(Math.abs(s.v-bv)*p.ptsMul,1)} ${p.ptsUnit} na 1 ${p.base}.`:`Spot je pro vás horší než rozpočet o ${fmt(Math.abs(s.v-bv)*p.ptsMul,1)} ${p.ptsUnit} na 1 ${p.base}.`}</div>`;
+  if(Number.isFinite(tv)){const hit=sell?s.v>=tv:s.v<=tv;const dist=Math.abs(tv-s.v);
+    verdict+=`<div class="verdict ${hit?'good':''}" style="margin-top:6px">${hit?`Cíl ${fmt(tv,p.dec)} je dosažen. Zvažte zajištění.`:`Do cíle ${fmt(tv,p.dec)} chybí ${fmt(dist*p.ptsMul,1)} ${p.ptsUnit} (${fmt(dist/s.v*100,2)} %).`}</div>`}
+  out.innerHTML=`<div class="tbl"><table><thead><tr><th>Kurz</th><th>Hodnota</th><th>vs. rozpočet ${fmt(bv,p.dec)}</th></tr></thead><tbody>${lines}</tbody></table></div>${verdict}`;
+}
+function renderForwards(){
+  const p=PAIRS[state.pair],fw=forwards(),box=$('#fwdTable');
+  if(!fw){box.innerHTML='<div class="empty">Čekám na kurzy…</div>';return}
+  if(!fw.some(f=>Number.isFinite(f.F))){box.innerHTML=`<div class="empty">Chybí sazby pro ${p.base} nebo ${p.quote}. Doplní je další aktualizace.</div>`;return}
+  box.innerHTML=`<table><thead><tr><th>Splatnost</th><th>Forward</th><th>Body</th><th>p.a.</th></tr></thead><tbody>${fw.map(f=>`<tr><td>${f.t}</td><td class="num">${fmt(f.F,p.dec)}</td><td class="num">${sgn(f.pts,1)}</td><td class="num">${pct(f.carry,2)}</td></tr>`).join('')}</tbody></table>`;
+  const m=state.data.mm||{};const bm=m[p.base],qm=m[p.quote];const f3=fw.find(f=>f.t==='12M');
+  const sellTxt=Number.isFinite(f3?.pts)?(f3.pts>0?`Prodej ${p.base} na termín vychází výhodněji než spot (body ${p.ptsUnit} kladné), nákup naopak dráž.`:`Nákup ${p.base} na termín vychází levněji než spot, prodej naopak hůř.`):'';
+  $('#fwdNote').textContent=`${sellTxt} Sazby: ${bm?.src||p.base} ${bm?.date?dShort(bm.date):''}, ${qm?.src||p.quote} ${qm?.date?dShort(qm.date):''}. Body v ${p.ptsUnit}. Kotace banky se liší o marži a cross-currency basis.`;
+}
+function renderBand(){
+  const p=PAIRS[state.pair],rows=series(state.pair),box=$('#bandTable');
+  const yr=windowed(rows,'1R').map(r=>r.v);const vol=annVol(yr);const fw=forwards();
+  if(!Number.isFinite(vol)||!fw){box.innerHTML='<div class="empty">Čekám na kurzy…</div>';return}
+  box.innerHTML=`<table><thead><tr><th>Horizont</th><th>68 % pásmo</th><th>95 % pásmo</th></tr></thead><tbody>${fw.map(f=>{const c=Number.isFinite(f.F)?f.F:rows.at(-1).v;const sd=vol*Math.sqrt(f.days/365);
+    return`<tr><td>${f.t}</td><td class="num">${fmt(c*Math.exp(-sd),p.dec)} – ${fmt(c*Math.exp(sd),p.dec)}</td><td class="num">${fmt(c*Math.exp(-1.96*sd),p.dec)} – ${fmt(c*Math.exp(1.96*sd),p.dec)}</td></tr>`}).join('')}</tbody></table><p class="note" style="margin-top:6px">Roční volatilita ${fmt(vol*100,1)} %.</p>`;
 }
 
-function renderChart(){
-  const all=series(state.pair);chartRows=windowed(all,state.period);const dec=PAIRS[state.pair].dec;
-  $('#chartTitle').textContent=state.pair+' · '+state.period;
-  document.querySelectorAll('#periods button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.p===state.period));
-  const last=chartRows.at(-1),first=chartRows[0];
-  $('#bigValue').textContent=last?fmt(last.v,dec):'—';
-  if(last&&first){const ch=(last.v/first.v-1)*100;$('#bigChange').className='bigc num '+cls(ch);$('#bigChange').textContent=`${pct(ch)} za ${state.period} · ${moveWord(state.pair,ch)}`}
-  else $('#bigChange').innerHTML='&nbsp;';
-  if(chartRows.length){const v=chartRows.map(r=>r.v);const avg=v.reduce((a,b)=>a+b,0)/v.length;$('#sMin').textContent=fmt(Math.min(...v),dec);$('#sMax').textContent=fmt(Math.max(...v),dec);$('#sAvg').textContent=fmt(avg,dec);const ch=(last.v/first.v-1)*100;$('#sChg').textContent=pct(ch);$('#sChg').className='num '+cls(ch)}
-  drawChart();
-}
-
+/* ---------- signals ---------- */
 function renderSignals(){
   const rows=series(state.pair),box=$('#signals');const dec=PAIRS[state.pair].dec;
-  if(rows.length<25){box.innerHTML=`<div class="empty">${state.dbMissing?'Signály potřebují data kurzů.':'Signály se spočítají po načtení kurzů.'}</div>`;return}
+  if(rows.length<25){box.innerHTML='<div class="empty">Signály se spočítají po načtení kurzů.</div>';return}
   const v=rows.map(r=>r.v),last=v.at(-1);
   const yr=windowed(rows,'1R').map(r=>r.v),ymin=Math.min(...yr),ymax=Math.max(...yr),pos=ymax>ymin?(last-ymin)/(ymax-ymin):.5;
-  const ma20=v.slice(-20).reduce((a,b)=>a+b,0)/20,dma=(last/ma20-1)*100;
-  const m5=(last/v.at(-6)-1)*100;
-  const rets=[];for(let i=v.length-20;i<v.length;i++)rets.push(Math.log(v[i]/v[i-1]));
-  const mean=rets.reduce((a,b)=>a+b,0)/rets.length,sd=Math.sqrt(rets.reduce((a,b)=>a+(b-mean)**2,0)/(rets.length-1)),vol=sd*Math.sqrt(252)*100;
-  const yrRets=[];for(let i=Math.max(1,v.length-yr.length+1);i<v.length;i++)yrRets.push(Math.log(v[i]/v[i-1]));
-  const ym=yrRets.reduce((a,b)=>a+b,0)/yrRets.length,ysd=Math.sqrt(yrRets.reduce((a,b)=>a+(b-ym)**2,0)/(yrRets.length-1))*Math.sqrt(252)*100;
+  const ma20=v.slice(-20).reduce((a,b)=>a+b,0)/20,dma=(last/ma20-1)*100,m5=(last/v.at(-6)-1)*100;
+  const vol=annVol(v.slice(-21))*100,yv=annVol(yr)*100;
   const posTxt=pos>.8?'blízko ročního maxima':pos<.2?'blízko ročního minima':'uprostřed ročního pásma';
+  const mw=moveWord(state.pair,m5);
   box.innerHTML=`
-   <div class="sig"><b>Poloha v ročním pásmu</b><span class="v num">${Math.round(pos*100)} %</span>
-     <div class="range" aria-hidden="true"><i style="left:${(pos*100).toFixed(1)}%"></i></div>
-     <p>Kurz ${fmt(last,dec)} je ${posTxt} (${fmt(ymin,dec)} – ${fmt(ymax,dec)}).</p></div>
-   <div class="sig"><b>Odchylka od 20denního průměru</b><span class="v num ${cls(dma)}">${pct(dma)}</span>
-     <p>Průměr za 20 fixingů je ${fmt(ma20,dec)}.</p></div>
-   <div class="sig"><b>Momentum 5 dní</b><span class="v num ${cls(m5)}">${pct(m5)}</span>
-     <p>${moveWord(state.pair,m5)[0].toUpperCase()+moveWord(state.pair,m5).slice(1)}.</p></div>
-   <div class="sig"><b>Volatilita 20D (p.a.)</b><span class="v num">${fmt(vol,1)} %</span>
-     <p>Roční průměr ${fmt(ysd,1)} % · ${vol>ysd*1.25?'trh je teď neklidnější než obvykle':vol<ysd*.8?'trh je teď klidnější než obvykle':'obvyklá úroveň'}.</p></div>`;
+   <div class="sig"><b>Poloha v ročním pásmu</b><span class="v num">${Math.round(pos*100)} %</span><div class="range" aria-hidden="true"><i style="left:${(pos*100).toFixed(1)}%"></i></div><p>Kurz ${fmt(last,dec)} je ${posTxt} (${fmt(ymin,dec)} – ${fmt(ymax,dec)}).</p></div>
+   <div class="sig"><b>Odchylka od 20denního průměru</b><span class="v num ${cls(dma)}">${pct(dma)}</span><p>Průměr za 20 fixingů je ${fmt(ma20,dec)}.</p></div>
+   <div class="sig"><b>Momentum 5 dní</b><span class="v num ${cls(m5)}">${pct(m5)}</span><p>${mw[0].toUpperCase()+mw.slice(1)}.</p></div>
+   <div class="sig"><b>Volatilita 20D (p.a.)</b><span class="v num">${fmt(vol,1)} %</span><p>Roční průměr ${fmt(yv,1)} % · ${vol>yv*1.25?'trh je teď neklidnější než obvykle':vol<yv*.8?'trh je teď klidnější než obvykle':'obvyklá úroveň'}.</p></div>`;
 }
 
+/* ---------- market ---------- */
+function renderCee(){
+  const box=$('#ceeTable');const d=state.days;if(d.length<70||!Number.isFinite(d.at(-1).HUF)){box.innerHTML='<div class="empty">Čekám na kurzy…</div>';return}
+  const back=n=>{const t=pd(d.at(-1).date);t.setDate(t.getDate()-n);let r=d[0];for(const x of d){if(pd(x.date)<=t)r=x}return r};
+  const r1=back(30),r3=back(91),L=d.at(-1);
+  const rows=[['EUR/CZK','CZK',3],['EUR/PLN','PLN',4],['EUR/HUF','HUF',2]].map(([n,k,dec])=>{const c1=(L[k]/r1[k]-1)*100,c3=(L[k]/r3[k]-1)*100;return`<tr><td>${n}</td><td class="num">${fmt(L[k],dec)}</td><td class="num ${cls(-c1)}">${pct(c1)}</td><td class="num ${cls(-c3)}">${pct(c3)}</td></tr>`}).join('');
+  box.innerHTML=`<table><thead><tr><th>Pár</th><th>Kurz</th><th>1M</th><th>3M</th></tr></thead><tbody>${rows}</tbody></table>`;
+  const c3=['CZK','PLN','HUF'].map(k=>(L[k]/r3[k]-1)*100);const same=c3.every(x=>x>0)||c3.every(x=>x<0);
+  $('#ceeNote').textContent='Kladné číslo = měna vůči euru oslabila. '+(same?(c3[0]>0?'Za 3 měsíce oslabil celý region, spíš globální vliv.':'Za 3 měsíce posílil celý region, spíš globální vliv.'):'Měny regionu se za 3 měsíce rozcházejí, roli hrají domácí faktory.');
+}
+function renderDiff(){
+  const df=state.data.diff,s=df?.series||[];
+  if(s.length<2){drawLines('#diffChart','#diffBox',[],{empty:'Data o sazbách se načítají…'});$('#diffNote').textContent='';return}
+  drawLines('#diffChart','#diffBox',[{rows:s.map(r=>({date:r.date,v:r.cz}))},{rows:s.map(r=>({date:r.date,v:r.ea})),color:'var(--line-2)'}],{dec:2,padR:44,tickFmt:iso=>pd(iso).toLocaleDateString('cs-CZ',{month:'numeric',year:'2-digit'})});
+  const L=s.at(-1),F=s[0];const dl=L.cz-L.ea,df0=F.cz-F.ea;
+  $('#diffNote').textContent=`Rozdíl ${fmt(dl,2)} p. b. (před rokem ${fmt(df0,2)} p. b.). ${dl<df0?'Diferenciál se zúžil, výnosová výhoda koruny slábne.':'Diferenciál se rozšířil, výnosová výhoda koruny roste.'} ${df.note||''}`;
+}
+function renderRisk(){
+  const r=state.data.risk,box=$('#riskBox');if(!r?.items?.length){box.innerHTML='<div class="empty">Rizikové ukazatele se načítají…</div>';return}
+  box.innerHTML=r.items.map(i=>{const unit=i.unit?' '+esc(i.unit):'';let ch='';
+    if(Number.isFinite(i.prev1m))ch=`<span class="num ${cls(-(i.value-i.prev1m))}">${sgn(i.value-i.prev1m,1)}${unit} za měsíc</span>`;
+    else if(Number.isFinite(i.chg1m))ch=`<span class="num">${pct(i.chg1m,1)} za měsíc</span>`;
+    else if(Number.isFinite(i.chg1d))ch=`<span class="num">${pct(i.chg1d,1)} za den</span>`;
+    return`<div class="riskRow"><b>${esc(i.label)}</b><span class="num">${fmt(i.value,i.value<50?2:1)}${unit}</span><p>${ch?ch+' · ':''}${esc(i.why||'')}</p></div>`}).join('')+`<p class="note">Stav k ${dCZ(r.asOf)}.</p>`;
+}
+
+/* ---------- tabs ---------- */
+function renderNews(p){
+  const items=state.data.news?.pairs?.[state.pair]||[];
+  if(!items.length){p.innerHTML=`<div class="empty">${state.offline?'Zprávy se nepodařilo načíst.':'K tomuto páru zatím nejsou zprávy.'}</div>`;return}
+  p.innerHTML=`<p class="note">Výběr zpráv k ${esc(dCZ(state.data.news.asOf))}</p>`+items.slice(0,8).map(n=>{const u=safeUrl(n.url);return`<article class="news"><span class="src">${esc(n.source)}${n.currency?' · '+esc(n.currency):''}</span><h4>${esc(n.title)}</h4><p>${esc(n.summary)}</p>${n.why?`<p class="why">${esc(n.why)}</p>`:''}${u?`<a href="${esc(u)}" target="_blank" rel="noopener">Otevřít zdroj</a>`:''}</article>`}).join('');
+}
+function renderCal(p){
+  const c=state.data.calendar;const all=c?.items||[];const rel=PAIRS[state.pair].cal;
+  const now=new Date();const cut=addD(now,-1);
+  const items=all.filter(i=>new Date(i.at)>=cut&&(state.calAll||rel.includes(i.country))).sort((a,b)=>a.at.localeCompare(b.at));
+  const toggle=`<div class="seg" role="group" aria-label="Filtr kalendáře"><button type="button" data-cal="0" aria-pressed="${!state.calAll}">K páru ${esc(state.pair)}</button><button type="button" data-cal="1" aria-pressed="${state.calAll}">Vše</button></div>`;
+  if(!items.length){p.innerHTML=toggle+'<div class="empty">V nejbližších dnech nejsou v kalendáři žádné události.</div>';bindCal(p);return}
+  let html=toggle,lastDay='';
+  items.forEach(i=>{const d=i.at.slice(0,10);if(d!==lastDay){lastDay=d;const dd=pd(d);const today=isoDay(now)===d;html+=`<div class="day">${today?'Dnes · ':''}${dd.toLocaleDateString('cs-CZ',{weekday:'long',day:'numeric',month:'numeric'})}</div>`}
+    const t=i.at.slice(11,16);const past=new Date(i.at)<now;const imp=[1,2,3].map(k=>`<i class="${k<=(i.importance||1)?'on':''}"></i>`).join('');
+    const meta=[i.actual?`<b>Skutečnost ${esc(i.actual)}</b>`:'',i.consensus?`Konsenzus ${esc(i.consensus)}`:'',i.previous?`Minule ${esc(i.previous)}`:''].filter(Boolean).join(' · ');
+    html+=`<div class="ev${past&&!i.actual?' past':''}"><span class="t num">${t&&t!=='00:00'?t:'—'}</span><span class="c">${esc(FLAG[i.country]||i.country)}</span><span class="e">${esc(i.event)}<span class="imp" aria-label="Důležitost ${i.importance||1} ze 3">${imp}</span></span>${meta?`<span class="m">${meta}</span>`:''}</div>`});
+  html+=`<p class="note" style="margin-top:6px">${esc(c.note||'')} Stav k ${dCZ(c.asOf)}.</p>`;
+  p.innerHTML=html;bindCal(p);
+}
+function bindCal(p){p.querySelectorAll('[data-cal]').forEach(b=>b.onclick=()=>{state.calAll=b.dataset.cal==='1';remember();renderPanel()})}
+function renderBanks(p){
+  const banks=state.data.banks?.banks||[];
+  if(!banks.length){p.innerHTML='<div class="empty">Údaje o centrálních bankách se načítají…</div>';return}
+  const rel=PAIRS[state.pair].cb;
+  const sorted=[...banks].sort((a,b)=>(rel.includes(b.id)-rel.includes(a.id))||String(a.next).localeCompare(String(b.next)));
+  let html=`<p class="note">Stav k ${esc(dCZ(state.data.banks.asOf))} · nahoře banky pro ${esc(state.pair)}</p>`+sorted.map(c=>{const days=Math.ceil((pd(c.next)-new Date())/864e5);const u=safeUrl(c.url);
+    return`<div class="bank"><div class="bankTop"><b>${esc(c.name)} · ${esc(c.currency)}</b><span class="bankRate num">${esc(c.rate)}</span></div><p>${esc(c.rateLabel)}</p>
+    <span class="chip num">Zasedání ${esc(dCZ(c.next))}${Number.isFinite(days)?(days>=0?` · za ${days} d`:' · proběhlo'):''}</span><p>${esc(c.bias)}</p>
+    <details><summary>Výhled a faktory</summary><p style="margin-top:6px">${esc(c.outlook6m)}</p><p style="margin-top:6px">${esc(c.expect)}</p><p style="margin-top:6px"><b>Faktory:</b> ${esc(c.drivers)}</p>${u?`<p style="margin-top:6px"><a class="link" href="${esc(u)}" target="_blank" rel="noopener">Oficiální stránka</a></p>`:''}</details></div>`}).join('');
+  const f=state.data.forecast?.cnb;
+  if(f?.rows?.length){const u=safeUrl(f.url);const spotCZ=series('EUR/CZK').at(-1);
+    html+=`<div class="bank"><div class="bankTop"><b>${esc(f.label)}</b><span class="chip soft">vydáno ${esc(dCZ(f.published))}</span></div>
+    <div class="tbl"><table><thead><tr><th>Rok</th><th>EUR/CZK</th><th>3M PRIBOR</th><th>Inflace</th><th>HDP</th></tr></thead><tbody>${f.rows.map(r=>`<tr><td>${esc(r.year)}</td><td class="num">${fmt(r.eurczk,1)}</td><td class="num">${fmt(r.pribor3m,1)} %</td><td class="num">${fmt(r.cpi,1)} %</td><td class="num">${fmt(r.gdp,1)} %</td></tr>`).join('')}</tbody></table></div>
+    <p>${spotCZ?`Aktuální EUR/CZK ${fmt(spotCZ.v,3)} je ${spotCZ.v>f.rows[0].eurczk?'nad':'pod'} prognózou ČNB na letošní rok (${fmt(f.rows[0].eurczk,1)}). `:''}${esc(f.note||'')}</p>${u?`<a class="link" href="${esc(u)}" target="_blank" rel="noopener">Prognóza na webu ČNB</a>`:''}</div>`}
+  p.innerHTML=html;
+}
+function renderHol(p){
+  const now=new Date(),y=now.getFullYear(),end=addD(now,120);const ccys=[PAIRS[state.pair].base,PAIRS[state.pair].quote];
+  const list=[...holidays(y),...holidays(y+1)].filter(h=>pd(h.date)>=addD(now,-1)&&pd(h.date)<=end).sort((a,b)=>a.date.localeCompare(b.date)||a.mk.localeCompare(b.mk));
+  const merged=[];list.forEach(h=>{const m=merged.find(x=>x.date===h.date);if(m)m.items.push(h);else merged.push({date:h.date,items:[h]})});
+  p.innerHTML=`<p class="note">Dny bez vypořádání v nejbližších 4 měsících. Zvýrazněné se týkají měn páru ${esc(state.pair)}. Počítáno podle pravidelných svátků; mimořádné uzavírky ověřte u banky.</p>`+merged.map(g=>{const hit=g.items.some(h=>ccys.includes(MK[h.mk].ccy));
+    return`<div class="hol"${hit?'':' style="opacity:.6"'}><span class="d num">${pd(g.date).toLocaleDateString('cs-CZ',{weekday:'short',day:'numeric',month:'numeric'})}</span><span>${g.items.map(h=>`<span class="chip ${ccys.includes(MK[h.mk].ccy)?'':'soft'}">${MK[h.mk].label}</span>`).join(' ')} ${esc([...new Set(g.items.map(h=>h.name))].join(' / '))}</span>${g.items.map(h=>`<p>${MK[h.mk].txt}</p>`).join('')}</div>`}).join('');
+}
+function renderRisksText(p){
+  const cb=PAIRS[state.pair].cb.join(' / ');
+  p.innerHTML=`<div class="risktext"><div><b>Sazby.</b> Rozhodnutí ${esc(cb)} mění úrokový diferenciál a tím forwardové body.</div><div><b>Makro.</b> Inflace, mzdy, maloobchod a PMI posouvají očekávání sazeb. Rozhoduje rozdíl proti konsenzu.</div><div><b>Sentiment.</b> CZK a PLN obvykle slábnou v epizodách averze k riziku (VIX nad 20–25, rozšiřování spreadů).</div><div><b>Energie.</b> Drahý plyn a ropa zhoršují obchodní bilanci regionu a tlačí na korunu i zlotý.</div><div><b>Technika.</b> Sledujte průraz ročního maxima či minima a návrat k 20dennímu průměru.</div></div>`;
+}
 function renderPanel(){
   document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.t===state.tab));
-  const p=$('#panel');
-  if(state.tab==='news'){
-    const items=state.news?.pairs?.[state.pair]||[];
-    if(!items.length){p.innerHTML=`<div class="empty">${state.news?'K tomuto páru zatím nejsou žádné zprávy.':state.dbMissing?'Zprávy se nepodařilo načíst. Zkontrolujte připojení.':'Zprávy se načítají…'}</div>`;return}
-    p.innerHTML=`<p class="note" style="margin:0">Výběr zpráv k ${esc(dCZ(state.news.asOf))}</p>`+items.slice(0,8).map(n=>{const u=safeUrl(n.url);return`<article class="news"><span class="src">${esc(n.source)}${n.currency?' · '+esc(n.currency):''}</span><h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p>${n.why?`<p class="why">${esc(n.why)}</p>`:''}${u?`<a href="${esc(u)}" target="_blank" rel="noopener">Otevřít zdroj</a>`:''}</article>`}).join('');
-  } else if(state.tab==='banks'){
-    const banks=state.banks?.banks||[];
-    if(!banks.length){p.innerHTML=`<div class="empty">${state.dbMissing?'Údaje o bankách se nepodařilo načíst. Zkontrolujte připojení.':'Načítám údaje o centrálních bankách…'}</div>`;return}
-    const rel=PAIRS[state.pair].cb;
-    const sorted=[...banks].sort((a,b)=>(rel.includes(b.id)-rel.includes(a.id))||String(a.next).localeCompare(String(b.next)));
-    p.innerHTML=`<p class="note" style="margin:0">Stav k ${esc(dCZ(state.banks.asOf))} · nahoře banky relevantní pro ${esc(state.pair)}</p>`+sorted.map(c=>{const days=Math.ceil((new Date(c.next+'T12:00:00')-new Date())/864e5);const u=safeUrl(c.url);
-      return`<div class="bank"><div class="bankTop"><b>${esc(c.name)} · ${esc(c.currency)}</b><span class="bankRate num">${esc(c.rate)}</span></div>
-      <p>${esc(c.rateLabel)}</p>
-      <span class="meet num">Zasedání ${esc(dCZ(c.next))}${Number.isFinite(days)?(days>=0?` · za ${days} d`:' · proběhlo'):''}</span>
-      <p>${esc(c.bias)}</p>
-      <details><summary>Výhled a faktory</summary><p style="margin-top:6px">${esc(c.outlook6m)}</p><p style="margin-top:6px">${esc(c.expect)}</p><p style="margin-top:6px"><b>Faktory:</b> ${esc(c.drivers)}</p>${u?`<p style="margin-top:6px"><a href="${esc(u)}" target="_blank" rel="noopener">Oficiální stránka</a></p>`:''}</details></div>`}).join('');
-  } else {
-    const cb=PAIRS[state.pair].cb.join(' / ');
-    p.innerHTML=`<div class="risk"><div><b>Sazby.</b> Rozhodnutí ${esc(cb)} mění úrokový diferenciál a tím forwardové body.</div><div><b>Makro.</b> Inflace, mzdy, maloobchod a PMI posouvají očekávání sazeb.</div><div><b>Sentiment.</b> CZK a PLN obvykle slábnou v epizodách averze k riziku.</div><div><b>Technika.</b> Sledujte průraz ročního maxima či minima a návrat k 20dennímu průměru.</div></div>`;
-  }
+  const p=$('#panel');({news:renderNews,cal:renderCal,banks:renderBanks,hol:renderHol,risks:renderRisksText})[state.tab](p);
 }
 
-function renderAll(){renderFresh();renderPairs();renderChart();renderSignals();renderPanel()}
+function renderAll(){renderFresh();renderPairs();renderChart();renderCnb();renderBudgetForm();renderBudget();renderForwards();renderBand();renderSignals();renderCee();renderDiff();renderRisk();renderPanel()}
 
+/* ---------- events ---------- */
 document.querySelectorAll('#periods button').forEach(b=>b.onclick=()=>{state.period=b.dataset.p;remember();renderChart()});
 document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{state.tab=b.dataset.t;remember();renderPanel()});
-let rT;window.addEventListener('resize',()=>{clearTimeout(rT);rT=setTimeout(drawChart,120)});
-const CACHE_KEY='fxradar-data-v1';
-const isoDay=d=>d.toISOString().slice(0,10);
+['#bRole','#bBudget','#bTarget'].forEach(s=>{$(s).addEventListener('change',saveBudget);$(s).addEventListener('input',()=>{clearTimeout(window.__bT);window.__bT=setTimeout(saveBudget,400)})});
+$('#budgetForm').addEventListener('submit',e=>{e.preventDefault();saveBudget()});
+let rT;window.addEventListener('resize',()=>{clearTimeout(rT);rT=setTimeout(()=>{renderChart();renderDiff()},120)});
+
+/* ---------- data loading ---------- */
+const CACHE_KEY='fxradar-data-v2';
 async function getJSON(url,ms=12000){const c=new AbortController();const t=setTimeout(()=>c.abort(),ms);try{const r=await fetch(url,{signal:c.signal,cache:'no-store'});if(!r.ok)throw new Error(r.status);return await r.json()}finally{clearTimeout(t)}}
-function loadCache(){try{const c=JSON.parse(localStorage.getItem(CACHE_KEY)||'null');if(c){state.days=c.days||[];state.news=c.news||null;state.banks=c.banks||null;state.fetchedAt=c.fetchedAt||0}}catch(e){}}
-function saveCache(){try{localStorage.setItem(CACHE_KEY,JSON.stringify({days:state.days,news:state.news,banks:state.banks,fetchedAt:state.fetchedAt}))}catch(e){}}
+function loadCache(){try{const c=JSON.parse(localStorage.getItem(CACHE_KEY)||'null');if(c){state.days=c.days||[];state.data=c.data||{};state.fetchedAt=c.fetchedAt||0}}catch(e){}}
+function saveCache(){try{localStorage.setItem(CACHE_KEY,JSON.stringify({days:state.days,data:state.data,fetchedAt:state.fetchedAt}))}catch(e){}}
 async function fetchRates(){
   const start=new Date();start.setDate(start.getDate()-400);
-  const j=await getJSON(`https://api.frankfurter.dev/v1/${isoDay(start)}..?from=EUR&to=CZK,USD,PLN`);
-  const days=Object.entries(j.rates||{}).map(([date,r])=>({date,CZK:+r.CZK,USD:+r.USD,PLN:+r.PLN}))
+  const j=await getJSON(`https://api.frankfurter.dev/v1/${isoDay(start)}..?from=EUR&to=CZK,USD,PLN,HUF`);
+  const days=Object.entries(j.rates||{}).map(([date,r])=>({date,CZK:+r.CZK,USD:+r.USD,PLN:+r.PLN,HUF:+r.HUF}))
     .filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d.date)&&[d.CZK,d.USD,d.PLN].every(Number.isFinite)).sort((a,b)=>a.date.localeCompare(b.date));
-  if(days.length<20)throw new Error('málo dat');
-  return days;
+  if(days.length<20)throw new Error('málo dat');return days;
 }
 async function refresh(){
   if(state.loading)return;state.loading=true;renderFresh();
   const [rates,content]=await Promise.allSettled([fetchRates(),getJSON('data.json?t='+Date.now())]);
   if(rates.status==='fulfilled'){state.days=rates.value;state.fetchedAt=Date.now();state.offline=false}else{state.offline=true;console.warn('kurzy',rates.reason)}
-  if(content.status==='fulfilled'&&content.value){state.news=content.value.news||state.news;state.banks=content.value.banks||state.banks}else console.warn('obsah',content.reason);
-  state.dbMissing=!state.days.length;state.loading=false;saveCache();renderAll();
+  if(content.status==='fulfilled'&&content.value)state.data=content.value;else console.warn('obsah',content.reason);
+  state.loading=false;saveCache();renderAll();
 }
 loadCache();renderAll();refresh();
 $('#fresh').onclick=refresh;

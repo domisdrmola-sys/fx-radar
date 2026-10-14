@@ -12,7 +12,12 @@ Webová aplikace (PWA) pro EUR/CZK, USD/CZK, EUR/USD a PLN/CZK. Běží v prohl�
 - **Android (Chrome):** otevřít adresu → menu ⋮ → Přidat na plochu / Instalovat aplikaci.
 
 ## Formát data.json
-```
-{ "news":  { "asOf": "YYYY-MM-DD", "pairs": { "EUR/CZK": [ {source, currency, title, url, summary, why} ], ... } },
-  "banks": { "asOf": "YYYY-MM-DD", "banks": [ {id, name, currency, rate, rateLabel, next, bias, outlook6m, expect, drivers, url, source} ] } }
-```
+Soubor plní naplánovaná úloha 4× denně. Klíče:
+- `news` – zprávy k párům, `banks` – centrální banky
+- `cnb` – kurz ČNB (EUR, USD, PLN, HUF za 100)
+- `mm` – mezibankové sazby pro forwardy (PRIBOR, EURIBOR, US T-bill, WIBOR; 1M/3M/6M/12M)
+- `diff` – měsíční vývoj 3M PRIBOR vs. 3M EURIBOR
+- `risk` – Brent, plyn TTF, spready BTP–Bund a OAT–Bund, VIX
+- `calendar` – makrokalendář (pražský čas), `forecast` – prognóza ČNB
+
+Svátky a dny bez vypořádání (ČR, TARGET2, USA, Polsko) aplikace počítá sama. Rozpočtové a cílové kurzy se ukládají jen v telefonu uživatele.
