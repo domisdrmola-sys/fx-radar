@@ -143,6 +143,13 @@ tr:last-child td{border-bottom:0}
 .legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-top:6px}
 .legend i{display:inline-block;width:14px;border-top:2px solid var(--accent);vertical-align:middle;margin-right:5px}
 .legend i.b{border-color:var(--muted)}
+.kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:10px}
+.kv div{background:var(--panel-2);border-radius:10px;padding:9px 10px;min-width:0}
+.kv span{display:block;font-size:10.5px;color:var(--muted);letter-spacing:.8px;text-transform:uppercase}
+.kv b{display:block;font-family:var(--font-num);font-size:17px;font-weight:700;margin-top:3px}
+.explain{display:grid;gap:8px;margin-top:4px}
+.explain p{margin:0;font-size:13.5px;line-height:1.5;color:var(--muted)}
+.explain b{color:var(--ink);font-weight:600}
 .risk{display:grid;gap:12px}
 .risk div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:baseline}
 .risk p{grid-column:1/-1;margin:0;font-size:12.5px;color:var(--muted)}
@@ -198,6 +205,7 @@ footer{font-size:12px;color:var(--muted);padding-block:6px 0;display:grid;gap:4p
   <!-- TRH -->
   <main class="view gut" id="v-market" hidden>
     <section class="panel"><h2 class="label">Region CEE vůči euru</h2><div class="tbl" id="cee"></div><p class="note" id="ceeNote"></p></section>
+    <section class="panel" aria-labelledby="czbL"><h2 class="label" id="czbL">Česko vs. Německo · 10leté dluhopisy</h2><div id="czb"></div></section>
     <section class="panel"><h2 class="label">Úrokový diferenciál CZK–EUR</h2><div class="chartBox small" id="diffBox"><svg id="diffChart" role="img" aria-label="3M PRIBOR a 3M EURIBOR"></svg></div><div class="legend"><span><i></i>3M PRIBOR</span><span><i class="b"></i>3M EURIBOR</span></div><p class="note" id="diffNote"></p></section>
     <section class="panel"><h2 class="label">Rizikové ukazatele</h2><div class="risk" id="risk"></div></section>
     <section class="panel"><h2 class="label" id="pairRiskL">Rizika páru</h2><div class="risk" id="pairRisk"></div></section>
@@ -333,7 +341,7 @@ function renderHeader(){
   $('#refresh').classList.toggle('spin',state.loading);
 }
 function renderTicker(){
-  const items=state.data.risk?.items||[];const short={brent:'BRENT',ttf:'TTF',btp:'BTP–BUND',oat:'OAT–BUND',vix:'VIX'};
+  const items=(state.data.risk?.items||[]).filter(i=>['brent','ttf','vix'].includes(i.id));const short={brent:'BRENT',ttf:'TTF',vix:'VIX'};
   $('#ticker').innerHTML=items.map(i=>{let c='';if(Number.isFinite(i.prev1m))c=i.value>i.prev1m*1.15?'down':'';return`<span>${esc(short[i.id]||i.label)} <b class="${c}">${fmt(i.value,i.value<50?2:1)}</b></span>`}).join('')||'<span>Načítám ukazatele…</span>';
 }
 function upcoming(limit,onlyRel){
@@ -407,10 +415,21 @@ function renderMarket(){
   if(s.length>1){drawLines('#diffChart','#diffBox',[{rows:s.map(r=>({date:r.date,v:r.cz}))},{rows:s.map(r=>({date:r.date,v:r.ea})),color:'#8A9BAD',width:1.6}],{dec:2,padR:40});
     const L=s.at(-1),F=s[0],dl=L.cz-L.ea,d0=F.cz-F.ea;$('#diffNote').textContent=`Rozdíl ${fmt(dl,2)} p. b. (před rokem ${fmt(d0,2)} p. b.). ${dl<d0?'Výnosová výhoda koruny slábne.':'Výnosová výhoda koruny roste.'}`}
   else drawLines('#diffChart','#diffBox',[],{empty:'Data o sazbách se načítají…'});
+  const cz=(state.data.risk?.items||[]).find(i=>i.id==='czbund');
+  if(cz){const ch=Number.isFinite(cz.prev1m)?cz.value-cz.prev1m:NaN;
+    const trend=!Number.isFinite(ch)?'':Math.abs(ch)<5?'Za měsíc se spread skoro nezměnil, trh vnímá Česko stejně jako před měsícem.':ch>0?`Za měsíc se spread rozšířil o ${fmt(ch,0)} bb: trh chce za české riziko víc, pro korunu spíš nepříznivé.`:`Za měsíc se spread zúžil o ${fmt(-ch,0)} bb: důvěra v Česko roste, pro korunu spíš příznivé.`;
+    $('#czb').innerHTML=`<div class="kv"><div><span>ČR 10Y</span><b>${fmt(cz.cz,2)} %</b></div><div><span>Bund 10Y</span><b>${fmt(cz.de,2)} %</b></div><div><span>Spread</span><b>${fmt(cz.value,0)} bb</b></div></div>
+    <p class="comment" style="margin:0 0 10px;color:var(--ink)">${esc(trend)}</p>
+    <div class="explain">
+      <p><b>Co to je.</b> Rozdíl mezi výnosem českého a německého desetiletého státního dluhopisu. Německý Bund je v Evropě měřítko „bezpečného“ dluhu, takže spread ukazuje, kolik navíc chtějí investoři za půjčování Česku. 100 bb = 1 procentní bod.</p>
+      <p><b>Co to sleduje.</b> Dvě věci najednou: rozdíl v očekávaných sazbách ČNB a ECB a rizikovou přirážku za Česko (veřejné finance, inflace, likvidita koruny). Proto reaguje na rozhodnutí ČNB, české inflační údaje i na celkovou náladu vůči regionu.</p>
+      <p><b>Jak to číst pro EUR/CZK.</b> Když se spread zužuje kvůli rostoucí důvěře, zahraniční investoři kupují české dluhopisy a k tomu korunu, což ji posiluje. Když se rozšiřuje kvůli obavám (fiskální problémy, únik z regionu), koruna obvykle slábne. Pozor: rozšíření kvůli tomu, že ČNB zvyšuje sazby, naopak korunu podpoří; rozhoduje důvod pohybu.</p>
+    </div><p class="note">Výnosy k ${dCZ(cz.date)}; před měsícem ${fmt(cz.prev1m,0)} bb.</p>`}
+  else $('#czb').innerHTML='<div class="empty">Data o dluhopisech se načítají…</div>';
   const r=state.data.risk;
-  $('#risk').innerHTML=r?.items?.length?r.items.map(i=>{const u=i.unit?' '+esc(i.unit):'';let ch='';
+  $('#risk').innerHTML=r?.items?.length?r.items.filter(i=>i.id!=='czbund').map(i=>{const u=i.unit?' '+esc(i.unit):'';let ch='';
     if(Number.isFinite(i.prev1m))ch=`<span class="num ${cls(-(i.value-i.prev1m))}">${sgn(i.value-i.prev1m,1)}${u} za měsíc</span> · `;else if(Number.isFinite(i.chg1m))ch=`<span class="num">${pct(i.chg1m,1)} za měsíc</span> · `;
-    return`<div><b style="font-weight:600">${esc(i.label)}</b><span class="num">${fmt(i.value,i.value<50?2:1)}${u}</span><p>${ch}${esc(i.why||'')}</p></div>`}).join('')+`<p class="note">Stav k ${dCZ(r.asOf)}.</p>`:'<div class="empty">Načítám…</div>';
+    return`<div><b style="font-weight:600">${esc(i.label)}</b><span class="num">${fmt(i.value,i.value<50?2:1)}${u}</span><p>${ch}${esc(i.why||'')}</p></div>`}).join('')+`<p class="note">Spready BTP–Bund a OAT–Bund měří, o kolik víc platí Itálie a Francie za desetiletý dluh než Německo. Rozšiřování znamená napětí v eurozóně a obvykle oslabuje euro. Stav k ${dCZ(r.asOf)}.</p>`:'<div class="empty">Načítám…</div>';
   const cb=PAIRS[state.pair].cb.join(' / ');$('#pairRiskL').textContent='Rizika páru '+state.pair;
   $('#pairRisk').innerHTML=[['Sazby',`Rozhodnutí ${cb} mění úrokový diferenciál a forwardové body.`],['Makro','Inflace, mzdy, maloobchod a PMI posouvají očekávání sazeb. Rozhoduje rozdíl proti konsenzu.'],['Sentiment','CZK a PLN obvykle slábnou při averzi k riziku (VIX nad 20–25, širší spready).'],['Energie','Drahý plyn a ropa zhoršují obchodní bilanci regionu a tlačí na korunu i zlotý.']].map(([a,b])=>`<div><b style="font-weight:600">${a}</b><span></span><p>${esc(b)}</p></div>`).join('');
 }

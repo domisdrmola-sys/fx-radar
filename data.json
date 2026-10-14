@@ -427,6 +427,17 @@
     "why": "Koruna i zlotý jsou citlivé na ceny energií; drahý plyn je oslabuje."
    },
    {
+    "id": "czbund",
+    "label": "Spread ČR 10Y–Bund",
+    "value": 185,
+    "unit": "bb",
+    "prev1m": 178,
+    "cz": 5.31,
+    "de": 3.46,
+    "date": "2026-10-14",
+    "why": "O kolik víc platí Česko za desetiletý dluh než Německo; rozšiřování obvykle oslabuje korunu."
+   },
+   {
     "id": "btp",
     "label": "Spread BTP–Bund 10Y",
     "value": 110,
