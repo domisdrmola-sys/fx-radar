@@ -155,7 +155,7 @@ tr:last-child td{border-bottom:0}
 /* bottom nav */
 nav.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--nav);border-top:1px solid var(--line);
   padding:6px max(4px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(4px,env(safe-area-inset-right,0px))}
-nav.tabbar .in{max-width:720px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+nav.tabbar .in{max-width:720px;margin:0 auto;display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
 nav.tabbar button{border:0;background:transparent;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:3px;min-height:48px;font-size:11.5px;cursor:pointer;letter-spacing:.3px}
 nav.tabbar button[aria-current="page"]{color:var(--accent)}
 footer{font-size:12px;color:var(--muted);padding-block:6px 0;display:grid;gap:4px}
@@ -205,8 +205,13 @@ footer{font-size:12px;color:var(--muted);padding-block:6px 0;display:grid;gap:4p
 
   <!-- KALENDÁŘ -->
   <main class="view gut" id="v-cal" hidden>
-    <div class="tabs2" id="calTabs" role="group" aria-label="Část kalendáře"><button type="button" data-c="ev">Události</button><button type="button" data-c="cb">Centrální banky</button><button type="button" data-c="hol">Svátky a valuta</button></div>
+    <div class="tabs2" id="calTabs" role="group" aria-label="Část kalendáře"><button type="button" data-c="ev">Události</button><button type="button" data-c="hol">Svátky a valuta</button></div>
     <div id="calBody"></div>
+  </main>
+
+  <!-- BANKY -->
+  <main class="view gut" id="v-banks" hidden>
+    <div id="banksBody"></div>
   </main>
 
   <footer class="gut">
@@ -220,6 +225,7 @@ footer{font-size:12px;color:var(--muted);padding-block:6px 0;display:grid;gap:4p
   <button type="button" data-v="market"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 17l5-6 4 3 6-8"/><path d="M3 21h18"/></svg>Trh</button>
   <button type="button" data-v="news"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Zprávy</button>
   <button type="button" data-v="cal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Kalendář</button>
+  <button type="button" data-v="banks"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v8M10 10v8M14 10v8M19 10v8M3 21h18"/></svg>Banky</button>
 </div></nav>
 
 <script>
@@ -236,7 +242,7 @@ const CC={CZ:"CZ",EA:"EU",DE:"DE",US:"US",PL:"PL"};
 const CCN={CZ:"ČR",EA:"eurozóna",DE:"Německo",US:"USA",PL:"Polsko"};
 const $=s=>document.querySelector(s);
 const state={days:[],data:{},pair:"EUR/CZK",period:"3M",view:"home",cal:"ev",calAll:false,loading:false,offline:false,fetchedAt:0};
-try{const s=JSON.parse(localStorage.getItem('fxradar')||'{}');if(PAIRS[s.pair])state.pair=s.pair;if(PERIOD_DAYS[s.period])state.period=s.period;if(['home','market','news','cal'].includes(s.view))state.view=s.view;if(['ev','cb','hol'].includes(s.cal))state.cal=s.cal;state.calAll=!!s.calAll}catch(e){}
+try{const s=JSON.parse(localStorage.getItem('fxradar')||'{}');if(PAIRS[s.pair])state.pair=s.pair;if(PERIOD_DAYS[s.period])state.period=s.period;if(['home','market','news','cal','banks'].includes(s.view))state.view=s.view;if(['ev','hol'].includes(s.cal))state.cal=s.cal;state.calAll=!!s.calAll}catch(e){}
 const remember=()=>{try{localStorage.setItem('fxradar',JSON.stringify({pair:state.pair,period:state.period,view:state.view,cal:state.cal,calAll:state.calAll}))}catch(e){}};
 
 /* formatting */
@@ -425,12 +431,6 @@ function renderCal(){
       html+=`<div class="item${past&&!i.actual?' past':''}"><span class="t${d===today&&!past?' now':''}">${t&&t!=='00:00'?t:'—'}</span><span class="cc">${esc(CC[i.country]||i.country)}</span><span class="e">${esc(i.event)}<span class="dot3" aria-label="Důležitost ${i.importance||1} ze 3">${imp}</span></span>${meta?`<span class="m">${esc(meta)}</span>`:''}</div>`});
     if(lastDay)html+='</div>';html+=c?`<p class="note">${esc(c.note||'')} Stav k ${dCZ(c.asOf)}.</p>`:'';
     body.innerHTML=html;body.querySelectorAll('[data-all]').forEach(b=>b.onclick=()=>{state.calAll=b.dataset.all==='1';remember();renderCal()});
-  }else if(state.cal==='cb'){const banks=state.data.banks?.banks||[];const rel=PAIRS[state.pair].cb;
-    let html=banks.length?`<p class="note" style="margin:0 0 10px">Stav k ${esc(dCZ(state.data.banks.asOf))} · nahoře banky pro ${esc(state.pair)}</p><div style="display:grid;gap:10px">`+[...banks].sort((a,b)=>(rel.includes(b.id)-rel.includes(a.id))||String(a.next).localeCompare(String(b.next))).map(c=>{const d=daysTo(c.next);const u=safeUrl(c.url);
-      return`<div class="bank"><div class="h"><b>${esc(c.name)} · ${esc(c.currency)}</b><span class="r">${esc(c.rate)}</span></div><p>${esc(c.rateLabel)}</p><span class="chip${d>=0&&d<=7?' hot':''}" style="justify-self:start">Zasedání ${esc(dCZ(c.next))}${Number.isFinite(d)?(d>=0?` · za ${d} d`:' · proběhlo'):''}</span><p>${esc(c.bias)}</p><details><summary>Výhled a faktory</summary><p style="margin-top:6px">${esc(c.outlook6m)}</p><p style="margin-top:6px">${esc(c.expect)}</p><p style="margin-top:6px"><b style="color:var(--ink)">Faktory:</b> ${esc(c.drivers)}</p>${u?`<a href="${esc(u)}" target="_blank" rel="noopener" style="font-size:13px;font-weight:600;text-decoration:none;display:inline-block;padding:6px 0">Oficiální stránka</a>`:''}</details></div>`}).join('')+'</div>':'<div class="empty">Údaje o bankách se načítají…</div>';
-    const f=state.data.forecast?.cnb;if(f?.rows?.length){const u=safeUrl(f.url);const s=stats('EUR/CZK');
-      html+=`<div class="bank" style="margin-top:10px"><div class="h"><b>${esc(f.label)}</b><span class="chip">vydáno ${esc(dCZ(f.published))}</span></div><div class="tbl"><table><thead><tr><th>Rok</th><th>EUR/CZK</th><th>PRIBOR 3M</th><th>Inflace</th><th>HDP</th></tr></thead><tbody>${f.rows.map(r=>`<tr><td>${esc(r.year)}</td><td class="num">${fmt(r.eurczk,1)}</td><td class="num">${fmt(r.pribor3m,1)} %</td><td class="num">${fmt(r.cpi,1)} %</td><td class="num">${fmt(r.gdp,1)} %</td></tr>`).join('')}</tbody></table></div><p>${s?`Aktuální EUR/CZK ${fmt(s.last,3)} je ${s.last>f.rows[0].eurczk?'nad':'pod'} prognózou na letošní rok. `:''}${esc(f.note||'')}</p>${u?`<a href="${esc(u)}" target="_blank" rel="noopener" style="font-size:13px;font-weight:600;text-decoration:none">Prognóza na webu ČNB</a>`:''}</div>`}
-    body.innerHTML=html;
   }else{const y=now.getFullYear(),end=addD(now,120);const ccys=[PAIRS[state.pair].base,PAIRS[state.pair].quote];
     const list=[...holidays(y),...holidays(y+1)].filter(h=>pd(h.date)>=addD(now,-1)&&pd(h.date)<=end).sort((a,b)=>a.date.localeCompare(b.date)||a.mk.localeCompare(b.mk));
     const g=[];list.forEach(h=>{const m=g.find(x=>x.date===h.date);if(m)m.items.push(h);else g.push({date:h.date,items:[h]})});
@@ -439,12 +439,22 @@ function renderCal(){
   }
 }
 
+/* ---------- BANKY ---------- */
+function renderBanks(){
+const banks=state.data.banks?.banks||[];const rel=PAIRS[state.pair].cb;
+    let html=banks.length?`<p class="note" style="margin:0 0 10px">Stav k ${esc(dCZ(state.data.banks.asOf))} · nahoře banky pro ${esc(state.pair)}</p><div style="display:grid;gap:10px">`+[...banks].sort((a,b)=>(rel.includes(b.id)-rel.includes(a.id))||String(a.next).localeCompare(String(b.next))).map(c=>{const d=daysTo(c.next);const u=safeUrl(c.url);
+      return`<div class="bank"><div class="h"><b>${esc(c.name)} · ${esc(c.currency)}</b><span class="r">${esc(c.rate)}</span></div><p>${esc(c.rateLabel)}</p><span class="chip${d>=0&&d<=7?' hot':''}" style="justify-self:start">Zasedání ${esc(dCZ(c.next))}${Number.isFinite(d)?(d>=0?` · za ${d} d`:' · proběhlo'):''}</span><p>${esc(c.bias)}</p><details><summary>Výhled a faktory</summary><p style="margin-top:6px">${esc(c.outlook6m)}</p><p style="margin-top:6px">${esc(c.expect)}</p><p style="margin-top:6px"><b style="color:var(--ink)">Faktory:</b> ${esc(c.drivers)}</p>${u?`<a href="${esc(u)}" target="_blank" rel="noopener" style="font-size:13px;font-weight:600;text-decoration:none;display:inline-block;padding:6px 0">Oficiální stránka</a>`:''}</details></div>`}).join('')+'</div>':'<div class="empty">Údaje o bankách se načítají…</div>';
+    const f=state.data.forecast?.cnb;if(f?.rows?.length){const u=safeUrl(f.url);const s=stats('EUR/CZK');
+      html+=`<div class="bank" style="margin-top:10px"><div class="h"><b>${esc(f.label)}</b><span class="chip">vydáno ${esc(dCZ(f.published))}</span></div><div class="tbl"><table><thead><tr><th>Rok</th><th>EUR/CZK</th><th>PRIBOR 3M</th><th>Inflace</th><th>HDP</th></tr></thead><tbody>${f.rows.map(r=>`<tr><td>${esc(r.year)}</td><td class="num">${fmt(r.eurczk,1)}</td><td class="num">${fmt(r.pribor3m,1)} %</td><td class="num">${fmt(r.cpi,1)} %</td><td class="num">${fmt(r.gdp,1)} %</td></tr>`).join('')}</tbody></table></div><p>${s?`Aktuální EUR/CZK ${fmt(s.last,3)} je ${s.last>f.rows[0].eurczk?'nad':'pod'} prognózou na letošní rok. `:''}${esc(f.note||'')}</p>${u?`<a href="${esc(u)}" target="_blank" rel="noopener" style="font-size:13px;font-weight:600;text-decoration:none">Prognóza na webu ČNB</a>`:''}</div>`}
+    $('#banksBody').innerHTML=html;
+}
+
 /* ---------- navigation ---------- */
-function showView(v){state.view=v;remember();['home','market','news','cal'].forEach(k=>{$('#v-'+k).hidden=k!==v});
+function showView(v){state.view=v;remember();['home','market','news','cal','banks'].forEach(k=>{$('#v-'+k).hidden=k!==v});
   document.querySelectorAll('nav.tabbar button').forEach(b=>{if(b.dataset.v===v)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
   window.scrollTo(0,0);if(v==='market')renderMarket();if(v==='home')renderChart()}
-function renderPairDependent(){renderRows();renderChart();renderWatch();renderNews();renderCal();if(state.view==='market')renderMarket()}
-function renderAll(){renderHeader();renderTicker();renderSummary();renderRows();renderChart();renderWatch();renderMarket();renderNews();renderCal()}
+function renderPairDependent(){renderRows();renderChart();renderWatch();renderNews();renderCal();renderBanks();if(state.view==='market')renderMarket()}
+function renderAll(){renderHeader();renderTicker();renderSummary();renderRows();renderChart();renderWatch();renderMarket();renderNews();renderCal();renderBanks()}
 
 document.querySelectorAll('nav.tabbar button').forEach(b=>b.onclick=()=>showView(b.dataset.v));
 document.querySelectorAll('#periods button').forEach(b=>b.onclick=()=>{state.period=b.dataset.p;remember();renderChart()});
