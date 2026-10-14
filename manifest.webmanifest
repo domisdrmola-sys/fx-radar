@@ -1,6 +1,6 @@
 {
-  "name": "FX Radar",
-  "short_name": "FX Radar",
+  "name": "SAB FX RADAR",
+  "short_name": "SAB FX RADAR",
   "description": "EUR/CZK, USD/CZK, EUR/USD a PLN/CZK: kurzy ECB, zprávy a centrální banky",
   "lang": "cs",
   "start_url": "./",

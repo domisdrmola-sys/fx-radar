@@ -1,6 +1,6 @@
-// FX Radar service worker: app works offline with the last downloaded data.
+// SAB FX RADAR service worker: app works offline with the last downloaded data.
 // Same-origin files: network first, cache as fallback. Rate API calls pass through untouched.
-const VERSION = 'fxradar-v1';
+const VERSION = 'fxradar-v2';
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'data.json',
   'icon-192.png', 'icon-512.png', 'icon-maskable.png', 'apple-touch-icon.png'];
 

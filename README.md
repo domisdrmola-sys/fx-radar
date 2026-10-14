@@ -1,4 +1,4 @@
-# FX Radar
+# SAB FX RADAR
 
 Webová aplikace (PWA) pro EUR/CZK, USD/CZK, EUR/USD a PLN/CZK. Běží v prohlížeči bez přihlášení a bez instalace aplikací.
 
