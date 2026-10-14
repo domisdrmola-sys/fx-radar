@@ -81,7 +81,8 @@ a{color:var(--accent)}
 .row svg{width:92px;height:32px;display:block}
 .row .v{text-align:right}
 .row .v b{display:block;font-family:var(--font-num);font-size:19px;font-weight:700;font-variant-numeric:tabular-nums}
-.row .v span{font-family:var(--font-num);font-size:11px}
+.row .v span{font-family:var(--font-num);font-size:11px;white-space:nowrap}
+.row .v span .flat{color:var(--muted)}
 
 /* chart */
 .chartHead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
@@ -370,14 +371,19 @@ function renderSummary(){
   const br=(state.data.risk?.items||[]).find(i=>i.id==='brent');if(br)chips.push(`<span class="chip">Brent ${fmt(br.value,0)} USD</span>`);
   $('#sumChips').innerHTML=chips.join('');
 }
-function renderRows(){
-  $('#rows').innerHTML='';Object.keys(PAIRS).forEach(k=>{const s=stats(k);const on=k===state.pair;const rows=series(k).slice(-22);
-    const b=document.createElement('button');b.type='button';b.className='row'+(on?' on':'');b.setAttribute('aria-pressed',on);
-    b.innerHTML=`<div style="min-width:0"><div class="n">${k}</div><div class="c">${s?moveWord(k,s.m5)+' · 5 dní':'načítám'}</div></div>${spark(rows,on)}<div class="v"><b>${s?fmt(s.last,PAIRS[k].dec):'—'}</b><span class="${s?cls(s.d1):'flat'}">${s?pct(s.d1):''}</span></div>`;
-    b.onclick=()=>{state.pair=k;remember();renderPairDependent()};$('#rows').appendChild(b)});
-}
 function intradayRows(pair){const it=state.intraday?.pairs?.[pair];if(!it?.points?.length)return[];return it.points.map(([t,v])=>({date:new Date(t*1000).toISOString(),ts:t,v}))}
 const hm=ts=>new Date(ts*1000).toLocaleTimeString('cs-CZ',{hour:'2-digit',minute:'2-digit'});
+function liveQuote(pair){const it=state.intraday?.pairs?.[pair];if(!it||!Number.isFinite(it.last)||!it.time)return null;
+  if(Date.now()/1000-it.time>3*3600)return null;return{v:it.last,ts:it.time}}
+function renderRows(){
+  $('#rows').innerHTML='';Object.keys(PAIRS).forEach(k=>{const s=stats(k);const on=k===state.pair;const rows=series(k).slice(-22);const lq=liveQuote(k);
+    const val=lq?lq.v:s?.last;const ch=lq&&s?(lq.v/s.last-1)*100:s?.d1;
+    const sub=lq?`${pct(ch)} <span class="flat">· ${hm(lq.ts)}</span>`:s?`${pct(ch)} <span class="flat">· fix</span>`:'';
+    const b=document.createElement('button');b.type='button';b.className='row'+(on?' on':'');b.setAttribute('aria-pressed',on);
+    b.title=lq?`Orientační kurz ${hm(lq.ts)}, změna proti fixingu ECB ${s?dShort(s.date):''}`:'Fixing ECB, změna proti předchozímu fixingu';
+    b.innerHTML=`<div style="min-width:0"><div class="n">${k}</div><div class="c">${s?moveWord(k,s.m5)+' · 5 dní':'načítám'}</div></div>${spark(rows,on)}<div class="v"><b>${Number.isFinite(val)?fmt(val,PAIRS[k].dec):'—'}</b><span class="${Number.isFinite(ch)?cls(ch):'flat'}">${sub}</span></div>`;
+    b.onclick=()=>{state.pair=k;remember();renderPairDependent()};$('#rows').appendChild(b)});
+}
 function renderChart(){
   const p=PAIRS[state.pair],id=state.period==='1D',rows=id?intradayRows(state.pair):windowed(series(state.pair),state.period);
   $('#chTitle').textContent=state.pair+' · '+state.period;
@@ -510,7 +516,7 @@ async function fetchRates(){const start=addD(new Date(),-400);
   const j=await getJSON(`https://api.frankfurter.dev/v1/${isoDay(start)}..?from=EUR&to=CZK,USD,PLN,HUF`);
   const days=Object.entries(j.rates||{}).map(([date,r])=>({date,CZK:+r.CZK,USD:+r.USD,PLN:+r.PLN,HUF:+r.HUF})).filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d.date)&&[d.CZK,d.USD,d.PLN].every(Number.isFinite)).sort((a,b)=>a.date.localeCompare(b.date));
   if(days.length<20)throw new Error('málo dat');return days}
-async function fetchIntraday(){try{const j=await getJSON(INTRADAY_URL+'?t='+Math.floor(Date.now()/60000),10000);if(j&&j.pairs){state.intraday=j}else state.intraday=state.intraday||{}}catch(e){state.intraday=state.intraday||{};console.warn('intraday',e)}if(state.view==='home')renderChart()}
+async function fetchIntraday(){try{const j=await getJSON(INTRADAY_URL+'?t='+Math.floor(Date.now()/60000),10000);if(j&&j.pairs){state.intraday=j}else state.intraday=state.intraday||{}}catch(e){state.intraday=state.intraday||{};console.warn('intraday',e)}if(state.view==='home'){renderRows();renderChart()}}
 async function refresh(){if(state.loading)return;state.loading=true;renderHeader();fetchIntraday();
   const [rates,content]=await Promise.allSettled([fetchRates(),getJSON('data.json?t='+Date.now())]);
   if(rates.status==='fulfilled'){state.days=rates.value;state.fetchedAt=Date.now();state.offline=false}else{state.offline=true;console.warn('kurzy',rates.reason)}
@@ -518,7 +524,7 @@ async function refresh(){if(state.loading)return;state.loading=true;renderHeader
   state.loading=false;saveCache();renderAll()}
 loadCache();showView(state.view);renderAll();refresh();
 $('#refresh').onclick=refresh;
-setInterval(()=>{if(document.visibilityState==='visible'&&state.period==='1D'&&state.view==='home')fetchIntraday()},5*60*1000);
+setInterval(()=>{if(document.visibilityState==='visible'&&state.view==='home')fetchIntraday()},5*60*1000);
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){renderHeader();if(Date.now()-(state.fetchedAt||0)>10*60*1000)refresh()}});
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 </script>
