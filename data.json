@@ -1,31 +1,16 @@
 {
  "news": {
-  "asOf": "2026-10-13",
+  "asOf": "2026-10-14",
   "pairs": {
    "EUR/CZK": [
-    {
-     "source": "ECB",
-     "currency": "EUR/CZK",
-     "title": "ECB fixing 12. 10. 2026: EUR/CZK 24,391",
-     "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.cs.html",
-     "summary": "Nejnovější dostupný referenční kurz ECB činí 24,391 CZK za euro.",
-     "why": "Aktuální referenční kotva pro EUR/CZK."
-    },
-    {
-     "source": "ČNB",
-     "currency": "CZK",
-     "title": "ČNB drží repo sazbu na 3,75 % a v listopadu připouští i zvýšení",
-     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
-     "summary": "Bankovní rada 17. září ponechala sazby beze změny. Uvedla ale, že proinflační rizika z komodit zesílila a příště bude volit mezi stabilitou a zvýšením sazeb.",
-     "why": "Jestřábější ČNB je podpůrným faktorem pro korunu."
-    },
     {
      "source": "Reuters",
      "currency": "EUR",
      "title": "Dolar 13. 10. ustupuje z 18měsíčního maxima, euro mírně ožívá",
      "url": "https://www.reuters.com/world/africa/dollar-holds-near-18-month-high-geopolitical-risks-rise-2026-10-13/",
      "summary": "Pokles ropy a částečné uklidnění geopolitických rizik srazily dolar z 18měsíčního maxima. Euro mírně posílilo, i když jej dál zatěžují fiskální obavy v eurozóně.",
-     "why": "Slabší dolar a nižší risk-off tlak mohou krátkodobě pomáhat EUR i regionálním měnám."
+     "why": "Slabší dolar a nižší risk-off tlak mohou krátkodobě pomáhat EUR i regionálním měnám.",
+     "published": "2026-10-13"
     },
     {
      "source": "ECB",
@@ -33,7 +18,8 @@
      "title": "Zápis ECB potvrzuje datově závislý přístup po zářijovém zvýšení",
      "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
      "summary": "ECB v září zvýšila sazby o 25 bb na 2,50 %. Zápis zveřejněný 8. října potvrzuje jednomyslnou podporu kroku a další rozhodování bez předem dané trajektorie.",
-     "why": "Snižuje pravděpodobnost automatického dalšího zvýšení už v říjnu."
+     "why": "Snižuje pravděpodobnost automatického dalšího zvýšení už v říjnu.",
+     "published": "2026-10-08"
     },
     {
      "source": "Reuters",
@@ -41,7 +27,17 @@
      "title": "Vyšší ropa a dluhopisové výnosy dál zvyšují inflační rizika",
      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-08/",
      "summary": "Ropa znovu výrazně zdražila a dlouhé výnosy zůstávají vysoko, což zvyšuje nervozitu na evropských i globálních trzích.",
-     "why": "Rizikový sentiment je pro CZK důležitý krátkodobý faktor."
+     "why": "Rizikový sentiment je pro CZK důležitý krátkodobý faktor.",
+     "published": "2026-10-08"
+    },
+    {
+     "source": "ČNB",
+     "currency": "CZK",
+     "title": "ČNB drží repo sazbu na 3,75 % a v listopadu připouští i zvýšení",
+     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
+     "summary": "Bankovní rada 17. září ponechala sazby beze změny. Uvedla ale, že proinflační rizika z komodit zesílila a příště bude volit mezi stabilitou a zvýšením sazeb.",
+     "why": "Jestřábější ČNB je podpůrným faktorem pro korunu.",
+     "published": "2026-09-17"
     },
     {
      "source": "ČNB",
@@ -49,33 +45,19 @@
      "title": "ČNB čeká dočasné zvýšení inflace nad 3 % na začátku roku 2027",
      "url": "https://www.cnb.cz/en/monetary-policy/bank-board-decisions/CNB-Board-decisions-1789628400000/?tab=recordGraph",
      "summary": "Aktualizace prognózy ČNB počítá s růstem inflace nad 3 % na začátku roku 2027 a se zvýšenou jádrovou inflací.",
-     "why": "Vývoj inflace určí, zda ČNB v listopadu sazby zvýší."
+     "why": "Vývoj inflace určí, zda ČNB v listopadu sazby zvýší.",
+     "published": "2026-09-17"
     }
    ],
    "USD/CZK": [
     {
-     "source": "ECB",
-     "currency": "USD/CZK",
-     "title": "ECB fixing 12. 10. implikuje USD/CZK přibližně 21,815",
-     "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.cs.html",
-     "summary": "Z EUR/CZK 24,391 a EUR/USD 1,1181 vychází křížový kurz USD/CZK přibližně 21,815.",
-     "why": "Aktuální referenční kontrola USD/CZK."
-    },
-    {
-     "source": "Fed",
+     "source": "FXStreet",
      "currency": "USD",
-     "title": "Fed drží po zářijovém zvýšení pásmo 3,75–4,00 %",
-     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-     "summary": "FOMC 16. září jednomyslně zvýšil sazby o 25 bb s odkazem na stále zvýšenou inflaci.",
-     "why": "Vyšší americké sazby a výnosy podporují dolar."
-    },
-    {
-     "source": "Fed",
-     "currency": "USD",
-     "title": "Zápis FOMC: inflace zůstává hlavní obavou, říjnové zvýšení ale není jisté",
-     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
-     "summary": "Zápis ukázal pokračující jestřábí tón, ale trh po zveřejnění snížil pravděpodobnost dalšího zvýšení už v říjnu.",
-     "why": "Rozděluje riziko mezi pauzu v říjnu a možné další zvýšení později."
+     "title": "Dolar před americkou inflací slábne, EUR/USD nad 1,12",
+     "url": "https://www.fxstreet.com/news/forex-today-us-dollar-weakens-ahead-of-us-cpi-inflation-data-202610140648",
+     "summary": "Dolarový index klesl k 102,1 spolu s nižší ropou a výnosy amerických dluhopisů; EUR/USD se v evropském obchodování dostal nad 1,12. Trh čeká na zářijovou inflaci CPI, odhady míří ke 3,6 % r/r, jádro kolem 2,5 %.",
+     "why": "Vyšší než čekaná inflace by vrátila sázky na zvýšení sazeb Fedu a posílila dolar.",
+     "published": "2026-10-14T08:48"
     },
     {
      "source": "Reuters",
@@ -83,15 +65,8 @@
      "title": "Dolar klesá z 18měsíčního maxima, trh více sází na říjnovou pauzu Fedu",
      "url": "https://www.reuters.com/world/africa/dollar-holds-near-18-month-high-geopolitical-risks-rise-2026-10-13/",
      "summary": "Dolar 13. října oslabil spolu s ropou a poklesem geopolitické prémie. Trh zvýšil pravděpodobnost, že Fed na říjnovém zasedání sazby ponechá beze změny.",
-     "why": "Nižší očekávání říjnového zvýšení sazeb mohou krátkodobě brzdit USD/CZK."
-    },
-    {
-     "source": "ČNB",
-     "currency": "CZK",
-     "title": "ČNB ponechala sazbu na 3,75 %, listopad může přinést zvýšení",
-     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
-     "summary": "ČNB zatím sazby drží, ale další zasedání bude podle bankovní rady mezi stabilitou a zvýšením.",
-     "why": "Jestřábí ČNB omezuje prostor pro růst USD/CZK."
+     "why": "Nižší očekávání říjnového zvýšení sazeb mohou krátkodobě brzdit USD/CZK.",
+     "published": "2026-10-13"
     },
     {
      "source": "Reuters",
@@ -99,17 +74,46 @@
      "title": "Poptávka po amerických dluhopisech přinesla částečnou úlevu výnosům",
      "url": "https://www.reuters.com/markets/us/us-bonds-fall-lifting-yields-2nd-day-oil-weighs-30-year-auction-looms-2026-10-08/",
      "summary": "Silná aukce třicetiletých dluhopisů stáhla část výnosů níže, přesto zůstávají výnosy historicky vysoko.",
-     "why": "Pokles výnosů může krátkodobě brzdit další posilování USD."
+     "why": "Pokles výnosů může krátkodobě brzdit další posilování USD.",
+     "published": "2026-10-08"
+    },
+    {
+     "source": "Fed",
+     "currency": "USD",
+     "title": "Zápis FOMC: inflace zůstává hlavní obavou, říjnové zvýšení ale není jisté",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
+     "summary": "Zápis ukázal pokračující jestřábí tón, ale trh po zveřejnění snížil pravděpodobnost dalšího zvýšení už v říjnu.",
+     "why": "Rozděluje riziko mezi pauzu v říjnu a možné další zvýšení později.",
+     "published": "2026-10-07"
+    },
+    {
+     "source": "ČNB",
+     "currency": "CZK",
+     "title": "ČNB ponechala sazbu na 3,75 %, listopad může přinést zvýšení",
+     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
+     "summary": "ČNB zatím sazby drží, ale další zasedání bude podle bankovní rady mezi stabilitou a zvýšením.",
+     "why": "Jestřábí ČNB omezuje prostor pro růst USD/CZK.",
+     "published": "2026-09-17"
+    },
+    {
+     "source": "Fed",
+     "currency": "USD",
+     "title": "Fed drží po zářijovém zvýšení pásmo 3,75–4,00 %",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+     "summary": "FOMC 16. září jednomyslně zvýšil sazby o 25 bb s odkazem na stále zvýšenou inflaci.",
+     "why": "Vyšší americké sazby a výnosy podporují dolar.",
+     "published": "2026-09-16"
     }
    ],
    "EUR/USD": [
     {
-     "source": "ECB",
-     "currency": "EUR/USD",
-     "title": "ECB fixing 12. 10. 2026: EUR/USD 1,1181",
-     "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.cs.html",
-     "summary": "Nejnovější dostupný referenční kurz ECB je 1,1181 USD za euro.",
-     "why": "Aktuální referenční spot."
+     "source": "FXStreet",
+     "currency": "USD",
+     "title": "Dolar před americkou inflací slábne, EUR/USD nad 1,12",
+     "url": "https://www.fxstreet.com/news/forex-today-us-dollar-weakens-ahead-of-us-cpi-inflation-data-202610140648",
+     "summary": "Dolarový index klesl k 102,1 spolu s nižší ropou a výnosy amerických dluhopisů; EUR/USD se v evropském obchodování dostal nad 1,12. Trh čeká na zářijovou inflaci CPI, odhady míří ke 3,6 % r/r, jádro kolem 2,5 %.",
+     "why": "Vyšší než čekaná inflace by vrátila sázky na zvýšení sazeb Fedu a posílila dolar.",
+     "published": "2026-10-14T08:48"
     },
     {
      "source": "Reuters",
@@ -117,7 +121,8 @@
      "title": "EUR/USD 13. 10. podporuje ústup dolaru a nižší ropa",
      "url": "https://www.reuters.com/world/africa/dollar-holds-near-18-month-high-geopolitical-risks-rise-2026-10-13/",
      "summary": "Dolar ustoupil z 18měsíčního maxima, když klesla ropa a trh zvýšil sázky na pauzu Fedu v říjnu. Euro však dál limitují evropská fiskální rizika.",
-     "why": "Aktuálně se střetává slábnoucí dolarový impuls s přetrvávajícími problémy eurozóny."
+     "why": "Aktuálně se střetává slábnoucí dolarový impuls s přetrvávajícími problémy eurozóny.",
+     "published": "2026-10-13"
     },
     {
      "source": "ECB",
@@ -125,15 +130,8 @@
      "title": "ECB zápis: zářijové zvýšení bylo jednomyslné, další kroky bez předem dané trajektorie",
      "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
      "summary": "Depozitní sazba je 2,50 %. ECB dál hodnotí inflaci jako příliš vysokou, ale rozhodování zůstává meeting-by-meeting.",
-     "why": "Pro říjen snižuje pravděpodobnost automatického dalšího zvýšení."
-    },
-    {
-     "source": "Fed",
-     "currency": "USD",
-     "title": "Fed po zářijovém zvýšení drží pásmo 3,75–4,00 %",
-     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-     "summary": "Zářijové rozhodnutí bylo jednomyslné a Fed uvedl, že inflace zůstává zvýšená.",
-     "why": "Relativní sazby Fedu a ECB jsou klíčové pro EUR/USD."
+     "why": "Pro říjen snižuje pravděpodobnost automatického dalšího zvýšení.",
+     "published": "2026-10-08"
     },
     {
      "source": "Reuters",
@@ -141,7 +139,8 @@
      "title": "Dolar zůstává silný, i když po zápisu Fedu část zisků odevzdal",
      "url": "https://www.reuters.com/world/africa/dollar-edges-back-18-month-high-after-fomc-minutes-2026-10-08/",
      "summary": "Trh méně věří v říjnové zvýšení Fedu, ale dál počítá s vysokou pravděpodobností dalšího utažení do konce roku.",
-     "why": "Udržuje výnosovou výhodu USD, ale omezuje prostor pro další rychlé posílení."
+     "why": "Udržuje výnosovou výhodu USD, ale omezuje prostor pro další rychlé posílení.",
+     "published": "2026-10-08"
     },
     {
      "source": "Reuters",
@@ -149,49 +148,28 @@
      "title": "Evropské fiskální problémy dávají dolarovým býkům další argument",
      "url": "https://www.reuters.com/world/europe/europes-woes-give-dollar-bulls-fresh-reason-press-2026-10-08/",
      "summary": "Fiskální napětí ve Francii a Itálii, vysoké energie a slabší sentiment dál zatěžují euro.",
-     "why": "Strukturální protivítr pro EUR/USD."
+     "why": "Strukturální protivítr pro EUR/USD.",
+     "published": "2026-10-08"
+    },
+    {
+     "source": "Fed",
+     "currency": "USD",
+     "title": "Fed po zářijovém zvýšení drží pásmo 3,75–4,00 %",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+     "summary": "Zářijové rozhodnutí bylo jednomyslné a Fed uvedl, že inflace zůstává zvýšená.",
+     "why": "Relativní sazby Fedu a ECB jsou klíčové pro EUR/USD.",
+     "published": "2026-09-16"
     }
    ],
    "PLN/CZK": [
     {
-     "source": "ECB",
-     "currency": "PLN/CZK",
-     "title": "ECB fixing 12. 10. implikuje PLN/CZK přibližně 5,5624",
-     "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.cs.html",
-     "summary": "Z EUR/CZK 24,391 a EUR/PLN 4,3850 vychází křížový kurz přibližně 5,5624 CZK za zlotý.",
-     "why": "Aktuální referenční kotva páru."
-    },
-    {
-     "source": "NBP",
+     "source": "RTTNews",
      "currency": "PLN",
-     "title": "NBP ponechala v říjnu referenční sazbu na 3,75 %",
-     "url": "https://nbp.pl/en/",
-     "summary": "Polská hlavní sazba zůstává na 3,75 %. Další klíčový bod přijde s listopadovým zasedáním a novou projekcí.",
-     "why": "Polská i česká hlavní sazba jsou nyní shodně 3,75 %."
-    },
-    {
-     "source": "Reuters",
-     "currency": "PLN",
-     "title": "Palivový cenový strop může zmírnit tlak na zvýšení sazeb NBP",
-     "url": "https://www.reuters.com/business/polands-fuel-price-cap-could-ease-pressure-central-bank-tighten-policy-2026-10-02/",
-     "summary": "Polská inflace v září zrychlila na 4,0 %, ale vládní cenové opatření u paliv může část tlaku dočasně snížit.",
-     "why": "Snižuje bezprostřední potřebu zvýšení sazeb a může brzdit PLN."
-    },
-    {
-     "source": "ČNB",
-     "currency": "CZK",
-     "title": "ČNB v listopadu připouští stabilitu i zvýšení sazeb",
-     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
-     "summary": "ČNB ponechala sazbu na 3,75 %, ale upozorňuje na rostoucí proinflační rizika.",
-     "why": "Relativní jestřábí tón ČNB je důležitý pro PLN/CZK."
-    },
-    {
-     "source": "ECB",
-     "currency": "PLN/CZK",
-     "title": "EUR/PLN 4,3850 a EUR/CZK 24,391 dne 12. 10.",
-     "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.cs.html",
-     "summary": "Nejnovější fixing umožňuje přímo srovnat relativní výkon zlotého a koruny vůči euru.",
-     "why": "PLN/CZK odráží rozdíl relativního výkonu PLN a CZK vůči EUR."
+     "title": "Polská inflace v září 4,1 %, nad rychlým odhadem",
+     "url": "https://www.rttnews.com/3698860/poland-inflation-rises-more-than-estimated.aspx",
+     "summary": "Finální zářijová inflace v Polsku vyšla na 4,1 % po srpnových 3,4 %, o desetinu nad rychlým odhadem 4,0 %.",
+     "why": "Vyšší inflace zvyšuje tlak na NBP, aby v listopadu zvážila zvýšení sazeb, což by podpořilo zlotý.",
+     "published": "2026-10-14T12:23"
     },
     {
      "source": "Reuters",
@@ -199,7 +177,35 @@
      "title": "Nižší ropa a slabší dolar 13. 10. ulevují rizikovým měnám",
      "url": "https://www.reuters.com/world/asia-pacific/global-markets-wrapup-1-2026-10-13/",
      "summary": "Pokles ropy a amerických výnosů spolu s ústupem dolaru částečně zlepšil prostředí pro rizikovější aktiva, i když technologické akcie zůstávají pod tlakem.",
-     "why": "Pro PLN a CZK je slabší dolar a nižší energie zpravidla příznivější kombinací."
+     "why": "Pro PLN a CZK je slabší dolar a nižší energie zpravidla příznivější kombinací.",
+     "published": "2026-10-13"
+    },
+    {
+     "source": "NBP",
+     "currency": "PLN",
+     "title": "NBP ponechala v říjnu referenční sazbu na 3,75 %",
+     "url": "https://nbp.pl/en/",
+     "summary": "Polská hlavní sazba zůstává na 3,75 %. Další klíčový bod přijde s listopadovým zasedáním a novou projekcí.",
+     "why": "Polská i česká hlavní sazba jsou nyní shodně 3,75 %.",
+     "published": "2026-10-07"
+    },
+    {
+     "source": "Reuters",
+     "currency": "PLN",
+     "title": "Palivový cenový strop může zmírnit tlak na zvýšení sazeb NBP",
+     "url": "https://www.reuters.com/business/polands-fuel-price-cap-could-ease-pressure-central-bank-tighten-policy-2026-10-02/",
+     "summary": "Polská inflace v září zrychlila na 4,0 %, ale vládní cenové opatření u paliv může část tlaku dočasně snížit.",
+     "why": "Snižuje bezprostřední potřebu zvýšení sazeb a může brzdit PLN.",
+     "published": "2026-10-02"
+    },
+    {
+     "source": "ČNB",
+     "currency": "CZK",
+     "title": "ČNB v listopadu připouští stabilitu i zvýšení sazeb",
+     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
+     "summary": "ČNB ponechala sazbu na 3,75 %, ale upozorňuje na rostoucí proinflační rizika.",
+     "why": "Relativní jestřábí tón ČNB je důležitý pro PLN/CZK.",
+     "published": "2026-09-17"
     }
    ]
   }

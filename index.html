@@ -123,6 +123,8 @@ a{color:var(--accent)}
 
 .news{background:var(--panel);border-radius:10px;padding:12px 14px;display:grid;gap:4px}
 .news .s{font-size:11px;color:var(--accent);letter-spacing:1px;text-transform:uppercase}
+.news .nh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.news .pt{font-family:var(--font-num);font-size:12px;color:var(--muted);white-space:nowrap}
 .news h3{margin:0;font-size:16px;line-height:1.3;font-weight:600;text-wrap:balance}
 .news p{margin:0;font-size:13.5px;color:var(--muted);max-width:65ch}
 .news .w{color:var(--ink)}
@@ -438,9 +440,13 @@ function renderMarket(){
 function renderNews(){
   $('#newsPairs').innerHTML=Object.keys(PAIRS).map(k=>`<button type="button" data-pair="${k}" aria-pressed="${k===state.pair}">${k}</button>`).join('');
   $('#newsPairs').querySelectorAll('button').forEach(b=>b.onclick=()=>{state.pair=b.dataset.pair;remember();renderPairDependent()});
-  const items=state.data.news?.pairs?.[state.pair]||[];
-  $('#newsList').innerHTML=items.length?`<p class="note" style="margin:0">Výběr zpráv k ${esc(dCZ(state.data.news.asOf))}</p>`+items.slice(0,8).map(n=>{const u=safeUrl(n.url);return`<article class="news"><span class="s">${esc(n.source)}${n.currency?' · '+esc(n.currency):''}</span><h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p>${n.why?`<p class="w">${esc(n.why)}</p>`:''}${u?`<a href="${esc(u)}" target="_blank" rel="noopener">Otevřít zdroj</a>`:''}</article>`}).join(''):`<div class="empty">${state.offline?'Zprávy se nepodařilo načíst.':'K tomuto páru zatím nejsou zprávy.'}</div>`;
+  const items=(state.data.news?.pairs?.[state.pair]||[]).filter(n=>!/fixing/i.test(n.title||'')).slice().sort((a,b)=>String(b.published||'').localeCompare(String(a.published||'')));
+  $('#newsList').innerHTML=items.length?items.slice(0,10).map(n=>{const u=safeUrl(n.url);
+    return`<article class="news"><div class="nh"><span class="s">${esc(n.source)}${n.currency?' · '+esc(n.currency):''}</span><time class="pt" datetime="${esc(n.published||'')}">${esc(pubLabel(n.published))}</time></div><h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p>${n.why?`<p class="w">${esc(n.why)}</p>`:''}${u?`<a href="${esc(u)}" target="_blank" rel="noopener">Otevřít zdroj</a>`:''}</article>`}).join('')+`<p class="note" style="margin:0">Aktualizováno ${esc(dCZ(state.data.news.asOf))} · čas zveřejnění v pražském čase</p>`:`<div class="empty">${state.offline?'Zprávy se nepodařilo načíst.':'K tomuto páru zatím nejsou zprávy.'}</div>`;
 }
+function pubLabel(p){if(!p)return'';const d=String(p).slice(0,10),t=String(p).slice(11,16);const dd=daysTo(d);
+  const day=dd===0?'dnes':dd===-1?'včera':pd(d).toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:pd(d).getFullYear()===new Date().getFullYear()?undefined:'numeric'});
+  return t?`${day} ${t}`:day}
 
 /* ---------- KALENDÁŘ ---------- */
 function renderCal(){
