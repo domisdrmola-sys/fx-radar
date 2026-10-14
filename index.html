@@ -429,15 +429,13 @@ function renderMarket(){
     const L=s.at(-1),F=s[0],dl=L.cz-L.ea,d0=F.cz-F.ea;$('#diffNote').textContent=`Rozdíl ${fmt(dl,2)} p. b. (před rokem ${fmt(d0,2)} p. b.). ${dl<d0?'Výnosová výhoda koruny slábne.':'Výnosová výhoda koruny roste.'}`}
   else drawLines('#diffChart','#diffBox',[],{empty:'Data o sazbách se načítají…'});
   const cz=(state.data.risk?.items||[]).find(i=>i.id==='czbund');
-  if(cz){const ch=Number.isFinite(cz.prev1m)?cz.value-cz.prev1m:NaN;
-    const trend=!Number.isFinite(ch)?'':Math.abs(ch)<5?'Za měsíc se spread skoro nezměnil, trh vnímá Česko stejně jako před měsícem.':ch>0?`Za měsíc se spread rozšířil o ${fmt(ch,0)} bb: trh chce za české riziko víc, pro korunu spíš nepříznivé.`:`Za měsíc se spread zúžil o ${fmt(-ch,0)} bb: důvěra v Česko roste, pro korunu spíš příznivé.`;
-    $('#czb').innerHTML=`<div class="kv"><div><span>ČR 10Y</span><b>${fmt(cz.cz,2)} %</b></div><div><span>Bund 10Y</span><b>${fmt(cz.de,2)} %</b></div><div><span>Spread</span><b>${fmt(cz.value,0)} bb</b></div></div>
-    <p class="comment" style="margin:0 0 10px;color:var(--ink)">${esc(trend)}</p>
-    <div class="explain">
-      <p><b>Co to je.</b> Rozdíl mezi výnosem českého a německého desetiletého státního dluhopisu. Německý Bund je v Evropě měřítko „bezpečného“ dluhu, takže spread ukazuje, kolik navíc chtějí investoři za půjčování Česku. 100 bb = 1 procentní bod.</p>
-      <p><b>Co to sleduje.</b> Dvě věci najednou: rozdíl v očekávaných sazbách ČNB a ECB a rizikovou přirážku za Česko (veřejné finance, inflace, likvidita koruny). Proto reaguje na rozhodnutí ČNB, české inflační údaje i na celkovou náladu vůči regionu.</p>
-      <p><b>Jak to číst pro EUR/CZK.</b> Když se spread zužuje kvůli rostoucí důvěře, zahraniční investoři kupují české dluhopisy a k tomu korunu, což ji posiluje. Když se rozšiřuje kvůli obavám (fiskální problémy, únik z regionu), koruna obvykle slábne. Pozor: rozšíření kvůli tomu, že ČNB zvyšuje sazby, naopak korunu podpoří; rozhoduje důvod pohybu.</p>
-    </div><p class="note">Výnosy k ${dCZ(cz.date)}; před měsícem ${fmt(cz.prev1m,0)} bb.</p>`}
+  if(cz){const sp=Number.isFinite(cz.cz)&&Number.isFinite(cz.de)?cz.cz-cz.de:cz.value/100;
+    $('#czb').innerHTML=`<div class="kv"><div><span>ČR 10Y</span><b>${fmt(cz.cz,2)} %</b></div><div><span>Bund 10Y</span><b>${fmt(cz.de,2)} %</b></div><div><span>Rozdíl</span><b style="white-space:nowrap">${fmt(sp,2)}<small style="font-size:.6em;font-weight:500"> p.b.</small></b></div></div>
+    <details style="margin-top:8px"><summary style="cursor:pointer;font-size:13.5px;font-weight:600;padding:4px 0">Co to znamená a jak se počítá</summary><div class="explain" style="margin-top:6px">
+      <p><b>Jak se počítá.</b> Výnos českého desetiletého státního dluhopisu minus výnos německého (Bund): ${fmt(cz.cz,2)} % − ${fmt(cz.de,2)} % = ${fmt(sp,2)} procentního bodu. Výnosy jsou k ${dCZ(cz.date)}.</p>
+      <p><b>Co to znamená.</b> Německý Bund je v Evropě měřítko „bezpečného“ dluhu, takže rozdíl ukazuje, kolik navíc chtějí investoři za půjčování Česku. Obsahuje dvě věci: rozdíl v očekávaných sazbách ČNB a ECB a rizikovou přirážku za Česko (veřejné finance, inflace, likvidita koruny).</p>
+      <p><b>Jak to číst pro EUR/CZK.</b> Když se rozdíl zužuje kvůli rostoucí důvěře, investoři kupují české dluhopisy a k tomu korunu, což ji posiluje. Když se rozšiřuje kvůli obavám, koruna obvykle slábne. Pozor: rozšíření kvůli tomu, že ČNB zvyšuje sazby, korunu naopak podpoří; rozhoduje důvod pohybu.</p>
+    </div></details>`}
   else $('#czb').innerHTML='<div class="empty">Data o dluhopisech se načítají…</div>';
   const r=state.data.risk;
   $('#risk').innerHTML=r?.items?.length?r.items.filter(i=>i.id!=='czbund').map(i=>{const u=i.unit?' '+esc(i.unit):'';let ch='';
