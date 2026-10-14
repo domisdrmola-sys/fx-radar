@@ -339,7 +339,9 @@ function renderHeader(){
   const last=state.days.at(-1);const st=$('#status');
   if(state.loading)st.textContent=state.days.length?'Aktualizuji…':'Načítám…';
   else if(!last)st.textContent='Bez dat · zkontrolujte připojení';
-  else st.textContent=(state.offline?'OFFLINE · ':'')+'FIXING ECB '+dShort(last.date).replace(/\s/g,' ');
+  else{const now=new Date(),today=isoDay(now),wd=now.getDay();let nxt='';
+    if(last.date!==today&&wd>=1&&wd<=5)nxt=now.getHours()<16?' · DNEŠNÍ PO 16:00':' · DNEŠNÍ SE NAČÍTÁ';
+    st.textContent=(state.offline?'OFFLINE · ':'')+'FIXING ECB '+dShort(last.date).replace(/\s/g,' ')+nxt}
   $('#refresh').classList.toggle('spin',state.loading);
 }
 function renderTicker(){
