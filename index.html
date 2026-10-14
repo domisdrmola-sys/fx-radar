@@ -244,11 +244,6 @@ footer{font-size:12px;color:var(--muted);display:grid;gap:4px}
       <p class="note" id="fwdNote">Výpočet z mezibankových sazeb přes krytou úrokovou paritu. Kotace banky se liší o marži a cross-currency basis.</p>
     </div>
 
-    <div class="sub">
-      <h3>Očekávané pásmo kurzu</h3>
-      <div class="tbl" id="bandTable"><div class="empty">Čekám na kurzy…</div></div>
-      <p class="note">Pásmo kolem forwardu z roční historické volatility. Statistický odhad, ne předpověď.</p>
-    </div>
   </section>
 
   <!-- Signals -->
@@ -504,15 +499,7 @@ function renderCalib(curve,fw){
   $('#cRate').oninput=()=>$('#cRate').setCustomValidity('');
   const cl=$('#cClear');if(cl)cl.onclick=()=>{delete state.calib[state.pair];remember();renderHedge()};
 }
-function renderHedge(){renderForwards();renderBudget();renderBand()}
-function renderBand(){
-  const p=PAIRS[state.pair],rows=series(state.pair),box=$('#bandTable');
-  const yr=windowed(rows,'1R').map(r=>r.v);const vol=annVol(yr);const fw=forwards();
-  if(!Number.isFinite(vol)||!fw){box.innerHTML='<div class="empty">Čekám na kurzy…</div>';return}
-  box.innerHTML=`<table><thead><tr><th>Horizont</th><th>68 % pásmo</th><th>95 % pásmo</th></tr></thead><tbody>${fw.map(f=>{const c=Number.isFinite(f.F)?f.F:rows.at(-1).v;const sd=vol*Math.sqrt(f.days/365);
-    return`<tr><td>${f.t}</td><td class="num">${fmt(c*Math.exp(-sd),p.dec)} – ${fmt(c*Math.exp(sd),p.dec)}</td><td class="num">${fmt(c*Math.exp(-1.96*sd),p.dec)} – ${fmt(c*Math.exp(1.96*sd),p.dec)}</td></tr>`}).join('')}</tbody></table><p class="note" style="margin-top:6px">Roční volatilita ${fmt(vol*100,1)} %.</p>`;
-}
-
+function renderHedge(){renderForwards();renderBudget()}
 /* ---------- signals ---------- */
 function renderSignals(){
   const rows=series(state.pair),box=$('#signals');const dec=PAIRS[state.pair].dec;
@@ -609,7 +596,7 @@ function renderPanel(){
   const p=$('#panel');({news:renderNews,cal:renderCal,banks:renderBanks,hol:renderHol,risks:renderRisksText})[state.tab](p);
 }
 
-function renderAll(){renderFresh();renderPairs();renderChart();renderCnb();renderBudgetForm();renderBudget();renderForwards();renderBand();renderSignals();renderCee();renderDiff();renderRisk();renderPanel()}
+function renderAll(){renderFresh();renderPairs();renderChart();renderCnb();renderBudgetForm();renderBudget();renderForwards();renderSignals();renderCee();renderDiff();renderRisk();renderPanel()}
 
 /* ---------- events ---------- */
 document.querySelectorAll('#periods button').forEach(b=>b.onclick=()=>{state.period=b.dataset.p;remember();renderChart()});
