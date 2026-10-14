@@ -194,7 +194,7 @@ footer{font-size:12px;color:var(--muted);padding-block:6px 0;display:grid;gap:4p
     <section aria-label="Měnové páry" style="margin-inline:-16px"><div class="rows" id="rows"></div></section>
     <section class="panel" aria-labelledby="chTitle">
       <div class="chartHead"><div class="label" id="chTitle" style="margin:0">EUR/CZK · 3M</div>
-        <div class="seg" role="group" aria-label="Období" id="periods"><button type="button" data-p="1M">1M</button><button type="button" data-p="3M">3M</button><button type="button" data-p="6M">6M</button><button type="button" data-p="1R">1R</button></div></div>
+        <div class="seg" role="group" aria-label="Období" id="periods"><button type="button" data-p="1D">1D</button><button type="button" data-p="1M">1M</button><button type="button" data-p="3M">3M</button><button type="button" data-p="6M">6M</button><button type="button" data-p="1R">1R</button></div></div>
       <div class="big" id="bigV">—</div>
       <div class="chartBox" id="chartBox"><svg id="chart" role="img" aria-label="Graf kurzu"></svg><div class="scrub" id="scrub" hidden></div></div>
       <div class="axis" id="axis"></div>
@@ -231,7 +231,7 @@ footer{font-size:12px;color:var(--muted);padding-block:6px 0;display:grid;gap:4p
   </main>
 
   <footer class="gut">
-    <span>Kurzy: denní referenční kurzy ECB (fixing kolem 16:00), obnoví se při každém otevření. Zprávy, sazby a kalendář se aktualizují 4× denně.</span>
+    <span>Kurzy: denní referenční kurzy ECB (fixing kolem 16:00), obnoví se při každém otevření. Graf 1D: orientační tržní kurz (Yahoo Finance), obnova po ~10 minutách. Zprávy, sazby a kalendář se aktualizují 4× denně.</span>
     <span>Data jsou indikativní. Pro obchodování ověřte kotace u banky.</span>
   </footer>
 </div>
@@ -253,11 +253,12 @@ const PAIRS={
   "EUR/USD":{base:"EUR",quote:"USD",dec:4,calc:d=>d.USD,cb:["ECB","Fed"],cal:["US","EA","DE"]},
   "PLN/CZK":{base:"PLN",quote:"CZK",dec:4,calc:d=>d.CZK/d.PLN,cb:["NBP","CNB"],cal:["PL","CZ"]}
 };
-const PERIOD_DAYS={"1M":31,"3M":92,"6M":183,"1R":366};
+const PERIOD_DAYS={"1D":1,"1M":31,"3M":92,"6M":183,"1R":366};
+const INTRADAY_URL="https://raw.githubusercontent.com/domisdrmola-sys/fx-radar/live/intraday.json";
 const CC={CZ:"CZ",EA:"EU",DE:"DE",US:"US",PL:"PL"};
 const CCN={CZ:"ČR",EA:"eurozóna",DE:"Německo",US:"USA",PL:"Polsko"};
 const $=s=>document.querySelector(s);
-const state={days:[],data:{},pair:"EUR/CZK",period:"3M",view:"home",cal:"ev",calAll:false,loading:false,offline:false,fetchedAt:0};
+const state={days:[],data:{},intraday:null,pair:"EUR/CZK",period:"3M",view:"home",cal:"ev",calAll:false,loading:false,offline:false,fetchedAt:0};
 try{const s=JSON.parse(localStorage.getItem('fxradar')||'{}');if(PAIRS[s.pair])state.pair=s.pair;if(PERIOD_DAYS[s.period])state.period=s.period;if(['home','market','news','cal','banks'].includes(s.view))state.view=s.view;if(['ev','hol'].includes(s.cal))state.cal=s.cal;state.calAll=!!s.calAll}catch(e){}
 const remember=()=>{try{localStorage.setItem('fxradar',JSON.stringify({pair:state.pair,period:state.period,view:state.view,cal:state.cal,calAll:state.calAll}))}catch(e){}};
 
@@ -375,25 +376,30 @@ function renderRows(){
     b.innerHTML=`<div style="min-width:0"><div class="n">${k}</div><div class="c">${s?moveWord(k,s.m5)+' · 5 dní':'načítám'}</div></div>${spark(rows,on)}<div class="v"><b>${s?fmt(s.last,PAIRS[k].dec):'—'}</b><span class="${s?cls(s.d1):'flat'}">${s?pct(s.d1):''}</span></div>`;
     b.onclick=()=>{state.pair=k;remember();renderPairDependent()};$('#rows').appendChild(b)});
 }
+function intradayRows(pair){const it=state.intraday?.pairs?.[pair];if(!it?.points?.length)return[];return it.points.map(([t,v])=>({date:new Date(t*1000).toISOString(),ts:t,v}))}
+const hm=ts=>new Date(ts*1000).toLocaleTimeString('cs-CZ',{hour:'2-digit',minute:'2-digit'});
 function renderChart(){
-  const p=PAIRS[state.pair],rows=windowed(series(state.pair),state.period);
+  const p=PAIRS[state.pair],id=state.period==='1D',rows=id?intradayRows(state.pair):windowed(series(state.pair),state.period);
   $('#chTitle').textContent=state.pair+' · '+state.period;
   document.querySelectorAll('#periods button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.p===state.period));
   const last=rows.at(-1),first=rows[0];
-  if(last&&first){const ch=(last.v/first.v-1)*100;$('#bigV').innerHTML=`${fmt(last.v,p.dec)} <span class="${cls(ch)}">${pct(ch)}</span>`}else $('#bigV').textContent='—';
-  const c=drawLines('#chart','#chartBox',[{rows}],{dec:p.dec,fill:true,empty:state.offline?'Kurzy se nepodařilo načíst.':'Načítám kurzy…'});
-  if(rows.length){const v=rows.map(r=>r.v);$('#axis').innerHTML=`<span>${dShort(first.date)}</span><span>min ${fmt(Math.min(...v),p.dec)}</span><span>max ${fmt(Math.max(...v),p.dec)}</span><span>${dShort(last.date)}</span>`}else $('#axis').innerHTML='';
+  if(last&&first){const ch=(last.v/first.v-1)*100;$('#bigV').innerHTML=`${fmt(last.v,p.dec)} <span class="${cls(ch)}">${pct(ch)}</span>${id?` <span class="flat" style="font-size:12px">orientačně ${hm(last.ts)}</span>`:''}`}else $('#bigV').textContent='—';
+  const c=drawLines('#chart','#chartBox',[{rows}],{dec:p.dec,fill:true,empty:id?(state.intraday===null?'Načítám orientační kurz…':'Orientační kurz teď není k dispozici.'):state.offline?'Kurzy se nepodařilo načíst.':'Načítám kurzy…'});
+  if(rows.length){const v=rows.map(r=>r.v);const lab=r=>id?hm(r.ts):dShort(r.date);$('#axis').innerHTML=`<span>${lab(first)}</span><span>min ${fmt(Math.min(...v),p.dec)}</span><span>max ${fmt(Math.max(...v),p.dec)}</span><span>${lab(last)}</span>`}else $('#axis').innerHTML='';
   const s=stats(state.pair);
-  if(s){const posTxt=s.pos>.8?'blízko ročního maxima':s.pos<.2?'blízko ročního minima':'uprostřed ročního pásma';const volTxt=s.vol>s.yv*1.25?'vyšší než obvykle':s.vol<s.yv*.8?'nižší než obvykle':'obvyklá';
+  if(id){const fx=s?s.last:NaN;const L=last?.v;const d=Number.isFinite(fx)&&Number.isFinite(L)?L-fx:NaN;const mul=p.dec===4&&p.quote==='USD'?10000:100;const unit=mul===100?'hal.':'pipů';
+    $('#comment').textContent=last?`Orientační tržní kurz za posledních 24 hodin, obnovuje se zhruba po 10 minutách a může se mírně lišit od kotací banky. ${Number.isFinite(d)?`Proti poslednímu fixingu ECB (${dShort(s.date)}, ${fmt(fx,p.dec)}) je ${d>0?'výš':'níž'} o ${fmt(Math.abs(d)*mul,1)} ${unit}${unit.endsWith('.')?'':'.'}`:''}`:(state.intraday===null?'Orientační kurz se načítá z trhu.':'Orientační kurz pro tento pár teď není k dispozici. Zkuste to za pár minut znovu.');}
+  if(s&&!id){const posTxt=s.pos>.8?'blízko ročního maxima':s.pos<.2?'blízko ročního minima':'uprostřed ročního pásma';const volTxt=s.vol>s.yv*1.25?'vyšší než obvykle':s.vol<s.yv*.8?'nižší než obvykle':'obvyklá';
     $('#comment').textContent=`Kurz je ${posTxt} (${Math.round(s.pos*100)} %). Volatilita ${fmt(s.vol,1)} % je ${volTxt}, za posledních 5 dní ${moveWord(state.pair,s.m5)}.`;
     $('#tiles').innerHTML=[['Pásmo 1R',`${Math.round(s.pos*100)} %`,''],['Vs. MA20',sgn(s.dma,2),cls(s.dma)],['Mom. 5D',sgn(s.m5,2),cls(s.m5)],['Vol 20D',fmt(s.vol,1)+' %','']].map(([l,v,c])=>`<div class="tile"><span>${l}</span><b class="${c}">${v}</b></div>`).join('')}
-  else{$('#comment').textContent='';$('#tiles').innerHTML=''}
+  else if(!s){$('#comment').textContent='';$('#tiles').innerHTML=''}
+  if(s&&id)$('#tiles').innerHTML=[['Pásmo 1R',`${Math.round(s.pos*100)} %`,''],['Vs. MA20',sgn(s.dma,2),cls(s.dma)],['Mom. 5D',sgn(s.m5,2),cls(s.m5)],['Vol 20D',fmt(s.vol,1)+' %','']].map(([l,v,c])=>`<div class="tile"><span>${l}</span><b class="${c}">${v}</b></div>`).join('');
   $('#scrub').hidden=true;if(!c)return;
   const guide=c.el('line',{x1:0,x2:0,y1:c.padT,y2:c.H-c.padB,stroke:'#8A9BAD','stroke-width':1,'stroke-dasharray':'3 3',visibility:'hidden'});
   const dot=c.el('circle',{cx:0,cy:0,r:5,fill:'#F2A93B',stroke:'#0F1720','stroke-width':2,visibility:'hidden'});const tip=$('#scrub');
   const move=e=>{const rect=c.svg.getBoundingClientRect();const px=(e.clientX-rect.left)*c.W/rect.width;let i=Math.round((px-c.padL)/(c.W-c.padL-c.padR)*(c.n-1));i=Math.max(0,Math.min(c.n-1,i));
     const cx=c.x(i),cy=c.y(rows[i].v);guide.setAttribute('x1',cx);guide.setAttribute('x2',cx);guide.setAttribute('visibility','visible');dot.setAttribute('cx',cx);dot.setAttribute('cy',cy);dot.setAttribute('visibility','visible');
-    tip.hidden=false;tip.textContent=`${dCZ(rows[i].date)} · ${fmt(rows[i].v,p.dec)}`;tip.style.left=Math.max(70,Math.min(rect.width-70,cx*rect.width/c.W))+'px'};
+    tip.hidden=false;tip.textContent=`${id?dShort(rows[i].date)+' '+hm(rows[i].ts):dCZ(rows[i].date)} · ${fmt(rows[i].v,p.dec)}`;tip.style.left=Math.max(70,Math.min(rect.width-70,cx*rect.width/c.W))+'px'};
   const leave=()=>{guide.setAttribute('visibility','hidden');dot.setAttribute('visibility','hidden');tip.hidden=true};
   c.svg.onpointermove=move;c.svg.onpointerdown=move;c.svg.onpointerleave=leave;c.svg.onpointerup=e=>{if(e.pointerType!=='mouse')leave()};
 }
@@ -503,13 +509,15 @@ async function fetchRates(){const start=addD(new Date(),-400);
   const j=await getJSON(`https://api.frankfurter.dev/v1/${isoDay(start)}..?from=EUR&to=CZK,USD,PLN,HUF`);
   const days=Object.entries(j.rates||{}).map(([date,r])=>({date,CZK:+r.CZK,USD:+r.USD,PLN:+r.PLN,HUF:+r.HUF})).filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d.date)&&[d.CZK,d.USD,d.PLN].every(Number.isFinite)).sort((a,b)=>a.date.localeCompare(b.date));
   if(days.length<20)throw new Error('málo dat');return days}
-async function refresh(){if(state.loading)return;state.loading=true;renderHeader();
+async function fetchIntraday(){try{const j=await getJSON(INTRADAY_URL+'?t='+Math.floor(Date.now()/60000),10000);if(j&&j.pairs){state.intraday=j}else state.intraday=state.intraday||{}}catch(e){state.intraday=state.intraday||{};console.warn('intraday',e)}if(state.view==='home')renderChart()}
+async function refresh(){if(state.loading)return;state.loading=true;renderHeader();fetchIntraday();
   const [rates,content]=await Promise.allSettled([fetchRates(),getJSON('data.json?t='+Date.now())]);
   if(rates.status==='fulfilled'){state.days=rates.value;state.fetchedAt=Date.now();state.offline=false}else{state.offline=true;console.warn('kurzy',rates.reason)}
   if(content.status==='fulfilled'&&content.value)state.data=content.value;else console.warn('obsah',content.reason);
   state.loading=false;saveCache();renderAll()}
 loadCache();showView(state.view);renderAll();refresh();
 $('#refresh').onclick=refresh;
+setInterval(()=>{if(document.visibilityState==='visible'&&state.period==='1D'&&state.view==='home')fetchIntraday()},5*60*1000);
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){renderHeader();if(Date.now()-(state.fetchedAt||0)>10*60*1000)refresh()}});
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 </script>

@@ -1,0 +1,28 @@
+name: Intradenní kurzy
+on:
+  schedule:
+    - cron: "*/10 5-21 * * 1-5"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: intraday
+  cancel-in-progress: true
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - name: Stáhnout kurzy
+        run: mkdir -p out && python3 scripts/intraday.py out/intraday.json
+      - name: Publikovat do větve live
+        run: |
+          cd out
+          git init -q
+          git checkout -q -b live
+          git add intraday.json
+          git -c user.name="fx-radar-bot" -c user.email="fx-radar-bot@users.noreply.github.com" commit -qm "intraday $(date -u +%FT%TZ)"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" live
