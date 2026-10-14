@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#111111">
-<meta name="description" content="SAB FX RADAR: EUR/CZK, USD/CZK, EUR/USD, PLN/CZK – kurzy, zajištění, zprávy a centrální banky">
+<meta name="theme-color" content="#0F1720">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="SAB FX RADAR: EUR/CZK, USD/CZK, EUR/USD, PLN/CZK – denní přehled kurzů, trhu, zpráv a kalendáře">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="SAB FX RADAR">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -15,272 +16,230 @@
 <title>SAB FX RADAR</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <style>
-/* Layout: phone-first card stack; two columns from 900px. Monochrome ink plus semantic up/down. */
+/* Layout: briefing-first phone app (variant B structure) in the dealing-desk look (variant A): one dark theme, amber accent, four screens behind a bottom tab bar. */
 :root{
-  --bg:#eeeeec; --surface:#ffffff; --surface-2:#f5f5f3; --ink:#111111; --muted:#64645f; --line:#dadad6;
-  --invert-bg:#141414; --invert-ink:#f2f2f0; --invert-muted:#a8a8a3;
-  --up:#1d7a4c; --down:#b23a2e; --warn:#9a6a00; --chart-fill:rgba(17,17,17,.08); --band:rgba(17,17,17,.06);
-  --line-2:#8a8a85;
-  --font-sans:"IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  --r:16px;
+  --bg:#0F1720; --panel:#16212C; --panel-2:#1B2733; --line:#243241; --line-soft:#1C2935;
+  --ink:#E6EDF3; --muted:#8A9BAD; --accent:#F2A93B; --accent-ink:#0F1720; --nav:#0B1219;
+  --up:#3FB68B; --down:#F0645A;
+  --font-ui:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --font-num:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --nav-h:64px;
+  color-scheme:dark;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0d0d0d; --surface:#181818; --surface-2:#202020; --ink:#ededea; --muted:#9a9a95; --line:#2e2e2c;
-  --invert-bg:#ededea; --invert-ink:#121212; --invert-muted:#5c5c58;
-  --up:#4cc38a; --down:#f07a6c; --warn:#e0b44a; --chart-fill:rgba(237,237,234,.09); --band:rgba(237,237,234,.07); --line-2:#77776f; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0d0d0d; --surface:#181818; --surface-2:#202020; --ink:#ededea; --muted:#9a9a95; --line:#2e2e2c;
-  --invert-bg:#ededea; --invert-ink:#121212; --invert-muted:#5c5c58;
-  --up:#4cc38a; --down:#f07a6c; --warn:#e0b44a; --chart-fill:rgba(237,237,234,.09); --band:rgba(237,237,234,.07); --line-2:#77776f; color-scheme:dark}
-
 *{box-sizing:border-box}
-html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-sans);font-size:15px;line-height:1.45;
-  padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px));padding-block:0 32px}
-.num{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
-a{color:inherit}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-ui);font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:calc(var(--nav-h) + env(safe-area-inset-bottom,0px) + 16px)}
 button,input,select{font:inherit;color:inherit}
-:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.num{font-family:var(--font-num);font-variant-numeric:tabular-nums}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--muted)}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:720px;margin:0 auto}
 
-.wrap{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
-header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);
-  display:flex;align-items:center;gap:12px;padding-block:14px 10px;border-bottom:1px solid var(--line)}
-.mark{width:38px;height:38px;border-radius:11px;background:var(--invert-bg);display:grid;place-items:center;flex:none}
-.mark svg{width:24px;height:24px}
-.mark path{stroke:var(--invert-ink)} .mark circle{fill:var(--invert-ink)}
-.brand{min-width:0;flex:1}
-.brand h1{margin:0;font-size:19px;letter-spacing:-.2px;line-height:1.1}
-.brand p{margin:2px 0 0;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.fresh{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 10px;background:var(--surface);flex:none;cursor:pointer}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--muted)}
-.dot.live{background:var(--up)} .dot.stale{background:var(--down)}
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-block:14px 10px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.mark{width:32px;height:32px;border-radius:8px;background:var(--accent);display:grid;place-items:center;flex:none}
+.brand b{display:block;font-size:16px;font-weight:700;letter-spacing:1.5px}
+.brand span{display:block;font-size:11px;color:var(--muted);letter-spacing:.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.iconbtn{width:44px;height:44px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);display:grid;place-items:center;cursor:pointer;flex:none}
+.iconbtn.spin svg{animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.iconbtn.spin svg{animation:none}}
 
-.pairs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.pair{all:unset;box-sizing:border-box;cursor:pointer;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 13px;display:grid;gap:4px;min-width:0}
-.pair:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
-.pair.active{background:var(--invert-bg);color:var(--invert-ink);border-color:var(--invert-bg)}
-.pair .pn{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
-.pair .pv{font-size:22px;font-weight:500;letter-spacing:-.5px}
-.pair .pc{font-size:12px}
-.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--muted)} .warn{color:var(--warn)}
-.pair.active .pc.flat{color:var(--invert-muted)}
+.ticker{display:flex;gap:18px;padding-block:8px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--font-num);font-size:11px;color:var(--muted);white-space:nowrap;overflow-x:auto;scrollbar-width:none}
+.ticker::-webkit-scrollbar{display:none}
+.ticker b{color:var(--ink);font-weight:500}
 
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;min-width:0}
-.card h2{margin:0;font-size:13px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-.card h3{margin:0 0 6px;font-size:14px;font-weight:600}
-.sub{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:14px;margin-top:14px}
-.chartHead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px;margin-bottom:10px}
-.bigv{font-size:34px;font-weight:500;letter-spacing:-1px;line-height:1.05;margin-top:4px}
-.bigc{font-size:13px;margin-top:2px}
-.seg{display:inline-flex;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px;flex-wrap:wrap}
-.seg button{all:unset;cursor:pointer;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;color:var(--muted)}
-.seg button[aria-pressed="true"]{background:var(--invert-bg);color:var(--invert-ink)}
-.seg button:focus-visible{outline:2px solid var(--ink)}
-.chartBox{position:relative;height:230px;touch-action:pan-y;user-select:none}
-.chartBox.small{height:170px}
+/* sections */
+.view{display:grid;gap:14px;padding-block:14px 8px}
+.view[hidden]{display:none}
+.label{font-size:12px;letter-spacing:1.2px;color:var(--muted);text-transform:uppercase;margin:0 0 8px;font-weight:500}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.date h1{margin:0;font-size:30px;line-height:1.1;font-weight:700;letter-spacing:-.3px;text-wrap:balance}
+.date p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+.date p b{color:var(--ink);font-weight:600}
+
+.summary{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:12px;padding:14px 16px}
+.summary .k{font-size:12px;font-weight:600;letter-spacing:1.2px;color:var(--accent)}
+.summary p{margin:8px 0 0;font-size:17px;line-height:1.45;font-weight:500;max-width:60ch}
+.chips{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.chip{font-size:12px;background:var(--panel-2);border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--ink);white-space:nowrap}
+.chip.hot{border-color:var(--accent);color:var(--accent)}
+
+/* pair rows */
+.rows{display:flex;flex-direction:column;border-top:1px solid var(--line-soft)}
+.row{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) 92px 92px;align-items:center;gap:10px;padding:12px 14px 12px 13px;border-bottom:1px solid var(--line-soft);border-left:3px solid transparent}
+.row:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.row.on{background:var(--panel);border-left-color:var(--accent)}
+.row .n{font-size:15px;font-weight:600}
+.row .c{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row svg{width:92px;height:32px;display:block}
+.row .v{text-align:right}
+.row .v b{display:block;font-family:var(--font-num);font-size:19px;font-weight:700;font-variant-numeric:tabular-nums}
+.row .v span{font-family:var(--font-num);font-size:11px}
+
+/* chart */
+.chartHead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.seg{display:flex;gap:4px;font-family:var(--font-num);font-size:12px}
+.seg button{border:0;background:transparent;color:var(--muted);padding:8px 9px;border-radius:6px;cursor:pointer;min-height:36px}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);font-weight:700}
+.big{font-family:var(--font-num);font-size:30px;font-weight:700;margin-top:6px;font-variant-numeric:tabular-nums}
+.big span{font-size:13px;font-weight:500}
+.chartBox{position:relative;height:190px;margin-top:8px;touch-action:pan-y;user-select:none}
+.chartBox.small{height:150px}
 .chartBox svg{width:100%;height:100%;display:block;overflow:visible}
-.scrub{position:absolute;top:0;pointer-events:none;background:var(--invert-bg);color:var(--invert-ink);font-size:12px;border-radius:8px;padding:5px 8px;white-space:nowrap;transform:translateX(-50%)}
-.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted)}
-.legend i{display:inline-block;width:14px;height:0;border-top:2px solid var(--ink);vertical-align:middle;margin-right:5px}
-.legend i.dash{border-top-style:dashed}
-.legend i.l2{border-color:var(--line-2)}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:12px 0 0;border-top:1px solid var(--line);padding-top:12px}
-.stats div{min-width:0}
-.stats dt{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-.stats dd{margin:2px 0 0;font-size:14px}
+.scrub{position:absolute;top:-4px;pointer-events:none;background:var(--ink);color:var(--bg);font-family:var(--font-num);font-size:12px;border-radius:6px;padding:4px 7px;white-space:nowrap;transform:translateX(-50%)}
+.axis{display:flex;justify-content:space-between;font-family:var(--font-num);font-size:11px;color:var(--muted);margin-top:4px}
+.comment{margin:10px 0 0;font-size:14px;line-height:1.5;color:var(--muted)}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.tile{background:var(--panel);border-radius:10px;padding:10px 8px;min-width:0}
+.tile span{display:block;font-size:10px;color:var(--muted);letter-spacing:.8px;text-transform:uppercase;white-space:nowrap}
+.tile b{display:block;font-family:var(--font-num);font-size:16px;font-weight:700;margin-top:4px}
+
+/* lists */
+.list{display:flex;flex-direction:column;gap:1px;background:var(--line);border-radius:10px;overflow:hidden}
+.item{background:var(--panel);padding:11px 12px;display:grid;grid-template-columns:56px 30px minmax(0,1fr);gap:4px 8px;align-items:baseline}
+.item .t{font-family:var(--font-num);font-size:13px;color:var(--muted)}
+.item .t.now{color:var(--accent)}
+.item .cc{font-size:11px;color:var(--muted);font-weight:600}
+.item .e{font-size:14px;min-width:0}
+.item .m{grid-column:3;font-size:12.5px;color:var(--muted)}
+.item.past{opacity:.55}
+.dot3{display:inline-flex;gap:2px;margin-left:6px;vertical-align:middle}
+.dot3 i{width:5px;height:5px;border-radius:50%;background:var(--line)}
+.dot3 i.on{background:var(--accent)}
+.day{font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin:10px 0 6px}
+
+.news{background:var(--panel);border-radius:10px;padding:12px 14px;display:grid;gap:4px}
+.news .s{font-size:11px;color:var(--accent);letter-spacing:1px;text-transform:uppercase}
+.news h3{margin:0;font-size:16px;line-height:1.3;font-weight:600;text-wrap:balance}
+.news p{margin:0;font-size:13.5px;color:var(--muted);max-width:65ch}
+.news .w{color:var(--ink)}
+.news a{font-size:13px;font-weight:600;text-decoration:none;justify-self:start;padding:6px 0}
+
+.tabs2{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.tabs2::-webkit-scrollbar{display:none}
+.tabs2 button{flex:none;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:8px 14px;min-height:40px;font-size:14px;font-weight:600;cursor:pointer}
+.tabs2 button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 
 .tbl{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-size:13.5px}
-th{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:right;padding:4px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{font-size:11px;font-weight:500;letter-spacing:.8px;text-transform:uppercase;color:var(--muted);text-align:right;padding:4px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{text-align:right;padding:9px 6px;border-bottom:1px solid var(--line-soft);white-space:nowrap}
 th:first-child,td:first-child{text-align:left;padding-left:0}
-td{text-align:right;padding:7px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
 tr:last-child td{border-bottom:0}
-.note{font-size:12px;color:var(--muted);margin:0}
-.kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.kv div{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:8px 10px;min-width:0}
-.kv span{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
-.kv b{display:block;font-weight:500;font-size:15px;margin-top:2px}
-
-.form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.form label{display:grid;gap:3px;font-size:12px;color:var(--muted);min-width:0}
-.form input,.form select{width:100%;min-width:0;border:1px solid var(--line);background:var(--surface-2);border-radius:10px;padding:8px 10px;font-size:15px;color:var(--ink)}
-.form input{font-family:var(--font-mono)}
-.verdict{border-left:3px solid var(--line-2);padding:4px 0 4px 10px;font-size:14px}
-.verdict.good{border-color:var(--up)} .verdict.bad{border-color:var(--down)}
-
-.signals{display:grid;gap:12px;margin-top:12px}
-.sig{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:baseline}
-.sig b{font-weight:500;font-size:14px}
-.sig span.v{font-size:14px}
-.sig p{grid-column:1/-1;margin:0;font-size:12.5px;color:var(--muted)}
-.range{grid-column:1/-1;height:6px;border-radius:3px;background:var(--surface-2);border:1px solid var(--line);position:relative;margin-top:4px}
-.range i{position:absolute;top:-4px;width:3px;height:12px;border-radius:2px;background:var(--ink);transform:translateX(-50%)}
-
-.risk{display:grid;gap:10px}
-.riskRow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:baseline}
-.riskRow b{font-weight:500}
-.riskRow p{grid-column:1/-1;margin:0;font-size:12.5px;color:var(--muted)}
-
-.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
-.tabs::-webkit-scrollbar{display:none}
-.tabs button{all:unset;cursor:pointer;flex:none;font-size:14px;font-weight:600;padding:8px 10px;border-bottom:2px solid transparent;margin-bottom:-1px;color:var(--muted)}
-.tabs button[aria-selected="true"]{color:var(--ink);border-color:var(--ink)}
-.tabs button:focus-visible{outline:2px solid var(--ink)}
-.panel{margin-top:12px;display:grid;gap:10px}
-.news{border-top:1px solid var(--line);padding-top:10px;display:grid;gap:4px}
-.news:first-of-type{border-top:0;padding-top:0}
-.src{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-.news h4{margin:0;font-size:15px;line-height:1.3;text-wrap:balance}
-.news p{margin:0;font-size:13.5px;color:var(--muted);max-width:65ch}
-.news .why{color:var(--ink)}
-.news a,.link{font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--line);justify-self:start;padding-bottom:1px}
-.bank{border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:6px;background:var(--surface-2)}
-.bankTop{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
-.bankTop b{font-size:15px}
-.bankRate{font-size:22px;font-weight:500}
-.chip{display:inline-flex;gap:6px;align-items:center;font-size:12px;font-weight:600;border-radius:999px;padding:3px 9px;background:var(--invert-bg);color:var(--invert-ink);justify-self:start;white-space:nowrap}
-.chip.soft{background:var(--surface-2);color:var(--muted);border:1px solid var(--line)}
-.bank p{margin:0;font-size:13px;color:var(--muted)}
-.bank details summary{cursor:pointer;font-size:13px;font-weight:600}
-.day{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-top:6px}
-.ev{display:grid;grid-template-columns:44px 30px minmax(0,1fr);gap:2px 8px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--line)}
-.ev.past{opacity:.55}
-.ev .t{font-size:13px}
-.ev .c{font-size:11px;font-weight:600;color:var(--muted)}
-.ev .e{font-size:14px;min-width:0}
-.ev .e b{font-weight:600}
-.ev .m{grid-column:3;font-size:12.5px;color:var(--muted)}
-.imp{display:inline-flex;gap:2px;margin-left:6px;vertical-align:middle}
-.imp i{width:5px;height:5px;border-radius:50%;background:var(--line)}
-.imp i.on{background:var(--ink)}
-.hol{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 10px;padding:7px 0;border-bottom:1px solid var(--line)}
-.hol .d{font-size:13px}
+.note{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-top:6px}
+.legend i{display:inline-block;width:14px;border-top:2px solid var(--accent);vertical-align:middle;margin-right:5px}
+.legend i.b{border-color:var(--muted)}
+.risk{display:grid;gap:12px}
+.risk div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:baseline}
+.risk p{grid-column:1/-1;margin:0;font-size:12.5px;color:var(--muted)}
+.bank{background:var(--panel);border-radius:10px;padding:12px 14px;display:grid;gap:6px}
+.bank .h{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.bank .h b{font-size:16px}
+.bank .r{font-family:var(--font-num);font-size:22px;font-weight:700}
+.bank p{margin:0;font-size:13.5px;color:var(--muted)}
+.bank details summary{cursor:pointer;font-size:13.5px;font-weight:600;padding:4px 0}
+.hol{background:var(--panel);padding:11px 12px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 10px}
+.hol .d{font-family:var(--font-num);font-size:13px}
 .hol p{margin:0;grid-column:2;font-size:12.5px;color:var(--muted)}
-.risktext{display:grid;gap:8px}
-.risktext div{border-left:3px solid var(--ink);padding:2px 0 2px 10px;font-size:14px}
+.hol.dim{opacity:.55}
 .empty{padding:16px 2px;color:var(--muted);font-size:14px}
-footer{font-size:12px;color:var(--muted);display:grid;gap:4px}
 
-@media (min-width:900px){
-  .wrap{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);align-items:start}
-  header.top,.pairs,footer{grid-column:1/-1}
-  .pairs{grid-template-columns:repeat(4,minmax(0,1fr))}
-  .chartBox{height:300px}
-}
-@media (max-width:420px){
-  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .bigv{font-size:30px}
-  .form{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
-  .form label.wide{grid-column:1/-1}
-  .kv{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
-}
-@media (prefers-reduced-motion:no-preference){.pair,.seg button,.tabs button{transition:background .15s,color .15s}}
+/* bottom nav */
+nav.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--nav);border-top:1px solid var(--line);
+  padding:6px max(4px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(4px,env(safe-area-inset-right,0px))}
+nav.tabbar .in{max-width:720px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+nav.tabbar button{border:0;background:transparent;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:3px;min-height:48px;font-size:11.5px;cursor:pointer;letter-spacing:.3px}
+nav.tabbar button[aria-current="page"]{color:var(--accent)}
+footer{font-size:12px;color:var(--muted);padding-block:6px 0;display:grid;gap:4px}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="top">
-    <div class="mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M10 50h44" stroke-width="5" stroke-linecap="round"/><path d="M14 42l10-12 9 7 15-22" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="48" cy="15" r="5"/></svg></div>
-    <div class="brand"><h1>SAB FX RADAR</h1><p>EUR/CZK, USD/CZK, EUR/USD, PLN/CZK</p></div>
-    <button type="button" class="fresh" id="fresh" aria-label="Aktualizovat data"><span class="dot" id="freshDot"></span><span id="freshText">Načítám…</span></button>
+  <header class="top gut">
+    <div class="brand">
+      <div class="mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 64 64" fill="none"><path d="M10 50h44" stroke="#0F1720" stroke-width="6" stroke-linecap="round"/><path d="M14 42l10-12 9 7 15-22" stroke="#0F1720" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div style="min-width:0"><b>SAB FX RADAR</b><span id="status">Načítám…</span></div>
+    </div>
+    <button type="button" class="iconbtn" id="refresh" aria-label="Obnovit data"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg></button>
   </header>
+  <div class="ticker gut" id="ticker" aria-label="Rizikové ukazatele"></div>
 
-  <nav class="pairs" id="pairs" aria-label="Měnové páry"></nav>
+  <!-- PŘEHLED -->
+  <main class="view gut" id="v-home">
+    <div class="date"><h1 id="dateH">—</h1><p id="nameday">&nbsp;</p></div>
+    <section class="summary" aria-labelledby="sumK"><div class="k" id="sumK">DNEŠNÍ SHRNUTÍ</div><p id="sumText">Načítám data…</p><div class="chips" id="sumChips"></div></section>
+    <section aria-label="Měnové páry" style="margin-inline:-16px"><div class="rows" id="rows"></div></section>
+    <section class="panel" aria-labelledby="chTitle">
+      <div class="chartHead"><div class="label" id="chTitle" style="margin:0">EUR/CZK · 3M</div>
+        <div class="seg" role="group" aria-label="Období" id="periods"><button type="button" data-p="1M">1M</button><button type="button" data-p="3M">3M</button><button type="button" data-p="6M">6M</button><button type="button" data-p="1R">1R</button></div></div>
+      <div class="big" id="bigV">—</div>
+      <div class="chartBox" id="chartBox"><svg id="chart" role="img" aria-label="Graf kurzu"></svg><div class="scrub" id="scrub" hidden></div></div>
+      <div class="axis" id="axis"></div>
+      <p class="comment" id="comment"></p>
+    </section>
+    <div class="tiles" id="tiles"></div>
+    <section aria-labelledby="watchL"><h2 class="label" id="watchL">Na co se dnes dívat</h2><div class="list" id="watch"><div class="item"><span></span><span></span><span class="e flat">Načítám…</span></div></div></section>
+  </main>
 
-  <!-- Chart -->
-  <section class="card" aria-labelledby="chartTitle">
-    <div class="chartHead">
-      <div>
-        <h2 id="chartTitle">EUR/CZK</h2>
-        <div class="bigv num" id="bigValue">—</div>
-        <div class="bigc num" id="bigChange">&nbsp;</div>
-      </div>
-      <div class="seg" role="group" aria-label="Období" id="periods">
-        <button type="button" data-p="1M" aria-pressed="false">1M</button>
-        <button type="button" data-p="3M" aria-pressed="true">3M</button>
-        <button type="button" data-p="6M" aria-pressed="false">6M</button>
-        <button type="button" data-p="1R" aria-pressed="false">1R</button>
-      </div>
-    </div>
-    <div class="chartBox" id="chartBox"><svg id="chart" role="img" aria-label="Graf kurzu"></svg><div class="scrub num" id="scrub" hidden></div></div>
-    <div class="legend" id="chartLegend" hidden></div>
-    <dl class="stats">
-      <div><dt>Min</dt><dd class="num" id="sMin">—</dd></div>
-      <div><dt>Max</dt><dd class="num" id="sMax">—</dd></div>
-      <div><dt>Průměr</dt><dd class="num" id="sAvg">—</dd></div>
-      <div><dt>Změna</dt><dd class="num" id="sChg">—</dd></div>
-    </dl>
-  </section>
+  <!-- TRH -->
+  <main class="view gut" id="v-market" hidden>
+    <section class="panel"><h2 class="label">Region CEE vůči euru</h2><div class="tbl" id="cee"></div><p class="note" id="ceeNote"></p></section>
+    <section class="panel"><h2 class="label">Úrokový diferenciál CZK–EUR</h2><div class="chartBox small" id="diffBox"><svg id="diffChart" role="img" aria-label="3M PRIBOR a 3M EURIBOR"></svg></div><div class="legend"><span><i></i>3M PRIBOR</span><span><i class="b"></i>3M EURIBOR</span></div><p class="note" id="diffNote"></p></section>
+    <section class="panel"><h2 class="label">Rizikové ukazatele</h2><div class="risk" id="risk"></div></section>
+    <section class="panel"><h2 class="label" id="pairRiskL">Rizika páru</h2><div class="risk" id="pairRisk"></div></section>
+  </main>
 
-  <!-- Signals -->
-  <section class="card" aria-labelledby="sigTitle">
-    <h2 id="sigTitle">Signály z kurzu</h2>
-    <div class="signals" id="signals"><div class="empty">Signály se spočítají po načtení kurzů.</div></div>
-    <p class="note" style="margin-top:12px">Počítáno z denních fixingů ECB. Popisuje dosavadní pohyb, nepředpovídá ho.</p>
-  </section>
+  <!-- ZPRÁVY -->
+  <main class="view gut" id="v-news" hidden>
+    <div class="tabs2" id="newsPairs" role="group" aria-label="Měnový pár"></div>
+    <div id="newsList" style="display:grid;gap:10px"></div>
+  </main>
 
-  <!-- Market -->
-  <section class="card" aria-labelledby="mktTitle">
-    <h2 id="mktTitle">Trh a rizika</h2>
+  <!-- KALENDÁŘ -->
+  <main class="view gut" id="v-cal" hidden>
+    <div class="tabs2" id="calTabs" role="group" aria-label="Část kalendáře"><button type="button" data-c="ev">Události</button><button type="button" data-c="cb">Centrální banky</button><button type="button" data-c="hol">Svátky a valuta</button></div>
+    <div id="calBody"></div>
+  </main>
 
-    <div class="sub" style="border-top:0;padding-top:10px;margin-top:0">
-      <h3>Region CEE vůči euru</h3>
-      <div class="tbl" id="ceeTable"><div class="empty">Čekám na kurzy…</div></div>
-      <p class="note" id="ceeNote">Kladné číslo = měna vůči euru oslabila.</p>
-    </div>
-
-    <div class="sub">
-      <h3 id="diffTitle">Úrokový diferenciál CZK–EUR</h3>
-      <div class="chartBox small" id="diffBox"><svg id="diffChart" role="img" aria-label="Graf úrokového diferenciálu"></svg></div>
-      <div class="legend"><span><i></i>3M PRIBOR</span><span><i class="l2"></i>3M EURIBOR</span></div>
-      <p class="note" id="diffNote"></p>
-    </div>
-
-    <div class="sub">
-      <h3>Rizikové ukazatele</h3>
-      <div class="risk" id="riskBox"><div class="empty">Načítám…</div></div>
-    </div>
-  </section>
-
-  <!-- Tabs -->
-  <section class="card" aria-label="Zprávy, kalendář, banky a svátky" style="grid-column:1/-1">
-    <div class="tabs" role="tablist" id="tabs">
-      <button type="button" role="tab" data-t="news" aria-selected="true">Zprávy</button>
-      <button type="button" role="tab" data-t="cal" aria-selected="false">Kalendář</button>
-      <button type="button" role="tab" data-t="banks" aria-selected="false">Centrální banky</button>
-      <button type="button" role="tab" data-t="hol" aria-selected="false">Svátky</button>
-      <button type="button" role="tab" data-t="risks" aria-selected="false">Rizika páru</button>
-    </div>
-    <div class="panel" id="panel" role="tabpanel"><div class="empty">Načítám…</div></div>
-  </section>
-
-  <footer>
-    <span>Kurzy: denní referenční kurzy ECB přes Frankfurter API (fixing kolem 16:00, jen pracovní dny), obnoví se při každém otevření. Kurz ČNB, sazby, rizika, kalendář a zprávy se aktualizují 4× denně.</span>
+  <footer class="gut">
+    <span>Kurzy: denní referenční kurzy ECB (fixing kolem 16:00), obnoví se při každém otevření. Zprávy, sazby a kalendář se aktualizují 4× denně.</span>
     <span>Data jsou indikativní. Pro obchodování ověřte kotace u banky.</span>
   </footer>
 </div>
 
+<nav class="tabbar" aria-label="Hlavní navigace"><div class="in">
+  <button type="button" data-v="home"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Přehled</button>
+  <button type="button" data-v="market"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 17l5-6 4 3 6-8"/><path d="M3 21h18"/></svg>Trh</button>
+  <button type="button" data-v="news"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Zprávy</button>
+  <button type="button" data-v="cal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Kalendář</button>
+</div></nav>
+
 <script>
 'use strict';
-/* ---------- configuration ---------- */
+const NAMEDAYS={"01-02":["Karina"],"01-03":["Radmila","Radomil"],"01-04":["Diana"],"01-05":["Dalimil"],"01-06":["Kašpar","Melichar","Baltazar"],"01-07":["Vilma"],"01-08":["Čestmír"],"01-09":["Vladan","Valtr"],"01-10":["Břetislav"],"01-11":["Bohdana"],"01-12":["Pravoslav"],"01-13":["Edita"],"01-14":["Radovan"],"01-15":["Alice"],"01-16":["Ctirad"],"01-17":["Drahoslav"],"01-18":["Vladislav","Vladislava"],"01-19":["Doubravka"],"01-20":["Ilona","Sebastián"],"01-21":["Běla"],"01-22":["Slavomír","Slavomíra"],"01-23":["Zdeněk"],"01-24":["Milena"],"01-25":["Miloš"],"01-26":["Zora"],"01-27":["Ingrid"],"01-28":["Otýlie"],"01-29":["Zdislava"],"01-30":["Robin","Erna"],"01-31":["Marika","Spytihněv"],"02-01":["Hynek"],"02-02":["Nela"],"02-03":["Blažej"],"02-04":["Jarmila"],"02-05":["Dobromila"],"02-06":["Vanda"],"02-07":["Veronika"],"02-08":["Milada"],"02-09":["Apolena"],"02-10":["Mojmír"],"02-11":["Božena"],"02-12":["Slavěna","Slávka"],"02-13":["Věnceslav","Věnceslava"],"02-14":["Valentýn","Valentýna"],"02-15":["Jiřina"],"02-16":["Ljuba"],"02-17":["Miloslava"],"02-18":["Gizela"],"02-19":["Patrik"],"02-20":["Oldřich"],"02-21":["Lenka","Eleonora"],"02-22":["Petr"],"02-23":["Svatopluk"],"02-24":["Matěj","Matyáš"],"02-25":["Liliana"],"02-26":["Dorota"],"02-27":["Alexandr"],"02-28":["Lumír"],"02-29":["Horymír"],"03-01":["Bedřich","Bedřiška"],"03-02":["Anežka"],"03-03":["Kamil","Kunhuta"],"03-04":["Stela"],"03-05":["Kazimír"],"03-06":["Miroslav"],"03-07":["Tomáš"],"03-08":["Gabriela","Zoltán"],"03-09":["Františka"],"03-10":["Viktorie"],"03-11":["Anděla"],"03-12":["Řehoř"],"03-13":["Růžena"],"03-14":["Rút","Matylda"],"03-15":["Ida"],"03-16":["Elena","Herbert"],"03-17":["Vlastimil","Vlastimila"],"03-18":["Eduard"],"03-19":["Josef","Josefa"],"03-20":["Světlana"],"03-21":["Radek"],"03-22":["Leona","Leontina","Lea"],"03-23":["Ivona"],"03-24":["Gabriel"],"03-25":["Marián"],"03-26":["Emanuel"],"03-27":["Dita"],"03-28":["Soňa"],"03-29":["Taťána"],"03-30":["Arnošt","Ernest"],"03-31":["Kvido"],"04-01":["Hugo"],"04-02":["Erika"],"04-03":["Richard"],"04-04":["Ivana"],"04-05":["Miroslava","Mirka"],"04-06":["Vendula","Venuše"],"04-07":["Heřman","Hermína"],"04-08":["Ema"],"04-09":["Dušan"],"04-10":["Darja"],"04-11":["Izabela"],"04-12":["Julius"],"04-13":["Aleš"],"04-14":["Vincenc"],"04-15":["Anastázie"],"04-16":["Irena","Bernadeta"],"04-17":["Rudolf"],"04-18":["Valérie"],"04-19":["Rostislav"],"04-20":["Marcela"],"04-21":["Alexandra"],"04-22":["Evženie"],"04-23":["Vojtěch"],"04-24":["Jiří"],"04-25":["Marek"],"04-26":["Oto"],"04-27":["Jaroslav"],"04-28":["Vlastislav"],"04-29":["Robert"],"04-30":["Blahoslav"],"05-02":["Zikmund"],"05-03":["Alexej","Alex"],"05-04":["Květoslav"],"05-05":["Klaudie"],"05-06":["Radoslav"],"05-07":["Stanislav"],"05-09":["Ctibor"],"05-10":["Blažena"],"05-11":["Svatava"],"05-12":["Pankrác"],"05-13":["Servác"],"05-14":["Bonifác"],"05-15":["Žofie","Sofie"],"05-16":["Přemysl"],"05-17":["Aneta"],"05-18":["Nataša"],"05-19":["Ivo"],"05-20":["Zbyšek"],"05-21":["Monika"],"05-22":["Emil"],"05-23":["Vladimír","Vladimíra"],"05-24":["Jana","Vanesa"],"05-25":["Viola"],"05-26":["Filip"],"05-27":["Valdemar"],"05-28":["Vilém"],"05-29":["Maxmilián","Maxim"],"05-30":["Ferdinand"],"05-31":["Kamila"],"06-01":["Laura"],"06-02":["Jarmil"],"06-03":["Tamara","Kevin"],"06-04":["Dalibor"],"06-05":["Dobroslav","Dobroslava"],"06-06":["Norbert"],"06-07":["Iveta","Slavoj"],"06-08":["Medard"],"06-09":["Stanislava"],"06-10":["Gita","Margita"],"06-11":["Bruno"],"06-12":["Antonie"],"06-13":["Antonín"],"06-14":["Roland","Herta"],"06-15":["Vít"],"06-16":["Zbyněk"],"06-17":["Adolf"],"06-18":["Milan","Milana"],"06-19":["Leoš","Leo"],"06-20":["Květa","Květuše"],"06-21":["Alois","Aloisie"],"06-22":["Pavla"],"06-23":["Zdeňka"],"06-24":["Jan"],"06-25":["Ivan"],"06-26":["Adriana","Adrian"],"06-27":["Ladislav","Ladislava"],"06-28":["Lubomír"],"06-29":["Petr","Pavel"],"06-30":["Šárka"],"07-01":["Jaroslava"],"07-02":["Patricie"],"07-03":["Radomír","Radomíra"],"07-04":["Prokop"],"07-05":["Cyril","Metoděj"],"07-07":["Bohuslava"],"07-08":["Nora"],"07-09":["Drahoslava","Drahuše"],"07-10":["Libuše","Amálie"],"07-11":["Olga","Helga"],"07-12":["Bořek"],"07-13":["Markéta"],"07-14":["Karolína"],"07-15":["Jindřich"],"07-16":["Luboš"],"07-17":["Martina"],"07-18":["Drahomíra","Drahomír"],"07-19":["Čeněk"],"07-20":["Ilja"],"07-21":["Vítězslav","Vítězslava"],"07-22":["Magdaléna","Magda"],"07-23":["Libor"],"07-24":["Kristýna"],"07-25":["Jakub"],"07-26":["Anna","Anita"],"07-27":["Věroslav"],"07-28":["Viktor","Alina"],"07-29":["Marta"],"07-30":["Bořivoj"],"07-31":["Ignác"],"08-01":["Oskar"],"08-02":["Gustav"],"08-03":["Miluše"],"08-04":["Dominik","Dominika"],"08-05":["Kristián"],"08-06":["Oldřiška"],"08-07":["Lada"],"08-08":["Soběslav"],"08-09":["Roman"],"08-10":["Vavřinec"],"08-11":["Zuzana"],"08-12":["Klára"],"08-13":["Alena"],"08-14":["Alan"],"08-15":["Hana"],"08-16":["Jáchym"],"08-17":["Petra"],"08-18":["Helena","Jelena"],"08-19":["Ludvík"],"08-20":["Bernard"],"08-21":["Johana"],"08-22":["Bohuslav"],"08-23":["Sandra"],"08-24":["Bartoloměj"],"08-25":["Radim"],"08-26":["Luděk"],"08-27":["Otakar"],"08-28":["Augustýn"],"08-29":["Evelína"],"08-30":["Vladěna"],"08-31":["Pavlína"],"09-01":["Linda","Samuel"],"09-02":["Adéla"],"09-03":["Bronislav","Bronislava"],"09-04":["Jindřiška","Rozálie"],"09-05":["Boris"],"09-06":["Boleslav"],"09-07":["Regína"],"09-08":["Mariana"],"09-09":["Daniela"],"09-10":["Irma"],"09-11":["Denisa","Denis"],"09-12":["Marie"],"09-13":["Lubor"],"09-14":["Radka"],"09-15":["Jolana"],"09-16":["Ludmila","Lidmila"],"09-17":["Naděžda","Naďa"],"09-18":["Kryštof"],"09-19":["Zita"],"09-20":["Oleg"],"09-21":["Matouš"],"09-22":["Darina"],"09-23":["Berta"],"09-24":["Jaromír","Jaromíra"],"09-25":["Zlata","Zlatuše"],"09-26":["Andrea"],"09-27":["Jonáš"],"09-28":["Václav","Václava"],"09-29":["Michal","Michael"],"09-30":["Jeroným","Ráchel"],"10-01":["Igor"],"10-02":["Olívie","Oliver"],"10-03":["Bohumil"],"10-04":["František"],"10-05":["Eliška"],"10-06":["Hanuš"],"10-07":["Justýna"],"10-08":["Věra"],"10-09":["Štefan","Sára"],"10-10":["Marina"],"10-11":["Andrej"],"10-12":["Marcel"],"10-13":["Renáta"],"10-14":["Agáta"],"10-15":["Tereza","Terezie"],"10-16":["Havel","Galina"],"10-17":["Hedvika"],"10-18":["Lukáš"],"10-19":["Michaela","Michala"],"10-20":["Vendelín"],"10-21":["Brigita"],"10-22":["Sabina"],"10-23":["Teodor"],"10-24":["Nina"],"10-25":["Beáta"],"10-26":["Erik"],"10-27":["Šarlota","Zoe"],"10-28":["Jidáš","Alfréd"],"10-29":["Silvie","Sylva"],"10-30":["Tadeáš"],"10-31":["Štěpánka"],"11-01":["Felix"],"11-02":["Tobiáš"],"11-03":["Hubert"],"11-04":["Karel","Karla"],"11-05":["Miriam"],"11-06":["Liběna","Leonard"],"11-07":["Saskie"],"11-08":["Bohumír","Bohumíra"],"11-09":["Bohdan"],"11-10":["Evžen"],"11-11":["Martin"],"11-12":["Benedikt"],"11-13":["Tibor"],"11-14":["Sáva"],"11-15":["Leopold"],"11-16":["Otmar"],"11-17":["Mahulena","Gertruda"],"11-18":["Romana"],"11-19":["Alžběta"],"11-20":["Nikola"],"11-21":["Albert"],"11-22":["Cecílie"],"11-23":["Klement"],"11-24":["Emílie"],"11-25":["Kateřina"],"11-26":["Artur"],"11-27":["Xenie"],"11-28":["René"],"11-29":["Zina"],"11-30":["Ondřej"],"12-01":["Iva"],"12-02":["Blanka"],"12-03":["Svatoslav"],"12-04":["Barbora"],"12-05":["Jitka"],"12-06":["Mikuláš"],"12-07":["Ambrož","Benjamín"],"12-08":["Květoslava"],"12-09":["Vratislav"],"12-10":["Julie"],"12-11":["Dana","Danuše"],"12-12":["Simona"],"12-13":["Lucie"],"12-14":["Lýdie"],"12-15":["Radana","Radan"],"12-16":["Albína"],"12-17":["Daniel"],"12-18":["Miloslav"],"12-19":["Ester"],"12-20":["Dagmar"],"12-21":["Natálie"],"12-22":["Šimon"],"12-23":["Vlasta"],"12-24":["Adam","Eva"],"12-26":["Štěpán"],"12-27":["Žaneta"],"12-28":["Bohumila"],"12-29":["Judita"],"12-30":["David"],"12-31":["Silvestr"]};
 const PAIRS={
-  "EUR/CZK":{base:"EUR",quote:"CZK",dec:3,calc:d=>d.CZK,cb:["ECB","CNB"],cal:["CZ","EA","DE"],ptsMul:100,ptsUnit:"hal."},
-  "USD/CZK":{base:"USD",quote:"CZK",dec:3,calc:d=>d.CZK/d.USD,cb:["Fed","CNB"],cal:["US","CZ"],ptsMul:100,ptsUnit:"hal."},
-  "EUR/USD":{base:"EUR",quote:"USD",dec:4,calc:d=>d.USD,cb:["ECB","Fed"],cal:["US","EA","DE"],ptsMul:10000,ptsUnit:"pipů"},
-  "PLN/CZK":{base:"PLN",quote:"CZK",dec:4,calc:d=>d.CZK/d.PLN,cb:["NBP","CNB"],cal:["PL","CZ"],ptsMul:100,ptsUnit:"hal."}
+  "EUR/CZK":{base:"EUR",quote:"CZK",dec:3,calc:d=>d.CZK,cb:["ECB","CNB"],cal:["CZ","EA","DE"]},
+  "USD/CZK":{base:"USD",quote:"CZK",dec:3,calc:d=>d.CZK/d.USD,cb:["Fed","CNB"],cal:["US","CZ"]},
+  "EUR/USD":{base:"EUR",quote:"USD",dec:4,calc:d=>d.USD,cb:["ECB","Fed"],cal:["US","EA","DE"]},
+  "PLN/CZK":{base:"PLN",quote:"CZK",dec:4,calc:d=>d.CZK/d.PLN,cb:["NBP","CNB"],cal:["PL","CZ"]}
 };
 const PERIOD_DAYS={"1M":31,"3M":92,"6M":183,"1R":366};
-const TENORS=[["1M",30],["3M",91],["6M",182],["12M",365]];
-const FLAG={CZ:"CZ",EA:"EU",DE:"DE",US:"US",PL:"PL"};
+const CC={CZ:"CZ",EA:"EU",DE:"DE",US:"US",PL:"PL"};
+const CCN={CZ:"ČR",EA:"eurozóna",DE:"Německo",US:"USA",PL:"Polsko"};
 const $=s=>document.querySelector(s);
-const state={days:[],data:{},pair:"EUR/CZK",period:"3M",tab:"news",calAll:false,calib:{},margin:{},loading:false,offline:false,fetchedAt:0,budgets:{}};
-try{const s=JSON.parse(localStorage.getItem('fxradar')||'{}');if(PAIRS[s.pair])state.pair=s.pair;if(PERIOD_DAYS[s.period])state.period=s.period;if(['news','cal','banks','hol','risks'].includes(s.tab))state.tab=s.tab;state.budgets=s.budgets||{};state.calAll=!!s.calAll;state.calib=Object.fromEntries(Object.entries(s.calib||{}).filter(([k,v])=>v&&v.tenor));state.margin=s.margin||{}}catch(e){}
-function remember(){try{localStorage.setItem('fxradar',JSON.stringify({pair:state.pair,period:state.period,tab:state.tab,budgets:state.budgets,calAll:state.calAll,calib:state.calib,margin:state.margin}))}catch(e){}}
+const state={days:[],data:{},pair:"EUR/CZK",period:"3M",view:"home",cal:"ev",calAll:false,loading:false,offline:false,fetchedAt:0};
+try{const s=JSON.parse(localStorage.getItem('fxradar')||'{}');if(PAIRS[s.pair])state.pair=s.pair;if(PERIOD_DAYS[s.period])state.period=s.period;if(['home','market','news','cal'].includes(s.view))state.view=s.view;if(['ev','cb','hol'].includes(s.cal))state.cal=s.cal;state.calAll=!!s.calAll}catch(e){}
+const remember=()=>{try{localStorage.setItem('fxradar',JSON.stringify({pair:state.pair,period:state.period,view:state.view,cal:state.cal,calAll:state.calAll}))}catch(e){}};
 
-/* ---------- formatting ---------- */
+/* formatting */
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeUrl=u=>/^https:\/\//i.test(String(u||''))?String(u):'';
 const fmt=(n,d)=>Number.isFinite(n)?n.toLocaleString('cs-CZ',{minimumFractionDigits:d,maximumFractionDigits:d}):'—';
@@ -291,226 +250,224 @@ const pd=iso=>new Date(String(iso).slice(0,10)+'T12:00:00');
 const dCZ=iso=>iso?pd(iso).toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:'numeric'}):'—';
 const dShort=iso=>pd(iso).toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric'});
 const isoDay=d=>{const z=new Date(d.getTime()-d.getTimezoneOffset()*6e4);return z.toISOString().slice(0,10)};
-const parseNum=s=>{const v=parseFloat(String(s||'').replace(/\s/g,'').replace(',','.'));return Number.isFinite(v)&&v>0?v:NaN};
+const addD=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x};
+const daysTo=iso=>Math.round((pd(iso)-pd(isoDay(new Date())))/864e5);
+const cap=s=>s?s[0].toUpperCase()+s.slice(1):s;
 
-/* ---------- series & stats ---------- */
+/* series */
 function series(pair){const f=PAIRS[pair].calc;return state.days.map(d=>({date:d.date,v:f(d)})).filter(r=>Number.isFinite(r.v))}
 function windowed(rows,period){if(!rows.length)return rows;const last=pd(rows.at(-1).date);const from=new Date(last);from.setDate(from.getDate()-PERIOD_DAYS[period]);return rows.filter(r=>pd(r.date)>=from)}
 function annVol(v){const r=[];for(let i=1;i<v.length;i++)r.push(Math.log(v[i]/v[i-1]));if(r.length<10)return NaN;const m=r.reduce((a,b)=>a+b,0)/r.length;return Math.sqrt(r.reduce((a,b)=>a+(b-m)**2,0)/(r.length-1))*Math.sqrt(252)}
-function moveWord(pair,ch){if(!ch)return'beze změny';const p=PAIRS[pair];return ch>0?`${p.base} posiluje vůči ${p.quote}`:`${p.quote} posiluje vůči ${p.base}`}
-function spot(){const r=series(state.pair);return r.at(-1)}
+/* plain-language direction: for xxx/CZK a rising pair means a weaker koruna */
+function moveWord(pair,ch){const p=PAIRS[pair];if(Math.abs(ch)<0.05)return p.quote==='CZK'?'koruna stabilní':'euro stabilní';
+  const strong=Math.abs(ch)>0.5?'':'mírně ';
+  if(p.quote==='CZK')return ch>0?`koruna ${strong}slábne`:`koruna ${strong}posiluje`;
+  return ch>0?`euro ${strong}posiluje`:`dolar ${strong}posiluje`}
+function stats(pair){const rows=series(pair);if(rows.length<25)return null;const v=rows.map(r=>r.v),last=v.at(-1);
+  const yr=windowed(rows,'1R').map(r=>r.v),ymin=Math.min(...yr),ymax=Math.max(...yr);
+  const ma20=v.slice(-20).reduce((a,b)=>a+b,0)/20;
+  return{last,prev:v.at(-2),date:rows.at(-1).date,pos:ymax>ymin?(last-ymin)/(ymax-ymin):.5,ymin,ymax,dma:(last/ma20-1)*100,m5:(last/v.at(-6)-1)*100,d1:(last/v.at(-2)-1)*100,vol:annVol(v.slice(-21))*100,yv:annVol(yr)*100}}
 
-/* ---------- holidays ---------- */
+/* holidays */
 function easter(y){const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;return new Date(y,mo-1,da,12)}
-const addD=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x};
 const nthWd=(y,m,wd,n)=>{const d=new Date(y,m,1,12);const off=(wd-d.getDay()+7)%7;return new Date(y,m,1+off+(n-1)*7,12)};
 const lastWd=(y,m,wd)=>{const d=new Date(y,m+1,0,12);const off=(d.getDay()-wd+7)%7;return new Date(y,m,d.getDate()-off,12)};
+const CZ_FIXED=[[1,1,'Nový rok, Den obnovy samostatného českého státu'],[5,1,'Svátek práce'],[5,8,'Den vítězství'],[7,5,'Den slovanských věrozvěstů Cyrila a Metoděje'],[7,6,'Den upálení mistra Jana Husa'],[9,28,'Den české státnosti'],[10,28,'Den vzniku samostatného československého státu'],[11,17,'Den boje za svobodu a demokracii'],[12,24,'Štědrý den'],[12,25,'1. svátek vánoční'],[12,26,'2. svátek vánoční']];
+function czHoliday(d){const y=d.getFullYear(),m=d.getMonth()+1,dd=d.getDate();const f=CZ_FIXED.find(x=>x[0]===m&&x[1]===dd);if(f)return f[2];const E=easter(y);
+  if(isoDay(d)===isoDay(addD(E,-2)))return'Velký pátek';if(isoDay(d)===isoDay(addD(E,1)))return'Velikonoční pondělí';return null}
 function holidays(y){
-  const E=easter(y),D=(m,d)=>new Date(y,m-1,d,12),out=[];
-  const add=(mk,d,name)=>out.push({mk,date:isoDay(d),name});
-  [[1,1,'Nový rok'],[5,1,'Svátek práce'],[5,8,'Den vítězství'],[7,5,'Cyril a Metoděj'],[7,6,'Jan Hus'],[9,28,'Den české státnosti'],[10,28,'Vznik Československa'],[11,17,'Den boje za svobodu'],[12,24,'Štědrý den'],[12,25,'1. svátek vánoční'],[12,26,'2. svátek vánoční']].forEach(([m,d,n])=>add('CZ',D(m,d),n));
-  add('CZ',addD(E,-2),'Velký pátek');add('CZ',addD(E,1),'Velikonoční pondělí');
-  [[1,1,'Nový rok'],[5,1,'Svátek práce'],[12,25,'Vánoce'],[12,26,'Vánoce']].forEach(([m,d,n])=>add('T2',D(m,d),n));
-  add('T2',addD(E,-2),'Velký pátek');add('T2',addD(E,1),'Velikonoční pondělí');
+  const E=easter(y),D=(m,d)=>new Date(y,m-1,d,12),out=[];const add=(mk,d,name)=>out.push({mk,date:isoDay(d),name});
+  CZ_FIXED.forEach(([m,d,n])=>add('CZ',D(m,d),n));add('CZ',addD(E,-2),'Velký pátek');add('CZ',addD(E,1),'Velikonoční pondělí');
+  [[1,1,'Nový rok'],[5,1,'Svátek práce'],[12,25,'Vánoce'],[12,26,'Vánoce']].forEach(([m,d,n])=>add('T2',D(m,d),n));add('T2',addD(E,-2),'Velký pátek');add('T2',addD(E,1),'Velikonoční pondělí');
   const us=(d,n)=>{if(d.getDay()===0)d=addD(d,1);if(d.getDay()!==6)add('US',d,n)};
   us(D(1,1),'New Year');us(nthWd(y,0,1,3),'Martin Luther King Jr. Day');us(nthWd(y,1,1,3),'Presidents Day');us(lastWd(y,4,1),'Memorial Day');us(D(6,19),'Juneteenth');us(D(7,4),'Independence Day');us(nthWd(y,8,1,1),'Labor Day');us(nthWd(y,9,1,2),'Columbus Day');us(D(11,11),'Veterans Day');us(nthWd(y,10,4,4),'Thanksgiving');us(D(12,25),'Christmas');
   [[1,1,'Nowy Rok'],[1,6,'Trzech Króli'],[5,1,'Święto Pracy'],[5,3,'Święto Konstytucji'],[8,15,'Wniebowzięcie'],[11,1,'Wszystkich Świętych'],[11,11,'Święto Niepodległości'],[12,24,'Wigilia'],[12,25,'Boże Narodzenie'],[12,26,'Boże Narodzenie']].forEach(([m,d,n])=>add('PL',D(m,d),n));
   add('PL',addD(E,1),'Poniedziałek Wielkanocny');add('PL',addD(E,60),'Boże Ciało');
   return out.filter(h=>{const wd=pd(h.date).getDay();return wd!==0&&wd!==6});
 }
-const MK={CZ:{label:'ČR',ccy:'CZK',txt:'Platby v CZK a česká valuta neprobíhají.'},T2:{label:'TARGET2',ccy:'EUR',txt:'Platby v EUR se nevypořádávají, valuta EUR se posouvá.'},US:{label:'USA',ccy:'USD',txt:'Fedwire zavřený, valuta USD se posouvá.'},PL:{label:'Polsko',ccy:'PLN',txt:'Platby v PLN neprobíhají.'}};
+const MK={CZ:{label:'ČR',ccy:'CZK',txt:'Platby v CZK neprobíhají.'},T2:{label:'TARGET2',ccy:'EUR',txt:'Platby v EUR se nevypořádávají.'},US:{label:'USA',ccy:'USD',txt:'Fedwire zavřený, valuta USD se posouvá.'},PL:{label:'Polsko',ccy:'PLN',txt:'Platby v PLN neprobíhají.'}};
 
-/* ---------- chart ---------- */
-function drawLines(svgId,boxId,lines,opts={}){
-  const svg=$(svgId),box=$(boxId);const W=box.clientWidth||600,H=box.clientHeight||230;
+/* charts */
+function drawLines(svgSel,boxSel,lines,opts={}){
+  const svg=$(svgSel),box=$(boxSel);const W=box.clientWidth||340,H=box.clientHeight||190;
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.innerHTML='';
   const main=lines[0]?.rows||[];
-  if(main.length<2){svg.innerHTML=`<text x="8" y="28" fill="var(--muted)" font-size="13">${esc(opts.empty||'Načítám…')}</text>`;return null}
-  const dec=opts.dec??2,padL=4,padR=opts.padR??58,padT=22,padB=24;
-  let vals=lines.flatMap(l=>l.rows.map(r=>r.v));(opts.hlines||[]).forEach(h=>{if(Number.isFinite(h.v))vals.push(h.v)});
-  if(opts.band)vals.push(...opts.band.flatMap(b=>[b.lo,b.hi]));
-  const min=Math.min(...vals),max=Math.max(...vals),span=(max-min)||max*0.001,lo=min-span*.08,hi=max+span*.08;
+  if(main.length<2){svg.innerHTML=`<text x="4" y="24" fill="#8A9BAD" font-size="13">${esc(opts.empty||'Načítám…')}</text>`;return null}
+  const dec=opts.dec??2,padL=2,padR=opts.padR??52,padT=10,padB=8;
+  const vals=lines.flatMap(l=>l.rows.map(r=>r.v));const min=Math.min(...vals),max=Math.max(...vals),span=(max-min)||max*0.001,lo=min-span*.08,hi=max+span*.08;
   const n=main.length,x=i=>padL+i*(W-padL-padR)/(n-1),y=v=>padT+(hi-v)/(hi-lo)*(H-padT-padB);
-  const NS='http://www.w3.org/2000/svg';
-  const el=(t,a,txt)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;svg.appendChild(e);return e};
-  for(let i=0;i<4;i++){const v=hi-(hi-lo)*(i+.5)/4,yy=y(v);el('line',{x1:padL,x2:W-padR,y1:yy,y2:yy,stroke:'var(--line)','stroke-width':1});el('text',{x:W-padR+8,y:yy+4,fill:'var(--muted)','font-size':11,'font-family':'IBM Plex Mono, monospace'},fmt(v,dec))}
-  const ticks=W<500?3:5;
-  for(let i=0;i<ticks;i++){const idx=Math.round(i*(n-1)/(ticks-1));el('text',{x:x(idx),y:H-6,fill:'var(--muted)','font-size':11,'text-anchor':i===0?'start':i===ticks-1?'end':'middle'},opts.tickFmt?opts.tickFmt(main[idx].date):dShort(main[idx].date))}
-  (opts.hlines||[]).forEach(h=>{if(!Number.isFinite(h.v))return;const yy=y(h.v);el('line',{x1:padL,x2:W-padR,y1:yy,y2:yy,stroke:h.color||'var(--muted)','stroke-width':1.5,'stroke-dasharray':h.dash||'5 4'});el('text',{x:padL+4,y:yy-5,fill:h.color||'var(--muted)','font-size':11},h.label)});
+  const NS='http://www.w3.org/2000/svg';const el=(t,a,txt)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;svg.appendChild(e);return e};
+  for(let i=0;i<3;i++){const v=hi-(hi-lo)*(i+.5)/3,yy=y(v);el('line',{x1:padL,x2:W-padR,y1:yy,y2:yy,stroke:'#1F2C39','stroke-width':1});el('text',{x:W-padR+6,y:yy+4,fill:'#8A9BAD','font-size':11,'font-family':'JetBrains Mono, monospace'},fmt(v,dec))}
   lines.forEach((l,li)=>{const path=l.rows.map((r,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(r.v).toFixed(1)).join(' ');
-    if(li===0&&opts.fill)el('path',{d:path+` L${x(n-1)} ${H-padB} L${x(0)} ${H-padB} Z`,fill:'var(--chart-fill)',stroke:'none'});
-    el('path',{d:path,fill:'none',stroke:l.color||'var(--ink)','stroke-width':l.width||2,'stroke-linejoin':'round','stroke-linecap':'round'});
-    el('circle',{cx:x(l.rows.length-1),cy:y(l.rows.at(-1).v),r:3.5,fill:l.color||'var(--ink)'})});
-  return {svg,el,x,y,W,H,padL,padR,padT,padB,n,rows:main,dec};
+    if(li===0&&opts.fill)el('path',{d:path+` L${x(n-1)} ${H-padB} L${x(0)} ${H-padB} Z`,fill:'rgba(242,169,59,.08)',stroke:'none'});
+    el('path',{d:path,fill:'none',stroke:l.color||'#F2A93B','stroke-width':l.width||2,'stroke-linejoin':'round','stroke-linecap':'round'});
+    el('circle',{cx:x(l.rows.length-1),cy:y(l.rows.at(-1).v),r:4,fill:l.color||'#F2A93B'})});
+  return{svg,el,x,y,W,H,padL,padR,padT,padB,n,rows:main,dec};
 }
+function spark(rows,on){if(rows.length<2)return'';const v=rows.map(r=>r.v),lo=Math.min(...v),hi=Math.max(...v),W=92,H=32;
+  const pts=v.map((x,i)=>`${(2+i*(W-4)/(v.length-1)).toFixed(1)},${(2+(hi-x)/((hi-lo)||1)*(H-4)).toFixed(1)}`).join(' ');
+  return`<svg viewBox="0 0 ${W} ${H}" aria-hidden="true"><polyline fill="none" stroke="${on?'#F2A93B':'#8A9BAD'}" stroke-width="${on?1.6:1.4}" stroke-linejoin="round" points="${pts}"/></svg>`}
 
+/* ---------- PŘEHLED ---------- */
+function renderHeader(){
+  const now=new Date();const h=now.toLocaleDateString('cs-CZ',{weekday:'long',day:'numeric',month:'long'});
+  $('#dateH').textContent=cap(h);
+  const key=String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');const names=NAMEDAYS[key];const hol=czHoliday(now);
+  $('#nameday').innerHTML=hol?`Státní svátek: <b>${esc(hol)}</b>${names?` · svátek má <b>${esc(names.join(' a '))}</b>`:''}`:names?`Svátek ${names.length>1?'mají':'má'} <b>${esc(names.join(' a '))}</b>`:'&nbsp;';
+  const last=state.days.at(-1);const st=$('#status');
+  if(state.loading)st.textContent=state.days.length?'Aktualizuji…':'Načítám…';
+  else if(!last)st.textContent='Bez dat · zkontrolujte připojení';
+  else st.textContent=(state.offline?'OFFLINE · ':'')+'FIXING ECB '+dShort(last.date).replace(/\s/g,' ');
+  $('#refresh').classList.toggle('spin',state.loading);
+}
+function renderTicker(){
+  const items=state.data.risk?.items||[];const short={brent:'BRENT',ttf:'TTF',btp:'BTP–BUND',oat:'OAT–BUND',vix:'VIX'};
+  $('#ticker').innerHTML=items.map(i=>{let c='';if(Number.isFinite(i.prev1m))c=i.value>i.prev1m*1.15?'down':'';return`<span>${esc(short[i.id]||i.label)} <b class="${c}">${fmt(i.value,i.value<50?2:1)}</b></span>`}).join('')||'<span>Načítám ukazatele…</span>';
+}
+function upcoming(limit,onlyRel){
+  const now=new Date(),rel=PAIRS[state.pair].cal;const items=(state.data.calendar?.items||[]).filter(i=>new Date(i.at)>=addD(now,-0.1)&&(!onlyRel||rel.includes(i.country)));
+  return items.sort((a,b)=>a.at.localeCompare(b.at)).filter(i=>(i.importance||1)>=2).slice(0,limit)}
+function whyFor(i){if(i.why)return i.why;const e=(i.event||'').toLowerCase();
+  if(/inflac|cpi|hicp/.test(e))return i.country==='US'?'Vyšší číslo obvykle posílí dolar.':i.country==='CZ'?'Vyšší inflace zvyšuje šanci na přísnější ČNB a podporuje korunu.':'Vyšší inflace podporuje přísnější centrální banku a měnu.';
+  if(/sazb|rozhodnutí/.test(e))return'Hlavní událost pro úrokový diferenciál a kurz.';
+  if(/hdp|pmi|zaměstnan|maloobchod/.test(e))return'Silnější data obvykle podpoří domácí měnu.';return''}
+function renderSummary(){
+  const s=stats('EUR/CZK');const sm=state.data.summary;const today=isoDay(new Date());let text;
+  if(sm?.text&&sm.asOf&&daysTo(sm.asOf)>=-1)text=sm.text;
+  else if(s){const up=upcoming(1,false)[0];const r3=windowed(series('EUR/CZK'),'3M');const c3=r3.length>1?(s.last/r3[0].v-1)*100:NaN;
+    text=`Koruna je na ${fmt(s.last,2)} za euro, za tři měsíce ${c3>0?'slabší':'silnější'} o ${fmt(Math.abs(c3),1)} %. `;
+    if(up){const d=up.at.slice(0,10);const when=d===today?`Dnes v ${up.at.slice(11,16)}`:daysTo(d)===1?`Zítra v ${up.at.slice(11,16)}`:`${cap(pd(d).toLocaleDateString('cs-CZ',{weekday:'long'}))} ${dShort(d)}`;
+      text+=`${when} ${CCN[up.country]?'('+CCN[up.country]+') ':''}${up.event.charAt(0).toLowerCase()+up.event.slice(1)}${up.consensus?`, trh čeká ${up.consensus}`:''}.`}}
+  else text=state.offline?'Data se nepodařilo načíst. Zkontrolujte připojení a klepněte na obnovení.':'Načítám data…';
+  $('#sumText').textContent=text;
+  const banks=(state.data.banks?.banks||[]).filter(b=>b.next&&daysTo(b.next)>=0).sort((a,b)=>a.next.localeCompare(b.next));
+  const chips=banks.slice(0,4).map(b=>{const d=daysTo(b.next);return`<span class="chip${d<=7?' hot':''}">${esc(b.name)} ${d===0?'dnes':d===1?'zítra':d<=31?'za '+d+' dní':dShort(b.next)}</span>`});
+  const br=(state.data.risk?.items||[]).find(i=>i.id==='brent');if(br)chips.push(`<span class="chip">Brent ${fmt(br.value,0)} USD</span>`);
+  $('#sumChips').innerHTML=chips.join('');
+}
+function renderRows(){
+  $('#rows').innerHTML='';Object.keys(PAIRS).forEach(k=>{const s=stats(k);const on=k===state.pair;const rows=series(k).slice(-22);
+    const b=document.createElement('button');b.type='button';b.className='row'+(on?' on':'');b.setAttribute('aria-pressed',on);
+    b.innerHTML=`<div style="min-width:0"><div class="n">${k}</div><div class="c">${s?moveWord(k,s.m5)+' · 5 dní':'načítám'}</div></div>${spark(rows,on)}<div class="v"><b>${s?fmt(s.last,PAIRS[k].dec):'—'}</b><span class="${s?cls(s.d1):'flat'}">${s?pct(s.d1):''}</span></div>`;
+    b.onclick=()=>{state.pair=k;remember();renderPairDependent()};$('#rows').appendChild(b)});
+}
 function renderChart(){
-  const all=series(state.pair);const rows=windowed(all,state.period);const p=PAIRS[state.pair];const dec=p.dec;
-  $('#chartTitle').textContent=state.pair+' · '+state.period;
+  const p=PAIRS[state.pair],rows=windowed(series(state.pair),state.period);
+  $('#chTitle').textContent=state.pair+' · '+state.period;
   document.querySelectorAll('#periods button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.p===state.period));
   const last=rows.at(-1),first=rows[0];
-  $('#bigValue').textContent=last?fmt(last.v,dec):'—';
-  if(last&&first){const ch=(last.v/first.v-1)*100;$('#bigChange').className='bigc num '+cls(ch);$('#bigChange').textContent=`${pct(ch)} za ${state.period} · ${moveWord(state.pair,ch)}`}else $('#bigChange').innerHTML='&nbsp;';
-  if(rows.length){const v=rows.map(r=>r.v);const avg=v.reduce((a,b)=>a+b,0)/v.length;$('#sMin').textContent=fmt(Math.min(...v),dec);$('#sMax').textContent=fmt(Math.max(...v),dec);$('#sAvg').textContent=fmt(avg,dec);const ch=(last.v/first.v-1)*100;$('#sChg').textContent=pct(ch);$('#sChg').className='num '+cls(ch)}
-  const hl=[];$('#chartLegend').hidden=true;
-  const c=drawLines('#chart','#chartBox',[{rows}],{dec,fill:true,hlines:hl,empty:state.offline&&!rows.length?'Kurzy se nepodařilo načíst. Zkontrolujte připojení.':'Načítám kurzy…'});
+  if(last&&first){const ch=(last.v/first.v-1)*100;$('#bigV').innerHTML=`${fmt(last.v,p.dec)} <span class="${cls(ch)}">${pct(ch)}</span>`}else $('#bigV').textContent='—';
+  const c=drawLines('#chart','#chartBox',[{rows}],{dec:p.dec,fill:true,empty:state.offline?'Kurzy se nepodařilo načíst.':'Načítám kurzy…'});
+  if(rows.length){const v=rows.map(r=>r.v);$('#axis').innerHTML=`<span>${dShort(first.date)}</span><span>min ${fmt(Math.min(...v),p.dec)}</span><span>max ${fmt(Math.max(...v),p.dec)}</span><span>${dShort(last.date)}</span>`}else $('#axis').innerHTML='';
+  const s=stats(state.pair);
+  if(s){const posTxt=s.pos>.8?'blízko ročního maxima':s.pos<.2?'blízko ročního minima':'uprostřed ročního pásma';const volTxt=s.vol>s.yv*1.25?'vyšší než obvykle':s.vol<s.yv*.8?'nižší než obvykle':'obvyklá';
+    $('#comment').textContent=`Kurz je ${posTxt} (${Math.round(s.pos*100)} %). Volatilita ${fmt(s.vol,1)} % je ${volTxt}, za posledních 5 dní ${moveWord(state.pair,s.m5)}.`;
+    $('#tiles').innerHTML=[['Pásmo 1R',`${Math.round(s.pos*100)} %`,''],['Vs. MA20',sgn(s.dma,2),cls(s.dma)],['Mom. 5D',sgn(s.m5,2),cls(s.m5)],['Vol 20D',fmt(s.vol,1)+' %','']].map(([l,v,c])=>`<div class="tile"><span>${l}</span><b class="${c}">${v}</b></div>`).join('')}
+  else{$('#comment').textContent='';$('#tiles').innerHTML=''}
   $('#scrub').hidden=true;if(!c)return;
-  const guide=c.el('line',{x1:0,x2:0,y1:c.padT-6,y2:c.H-c.padB,stroke:'var(--muted)','stroke-width':1,'stroke-dasharray':'3 3',visibility:'hidden'});
-  const dot=c.el('circle',{cx:0,cy:0,r:5,fill:'var(--ink)',stroke:'var(--surface)','stroke-width':2,visibility:'hidden'});
-  const tip=$('#scrub');
+  const guide=c.el('line',{x1:0,x2:0,y1:c.padT,y2:c.H-c.padB,stroke:'#8A9BAD','stroke-width':1,'stroke-dasharray':'3 3',visibility:'hidden'});
+  const dot=c.el('circle',{cx:0,cy:0,r:5,fill:'#F2A93B',stroke:'#0F1720','stroke-width':2,visibility:'hidden'});const tip=$('#scrub');
   const move=e=>{const rect=c.svg.getBoundingClientRect();const px=(e.clientX-rect.left)*c.W/rect.width;let i=Math.round((px-c.padL)/(c.W-c.padL-c.padR)*(c.n-1));i=Math.max(0,Math.min(c.n-1,i));
     const cx=c.x(i),cy=c.y(rows[i].v);guide.setAttribute('x1',cx);guide.setAttribute('x2',cx);guide.setAttribute('visibility','visible');dot.setAttribute('cx',cx);dot.setAttribute('cy',cy);dot.setAttribute('visibility','visible');
-    tip.hidden=false;tip.textContent=`${dCZ(rows[i].date)} · ${fmt(rows[i].v,dec)}`;tip.style.left=Math.max(70,Math.min(rect.width-70,cx*rect.width/c.W))+'px'};
+    tip.hidden=false;tip.textContent=`${dCZ(rows[i].date)} · ${fmt(rows[i].v,p.dec)}`;tip.style.left=Math.max(70,Math.min(rect.width-70,cx*rect.width/c.W))+'px'};
   const leave=()=>{guide.setAttribute('visibility','hidden');dot.setAttribute('visibility','hidden');tip.hidden=true};
   c.svg.onpointermove=move;c.svg.onpointerdown=move;c.svg.onpointerleave=leave;c.svg.onpointerup=e=>{if(e.pointerType!=='mouse')leave()};
 }
-
-/* ---------- header & pairs ---------- */
-function renderFresh(){
-  const el=$('#freshText'),dot=$('#freshDot');
-  if(state.loading){el.textContent=state.days.length?'Aktualizuji…':'Načítám…';dot.className='dot';return}
-  const last=state.days.at(-1);
-  if(!last){el.textContent='Bez dat';dot.className='dot stale';return}
-  const age=(Date.now()-new Date(last.date+'T16:00:00'))/864e5;
-  el.textContent=(state.offline?'Offline · ':'Fixing ')+dShort(last.date);
-  dot.className='dot '+(!state.offline&&age<=3.5?'live':'stale');
-  $('#fresh').title='Poslední fixing ECB: '+dCZ(last.date)+(state.fetchedAt?' · staženo '+new Date(state.fetchedAt).toLocaleString('cs-CZ'):'');
-}
-function renderPairs(){
-  const nav=$('#pairs');nav.innerHTML='';
-  Object.keys(PAIRS).forEach(k=>{
-    const rows=series(k),last=rows.at(-1),prev=rows.at(-2);const ch=last&&prev?(last.v/prev.v-1)*100:NaN;
-    const b=document.createElement('button');b.type='button';b.className='pair'+(k===state.pair?' active':'');b.setAttribute('aria-pressed',k===state.pair);
-    b.innerHTML=`<span class="pn">${k}</span><span class="pv num">${last?fmt(last.v,PAIRS[k].dec):'—'}</span><span class="pc num ${cls(ch)}">${Number.isFinite(ch)?(ch>0?'▲ ':ch<0?'▼ ':'')+pct(ch)+' za den':'&nbsp;'}</span>`;
-    b.onclick=()=>{state.pair=k;remember();renderAll()};nav.appendChild(b);
-  });
+function renderWatch(){
+  const today=isoDay(new Date()),rel=PAIRS[state.pair].cal;
+  const items=upcoming(40,false).filter(i=>i.at.startsWith(today)||rel.includes(i.country)).slice(0,3);
+  $('#watchL').textContent=items.some(i=>i.at.startsWith(today))?'Na co se dnes dívat':'Na co se dívat';
+  $('#watch').innerHTML=items.length?items.map(i=>{const d=i.at.slice(0,10),t=i.at.slice(11,16);const isToday=d===today;
+    const when=isToday?t:daysTo(d)===1?'Zítra':dShort(d);const meta=[i.actual?`skutečnost ${i.actual}`:'',i.consensus?`kons. ${i.consensus}`:'',i.previous?`min. ${i.previous}`:''].filter(Boolean).join(' · ');const w=whyFor(i);
+    return`<div class="item"><span class="t${isToday?' now':''}">${esc(when)}</span><span class="cc">${esc(CC[i.country]||i.country)}</span><span class="e">${esc(i.event)}</span>${meta||w?`<span class="m">${esc(meta)}${meta&&w?'. ':''}${esc(w)}</span>`:''}</div>`}).join(''):'<div class="item"><span></span><span></span><span class="e flat">V nejbližších dnech nic zásadního.</span></div>';
 }
 
-/* ---------- signals ---------- */
-function renderSignals(){
-  const rows=series(state.pair),box=$('#signals');const dec=PAIRS[state.pair].dec;
-  if(rows.length<25){box.innerHTML='<div class="empty">Signály se spočítají po načtení kurzů.</div>';return}
-  const v=rows.map(r=>r.v),last=v.at(-1);
-  const yr=windowed(rows,'1R').map(r=>r.v),ymin=Math.min(...yr),ymax=Math.max(...yr),pos=ymax>ymin?(last-ymin)/(ymax-ymin):.5;
-  const ma20=v.slice(-20).reduce((a,b)=>a+b,0)/20,dma=(last/ma20-1)*100,m5=(last/v.at(-6)-1)*100;
-  const vol=annVol(v.slice(-21))*100,yv=annVol(yr)*100;
-  const posTxt=pos>.8?'blízko ročního maxima':pos<.2?'blízko ročního minima':'uprostřed ročního pásma';
-  const mw=moveWord(state.pair,m5);
-  box.innerHTML=`
-   <div class="sig"><b>Poloha v ročním pásmu</b><span class="v num">${Math.round(pos*100)} %</span><div class="range" aria-hidden="true"><i style="left:${(pos*100).toFixed(1)}%"></i></div><p>Kurz ${fmt(last,dec)} je ${posTxt} (${fmt(ymin,dec)} – ${fmt(ymax,dec)}).</p></div>
-   <div class="sig"><b>Odchylka od 20denního průměru</b><span class="v num ${cls(dma)}">${pct(dma)}</span><p>Průměr za 20 fixingů je ${fmt(ma20,dec)}.</p></div>
-   <div class="sig"><b>Momentum 5 dní</b><span class="v num ${cls(m5)}">${pct(m5)}</span><p>${mw[0].toUpperCase()+mw.slice(1)}.</p></div>
-   <div class="sig"><b>Volatilita 20D (p.a.)</b><span class="v num">${fmt(vol,1)} %</span><p>Roční průměr ${fmt(yv,1)} % · ${vol>yv*1.25?'trh je teď neklidnější než obvykle':vol<yv*.8?'trh je teď klidnější než obvykle':'obvyklá úroveň'}.</p></div>`;
+/* ---------- TRH ---------- */
+function renderMarket(){
+  const d=state.days;
+  if(d.length>70&&Number.isFinite(d.at(-1).HUF)){const back=n=>{const t=pd(d.at(-1).date);t.setDate(t.getDate()-n);let r=d[0];for(const x of d){if(pd(x.date)<=t)r=x}return r};
+    const r1=back(30),r3=back(91),L=d.at(-1);
+    $('#cee').innerHTML=`<table><thead><tr><th>Pár</th><th>Kurz</th><th>1M</th><th>3M</th></tr></thead><tbody>${[['EUR/CZK','CZK',3],['EUR/PLN','PLN',4],['EUR/HUF','HUF',2]].map(([n,k,dec])=>{const c1=(L[k]/r1[k]-1)*100,c3=(L[k]/r3[k]-1)*100;return`<tr><td>${n}</td><td class="num">${fmt(L[k],dec)}</td><td class="num ${cls(-c1)}">${pct(c1)}</td><td class="num ${cls(-c3)}">${pct(c3)}</td></tr>`}).join('')}</tbody></table>`;
+    const c3=['CZK','PLN','HUF'].map(k=>(L[k]/r3[k]-1)*100);const same=c3.every(x=>x>0)||c3.every(x=>x<0);
+    $('#ceeNote').textContent='Kladné číslo = měna vůči euru oslabila. '+(same?(c3[0]>0?'Za 3 měsíce oslabil celý region, spíš globální vliv.':'Za 3 měsíce posílil celý region, spíš globální vliv.'):'Měny regionu se rozcházejí, roli hrají domácí faktory.')}
+  else{$('#cee').innerHTML='<div class="empty">Čekám na kurzy…</div>';$('#ceeNote').textContent=''}
+  const s=state.data.diff?.series||[];
+  if(s.length>1){drawLines('#diffChart','#diffBox',[{rows:s.map(r=>({date:r.date,v:r.cz}))},{rows:s.map(r=>({date:r.date,v:r.ea})),color:'#8A9BAD',width:1.6}],{dec:2,padR:40});
+    const L=s.at(-1),F=s[0],dl=L.cz-L.ea,d0=F.cz-F.ea;$('#diffNote').textContent=`Rozdíl ${fmt(dl,2)} p. b. (před rokem ${fmt(d0,2)} p. b.). ${dl<d0?'Výnosová výhoda koruny slábne.':'Výnosová výhoda koruny roste.'}`}
+  else drawLines('#diffChart','#diffBox',[],{empty:'Data o sazbách se načítají…'});
+  const r=state.data.risk;
+  $('#risk').innerHTML=r?.items?.length?r.items.map(i=>{const u=i.unit?' '+esc(i.unit):'';let ch='';
+    if(Number.isFinite(i.prev1m))ch=`<span class="num ${cls(-(i.value-i.prev1m))}">${sgn(i.value-i.prev1m,1)}${u} za měsíc</span> · `;else if(Number.isFinite(i.chg1m))ch=`<span class="num">${pct(i.chg1m,1)} za měsíc</span> · `;
+    return`<div><b style="font-weight:600">${esc(i.label)}</b><span class="num">${fmt(i.value,i.value<50?2:1)}${u}</span><p>${ch}${esc(i.why||'')}</p></div>`}).join('')+`<p class="note">Stav k ${dCZ(r.asOf)}.</p>`:'<div class="empty">Načítám…</div>';
+  const cb=PAIRS[state.pair].cb.join(' / ');$('#pairRiskL').textContent='Rizika páru '+state.pair;
+  $('#pairRisk').innerHTML=[['Sazby',`Rozhodnutí ${cb} mění úrokový diferenciál a forwardové body.`],['Makro','Inflace, mzdy, maloobchod a PMI posouvají očekávání sazeb. Rozhoduje rozdíl proti konsenzu.'],['Sentiment','CZK a PLN obvykle slábnou při averzi k riziku (VIX nad 20–25, širší spready).'],['Energie','Drahý plyn a ropa zhoršují obchodní bilanci regionu a tlačí na korunu i zlotý.']].map(([a,b])=>`<div><b style="font-weight:600">${a}</b><span></span><p>${esc(b)}</p></div>`).join('');
 }
 
-/* ---------- market ---------- */
-function renderCee(){
-  const box=$('#ceeTable');const d=state.days;if(d.length<70||!Number.isFinite(d.at(-1).HUF)){box.innerHTML='<div class="empty">Čekám na kurzy…</div>';return}
-  const back=n=>{const t=pd(d.at(-1).date);t.setDate(t.getDate()-n);let r=d[0];for(const x of d){if(pd(x.date)<=t)r=x}return r};
-  const r1=back(30),r3=back(91),L=d.at(-1);
-  const rows=[['EUR/CZK','CZK',3],['EUR/PLN','PLN',4],['EUR/HUF','HUF',2]].map(([n,k,dec])=>{const c1=(L[k]/r1[k]-1)*100,c3=(L[k]/r3[k]-1)*100;return`<tr><td>${n}</td><td class="num">${fmt(L[k],dec)}</td><td class="num ${cls(-c1)}">${pct(c1)}</td><td class="num ${cls(-c3)}">${pct(c3)}</td></tr>`}).join('');
-  box.innerHTML=`<table><thead><tr><th>Pár</th><th>Kurz</th><th>1M</th><th>3M</th></tr></thead><tbody>${rows}</tbody></table>`;
-  const c3=['CZK','PLN','HUF'].map(k=>(L[k]/r3[k]-1)*100);const same=c3.every(x=>x>0)||c3.every(x=>x<0);
-  $('#ceeNote').textContent='Kladné číslo = měna vůči euru oslabila. '+(same?(c3[0]>0?'Za 3 měsíce oslabil celý region, spíš globální vliv.':'Za 3 měsíce posílil celý region, spíš globální vliv.'):'Měny regionu se za 3 měsíce rozcházejí, roli hrají domácí faktory.');
-}
-function renderDiff(){
-  const df=state.data.diff,s=df?.series||[];
-  if(s.length<2){drawLines('#diffChart','#diffBox',[],{empty:'Data o sazbách se načítají…'});$('#diffNote').textContent='';return}
-  drawLines('#diffChart','#diffBox',[{rows:s.map(r=>({date:r.date,v:r.cz}))},{rows:s.map(r=>({date:r.date,v:r.ea})),color:'var(--line-2)'}],{dec:2,padR:44,tickFmt:iso=>pd(iso).toLocaleDateString('cs-CZ',{month:'numeric',year:'2-digit'})});
-  const L=s.at(-1),F=s[0];const dl=L.cz-L.ea,df0=F.cz-F.ea;
-  $('#diffNote').textContent=`Rozdíl ${fmt(dl,2)} p. b. (před rokem ${fmt(df0,2)} p. b.). ${dl<df0?'Diferenciál se zúžil, výnosová výhoda koruny slábne.':'Diferenciál se rozšířil, výnosová výhoda koruny roste.'} ${df.note||''}`;
-}
-function renderRisk(){
-  const r=state.data.risk,box=$('#riskBox');if(!r?.items?.length){box.innerHTML='<div class="empty">Rizikové ukazatele se načítají…</div>';return}
-  box.innerHTML=r.items.map(i=>{const unit=i.unit?' '+esc(i.unit):'';let ch='';
-    if(Number.isFinite(i.prev1m))ch=`<span class="num ${cls(-(i.value-i.prev1m))}">${sgn(i.value-i.prev1m,1)}${unit} za měsíc</span>`;
-    else if(Number.isFinite(i.chg1m))ch=`<span class="num">${pct(i.chg1m,1)} za měsíc</span>`;
-    else if(Number.isFinite(i.chg1d))ch=`<span class="num">${pct(i.chg1d,1)} za den</span>`;
-    return`<div class="riskRow"><b>${esc(i.label)}</b><span class="num">${fmt(i.value,i.value<50?2:1)}${unit}</span><p>${ch?ch+' · ':''}${esc(i.why||'')}</p></div>`}).join('')+`<p class="note">Stav k ${dCZ(r.asOf)}.</p>`;
-}
-
-/* ---------- tabs ---------- */
-function renderNews(p){
+/* ---------- ZPRÁVY ---------- */
+function renderNews(){
+  $('#newsPairs').innerHTML=Object.keys(PAIRS).map(k=>`<button type="button" data-pair="${k}" aria-pressed="${k===state.pair}">${k}</button>`).join('');
+  $('#newsPairs').querySelectorAll('button').forEach(b=>b.onclick=()=>{state.pair=b.dataset.pair;remember();renderPairDependent()});
   const items=state.data.news?.pairs?.[state.pair]||[];
-  if(!items.length){p.innerHTML=`<div class="empty">${state.offline?'Zprávy se nepodařilo načíst.':'K tomuto páru zatím nejsou zprávy.'}</div>`;return}
-  p.innerHTML=`<p class="note">Výběr zpráv k ${esc(dCZ(state.data.news.asOf))}</p>`+items.slice(0,8).map(n=>{const u=safeUrl(n.url);return`<article class="news"><span class="src">${esc(n.source)}${n.currency?' · '+esc(n.currency):''}</span><h4>${esc(n.title)}</h4><p>${esc(n.summary)}</p>${n.why?`<p class="why">${esc(n.why)}</p>`:''}${u?`<a href="${esc(u)}" target="_blank" rel="noopener">Otevřít zdroj</a>`:''}</article>`}).join('');
-}
-function renderCal(p){
-  const c=state.data.calendar;const all=c?.items||[];const rel=PAIRS[state.pair].cal;
-  const now=new Date();const cut=addD(now,-1);
-  const items=all.filter(i=>new Date(i.at)>=cut&&(state.calAll||rel.includes(i.country))).sort((a,b)=>a.at.localeCompare(b.at));
-  const toggle=`<div class="seg" role="group" aria-label="Filtr kalendáře"><button type="button" data-cal="0" aria-pressed="${!state.calAll}">K páru ${esc(state.pair)}</button><button type="button" data-cal="1" aria-pressed="${state.calAll}">Vše</button></div>`;
-  if(!items.length){p.innerHTML=toggle+'<div class="empty">V nejbližších dnech nejsou v kalendáři žádné události.</div>';bindCal(p);return}
-  let html=toggle,lastDay='';
-  items.forEach(i=>{const d=i.at.slice(0,10);if(d!==lastDay){lastDay=d;const dd=pd(d);const today=isoDay(now)===d;html+=`<div class="day">${today?'Dnes · ':''}${dd.toLocaleDateString('cs-CZ',{weekday:'long',day:'numeric',month:'numeric'})}</div>`}
-    const t=i.at.slice(11,16);const past=new Date(i.at)<now;const imp=[1,2,3].map(k=>`<i class="${k<=(i.importance||1)?'on':''}"></i>`).join('');
-    const meta=[i.actual?`<b>Skutečnost ${esc(i.actual)}</b>`:'',i.consensus?`Konsenzus ${esc(i.consensus)}`:'',i.previous?`Minule ${esc(i.previous)}`:''].filter(Boolean).join(' · ');
-    html+=`<div class="ev${past&&!i.actual?' past':''}"><span class="t num">${t&&t!=='00:00'?t:'—'}</span><span class="c">${esc(FLAG[i.country]||i.country)}</span><span class="e">${esc(i.event)}<span class="imp" aria-label="Důležitost ${i.importance||1} ze 3">${imp}</span></span>${meta?`<span class="m">${meta}</span>`:''}</div>`});
-  html+=`<p class="note" style="margin-top:6px">${esc(c.note||'')} Stav k ${dCZ(c.asOf)}.</p>`;
-  p.innerHTML=html;bindCal(p);
-}
-function bindCal(p){p.querySelectorAll('[data-cal]').forEach(b=>b.onclick=()=>{state.calAll=b.dataset.cal==='1';remember();renderPanel()})}
-function renderBanks(p){
-  const banks=state.data.banks?.banks||[];
-  if(!banks.length){p.innerHTML='<div class="empty">Údaje o centrálních bankách se načítají…</div>';return}
-  const rel=PAIRS[state.pair].cb;
-  const sorted=[...banks].sort((a,b)=>(rel.includes(b.id)-rel.includes(a.id))||String(a.next).localeCompare(String(b.next)));
-  let html=`<p class="note">Stav k ${esc(dCZ(state.data.banks.asOf))} · nahoře banky pro ${esc(state.pair)}</p>`+sorted.map(c=>{const days=Math.ceil((pd(c.next)-new Date())/864e5);const u=safeUrl(c.url);
-    return`<div class="bank"><div class="bankTop"><b>${esc(c.name)} · ${esc(c.currency)}</b><span class="bankRate num">${esc(c.rate)}</span></div><p>${esc(c.rateLabel)}</p>
-    <span class="chip num">Zasedání ${esc(dCZ(c.next))}${Number.isFinite(days)?(days>=0?` · za ${days} d`:' · proběhlo'):''}</span><p>${esc(c.bias)}</p>
-    <details><summary>Výhled a faktory</summary><p style="margin-top:6px">${esc(c.outlook6m)}</p><p style="margin-top:6px">${esc(c.expect)}</p><p style="margin-top:6px"><b>Faktory:</b> ${esc(c.drivers)}</p>${u?`<p style="margin-top:6px"><a class="link" href="${esc(u)}" target="_blank" rel="noopener">Oficiální stránka</a></p>`:''}</details></div>`}).join('');
-  const f=state.data.forecast?.cnb;
-  if(f?.rows?.length){const u=safeUrl(f.url);const spotCZ=series('EUR/CZK').at(-1);
-    html+=`<div class="bank"><div class="bankTop"><b>${esc(f.label)}</b><span class="chip soft">vydáno ${esc(dCZ(f.published))}</span></div>
-    <div class="tbl"><table><thead><tr><th>Rok</th><th>EUR/CZK</th><th>3M PRIBOR</th><th>Inflace</th><th>HDP</th></tr></thead><tbody>${f.rows.map(r=>`<tr><td>${esc(r.year)}</td><td class="num">${fmt(r.eurczk,1)}</td><td class="num">${fmt(r.pribor3m,1)} %</td><td class="num">${fmt(r.cpi,1)} %</td><td class="num">${fmt(r.gdp,1)} %</td></tr>`).join('')}</tbody></table></div>
-    <p>${spotCZ?`Aktuální EUR/CZK ${fmt(spotCZ.v,3)} je ${spotCZ.v>f.rows[0].eurczk?'nad':'pod'} prognózou ČNB na letošní rok (${fmt(f.rows[0].eurczk,1)}). `:''}${esc(f.note||'')}</p>${u?`<a class="link" href="${esc(u)}" target="_blank" rel="noopener">Prognóza na webu ČNB</a>`:''}</div>`}
-  p.innerHTML=html;
-}
-function renderHol(p){
-  const now=new Date(),y=now.getFullYear(),end=addD(now,120);const ccys=[PAIRS[state.pair].base,PAIRS[state.pair].quote];
-  const list=[...holidays(y),...holidays(y+1)].filter(h=>pd(h.date)>=addD(now,-1)&&pd(h.date)<=end).sort((a,b)=>a.date.localeCompare(b.date)||a.mk.localeCompare(b.mk));
-  const merged=[];list.forEach(h=>{const m=merged.find(x=>x.date===h.date);if(m)m.items.push(h);else merged.push({date:h.date,items:[h]})});
-  p.innerHTML=`<p class="note">Dny bez vypořádání v nejbližších 4 měsících. Zvýrazněné se týkají měn páru ${esc(state.pair)}. Počítáno podle pravidelných svátků; mimořádné uzavírky ověřte u banky.</p>`+merged.map(g=>{const hit=g.items.some(h=>ccys.includes(MK[h.mk].ccy));
-    return`<div class="hol"${hit?'':' style="opacity:.6"'}><span class="d num">${pd(g.date).toLocaleDateString('cs-CZ',{weekday:'short',day:'numeric',month:'numeric'})}</span><span>${g.items.map(h=>`<span class="chip ${ccys.includes(MK[h.mk].ccy)?'':'soft'}">${MK[h.mk].label}</span>`).join(' ')} ${esc([...new Set(g.items.map(h=>h.name))].join(' / '))}</span>${g.items.map(h=>`<p>${MK[h.mk].txt}</p>`).join('')}</div>`}).join('');
-}
-function renderRisksText(p){
-  const cb=PAIRS[state.pair].cb.join(' / ');
-  p.innerHTML=`<div class="risktext"><div><b>Sazby.</b> Rozhodnutí ${esc(cb)} mění úrokový diferenciál a tím forwardové body.</div><div><b>Makro.</b> Inflace, mzdy, maloobchod a PMI posouvají očekávání sazeb. Rozhoduje rozdíl proti konsenzu.</div><div><b>Sentiment.</b> CZK a PLN obvykle slábnou v epizodách averze k riziku (VIX nad 20–25, rozšiřování spreadů).</div><div><b>Energie.</b> Drahý plyn a ropa zhoršují obchodní bilanci regionu a tlačí na korunu i zlotý.</div><div><b>Technika.</b> Sledujte průraz ročního maxima či minima a návrat k 20dennímu průměru.</div></div>`;
-}
-function renderPanel(){
-  document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.t===state.tab));
-  const p=$('#panel');({news:renderNews,cal:renderCal,banks:renderBanks,hol:renderHol,risks:renderRisksText})[state.tab](p);
+  $('#newsList').innerHTML=items.length?`<p class="note" style="margin:0">Výběr zpráv k ${esc(dCZ(state.data.news.asOf))}</p>`+items.slice(0,8).map(n=>{const u=safeUrl(n.url);return`<article class="news"><span class="s">${esc(n.source)}${n.currency?' · '+esc(n.currency):''}</span><h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p>${n.why?`<p class="w">${esc(n.why)}</p>`:''}${u?`<a href="${esc(u)}" target="_blank" rel="noopener">Otevřít zdroj</a>`:''}</article>`}).join(''):`<div class="empty">${state.offline?'Zprávy se nepodařilo načíst.':'K tomuto páru zatím nejsou zprávy.'}</div>`;
 }
 
-function renderAll(){renderFresh();renderPairs();renderChart();renderSignals();renderCee();renderDiff();renderRisk();renderPanel()}
+/* ---------- KALENDÁŘ ---------- */
+function renderCal(){
+  document.querySelectorAll('#calTabs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.c===state.cal));
+  const body=$('#calBody');const now=new Date(),today=isoDay(now);
+  if(state.cal==='ev'){const c=state.data.calendar;const rel=PAIRS[state.pair].cal;
+    const items=(c?.items||[]).filter(i=>new Date(i.at)>=addD(now,-1)&&(state.calAll||rel.includes(i.country))).sort((a,b)=>a.at.localeCompare(b.at));
+    let html=`<div class="tabs2" style="margin-bottom:6px"><button type="button" data-all="0" aria-pressed="${!state.calAll}">K páru ${esc(state.pair)}</button><button type="button" data-all="1" aria-pressed="${state.calAll}">Vše</button></div>`;let lastDay='';
+    if(!items.length)html+='<div class="empty">V nejbližších dnech nejsou v kalendáři žádné události.</div>';
+    items.forEach(i=>{const d=i.at.slice(0,10);if(d!==lastDay){if(lastDay)html+='</div>';lastDay=d;html+=`<div class="day">${d===today?'Dnes · ':''}${pd(d).toLocaleDateString('cs-CZ',{weekday:'long',day:'numeric',month:'numeric'})}</div><div class="list">`}
+      const t=i.at.slice(11,16);const past=new Date(i.at)<now;const imp=[1,2,3].map(k=>`<i class="${k<=(i.importance||1)?'on':''}"></i>`).join('');
+      const meta=[i.actual?`skutečnost ${i.actual}`:'',i.consensus?`kons. ${i.consensus}`:'',i.previous?`min. ${i.previous}`:''].filter(Boolean).join(' · ');
+      html+=`<div class="item${past&&!i.actual?' past':''}"><span class="t${d===today&&!past?' now':''}">${t&&t!=='00:00'?t:'—'}</span><span class="cc">${esc(CC[i.country]||i.country)}</span><span class="e">${esc(i.event)}<span class="dot3" aria-label="Důležitost ${i.importance||1} ze 3">${imp}</span></span>${meta?`<span class="m">${esc(meta)}</span>`:''}</div>`});
+    if(lastDay)html+='</div>';html+=c?`<p class="note">${esc(c.note||'')} Stav k ${dCZ(c.asOf)}.</p>`:'';
+    body.innerHTML=html;body.querySelectorAll('[data-all]').forEach(b=>b.onclick=()=>{state.calAll=b.dataset.all==='1';remember();renderCal()});
+  }else if(state.cal==='cb'){const banks=state.data.banks?.banks||[];const rel=PAIRS[state.pair].cb;
+    let html=banks.length?`<p class="note" style="margin:0 0 10px">Stav k ${esc(dCZ(state.data.banks.asOf))} · nahoře banky pro ${esc(state.pair)}</p><div style="display:grid;gap:10px">`+[...banks].sort((a,b)=>(rel.includes(b.id)-rel.includes(a.id))||String(a.next).localeCompare(String(b.next))).map(c=>{const d=daysTo(c.next);const u=safeUrl(c.url);
+      return`<div class="bank"><div class="h"><b>${esc(c.name)} · ${esc(c.currency)}</b><span class="r">${esc(c.rate)}</span></div><p>${esc(c.rateLabel)}</p><span class="chip${d>=0&&d<=7?' hot':''}" style="justify-self:start">Zasedání ${esc(dCZ(c.next))}${Number.isFinite(d)?(d>=0?` · za ${d} d`:' · proběhlo'):''}</span><p>${esc(c.bias)}</p><details><summary>Výhled a faktory</summary><p style="margin-top:6px">${esc(c.outlook6m)}</p><p style="margin-top:6px">${esc(c.expect)}</p><p style="margin-top:6px"><b style="color:var(--ink)">Faktory:</b> ${esc(c.drivers)}</p>${u?`<a href="${esc(u)}" target="_blank" rel="noopener" style="font-size:13px;font-weight:600;text-decoration:none;display:inline-block;padding:6px 0">Oficiální stránka</a>`:''}</details></div>`}).join('')+'</div>':'<div class="empty">Údaje o bankách se načítají…</div>';
+    const f=state.data.forecast?.cnb;if(f?.rows?.length){const u=safeUrl(f.url);const s=stats('EUR/CZK');
+      html+=`<div class="bank" style="margin-top:10px"><div class="h"><b>${esc(f.label)}</b><span class="chip">vydáno ${esc(dCZ(f.published))}</span></div><div class="tbl"><table><thead><tr><th>Rok</th><th>EUR/CZK</th><th>PRIBOR 3M</th><th>Inflace</th><th>HDP</th></tr></thead><tbody>${f.rows.map(r=>`<tr><td>${esc(r.year)}</td><td class="num">${fmt(r.eurczk,1)}</td><td class="num">${fmt(r.pribor3m,1)} %</td><td class="num">${fmt(r.cpi,1)} %</td><td class="num">${fmt(r.gdp,1)} %</td></tr>`).join('')}</tbody></table></div><p>${s?`Aktuální EUR/CZK ${fmt(s.last,3)} je ${s.last>f.rows[0].eurczk?'nad':'pod'} prognózou na letošní rok. `:''}${esc(f.note||'')}</p>${u?`<a href="${esc(u)}" target="_blank" rel="noopener" style="font-size:13px;font-weight:600;text-decoration:none">Prognóza na webu ČNB</a>`:''}</div>`}
+    body.innerHTML=html;
+  }else{const y=now.getFullYear(),end=addD(now,120);const ccys=[PAIRS[state.pair].base,PAIRS[state.pair].quote];
+    const list=[...holidays(y),...holidays(y+1)].filter(h=>pd(h.date)>=addD(now,-1)&&pd(h.date)<=end).sort((a,b)=>a.date.localeCompare(b.date)||a.mk.localeCompare(b.mk));
+    const g=[];list.forEach(h=>{const m=g.find(x=>x.date===h.date);if(m)m.items.push(h);else g.push({date:h.date,items:[h]})});
+    body.innerHTML=`<p class="note" style="margin:0 0 10px">Dny bez vypořádání v příštích 4 měsících. Zvýrazněné se týkají měn páru ${esc(state.pair)}.</p><div class="list">`+g.map(x=>{const hit=x.items.some(h=>ccys.includes(MK[h.mk].ccy));
+      return`<div class="hol${hit?'':' dim'}"><span class="d">${pd(x.date).toLocaleDateString('cs-CZ',{weekday:'short',day:'numeric',month:'numeric'})}</span><span>${x.items.map(h=>`<span class="chip${ccys.includes(MK[h.mk].ccy)?' hot':''}">${MK[h.mk].label}</span>`).join(' ')} ${esc([...new Set(x.items.map(h=>h.name))].join(' / '))}</span>${x.items.map(h=>`<p>${MK[h.mk].txt}</p>`).join('')}</div>`}).join('')+'</div>';
+  }
+}
 
-/* ---------- events ---------- */
+/* ---------- navigation ---------- */
+function showView(v){state.view=v;remember();['home','market','news','cal'].forEach(k=>{$('#v-'+k).hidden=k!==v});
+  document.querySelectorAll('nav.tabbar button').forEach(b=>{if(b.dataset.v===v)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
+  window.scrollTo(0,0);if(v==='market')renderMarket();if(v==='home')renderChart()}
+function renderPairDependent(){renderRows();renderChart();renderWatch();renderNews();renderCal();if(state.view==='market')renderMarket()}
+function renderAll(){renderHeader();renderTicker();renderSummary();renderRows();renderChart();renderWatch();renderMarket();renderNews();renderCal()}
+
+document.querySelectorAll('nav.tabbar button').forEach(b=>b.onclick=()=>showView(b.dataset.v));
 document.querySelectorAll('#periods button').forEach(b=>b.onclick=()=>{state.period=b.dataset.p;remember();renderChart()});
-document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{state.tab=b.dataset.t;remember();renderPanel()});
-let rT;window.addEventListener('resize',()=>{clearTimeout(rT);rT=setTimeout(()=>{renderChart();renderDiff()},120)});
+document.querySelectorAll('#calTabs button').forEach(b=>b.onclick=()=>{state.cal=b.dataset.c;remember();renderCal()});
+let rT;window.addEventListener('resize',()=>{clearTimeout(rT);rT=setTimeout(()=>{renderChart();if(state.view==='market')renderMarket()},120)});
 
-/* ---------- data loading ---------- */
+/* ---------- data ---------- */
 const CACHE_KEY='fxradar-data-v2';
 async function getJSON(url,ms=12000){const c=new AbortController();const t=setTimeout(()=>c.abort(),ms);try{const r=await fetch(url,{signal:c.signal,cache:'no-store'});if(!r.ok)throw new Error(r.status);return await r.json()}finally{clearTimeout(t)}}
 function loadCache(){try{const c=JSON.parse(localStorage.getItem(CACHE_KEY)||'null');if(c){state.days=c.days||[];state.data=c.data||{};state.fetchedAt=c.fetchedAt||0}}catch(e){}}
 function saveCache(){try{localStorage.setItem(CACHE_KEY,JSON.stringify({days:state.days,data:state.data,fetchedAt:state.fetchedAt}))}catch(e){}}
-async function fetchRates(){
-  const start=new Date();start.setDate(start.getDate()-400);
+async function fetchRates(){const start=addD(new Date(),-400);
   const j=await getJSON(`https://api.frankfurter.dev/v1/${isoDay(start)}..?from=EUR&to=CZK,USD,PLN,HUF`);
-  const days=Object.entries(j.rates||{}).map(([date,r])=>({date,CZK:+r.CZK,USD:+r.USD,PLN:+r.PLN,HUF:+r.HUF}))
-    .filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d.date)&&[d.CZK,d.USD,d.PLN].every(Number.isFinite)).sort((a,b)=>a.date.localeCompare(b.date));
-  if(days.length<20)throw new Error('málo dat');return days;
-}
-async function refresh(){
-  if(state.loading)return;state.loading=true;renderFresh();
+  const days=Object.entries(j.rates||{}).map(([date,r])=>({date,CZK:+r.CZK,USD:+r.USD,PLN:+r.PLN,HUF:+r.HUF})).filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d.date)&&[d.CZK,d.USD,d.PLN].every(Number.isFinite)).sort((a,b)=>a.date.localeCompare(b.date));
+  if(days.length<20)throw new Error('málo dat');return days}
+async function refresh(){if(state.loading)return;state.loading=true;renderHeader();
   const [rates,content]=await Promise.allSettled([fetchRates(),getJSON('data.json?t='+Date.now())]);
   if(rates.status==='fulfilled'){state.days=rates.value;state.fetchedAt=Date.now();state.offline=false}else{state.offline=true;console.warn('kurzy',rates.reason)}
   if(content.status==='fulfilled'&&content.value)state.data=content.value;else console.warn('obsah',content.reason);
-  state.loading=false;saveCache();renderAll();
-}
-loadCache();renderAll();refresh();
-$('#fresh').onclick=refresh;
-document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&Date.now()-(state.fetchedAt||0)>10*60*1000)refresh()});
+  state.loading=false;saveCache();renderAll()}
+loadCache();showView(state.view);renderAll();refresh();
+$('#refresh').onclick=refresh;
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){renderHeader();if(Date.now()-(state.fetchedAt||0)>10*60*1000)refresh()}});
 if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 </script>
 </body>
