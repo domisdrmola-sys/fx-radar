@@ -106,7 +106,13 @@ a{color:var(--accent)}
 .item{background:var(--panel);padding:11px 12px;display:grid;grid-template-columns:56px 30px minmax(0,1fr);gap:4px 8px;align-items:baseline}
 .item .t{font-family:var(--font-num);font-size:13px;color:var(--muted)}
 .item .t.now{color:var(--accent)}
-.item .cc{font-size:11px;color:var(--muted);font-weight:600}
+.item .cc{font-size:10.5px;font-weight:700;letter-spacing:.5px;border-radius:5px;padding:1px 0;text-align:center;align-self:start;margin-top:2px;color:#0F1720}
+.item{border-left:3px solid transparent}
+.r-US{--rc:#5AA9F5} .r-EA,.r-DE{--rc:#B79CFF} .r-CZ{--rc:#4FD1B8} .r-PL{--rc:#F59AB8}
+.item[class*="r-"]{border-left-color:var(--rc)} .item[class*="r-"] .cc{background:var(--rc)}
+.rlegend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted);margin:2px 0 8px}
+.rlegend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--rc);margin-right:5px;vertical-align:-1px}
+
 .item .e{font-size:14px;min-width:0}
 .item .m{grid-column:3;font-size:12.5px;color:var(--muted)}
 .item.past{opacity:.55}
@@ -385,7 +391,7 @@ function renderWatch(){
   $('#watchL').textContent=items.some(i=>i.at.startsWith(today))?'Na co se dnes dívat':'Na co se dívat';
   $('#watch').innerHTML=items.length?items.map(i=>{const d=i.at.slice(0,10),t=i.at.slice(11,16);const isToday=d===today;
     const when=isToday?t:daysTo(d)===1?'Zítra':dShort(d);const meta=[i.actual?`skutečnost ${i.actual}`:'',i.consensus?`kons. ${i.consensus}`:'',i.previous?`min. ${i.previous}`:''].filter(Boolean).join(' · ');const w=whyFor(i);
-    return`<div class="item"><span class="t${isToday?' now':''}">${esc(when)}</span><span class="cc">${esc(CC[i.country]||i.country)}</span><span class="e">${esc(i.event)}</span>${meta||w?`<span class="m">${esc(meta)}${meta&&w?'. ':''}${esc(w)}</span>`:''}</div>`}).join(''):'<div class="item"><span></span><span></span><span class="e flat">V nejbližších dnech nic zásadního.</span></div>';
+    return`<div class="item r-${esc(i.country)}"><span class="t${isToday?' now':''}">${esc(when)}</span><span class="cc">${esc(CC[i.country]||i.country)}</span><span class="e">${esc(i.event)}</span>${meta||w?`<span class="m">${esc(meta)}${meta&&w?'. ':''}${esc(w)}</span>`:''}</div>`}).join(''):'<div class="item"><span></span><span></span><span class="e flat">V nejbližších dnech nic zásadního.</span></div>';
 }
 
 /* ---------- TRH ---------- */
@@ -423,12 +429,12 @@ function renderCal(){
   const body=$('#calBody');const now=new Date(),today=isoDay(now);
   if(state.cal==='ev'){const c=state.data.calendar;const rel=PAIRS[state.pair].cal;
     const items=(c?.items||[]).filter(i=>new Date(i.at)>=addD(now,-1)&&(state.calAll||rel.includes(i.country))).sort((a,b)=>a.at.localeCompare(b.at));
-    let html=`<div class="tabs2" style="margin-bottom:6px"><button type="button" data-all="0" aria-pressed="${!state.calAll}">K páru ${esc(state.pair)}</button><button type="button" data-all="1" aria-pressed="${state.calAll}">Vše</button></div>`;let lastDay='';
+    let html=`<div class="tabs2" style="margin-bottom:8px"><button type="button" data-all="0" aria-pressed="${!state.calAll}">K páru ${esc(state.pair)}</button><button type="button" data-all="1" aria-pressed="${state.calAll}">Vše</button></div><div class="rlegend"><span class="r-US">USA</span><span class="r-EA">Eurozóna a Německo</span><span class="r-CZ">ČR</span><span class="r-PL">Polsko</span></div>`;let lastDay='';
     if(!items.length)html+='<div class="empty">V nejbližších dnech nejsou v kalendáři žádné události.</div>';
     items.forEach(i=>{const d=i.at.slice(0,10);if(d!==lastDay){if(lastDay)html+='</div>';lastDay=d;html+=`<div class="day">${d===today?'Dnes · ':''}${pd(d).toLocaleDateString('cs-CZ',{weekday:'long',day:'numeric',month:'numeric'})}</div><div class="list">`}
       const t=i.at.slice(11,16);const past=new Date(i.at)<now;const imp=[1,2,3].map(k=>`<i class="${k<=(i.importance||1)?'on':''}"></i>`).join('');
       const meta=[i.actual?`skutečnost ${i.actual}`:'',i.consensus?`kons. ${i.consensus}`:'',i.previous?`min. ${i.previous}`:''].filter(Boolean).join(' · ');
-      html+=`<div class="item${past&&!i.actual?' past':''}"><span class="t${d===today&&!past?' now':''}">${t&&t!=='00:00'?t:'—'}</span><span class="cc">${esc(CC[i.country]||i.country)}</span><span class="e">${esc(i.event)}<span class="dot3" aria-label="Důležitost ${i.importance||1} ze 3">${imp}</span></span>${meta?`<span class="m">${esc(meta)}</span>`:''}</div>`});
+      html+=`<div class="item r-${esc(i.country)}${past&&!i.actual?' past':''}"><span class="t${d===today&&!past?' now':''}">${t&&t!=='00:00'?t:'—'}</span><span class="cc">${esc(CC[i.country]||i.country)}</span><span class="e">${esc(i.event)}<span class="dot3" aria-label="Důležitost ${i.importance||1} ze 3">${imp}</span></span>${meta?`<span class="m">${esc(meta)}</span>`:''}</div>`});
     if(lastDay)html+='</div>';html+=c?`<p class="note">${esc(c.note||'')} Stav k ${dCZ(c.asOf)}.</p>`:'';
     body.innerHTML=html;body.querySelectorAll('[data-all]').forEach(b=>b.onclick=()=>{state.calAll=b.dataset.all==='1';remember();renderCal()});
   }else{const y=now.getFullYear(),end=addD(now,120);const ccys=[PAIRS[state.pair].base,PAIRS[state.pair].quote];
