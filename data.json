@@ -1,6 +1,6 @@
 {
  "news": {
-  "asOf": "2026-10-14",
+  "asOf": "2026-10-15",
   "pairs": {
    "EUR/CZK": [
     {
@@ -50,6 +50,15 @@
     }
    ],
    "USD/CZK": [
+    {
+     "source": "U.S. News",
+     "currency": "USD",
+     "title": "Zářijová inflace v USA překvapila nahoru a zvedla sázky na zvýšení sazeb",
+     "url": "https://money.usnews.com/investing/news/articles/2026-10-14/hot-september-cpi-sends-rate-hike-bets-soaring",
+     "summary": "Americká inflace CPI v září vzrostla na 3,7 % r/r proti odhadu 3,6 %, jádro na 2,6 % proti 2,5 %. Trh po datech zvýšil sázky na další zvýšení sazeb Fedu.",
+     "why": "Vyšší inflace podporuje dolar a sázky na přísnější Fed, což tlačí na USD/CZK nahoru.",
+     "published": "2026-10-14"
+    },
     {
      "source": "FXStreet",
      "currency": "USD",
@@ -106,6 +115,15 @@
     }
    ],
    "EUR/USD": [
+    {
+     "source": "U.S. News",
+     "currency": "USD",
+     "title": "Zářijová inflace v USA překvapila nahoru a zvedla sázky na zvýšení sazeb",
+     "url": "https://money.usnews.com/investing/news/articles/2026-10-14/hot-september-cpi-sends-rate-hike-bets-soaring",
+     "summary": "Americká inflace CPI v září vzrostla na 3,7 % r/r proti odhadu 3,6 %, jádro na 2,6 % proti 2,5 %. Trh po datech zvýšil sázky na další zvýšení sazeb Fedu.",
+     "why": "Vyšší inflace podporuje dolar a sázky na přísnější Fed, což tlačí na USD/CZK nahoru.",
+     "published": "2026-10-14"
+    },
     {
      "source": "FXStreet",
      "currency": "USD",
@@ -490,7 +508,7 @@
     "event": "Inflace CPI r/r (září)",
     "consensus": "3,6 %",
     "previous": "3,4 %",
-    "actual": "",
+    "actual": "3,7 %",
     "importance": 3
    },
    {
@@ -499,7 +517,7 @@
     "event": "Jádrová inflace CPI r/r (září)",
     "consensus": "2,5 %",
     "previous": "2,4 %",
-    "actual": "",
+    "actual": "2,6 %",
     "importance": 3
    },
    {
@@ -725,8 +743,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-14",
-  "text": "Koruna drží 24,37 za euro, za tři měsíce je slabší o 0,4 %. Odpoledne ve 14:30 vyjde americká inflace, trh čeká 3,6 %; vyšší číslo by posílilo dolar."
+  "asOf": "2026-10-15",
+  "text": "Koruna se drží kolem 24,35 za euro (fixing ECB 14. 10.: 24,357). Americká inflace v září vyšla výš (3,7 % vs. 3,6 %), což zvyšuje sázky na Fed; dnes odpoledne vyjdou tržby a PPI z USA."
  },
  "outlook": {
   "asOf": "2026-10-14",
