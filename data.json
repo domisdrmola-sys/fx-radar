@@ -51,6 +51,15 @@
    ],
    "USD/CZK": [
     {
+     "source": "Saxo Bank",
+     "currency": "USD",
+     "title": "Dolar po inflaci vystřelil a vzápětí vše vrátil",
+     "url": "https://home.saxo/en-ch/content/articles/forex/the-fx-trader-the-usd-and-risk-sentiment-a-bit-different-now-15102026",
+     "summary": "Po horší americké inflaci (3,7 %) dolar i výnosy krátce vyskočily, ale pohyb se zcela otočil; EUR/USD spadl na 1,1113 a vrátil se k 1,1240. Americké akcie během dne klesaly.",
+     "why": "Slabší dolar a vyšší EUR/USD obvykle pomáhají koruně k dolaru; vůči euru je dopad malý.",
+     "published": "2026-10-15"
+    },
+    {
      "source": "U.S. News",
      "currency": "USD",
      "title": "Zářijová inflace v USA překvapila nahoru a zvedla sázky na zvýšení sazeb",
@@ -115,6 +124,15 @@
     }
    ],
    "EUR/USD": [
+    {
+     "source": "Saxo Bank",
+     "currency": "USD",
+     "title": "Dolar po inflaci vystřelil a vzápětí vše vrátil",
+     "url": "https://home.saxo/en-ch/content/articles/forex/the-fx-trader-the-usd-and-risk-sentiment-a-bit-different-now-15102026",
+     "summary": "Po horší americké inflaci (3,7 %) dolar i výnosy krátce vyskočily, ale pohyb se zcela otočil; EUR/USD spadl na 1,1113 a vrátil se k 1,1240. Americké akcie během dne klesaly.",
+     "why": "Slabší dolar a vyšší EUR/USD obvykle pomáhají koruně k dolaru; vůči euru je dopad malý.",
+     "published": "2026-10-15"
+    },
     {
      "source": "U.S. News",
      "currency": "USD",
@@ -290,13 +308,13 @@
   ]
  },
  "cnb": {
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.355,
-   "USD": 21.754,
-   "PLN": 5.579,
-   "HUF100": 6.705
+   "EUR": 24.35,
+   "USD": 21.732,
+   "PLN": 5.572,
+   "HUF100": 6.697
   }
  },
  "mm": {
@@ -535,7 +553,7 @@
     "event": "Maloobchodní tržby m/m (září)",
     "consensus": "0,3 %",
     "previous": "1,2 %",
-    "actual": "",
+    "actual": "0,8 %",
     "importance": 2
    },
    {
@@ -744,7 +762,7 @@
  },
  "summary": {
   "asOf": "2026-10-15",
-  "text": "Koruna se drží kolem 24,35 za euro (fixing ECB 14. 10.: 24,357). Americká inflace v září vyšla výš (3,7 % vs. 3,6 %), což zvyšuje sázky na Fed; dnes odpoledne vyjdou tržby a PPI z USA."
+  "text": "Koruna se drží kolem 24,35 za euro (kurz ČNB 15. 10.: 24,350; USD 21,73). Dolar po horší inflaci v USA zisky vrátil; dnešní maloobchodní tržby USA vyšly nad odhadem (0,8 % vs. 0,3 %)."
  },
  "outlook": {
   "asOf": "2026-10-14",
