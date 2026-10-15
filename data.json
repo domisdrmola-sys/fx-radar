@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "České noviny / ČTK (Patria Online)",
+     "currency": "CZK",
+     "title": "Pražská burza popáté v řadě rostla, koruna mírně posílila",
+     "url": "https://www.ceskenoviny.cz/zpravy/prazska-burza-rostla-popate-v-rade-koruna-posilila/2888435",
+     "summary": "Koruna v 17:00 posílila k euru o 2 haléře na 24,36 Kč a k dolaru o 17 haléřů na 21,74 Kč. Silnější americké PPI a maloobchod vyvolaly jen malou reakci trhu.",
+     "why": "Slabší dolar pomáhá středoevropským měnám; koruna zůstává poblíž 24,35 za euro.",
+     "published": "2026-10-15T17:26"
+    },
+    {
      "currency": "EUR",
      "published": "2026-10-14T09:08",
      "source": "Reuters",
@@ -59,6 +68,15 @@
     }
    ],
    "USD/CZK": [
+    {
+     "source": "České noviny / ČTK (Patria Online)",
+     "currency": "CZK",
+     "title": "Pražská burza popáté v řadě rostla, koruna mírně posílila",
+     "url": "https://www.ceskenoviny.cz/zpravy/prazska-burza-rostla-popate-v-rade-koruna-posilila/2888435",
+     "summary": "Koruna v 17:00 posílila k euru o 2 haléře na 24,36 Kč a k dolaru o 17 haléřů na 21,74 Kč. Silnější americké PPI a maloobchod vyvolaly jen malou reakci trhu.",
+     "why": "Slabší dolar pomáhá středoevropským měnám; koruna zůstává poblíž 24,35 za euro.",
+     "published": "2026-10-15T17:26"
+    },
     {
      "currency": "USD",
      "published": "2026-10-15T04:55",
@@ -121,15 +139,6 @@
      "title": "Zápis FOMC: inflace zůstává hlavní obavou, říjnové zvýšení ale není jisté",
      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
      "why": "Rozděluje riziko mezi pauzu v říjnu a možné další zvýšení později."
-    },
-    {
-     "currency": "CZK",
-     "published": "2026-09-17",
-     "source": "ČNB",
-     "summary": "ČNB zatím sazby drží, ale další zasedání bude podle bankovní rady mezi stabilitou a zvýšením.",
-     "title": "ČNB ponechala sazbu na 3,75 %, listopad může přinést zvýšení",
-     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
-     "why": "Jestřábí ČNB omezuje prostor pro růst USD/CZK."
     }
    ],
    "EUR/USD": [
