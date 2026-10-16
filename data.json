@@ -1,6 +1,6 @@
 {
  "news": {
-  "asOf": "2026-10-15",
+  "asOf": "2026-10-16",
   "pairs": {
    "EUR/CZK": [
     {
@@ -69,6 +69,15 @@
    ],
    "USD/CZK": [
     {
+     "source": "FXStreet",
+     "currency": "USD",
+     "title": "Euro posiluje, dolar slábne po komentářích Warshe z Fedu",
+     "url": "https://www.fxstreet.com/news/euro-gains-as-us-dollar-weakens-following-fed-warshs-comments-at-imf-chat-202610160401",
+     "summary": "Euro se odrazilo od 17měsíčního minima kolem 1,111 USD a zhruba na úrovni 1,12 těží ze slábnoucího dolaru po vystoupení člena Fedu Warshe na akci MMF.",
+     "why": "Slabší dolar podporuje EUR/USD a mírně tlačí USD/CZK dolů, koruna k euru se zatím příliš nehýbe.",
+     "published": "2026-10-16"
+    },
+    {
      "source": "České noviny / ČTK (Patria Online)",
      "currency": "CZK",
      "title": "Pražská burza popáté v řadě rostla, koruna mírně posílila",
@@ -130,18 +139,18 @@
      "title": "Poptávka po amerických dluhopisech přinesla částečnou úlevu výnosům",
      "url": "https://www.reuters.com/markets/us/us-bonds-fall-lifting-yields-2nd-day-oil-weighs-30-year-auction-looms-2026-10-08/",
      "why": "Pokles výnosů může krátkodobě brzdit další posilování USD."
-    },
-    {
-     "currency": "USD",
-     "published": "2026-10-07",
-     "source": "Fed",
-     "summary": "Zápis ukázal pokračující jestřábí tón, ale trh po zveřejnění snížil pravděpodobnost dalšího zvýšení už v říjnu.",
-     "title": "Zápis FOMC: inflace zůstává hlavní obavou, říjnové zvýšení ale není jisté",
-     "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
-     "why": "Rozděluje riziko mezi pauzu v říjnu a možné další zvýšení později."
     }
    ],
    "EUR/USD": [
+    {
+     "source": "FXStreet",
+     "currency": "USD",
+     "title": "Euro posiluje, dolar slábne po komentářích Warshe z Fedu",
+     "url": "https://www.fxstreet.com/news/euro-gains-as-us-dollar-weakens-following-fed-warshs-comments-at-imf-chat-202610160401",
+     "summary": "Euro se odrazilo od 17měsíčního minima kolem 1,111 USD a zhruba na úrovni 1,12 těží ze slábnoucího dolaru po vystoupení člena Fedu Warshe na akci MMF.",
+     "why": "Slabší dolar podporuje EUR/USD a mírně tlačí USD/CZK dolů, koruna k euru se zatím příliš nehýbe.",
+     "published": "2026-10-16"
+    },
     {
      "currency": "USD",
      "published": "2026-10-15T04:55",
@@ -204,15 +213,6 @@
      "title": "ECB zápis: zářijové zvýšení bylo jednomyslné, další kroky bez předem dané trajektorie",
      "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
      "why": "Pro říjen snižuje pravděpodobnost automatického dalšího zvýšení."
-    },
-    {
-     "currency": "USD",
-     "published": "2026-10-08",
-     "source": "Reuters",
-     "summary": "Trh méně věří v říjnové zvýšení Fedu, ale dál počítá s vysokou pravděpodobností dalšího utažení do konce roku.",
-     "title": "Dolar zůstává silný, i když po zápisu Fedu část zisků odevzdal",
-     "url": "https://www.reuters.com/world/africa/dollar-edges-back-18-month-high-after-fomc-minutes-2026-10-08/",
-     "why": "Udržuje výnosovou výhodu USD, ale omezuje prostor pro další rychlé posílení."
     }
    ],
    "PLN/CZK": [
@@ -788,8 +788,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-15",
-  "text": "Koruna se drží kolem 24,35 za euro (kurz ČNB 15. 10.: 24,350; USD 21,73). Dolar po horší inflaci v USA zisky vrátil; dnešní maloobchodní tržby USA vyšly nad odhadem (0,8 % vs. 0,3 %)."
+  "asOf": "2026-10-16",
+  "text": "Koruna se drží kolem 24,35 za euro (fixing ECB 15. 10.: 24,353). Dolar po říjnovém výprodeji kolem inflace slábne a EUR/USD je zpět nad 1,12; dál se čeká na Fed (28. 10.) a ECB (29. 10)."
  },
  "outlook": {
   "asOf": "2026-10-14",
