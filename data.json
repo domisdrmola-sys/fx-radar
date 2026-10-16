@@ -89,6 +89,15 @@
     {
      "source": "FXStreet",
      "currency": "USD",
+     "title": "Warsh nepředjímá říjnové zasedání, dolarový index klesá",
+     "url": "https://fxstreet.com/news/dollar-index-slips-as-fed-chair-warsh-wont-prejudge-october-202610161624",
+     "summary": "Šéf Fedu Warsh uvedl, že nebude předjímat říjnové rozhodnutí; sázky na zvýšení sazeb klesly asi na 16 % z 28 %. Dolarový index padl na nejnižší úroveň od 1. října, i přes silnější americkou průmyslovou výrobu (+0,7 % proti očekávaným 0,4 %).",
+     "why": "Slabší dolar a nižší šance na zvýšení sazeb Fedu podporují euro i korunu vůči dolaru.",
+     "published": "2026-10-16"
+    },
+    {
+     "source": "FXStreet",
+     "currency": "USD",
      "title": "Euro posiluje, dolar slábne po komentářích Warshe z Fedu",
      "url": "https://www.fxstreet.com/news/euro-gains-as-us-dollar-weakens-following-fed-warshs-comments-at-imf-chat-202610160401",
      "summary": "Euro se odrazilo od 17měsíčního minima kolem 1,111 USD a zhruba na úrovni 1,12 těží ze slábnoucího dolaru po vystoupení člena Fedu Warshe na akci MMF.",
@@ -139,18 +148,18 @@
      "title": "Zářijová inflace v USA překvapila nahoru a zvedla sázky na zvýšení sazeb",
      "url": "https://money.usnews.com/investing/news/articles/2026-10-14/hot-september-cpi-sends-rate-hike-bets-soaring",
      "why": "Vyšší inflace podporuje dolar a sázky na přísnější Fed, což tlačí na USD/CZK nahoru."
-    },
-    {
-     "currency": "USD",
-     "published": "2026-10-13",
-     "source": "Reuters",
-     "summary": "Dolar 13. října oslabil spolu s ropou a poklesem geopolitické prémie. Trh zvýšil pravděpodobnost, že Fed na říjnovém zasedání sazby ponechá beze změny.",
-     "title": "Dolar klesá z 18měsíčního maxima, trh více sází na říjnovou pauzu Fedu",
-     "url": "https://www.reuters.com/world/africa/dollar-holds-near-18-month-high-geopolitical-risks-rise-2026-10-13/",
-     "why": "Nižší očekávání říjnového zvýšení sazeb mohou krátkodobě brzdit USD/CZK."
     }
    ],
    "EUR/USD": [
+    {
+     "source": "FXStreet",
+     "currency": "USD",
+     "title": "Warsh nepředjímá říjnové zasedání, dolarový index klesá",
+     "url": "https://fxstreet.com/news/dollar-index-slips-as-fed-chair-warsh-wont-prejudge-october-202610161624",
+     "summary": "Šéf Fedu Warsh uvedl, že nebude předjímat říjnové rozhodnutí; sázky na zvýšení sazeb klesly asi na 16 % z 28 %. Dolarový index padl na nejnižší úroveň od 1. října, i přes silnější americkou průmyslovou výrobu (+0,7 % proti očekávaným 0,4 %).",
+     "why": "Slabší dolar a nižší šance na zvýšení sazeb Fedu podporují euro i korunu vůči dolaru.",
+     "published": "2026-10-16"
+    },
     {
      "source": "FXStreet",
      "currency": "USD",
@@ -213,15 +222,6 @@
      "title": "EUR/USD 13. 10. podporuje ústup dolaru a nižší ropa",
      "url": "https://www.reuters.com/world/africa/dollar-holds-near-18-month-high-geopolitical-risks-rise-2026-10-13/",
      "why": "Aktuálně se střetává slábnoucí dolarový impuls s přetrvávajícími problémy eurozóny."
-    },
-    {
-     "currency": "EUR",
-     "published": "2026-10-08",
-     "source": "ECB",
-     "summary": "Depozitní sazba je 2,50 %. ECB dál hodnotí inflaci jako příliš vysokou, ale rozhodování zůstává meeting-by-meeting.",
-     "title": "ECB zápis: zářijové zvýšení bylo jednomyslné, další kroky bez předem dané trajektorie",
-     "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
-     "why": "Pro říjen snižuje pravděpodobnost automatického dalšího zvýšení."
     }
    ],
    "PLN/CZK": [
@@ -544,7 +544,7 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-10-14",
+  "asOf": "2026-10-16",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
    {
@@ -634,7 +634,7 @@
     "event": "Průmyslová výroba m/m (září)",
     "consensus": "0,4 %",
     "previous": "0,0 %",
-    "actual": "",
+    "actual": "0,7 %",
     "importance": 1
    },
    {
@@ -798,7 +798,7 @@
  },
  "summary": {
   "asOf": "2026-10-16",
-  "text": "Koruna se drží kolem 24,33 za euro (kurz ČNB 16. 10.: 24,325). České ceny výrobců za září vzrostly o 3,7 %; dál se čeká na Fed (28. 10.) a ECB (29. 10.)."
+  "text": "Koruna zůstává kolem 24,33 za euro (kurz ČNB 16. 10.: 24,325), euro se proti dolaru odrazilo k 1,125. Dolar slábne, protože Warsh nepředjímá říjnové zasedání Fedu (28. 10.); dál se čeká na Fed a ECB (29. 10.)."
  },
  "outlook": {
   "asOf": "2026-10-14",
