@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-10-16",
+  "asOf": "2026-10-19",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "Kurzy.cz (ČSOB Dealing)",
+     "currency": "CZK",
+     "title": "Koruna vyčkává na komentáře ČNB, testovala 24,30 za euro",
+     "url": "https://zpravy.kurzy.cz/878668-koruna-pod-taktovkou-eurodolaru-vyckava-na-komentare-z-cnb/",
+     "summary": "Koruna v pátek posílila díky stabilnějšímu eurodolaru a nižším americkým výnosům a testovala 24,30 za euro. Tuzemský kalendář je tento týden prázdný, pohyby budou záviset na komentářích centrálních bankéřů před listopadovým zasedáním ČNB.",
+     "why": "Bez domácích dat se koruna řídí eurodolarem a francouzským politickým napětím.",
+     "published": "2026-10-19T08:20"
+    },
     {
      "source": "Kurzy.cz (ČSOB Dealing)",
      "currency": "CZK",
@@ -65,18 +74,18 @@
      "title": "ČNB drží repo sazbu na 3,75 % a v listopadu připouští i zvýšení",
      "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
      "why": "Jestřábější ČNB je podpůrným faktorem pro korunu."
-    },
-    {
-     "currency": "CZK",
-     "published": "2026-09-17",
-     "source": "ČNB",
-     "summary": "Aktualizace prognózy ČNB počítá s růstem inflace nad 3 % na začátku roku 2027 a se zvýšenou jádrovou inflací.",
-     "title": "ČNB čeká dočasné zvýšení inflace nad 3 % na začátku roku 2027",
-     "url": "https://www.cnb.cz/en/monetary-policy/bank-board-decisions/CNB-Board-decisions-1789628400000/?tab=recordGraph",
-     "why": "Vývoj inflace určí, zda ČNB v listopadu sazby zvýší."
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Kurzy.cz (ČSOB Dealing)",
+     "currency": "CZK",
+     "title": "Koruna vyčkává na komentáře ČNB, testovala 24,30 za euro",
+     "url": "https://zpravy.kurzy.cz/878668-koruna-pod-taktovkou-eurodolaru-vyckava-na-komentare-z-cnb/",
+     "summary": "Koruna v pátek posílila díky stabilnějšímu eurodolaru a nižším americkým výnosům a testovala 24,30 za euro. Tuzemský kalendář je tento týden prázdný, pohyby budou záviset na komentářích centrálních bankéřů před listopadovým zasedáním ČNB.",
+     "why": "Bez domácích dat se koruna řídí eurodolarem a francouzským politickým napětím.",
+     "published": "2026-10-19T08:20"
+    },
     {
      "source": "Kurzy.cz (ČSOB Dealing)",
      "currency": "CZK",
@@ -139,15 +148,6 @@
      "title": "Dolar před americkou inflací slábne, EUR/USD nad 1,12",
      "url": "https://www.fxstreet.com/news/forex-today-us-dollar-weakens-ahead-of-us-cpi-inflation-data-202610140648",
      "why": "Vyšší než čekaná inflace by vrátila sázky na zvýšení sazeb Fedu a posílila dolar."
-    },
-    {
-     "currency": "USD",
-     "published": "2026-10-14",
-     "source": "U.S. News",
-     "summary": "Americká inflace CPI v září vzrostla na 3,7 % r/r proti odhadu 3,6 %, jádro na 2,6 % proti 2,5 %. Trh po datech zvýšil sázky na další zvýšení sazeb Fedu.",
-     "title": "Zářijová inflace v USA překvapila nahoru a zvedla sázky na zvýšení sazeb",
-     "url": "https://money.usnews.com/investing/news/articles/2026-10-14/hot-september-cpi-sends-rate-hike-bets-soaring",
-     "why": "Vyšší inflace podporuje dolar a sázky na přísnější Fed, což tlačí na USD/CZK nahoru."
     }
    ],
    "EUR/USD": [
@@ -344,12 +344,12 @@
   ]
  },
  "cnb": {
-  "date": "2026-10-16",
+  "date": "2026-10-19",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.325,
-   "USD": 21.622,
-   "PLN": 5.568,
+   "EUR": 24.34,
+   "USD": 21.69,
+   "PLN": 5.569,
    "HUF100": 6.701
   }
  },
@@ -797,8 +797,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-16",
-  "text": "Koruna zůstává kolem 24,33 za euro (kurz ČNB 16. 10.: 24,325), euro se proti dolaru odrazilo k 1,125. Dolar slábne, protože Warsh nepředjímá říjnové zasedání Fedu (28. 10.); dál se čeká na Fed a ECB (29. 10.)."
+  "asOf": "2026-10-19",
+  "text": "Koruna drží u 24,34 za euro (kurz ČNB 19. 10.), dolar mírně posílil na 21,69 Kč. Tento týden chybí domácí data; trh sleduje Francii, komentáře centrálních bank a Fed (28. 10.) s ECB (29. 10.)."
  },
  "outlook": {
   "asOf": "2026-10-14",
