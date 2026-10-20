@@ -544,99 +544,9 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-10-16",
+  "asOf": "2026-10-20",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
-   {
-    "at": "2026-10-14T10:00",
-    "country": "CZ",
-    "event": "Běžný účet (srpen)",
-    "consensus": "−25,4 mld. Kč",
-    "previous": "−34,2 mld. Kč",
-    "actual": "",
-    "importance": 1
-   },
-   {
-    "at": "2026-10-14T14:30",
-    "country": "US",
-    "event": "Inflace CPI r/r (září)",
-    "consensus": "3,6 %",
-    "previous": "3,4 %",
-    "actual": "3,7 %",
-    "importance": 3
-   },
-   {
-    "at": "2026-10-14T14:30",
-    "country": "US",
-    "event": "Jádrová inflace CPI r/r (září)",
-    "consensus": "2,5 %",
-    "previous": "2,4 %",
-    "actual": "2,6 %",
-    "importance": 3
-   },
-   {
-    "at": "2026-10-15T11:00",
-    "country": "EA",
-    "event": "Průmyslová výroba m/m (srpen)",
-    "consensus": "0,0 %",
-    "previous": "−0,1 %",
-    "actual": "",
-    "importance": 1
-   },
-   {
-    "at": "2026-10-15T14:30",
-    "country": "US",
-    "event": "Maloobchodní tržby m/m (září)",
-    "consensus": "0,3 %",
-    "previous": "1,2 %",
-    "actual": "0,8 %",
-    "importance": 2
-   },
-   {
-    "at": "2026-10-15T14:30",
-    "country": "US",
-    "event": "Ceny výrobců PPI r/r (září)",
-    "consensus": "5,3 %",
-    "previous": "5,4 %",
-    "actual": "",
-    "importance": 2
-   },
-   {
-    "at": "2026-10-15T14:30",
-    "country": "US",
-    "event": "Nové žádosti o podporu",
-    "consensus": "200 tis.",
-    "previous": "197 tis.",
-    "actual": "",
-    "importance": 1
-   },
-   {
-    "at": "2026-10-16T09:00",
-    "country": "CZ",
-    "event": "Ceny průmyslových výrobců r/r (září)",
-    "consensus": "3,4 %",
-    "previous": "2,0 %",
-    "actual": "3,7 %",
-    "importance": 1
-   },
-   {
-    "at": "2026-10-16T11:00",
-    "country": "EA",
-    "event": "Inflace HICP – finální (září)",
-    "consensus": "",
-    "previous": "",
-    "actual": "",
-    "importance": 2
-   },
-   {
-    "at": "2026-10-16T15:15",
-    "country": "US",
-    "event": "Průmyslová výroba m/m (září)",
-    "consensus": "0,4 %",
-    "previous": "0,0 %",
-    "actual": "0,7 %",
-    "importance": 1
-   },
    {
     "at": "2026-10-20T10:00",
     "country": "PL",
@@ -797,7 +707,7 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-19",
+  "asOf": "2026-10-20",
   "text": "Koruna drží u 24,34 za euro (kurz ČNB 19. 10.), dolar mírně posílil na 21,69 Kč. Tento týden chybí domácí data; trh sleduje Francii, komentáře centrálních bank a Fed (28. 10.) s ECB (29. 10.)."
  },
  "outlook": {
