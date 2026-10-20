@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-10-19",
+  "asOf": "2026-10-20",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "FXStreet.cz (Citfin)",
+     "currency": "EUR",
+     "title": "ZEW v říjnu klesl, drahá energie a Francie brzdí vyhlídky eurozóny",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-209222.html",
+     "summary": "Očekávání ZEW v Německu klesla z 34,7 na 28,1 bodu (konsenzus 30), v eurozóně z 25,8 na 18,5. Index zůstává kladný, ale vyšší ceny energií a francouzské fiskální riziko tlačí na růst.",
+     "why": "Slabší očekávání a drahá energie brzdí euro, na koruně se dopad projeví hlavně přes eurodolar.",
+     "published": "2026-10-20"
+    },
     {
      "source": "Kurzy.cz (ČSOB Dealing)",
      "currency": "CZK",
@@ -65,15 +74,6 @@
      "title": "Vyšší ropa a dluhopisové výnosy dál zvyšují inflační rizika",
      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-08/",
      "why": "Rizikový sentiment je pro CZK důležitý krátkodobý faktor."
-    },
-    {
-     "currency": "CZK",
-     "published": "2026-09-17",
-     "source": "ČNB",
-     "summary": "Bankovní rada 17. září ponechala sazby beze změny. Uvedla ale, že proinflační rizika z komodit zesílila a příště bude volit mezi stabilitou a zvýšením sazeb.",
-     "title": "ČNB drží repo sazbu na 3,75 % a v listopadu připouští i zvýšení",
-     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
-     "why": "Jestřábější ČNB je podpůrným faktorem pro korunu."
     }
    ],
    "USD/CZK": [
@@ -152,6 +152,15 @@
    ],
    "EUR/USD": [
     {
+     "source": "FXStreet.cz (Citfin)",
+     "currency": "EUR",
+     "title": "ZEW v říjnu klesl, drahá energie a Francie brzdí vyhlídky eurozóny",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-209222.html",
+     "summary": "Očekávání ZEW v Německu klesla z 34,7 na 28,1 bodu (konsenzus 30), v eurozóně z 25,8 na 18,5. Index zůstává kladný, ale vyšší ceny energií a francouzské fiskální riziko tlačí na růst.",
+     "why": "Slabší očekávání a drahá energie brzdí euro, na koruně se dopad projeví hlavně přes eurodolar.",
+     "published": "2026-10-20"
+    },
+    {
      "source": "FXStreet",
      "currency": "USD",
      "title": "Warsh nepředjímá říjnové zasedání, dolarový index klesá",
@@ -213,15 +222,6 @@
      "title": "Zářijová inflace v USA překvapila nahoru a zvedla sázky na zvýšení sazeb",
      "url": "https://money.usnews.com/investing/news/articles/2026-10-14/hot-september-cpi-sends-rate-hike-bets-soaring",
      "why": "Vyšší inflace podporuje dolar a sázky na přísnější Fed, což tlačí na USD/CZK nahoru."
-    },
-    {
-     "currency": "EUR/USD",
-     "published": "2026-10-13",
-     "source": "Reuters",
-     "summary": "Dolar ustoupil z 18měsíčního maxima, když klesla ropa a trh zvýšil sázky na pauzu Fedu v říjnu. Euro však dál limitují evropská fiskální rizika.",
-     "title": "EUR/USD 13. 10. podporuje ústup dolaru a nižší ropa",
-     "url": "https://www.reuters.com/world/africa/dollar-holds-near-18-month-high-geopolitical-risks-rise-2026-10-13/",
-     "why": "Aktuálně se střetává slábnoucí dolarový impuls s přetrvávajícími problémy eurozóny."
     }
    ],
    "PLN/CZK": [
@@ -344,13 +344,13 @@
   ]
  },
  "cnb": {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.34,
-   "USD": 21.69,
-   "PLN": 5.569,
-   "HUF100": 6.701
+   "EUR": 24.325,
+   "USD": 21.681,
+   "PLN": 5.558,
+   "HUF100": 6.672
   }
  },
  "mm": {
@@ -561,8 +561,8 @@
     "country": "DE",
     "event": "Index ZEW (říjen)",
     "consensus": "",
-    "previous": "",
-    "actual": "",
+    "previous": "34,7",
+    "actual": "28,1 (Německo, očekávání)",
     "importance": 2
    },
    {
@@ -708,7 +708,7 @@
  },
  "summary": {
   "asOf": "2026-10-20",
-  "text": "Koruna drží u 24,34 za euro (kurz ČNB 19. 10.), dolar mírně posílil na 21,69 Kč. Tento týden chybí domácí data; trh sleduje Francii, komentáře centrálních bank a Fed (28. 10.) s ECB (29. 10.)."
+  "text": "Koruna drží u 24,33 za euro (kurz ČNB 20. 10.), dolar je na 21,68 Kč. ZEW za říjen klesl na 28,1 (konsenzus 30) kvůli drahé energii a Francii; trh dál čeká na Fed (28. 10.) a ECB (29. 10.)."
  },
  "outlook": {
   "asOf": "2026-10-14",
