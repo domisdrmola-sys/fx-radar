@@ -78,6 +78,15 @@
    ],
    "USD/CZK": [
     {
+     "source": "FXStreet",
+     "currency": "USD",
+     "title": "Euro posiluje, ropa padá na nadějích na jednání USA s Íránem",
+     "url": "https://www.fxstreet.com/news/euro-climbs-as-oil-prices-tumble-on-us-iran-negotiation-hopes-202610201456",
+     "summary": "Ropa se po zprávách o pokroku k obnovení jednání USA s Íránem prudce otočila dolů, dolarový index klesl k 101,5 a výnosy amerických dluhopisů ustoupily. Část zisků euro se později vrátila, protože očekávání rychlé dohody se ukázala jako předčasná.",
+     "why": "Slabší dolar a levnější ropa podporují euro i koruna, ale křehké zprávy z Blízkého východu mohou trend rychle zvrátit.",
+     "published": "2026-10-20"
+    },
+    {
      "source": "Kurzy.cz (ČSOB Dealing)",
      "currency": "CZK",
      "title": "Koruna vyčkává na komentáře ČNB, testovala 24,30 za euro",
@@ -139,18 +148,18 @@
      "summary": "Po horší americké inflaci (3,7 %) dolar i výnosy krátce vyskočily, ale pohyb se zcela otočil; EUR/USD spadl na 1,1113 a vrátil se k 1,1240. Americké akcie během dne klesaly.",
      "why": "Slabší dolar a vyšší EUR/USD obvykle pomáhají koruně k dolaru; vůči euru je dopad malý.",
      "published": "2026-10-15"
-    },
-    {
-     "currency": "USD",
-     "published": "2026-10-14T08:48",
-     "source": "FXStreet",
-     "summary": "Dolarový index klesl k 102,1 spolu s nižší ropou a výnosy amerických dluhopisů; EUR/USD se v evropském obchodování dostal nad 1,12. Trh čeká na zářijovou inflaci CPI, odhady míří ke 3,6 % r/r, jádro kolem 2,5 %.",
-     "title": "Dolar před americkou inflací slábne, EUR/USD nad 1,12",
-     "url": "https://www.fxstreet.com/news/forex-today-us-dollar-weakens-ahead-of-us-cpi-inflation-data-202610140648",
-     "why": "Vyšší než čekaná inflace by vrátila sázky na zvýšení sazeb Fedu a posílila dolar."
     }
    ],
    "EUR/USD": [
+    {
+     "source": "FXStreet",
+     "currency": "USD",
+     "title": "Euro posiluje, ropa padá na nadějích na jednání USA s Íránem",
+     "url": "https://www.fxstreet.com/news/euro-climbs-as-oil-prices-tumble-on-us-iran-negotiation-hopes-202610201456",
+     "summary": "Ropa se po zprávách o pokroku k obnovení jednání USA s Íránem prudce otočila dolů, dolarový index klesl k 101,5 a výnosy amerických dluhopisů ustoupily. Část zisků euro se později vrátila, protože očekávání rychlé dohody se ukázala jako předčasná.",
+     "why": "Slabší dolar a levnější ropa podporují euro i koruna, ale křehké zprávy z Blízkého východu mohou trend rychle zvrátit.",
+     "published": "2026-10-20"
+    },
     {
      "source": "FXStreet.cz (Citfin)",
      "currency": "EUR",
@@ -213,15 +222,6 @@
      "title": "Dolar před americkou inflací slábne, EUR/USD nad 1,12",
      "url": "https://www.fxstreet.com/news/forex-today-us-dollar-weakens-ahead-of-us-cpi-inflation-data-202610140648",
      "why": "Vyšší než čekaná inflace by vrátila sázky na zvýšení sazeb Fedu a posílila dolar."
-    },
-    {
-     "currency": "USD",
-     "published": "2026-10-14",
-     "source": "U.S. News",
-     "summary": "Americká inflace CPI v září vzrostla na 3,7 % r/r proti odhadu 3,6 %, jádro na 2,6 % proti 2,5 %. Trh po datech zvýšil sázky na další zvýšení sazeb Fedu.",
-     "title": "Zářijová inflace v USA překvapila nahoru a zvedla sázky na zvýšení sazeb",
-     "url": "https://money.usnews.com/investing/news/articles/2026-10-14/hot-september-cpi-sends-rate-hike-bets-soaring",
-     "why": "Vyšší inflace podporuje dolar a sázky na přísnější Fed, což tlačí na USD/CZK nahoru."
     }
    ],
    "PLN/CZK": [
@@ -708,7 +708,7 @@
  },
  "summary": {
   "asOf": "2026-10-20",
-  "text": "Koruna drží u 24,33 za euro (kurz ČNB 20. 10.), dolar je na 21,68 Kč. ZEW za říjen klesl na 28,1 (konsenzus 30) kvůli drahé energii a Francii; trh dál čeká na Fed (28. 10.) a ECB (29. 10.)."
+  "text": "Koruna drží u 24,33 za euro (kurz ČNB 20. 10.), dolar je na 21,68 Kč. Ropa kolísá podle zpráv o jednání USA s Íránem a dolar slábne; trh dál čeká na Fed (28. 10.) a ECB (29. 10.)."
  },
  "outlook": {
   "asOf": "2026-10-14",
