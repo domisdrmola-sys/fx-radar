@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-10-20",
+  "asOf": "2026-10-21",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "Kurzy.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Koruna posílila k měsíčnímu maximu kolem 24,30 za euro",
+     "url": "https://zpravy.kurzy.cz/878956-koruna-posiluje-k-hladine-24-30-eurczk",
+     "summary": "Koruna ráno posílila k 24,30 za euro, na nejsilnější úroveň za měsíc, po ponechání sazeb maďarskou centrální bankou. Analytici čekají pásmo 24,25–24,35; zisky brzdí drahá energie a nejistota kolem Francie.",
+     "why": "Bez domácích dat koruna těží z regionální nálady, omezují ji ceny energií a francouzská rizika.",
+     "published": "2026-10-21T07:05"
+    },
     {
      "source": "FXStreet.cz (Citfin)",
      "currency": "EUR",
@@ -65,18 +74,18 @@
      "title": "Zápis ECB potvrzuje datově závislý přístup po zářijovém zvýšení",
      "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261008~a10153d090.en.html",
      "why": "Snižuje pravděpodobnost automatického dalšího zvýšení už v říjnu."
-    },
-    {
-     "currency": "Makro",
-     "published": "2026-10-08",
-     "source": "Reuters",
-     "summary": "Ropa znovu výrazně zdražila a dlouhé výnosy zůstávají vysoko, což zvyšuje nervozitu na evropských i globálních trzích.",
-     "title": "Vyšší ropa a dluhopisové výnosy dál zvyšují inflační rizika",
-     "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-08/",
-     "why": "Rizikový sentiment je pro CZK důležitý krátkodobý faktor."
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Kurzy.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Koruna posílila k měsíčnímu maximu kolem 24,30 za euro",
+     "url": "https://zpravy.kurzy.cz/878956-koruna-posiluje-k-hladine-24-30-eurczk",
+     "summary": "Koruna ráno posílila k 24,30 za euro, na nejsilnější úroveň za měsíc, po ponechání sazeb maďarskou centrální bankou. Analytici čekají pásmo 24,25–24,35; zisky brzdí drahá energie a nejistota kolem Francie.",
+     "why": "Bez domácích dat koruna těží z regionální nálady, omezují ji ceny energií a francouzská rizika.",
+     "published": "2026-10-21T07:05"
+    },
     {
      "source": "FXStreet",
      "currency": "USD",
@@ -139,15 +148,6 @@
      "title": "Dolar odevzdal zisky po inflaci, Fed signalizuje trpělivost",
      "url": "https://www.brecorder.com/news/40444323/dollar-retreats-from-18-month-high-despite-hot-cpi-as-fed-officials-temper-hike-bets",
      "why": "Nižší pravděpodobnost říjnového zvýšení sazeb Fedu krátkodobě brzdí dolar."
-    },
-    {
-     "source": "Saxo Bank",
-     "currency": "USD",
-     "title": "Dolar po inflaci vystřelil a vzápětí vše vrátil",
-     "url": "https://home.saxo/en-ch/content/articles/forex/the-fx-trader-the-usd-and-risk-sentiment-a-bit-different-now-15102026",
-     "summary": "Po horší americké inflaci (3,7 %) dolar i výnosy krátce vyskočily, ale pohyb se zcela otočil; EUR/USD spadl na 1,1113 a vrátil se k 1,1240. Americké akcie během dne klesaly.",
-     "why": "Slabší dolar a vyšší EUR/USD obvykle pomáhají koruně k dolaru; vůči euru je dopad malý.",
-     "published": "2026-10-15"
     }
    ],
    "EUR/USD": [
@@ -707,8 +707,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-20",
-  "text": "Koruna drží u 24,33 za euro (kurz ČNB 20. 10.), dolar je na 21,68 Kč. Ropa kolísá podle zpráv o jednání USA s Íránem a dolar slábne; trh dál čeká na Fed (28. 10.) a ECB (29. 10.)."
+  "asOf": "2026-10-21",
+  "text": "Koruna ráno posílila k 24,30 za euro, na měsíční maximum (fixing ECB 20. 10.: 24,33). Trh čeká na Fed (28. 10.) a ECB (29. 10.); kurz dál ovlivňují ceny energií, Írán a Francie."
  },
  "outlook": {
   "asOf": "2026-10-14",
