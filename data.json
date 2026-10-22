@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "FXStreet.cz",
+     "currency": "CZK",
+     "title": "Koruna se drží pod 24,30 a hledá impulsy v zahraničí",
+     "url": "https://fxstreet.cz/zpravodajstvi-209334.html",
+     "summary": "Koruna včera klesla pod 24,30 za euro a čeká na nové podněty. Domácí události tento týden chybí, trh sleduje eurodolar a růst výnosů francouzských dluhopisů nad 5 %.",
+     "why": "Bez domácích impulsů se koruna odvíjí od eurodolaru a evropského rizikového sentimentu.",
+     "published": "2026-10-22T09:35"
+    },
+    {
      "source": "Kurzy.cz (ČSOB Dealing)",
      "currency": "CZK",
      "title": "Koruna bez domácích impulsů sleduje eurodolar a Francii",
@@ -65,18 +74,18 @@
      "summary": "Koruna v pátek posílila díky stabilnějšímu eurodolaru a nižším americkým výnosům a testovala 24,30 za euro. Tuzemský kalendář je tento týden prázdný, pohyby budou záviset na komentářích centrálních bankéřů před listopadovým zasedáním ČNB.",
      "why": "Bez domácích dat se koruna řídí eurodolarem a francouzským politickým napětím.",
      "published": "2026-10-19T08:20"
-    },
-    {
-     "source": "Kurzy.cz (ČSOB Dealing)",
-     "currency": "CZK",
-     "title": "Koruna drží těsně pod 24,40 za euro",
-     "url": "https://zpravy.kurzy.cz/878501-koruna-stabilni-pod-24-40-eur-czk/",
-     "summary": "Koruna zůstává navzdory kolísání eura vůči dolaru těsně pod 24,40 za euro. Obchodníci sledují dolar, geopolitiku a ceny energií, zejména plynu v EU.",
-     "why": "Klidné prostředí a stabilní koruna; riziko přichází hlavně z dolaru a energií.",
-     "published": "2026-10-16T08:18"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "FXStreet.cz",
+     "currency": "CZK",
+     "title": "Koruna se drží pod 24,30 a hledá impulsy v zahraničí",
+     "url": "https://fxstreet.cz/zpravodajstvi-209334.html",
+     "summary": "Koruna včera klesla pod 24,30 za euro a čeká na nové podněty. Domácí události tento týden chybí, trh sleduje eurodolar a růst výnosů francouzských dluhopisů nad 5 %.",
+     "why": "Bez domácích impulsů se koruna odvíjí od eurodolaru a evropského rizikového sentimentu.",
+     "published": "2026-10-22T09:35"
+    },
     {
      "source": "Kurzy.cz (ČSOB Dealing)",
      "currency": "CZK",
@@ -139,15 +148,6 @@
      "summary": "Koruna v pátek posílila díky stabilnějšímu eurodolaru a nižším americkým výnosům a testovala 24,30 za euro. Tuzemský kalendář je tento týden prázdný, pohyby budou záviset na komentářích centrálních bankéřů před listopadovým zasedáním ČNB.",
      "why": "Bez domácích dat se koruna řídí eurodolarem a francouzským politickým napětím.",
      "published": "2026-10-19T08:20"
-    },
-    {
-     "source": "Kurzy.cz (ČSOB Dealing)",
-     "currency": "CZK",
-     "title": "Koruna drží těsně pod 24,40 za euro",
-     "url": "https://zpravy.kurzy.cz/878501-koruna-stabilni-pod-24-40-eur-czk/",
-     "summary": "Koruna zůstává navzdory kolísání eura vůči dolaru těsně pod 24,40 za euro. Obchodníci sledují dolar, geopolitiku a ceny energií, zejména plynu v EU.",
-     "why": "Klidné prostředí a stabilní koruna; riziko přichází hlavně z dolaru a energií.",
-     "published": "2026-10-16T08:18"
     }
    ],
    "EUR/USD": [
@@ -344,13 +344,13 @@
   ]
  },
  "cnb": {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.26,
-   "USD": 21.593,
-   "PLN": 5.56,
-   "HUF100": 6.644
+   "EUR": 24.265,
+   "USD": 21.651,
+   "PLN": 5.554,
+   "HUF100": 6.621
   }
  },
  "mm": {
@@ -690,7 +690,7 @@
  },
  "summary": {
   "asOf": "2026-10-22",
-  "text": "Koruna ráno drží u 24,25 za euro (fixing ECB 21. 10.: 24,26), nejsilněji od poloviny září; podporuje ji očekávané zvýšení sazeb ČNB. Rizikem jsou francouzské výnosy nad 5 % a energie; zítra flash PMI."
+  "text": "Koruna drží u 24,25 za euro (kurz ČNB 24,265), nejsilněji od poloviny září; podporuje ji očekávané zvýšení sazeb ČNB. Rizikem jsou francouzské výnosy nad 5 % a energie; zítra flash PMI."
  },
  "outlook": {
   "asOf": "2026-10-14",
