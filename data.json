@@ -1,8 +1,26 @@
 {
  "news": {
-  "asOf": "2026-10-21",
+  "asOf": "2026-10-22",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "Kurzy.cz (ČSOB Dealing)",
+     "currency": "CZK",
+     "title": "Koruna bez domácích impulsů sleduje eurodolar a Francii",
+     "url": "https://zpravy.kurzy.cz/879098-koruna-pod-24-30-eur-czk/",
+     "summary": "Tuzemský kalendář je do konce týdne prázdný, takže koruna sleduje hlavně eurodolar. Negativem jsou rostoucí výnosy francouzských dluhopisů nad 5 %.",
+     "why": "Bez domácích dat se koruna řídí zahraničím; francouzské výnosy by ji mohly oslabit zpět nad 24,30.",
+     "published": "2026-10-22T08:19"
+    },
+    {
+     "source": "Kurzy.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Koruna ráno u 24,25 za euro, drží ji čekání na sazby ČNB",
+     "url": "https://zpravy.kurzy.cz/879094-stabilita-na-eurodolaru-koruna-zatim-dale-posiluje/",
+     "summary": "Koruna ráno posílila k 24,25 za euro a analytici čekají pásmo 24,20–24,30. Eurodolar je stabilní, ale euro tlačí výnosy francouzských dluhopisů nad 5 % a inflace v eurozóně zrychlila na 3,8 %.",
+     "why": "Očekávané zvýšení sazeb ČNB v listopadu korunu podporuje, riziko je horší nálada kolem Francie a dražší energie.",
+     "published": "2026-10-22T07:11"
+    },
     {
      "source": "FXStreet.cz",
      "currency": "CZK",
@@ -56,27 +74,27 @@
      "summary": "Koruna zůstává navzdory kolísání eura vůči dolaru těsně pod 24,40 za euro. Obchodníci sledují dolar, geopolitiku a ceny energií, zejména plynu v EU.",
      "why": "Klidné prostředí a stabilní koruna; riziko přichází hlavně z dolaru a energií.",
      "published": "2026-10-16T08:18"
-    },
-    {
-     "source": "České noviny / ČTK (Patria Online)",
-     "currency": "CZK",
-     "title": "Pražská burza popáté v řadě rostla, koruna mírně posílila",
-     "url": "https://www.ceskenoviny.cz/zpravy/prazska-burza-rostla-popate-v-rade-koruna-posilila/2888435",
-     "summary": "Koruna v 17:00 posílila k euru o 2 haléře na 24,36 Kč a k dolaru o 17 haléřů na 21,74 Kč. Silnější americké PPI a maloobchod vyvolaly jen malou reakci trhu.",
-     "why": "Slabší dolar pomáhá středoevropským měnám; koruna zůstává poblíž 24,35 za euro.",
-     "published": "2026-10-15T17:26"
-    },
-    {
-     "currency": "EUR",
-     "published": "2026-10-14T09:08",
-     "source": "Reuters",
-     "summary": "Šéfka ECB odmítla spekulace o nákupech francouzských dluhopisů a vyzvala Paříž ke konsolidaci rozpočtu. Vysokou inflaci připisuje hlavně energiím a sleduje sekundární efekty; trh čeká další zvýšení sazeb ECB v prosinci.",
-     "title": "Lagardeová: řešení francouzského dluhu musí najít Francie sama",
-     "url": "https://www.brecorder.com/news/40444162/ecbs-lagarde-says-solution-to-french-debt-woes-is-at-home",
-     "why": "Fiskální rizika ve Francii mohou dál tížit euro, jestřábí ECB ho naopak podporuje."
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Kurzy.cz (ČSOB Dealing)",
+     "currency": "CZK",
+     "title": "Koruna bez domácích impulsů sleduje eurodolar a Francii",
+     "url": "https://zpravy.kurzy.cz/879098-koruna-pod-24-30-eur-czk/",
+     "summary": "Tuzemský kalendář je do konce týdne prázdný, takže koruna sleduje hlavně eurodolar. Negativem jsou rostoucí výnosy francouzských dluhopisů nad 5 %.",
+     "why": "Bez domácích dat se koruna řídí zahraničím; francouzské výnosy by ji mohly oslabit zpět nad 24,30.",
+     "published": "2026-10-22T08:19"
+    },
+    {
+     "source": "Kurzy.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Koruna ráno u 24,25 za euro, drží ji čekání na sazby ČNB",
+     "url": "https://zpravy.kurzy.cz/879094-stabilita-na-eurodolaru-koruna-zatim-dale-posiluje/",
+     "summary": "Koruna ráno posílila k 24,25 za euro a analytici čekají pásmo 24,20–24,30. Eurodolar je stabilní, ale euro tlačí výnosy francouzských dluhopisů nad 5 % a inflace v eurozóně zrychlila na 3,8 %.",
+     "why": "Očekávané zvýšení sazeb ČNB v listopadu korunu podporuje, riziko je horší nálada kolem Francie a dražší energie.",
+     "published": "2026-10-22T07:11"
+    },
     {
      "source": "FXStreet.cz",
      "currency": "CZK",
@@ -130,27 +148,18 @@
      "summary": "Koruna zůstává navzdory kolísání eura vůči dolaru těsně pod 24,40 za euro. Obchodníci sledují dolar, geopolitiku a ceny energií, zejména plynu v EU.",
      "why": "Klidné prostředí a stabilní koruna; riziko přichází hlavně z dolaru a energií.",
      "published": "2026-10-16T08:18"
-    },
-    {
-     "source": "FXStreet",
-     "currency": "USD",
-     "title": "Warsh nepředjímá říjnové zasedání, dolarový index klesá",
-     "url": "https://fxstreet.com/news/dollar-index-slips-as-fed-chair-warsh-wont-prejudge-october-202610161624",
-     "summary": "Šéf Fedu Warsh uvedl, že nebude předjímat říjnové rozhodnutí; sázky na zvýšení sazeb klesly asi na 16 % z 28 %. Dolarový index padl na nejnižší úroveň od 1. října, i přes silnější americkou průmyslovou výrobu (+0,7 % proti očekávaným 0,4 %).",
-     "why": "Slabší dolar a nižší šance na zvýšení sazeb Fedu podporují euro i korunu vůči dolaru.",
-     "published": "2026-10-16"
-    },
-    {
-     "source": "FXStreet",
-     "currency": "USD",
-     "title": "Euro posiluje, dolar slábne po komentářích Warshe z Fedu",
-     "url": "https://www.fxstreet.com/news/euro-gains-as-us-dollar-weakens-following-fed-warshs-comments-at-imf-chat-202610160401",
-     "summary": "Euro se odrazilo od 17měsíčního minima kolem 1,111 USD a zhruba na úrovni 1,12 těží ze slábnoucího dolaru po vystoupení člena Fedu Warshe na akci MMF.",
-     "why": "Slabší dolar podporuje EUR/USD a mírně tlačí USD/CZK dolů, koruna k euru se zatím příliš nehýbe.",
-     "published": "2026-10-16"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "Kurzy.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Koruna ráno u 24,25 za euro, drží ji čekání na sazby ČNB",
+     "url": "https://zpravy.kurzy.cz/879094-stabilita-na-eurodolaru-koruna-zatim-dale-posiluje/",
+     "summary": "Koruna ráno posílila k 24,25 za euro a analytici čekají pásmo 24,20–24,30. Eurodolar je stabilní, ale euro tlačí výnosy francouzských dluhopisů nad 5 % a inflace v eurozóně zrychlila na 3,8 %.",
+     "why": "Očekávané zvýšení sazeb ČNB v listopadu korunu podporuje, riziko je horší nálada kolem Francie a dražší energie.",
+     "published": "2026-10-22T07:11"
+    },
     {
      "source": "FXStreet.cz",
      "currency": "CZK",
@@ -213,15 +222,6 @@
      "summary": "Po horší americké inflaci (3,7 %) dolar i výnosy krátce vyskočily, ale pohyb se zcela otočil; EUR/USD spadl na 1,1113 a vrátil se k 1,1240. Americké akcie během dne klesaly.",
      "why": "Slabší dolar a vyšší EUR/USD obvykle pomáhají koruně k dolaru; vůči euru je dopad malý.",
      "published": "2026-10-15"
-    },
-    {
-     "currency": "EUR",
-     "published": "2026-10-14T09:08",
-     "source": "Reuters",
-     "summary": "Šéfka ECB odmítla spekulace o nákupech francouzských dluhopisů a vyzvala Paříž ke konsolidaci rozpočtu. Vysokou inflaci připisuje hlavně energiím a sleduje sekundární efekty; trh čeká další zvýšení sazeb ECB v prosinci.",
-     "title": "Lagardeová: řešení francouzského dluhu musí najít Francie sama",
-     "url": "https://www.brecorder.com/news/40444162/ecbs-lagarde-says-solution-to-french-debt-woes-is-at-home",
-     "why": "Fiskální rizika ve Francii mohou dál tížit euro, jestřábí ECB ho naopak podporuje."
     }
    ],
    "PLN/CZK": [
@@ -544,27 +544,9 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-10-20",
+  "asOf": "2026-10-22",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
-   {
-    "at": "2026-10-20T10:00",
-    "country": "PL",
-    "event": "Mzdy a průmyslová výroba (září)",
-    "consensus": "",
-    "previous": "",
-    "actual": "",
-    "importance": 2
-   },
-   {
-    "at": "2026-10-20T11:00",
-    "country": "DE",
-    "event": "Index ZEW (říjen)",
-    "consensus": "",
-    "previous": "34,7",
-    "actual": "28,1 (Německo, očekávání)",
-    "importance": 2
-   },
    {
     "at": "2026-10-22T10:00",
     "country": "PL",
@@ -707,8 +689,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-21",
-  "text": "Koruna posílila k 24,26 za euro podle kurzu ČNB (fixing ECB 21. 10.: 24,26), na nejsilnější úroveň od poloviny září; trh sází na další zvýšení sazeb ČNB. Dál sledujeme Fed (28. 10.), ECB (29. 10.), energie a Francii."
+  "asOf": "2026-10-22",
+  "text": "Koruna ráno drží u 24,25 za euro (fixing ECB 21. 10.: 24,26), nejsilněji od poloviny září; podporuje ji očekávané zvýšení sazeb ČNB. Rizikem jsou francouzské výnosy nad 5 % a energie; zítra flash PMI."
  },
  "outlook": {
   "asOf": "2026-10-14",
