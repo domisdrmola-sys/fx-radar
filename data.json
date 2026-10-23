@@ -161,6 +161,15 @@
      "published": "2026-10-23T07:26"
     },
     {
+     "source": "FXStreet (BBH)",
+     "currency": "EUR/USD",
+     "title": "BBH: euro bez síly nad dolarem kvůli francouzským financím",
+     "url": "https://www.fxstreet.com/news/euro-fiscal-risks-cap-upside-against-us-dollar-bbh-202610231346",
+     "summary": "Analytici BBH vidí EUR/USD defenzivně pod 1,12 po slabším PMI v eurozóně. Fiskální potíže Francie by mohly pár přiblížit k 1,10, ECB má kvůli inflaci prostor pro další zvyšování sazeb.",
+     "why": "Slabší euro k dolaru obvykle znamená i tlak na EUR/CZK a posiluje USD/CZK.",
+     "published": "2026-10-23"
+    },
+    {
      "source": "FXStreet",
      "currency": "EUR",
      "title": "Eurozónové PMI v říjnu zklamalo, složený index 51,9",
@@ -212,15 +221,6 @@
      "url": "https://fxstreet.com/news/dollar-index-slips-as-fed-chair-warsh-wont-prejudge-october-202610161624",
      "summary": "Šéf Fedu Warsh uvedl, že nebude předjímat říjnové rozhodnutí; sázky na zvýšení sazeb klesly asi na 16 % z 28 %. Dolarový index padl na nejnižší úroveň od 1. října, i přes silnější americkou průmyslovou výrobu (+0,7 % proti očekávaným 0,4 %).",
      "why": "Slabší dolar a nižší šance na zvýšení sazeb Fedu podporují euro i korunu vůči dolaru.",
-     "published": "2026-10-16"
-    },
-    {
-     "source": "FXStreet",
-     "currency": "USD",
-     "title": "Euro posiluje, dolar slábne po komentářích Warshe z Fedu",
-     "url": "https://www.fxstreet.com/news/euro-gains-as-us-dollar-weakens-following-fed-warshs-comments-at-imf-chat-202610160401",
-     "summary": "Euro se odrazilo od 17měsíčního minima kolem 1,111 USD a zhruba na úrovni 1,12 těží ze slábnoucího dolaru po vystoupení člena Fedu Warshe na akci MMF.",
-     "why": "Slabší dolar podporuje EUR/USD a mírně tlačí USD/CZK dolů, koruna k euru se zatím příliš nehýbe.",
      "published": "2026-10-16"
     }
    ],
