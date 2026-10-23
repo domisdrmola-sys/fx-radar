@@ -1,8 +1,26 @@
 {
  "news": {
-  "asOf": "2026-10-22",
+  "asOf": "2026-10-23",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "Kurzy.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Koruna drží 24,25–24,30, euro klesá pod 1,12 USD kvůli Francii",
+     "url": "https://zpravy.kurzy.cz/879230-dolar-posiluje-a-napeti-na-evropskych-trzich-roste/",
+     "summary": "Euro kleslo pod 1,12 USD kvůli francouzským dluhopisům a dražší energii, koruna se držela kolem 24,25–24,30 za euro. Podporuje ji očekávané listopadové zvýšení sazeb ČNB.",
+     "why": "Slabší euro tlačí USD/CZK nahoru, EUR/CZK drží očekávání sazeb ČNB.",
+     "published": "2026-10-23T07:26"
+    },
+    {
+     "source": "FXStreet",
+     "currency": "EUR",
+     "title": "Eurozónové PMI v říjnu zklamalo, složený index 51,9",
+     "url": "https://www.fxstreet.com/news/eurozone-hcob-composite-pmi-declines-to-519-in-october-vs-527-expected-202610230806",
+     "summary": "Předběžný složený PMI eurozóny klesl na 51,9 z 53,1 a minul konsenzus 52,7; služby 51,7 proti očekávaným 52,5. Euro se drželo těsně pod 1,12 USD.",
+     "why": "Slabší data tlumí euro a potvrzují opatrnost ECB, což tlačí EUR/USD dolů.",
+     "published": "2026-10-23"
+    },
     {
      "source": "FXStreet.cz",
      "currency": "CZK",
@@ -56,27 +74,18 @@
      "summary": "Koruna se v úterý odpoledne držela kolem 24,30 za euro a 21,62 za dolar; od začátku října posílila téměř o 1 % k euru. Analytik Purple Trading to vysvětluje hlavně sázkami na další růst sazeb ČNB kvůli zrychlující inflaci (ceny průmyslových výrobců v září +3,7 % meziročně).",
      "why": "Očekávání zpřísňování ČNB podporuje korunu a může ji držet poblíž měsíčních maxim.",
      "published": "2026-10-20T17:00"
-    },
-    {
-     "source": "FXStreet.cz (Citfin)",
-     "currency": "EUR",
-     "title": "ZEW v říjnu klesl, drahá energie a Francie brzdí vyhlídky eurozóny",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-209222.html",
-     "summary": "Očekávání ZEW v Německu klesla z 34,7 na 28,1 bodu (konsenzus 30), v eurozóně z 25,8 na 18,5. Index zůstává kladný, ale vyšší ceny energií a francouzské fiskální riziko tlačí na růst.",
-     "why": "Slabší očekávání a drahá energie brzdí euro, na koruně se dopad projeví hlavně přes eurodolar.",
-     "published": "2026-10-20"
-    },
-    {
-     "source": "Kurzy.cz (ČSOB Dealing)",
-     "currency": "CZK",
-     "title": "Koruna vyčkává na komentáře ČNB, testovala 24,30 za euro",
-     "url": "https://zpravy.kurzy.cz/878668-koruna-pod-taktovkou-eurodolaru-vyckava-na-komentare-z-cnb/",
-     "summary": "Koruna v pátek posílila díky stabilnějšímu eurodolaru a nižším americkým výnosům a testovala 24,30 za euro. Tuzemský kalendář je tento týden prázdný, pohyby budou záviset na komentářích centrálních bankéřů před listopadovým zasedáním ČNB.",
-     "why": "Bez domácích dat se koruna řídí eurodolarem a francouzským politickým napětím.",
-     "published": "2026-10-19T08:20"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Kurzy.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Koruna drží 24,25–24,30, euro klesá pod 1,12 USD kvůli Francii",
+     "url": "https://zpravy.kurzy.cz/879230-dolar-posiluje-a-napeti-na-evropskych-trzich-roste/",
+     "summary": "Euro kleslo pod 1,12 USD kvůli francouzským dluhopisům a dražší energii, koruna se držela kolem 24,25–24,30 za euro. Podporuje ji očekávané listopadové zvýšení sazeb ČNB.",
+     "why": "Slabší euro tlačí USD/CZK nahoru, EUR/CZK drží očekávání sazeb ČNB.",
+     "published": "2026-10-23T07:26"
+    },
     {
      "source": "FXStreet.cz",
      "currency": "CZK",
@@ -139,18 +148,27 @@
      "summary": "Ropa se po zprávách o pokroku k obnovení jednání USA s Íránem prudce otočila dolů, dolarový index klesl k 101,5 a výnosy amerických dluhopisů ustoupily. Část zisků euro se později vrátila, protože očekávání rychlé dohody se ukázala jako předčasná.",
      "why": "Slabší dolar a levnější ropa podporují euro i koruna, ale křehké zprávy z Blízkého východu mohou trend rychle zvrátit.",
      "published": "2026-10-20"
-    },
-    {
-     "source": "Kurzy.cz (ČSOB Dealing)",
-     "currency": "CZK",
-     "title": "Koruna vyčkává na komentáře ČNB, testovala 24,30 za euro",
-     "url": "https://zpravy.kurzy.cz/878668-koruna-pod-taktovkou-eurodolaru-vyckava-na-komentare-z-cnb/",
-     "summary": "Koruna v pátek posílila díky stabilnějšímu eurodolaru a nižším americkým výnosům a testovala 24,30 za euro. Tuzemský kalendář je tento týden prázdný, pohyby budou záviset na komentářích centrálních bankéřů před listopadovým zasedáním ČNB.",
-     "why": "Bez domácích dat se koruna řídí eurodolarem a francouzským politickým napětím.",
-     "published": "2026-10-19T08:20"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "Kurzy.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Koruna drží 24,25–24,30, euro klesá pod 1,12 USD kvůli Francii",
+     "url": "https://zpravy.kurzy.cz/879230-dolar-posiluje-a-napeti-na-evropskych-trzich-roste/",
+     "summary": "Euro kleslo pod 1,12 USD kvůli francouzským dluhopisům a dražší energii, koruna se držela kolem 24,25–24,30 za euro. Podporuje ji očekávané listopadové zvýšení sazeb ČNB.",
+     "why": "Slabší euro tlačí USD/CZK nahoru, EUR/CZK drží očekávání sazeb ČNB.",
+     "published": "2026-10-23T07:26"
+    },
+    {
+     "source": "FXStreet",
+     "currency": "EUR",
+     "title": "Eurozónové PMI v říjnu zklamalo, složený index 51,9",
+     "url": "https://www.fxstreet.com/news/eurozone-hcob-composite-pmi-declines-to-519-in-october-vs-527-expected-202610230806",
+     "summary": "Předběžný složený PMI eurozóny klesl na 51,9 z 53,1 a minul konsenzus 52,7; služby 51,7 proti očekávaným 52,5. Euro se drželo těsně pod 1,12 USD.",
+     "why": "Slabší data tlumí euro a potvrzují opatrnost ECB, což tlačí EUR/USD dolů.",
+     "published": "2026-10-23"
+    },
     {
      "source": "Kurzy.cz (Citfin)",
      "currency": "CZK",
@@ -204,24 +222,6 @@
      "summary": "Euro se odrazilo od 17měsíčního minima kolem 1,111 USD a zhruba na úrovni 1,12 těží ze slábnoucího dolaru po vystoupení člena Fedu Warshe na akci MMF.",
      "why": "Slabší dolar podporuje EUR/USD a mírně tlačí USD/CZK dolů, koruna k euru se zatím příliš nehýbe.",
      "published": "2026-10-16"
-    },
-    {
-     "currency": "USD",
-     "published": "2026-10-15T04:55",
-     "source": "Reuters",
-     "summary": "Dolarový index klesl k 102,06 a euro se vrátilo k 1,1187 USD z 18měsíčního minima. Bowmanová a Dalyová z Fedu uvedly, že banka může před zasedáním 27.–28. 10. vyčkat, takže sázky na říjnové zvýšení po skoku k 50 % opět opadly.",
-     "title": "Dolar odevzdal zisky po inflaci, Fed signalizuje trpělivost",
-     "url": "https://www.brecorder.com/news/40444323/dollar-retreats-from-18-month-high-despite-hot-cpi-as-fed-officials-temper-hike-bets",
-     "why": "Nižší pravděpodobnost říjnového zvýšení sazeb Fedu krátkodobě brzdí dolar."
-    },
-    {
-     "source": "Saxo Bank",
-     "currency": "USD",
-     "title": "Dolar po inflaci vystřelil a vzápětí vše vrátil",
-     "url": "https://home.saxo/en-ch/content/articles/forex/the-fx-trader-the-usd-and-risk-sentiment-a-bit-different-now-15102026",
-     "summary": "Po horší americké inflaci (3,7 %) dolar i výnosy krátce vyskočily, ale pohyb se zcela otočil; EUR/USD spadl na 1,1113 a vrátil se k 1,1240. Americké akcie během dne klesaly.",
-     "why": "Slabší dolar a vyšší EUR/USD obvykle pomáhají koruně k dolaru; vůči euru je dopad malý.",
-     "published": "2026-10-15"
     }
    ],
    "PLN/CZK": [
@@ -344,25 +344,25 @@
   ]
  },
  "cnb": {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.265,
-   "USD": 21.651,
-   "PLN": 5.554,
-   "HUF100": 6.621
+   "EUR": 24.335,
+   "USD": 21.741,
+   "PLN": 5.537,
+   "HUF100": 6.636
   }
  },
  "mm": {
-  "asOf": "2026-10-20",
+  "asOf": "2026-10-23",
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
-   "date": "2026-10-13",
+   "date": "2026-10-16",
    "basis": 360,
    "r": {
     "1M": 3.82,
-    "3M": 3.91,
+    "3M": 3.92,
     "6M": 4.07,
     "12M": 4.27
    }
@@ -544,7 +544,7 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-10-22",
+  "asOf": "2026-10-23",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
    {
@@ -560,9 +560,9 @@
     "at": "2026-10-23T10:00",
     "country": "EA",
     "event": "PMI flash (říjen)",
-    "consensus": "",
-    "previous": "",
-    "actual": "",
+    "consensus": "52,7 (kompozitní)",
+    "previous": "53,1 (kompozitní)",
+    "actual": "51,9 (kompozitní)",
     "importance": 2
    },
    {
@@ -689,8 +689,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-22",
-  "text": "Koruna drží u 24,25 za euro (kurz ČNB 24,265), nejsilněji od poloviny září; podporuje ji očekávané zvýšení sazeb ČNB. Rizikem jsou francouzské výnosy nad 5 % a energie; zítra flash PMI."
+  "asOf": "2026-10-23",
+  "text": "Koruna zeslábla k 24,34 za euro (kurz ČNB), po týdnu u 24,25, euro kleslo pod 1,12 USD kvůli Francii a energiím. Slabé flash PMI eurozóny (51,9 vs 52,7) tlačí euro; příští týden Fed a ECB."
  },
  "outlook": {
   "asOf": "2026-10-14",
