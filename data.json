@@ -78,6 +78,15 @@
    ],
    "USD/CZK": [
     {
+     "source": "StoneX",
+     "currency": "EUR",
+     "title": "Euro slábne před Fedem a ECB, dolarový index se blíží 102",
+     "url": "https://www.stonex.com/en-gb/news-and-analysis/eur-usd-update-euro-weakness-returns-ahead-of-central-bank-decisions-2026-10-26/",
+     "summary": "EUR/USD za poslední tři seance ztratil téměř 0,5 % kvůli návratu síly dolaru. Trh dává přes 90 % šanci, že Fed ponechá sazby na 4,00 %, a přes 97 %, že ECB ponechá depozitní sazbu na 2,50 %.",
+     "why": "Jestřábější tón Fedu než ECB by mohl tlačit eurodolar níž, což by mírně oslabovalo i korunu vůči dolaru.",
+     "published": "2026-10-26"
+    },
+    {
      "source": "Citfin",
      "currency": "CZK",
      "title": "Koruna startuje týden klidně, vše se rozhodne ve Fedu a ECB",
@@ -139,18 +148,18 @@
      "summary": "Koruna ráno posílila k 24,30 za euro, na nejsilnější úroveň za měsíc, po ponechání sazeb maďarskou centrální bankou. Analytici čekají pásmo 24,25–24,35; zisky brzdí drahá energie a nejistota kolem Francie.",
      "why": "Bez domácích dat koruna těží z regionální nálady, omezují ji ceny energií a francouzská rizika.",
      "published": "2026-10-21T07:05"
-    },
-    {
-     "source": "FXStreet.cz",
-     "currency": "CZK",
-     "title": "Koruna sílí na očekávání dalšího zvýšení sazeb ČNB",
-     "url": "https://fxstreet.cz/forex-koruna-dnes-posilila-k-euru-i-dolaru-o-jednotky-haleru.html",
-     "summary": "Koruna se v úterý odpoledne držela kolem 24,30 za euro a 21,62 za dolar; od začátku října posílila téměř o 1 % k euru. Analytik Purple Trading to vysvětluje hlavně sázkami na další růst sazeb ČNB kvůli zrychlující inflaci (ceny průmyslových výrobců v září +3,7 % meziročně).",
-     "why": "Očekávání zpřísňování ČNB podporuje korunu a může ji držet poblíž měsíčních maxim.",
-     "published": "2026-10-20T17:00"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "StoneX",
+     "currency": "EUR",
+     "title": "Euro slábne před Fedem a ECB, dolarový index se blíží 102",
+     "url": "https://www.stonex.com/en-gb/news-and-analysis/eur-usd-update-euro-weakness-returns-ahead-of-central-bank-decisions-2026-10-26/",
+     "summary": "EUR/USD za poslední tři seance ztratil téměř 0,5 % kvůli návratu síly dolaru. Trh dává přes 90 % šanci, že Fed ponechá sazby na 4,00 %, a přes 97 %, že ECB ponechá depozitní sazbu na 2,50 %.",
+     "why": "Jestřábější tón Fedu než ECB by mohl tlačit eurodolar níž, což by mírně oslabovalo i korunu vůči dolaru.",
+     "published": "2026-10-26"
+    },
     {
      "source": "Kurzy.cz (Citfin)",
      "currency": "CZK",
@@ -213,15 +222,6 @@
      "summary": "Očekávání ZEW v Německu klesla z 34,7 na 28,1 bodu (konsenzus 30), v eurozóně z 25,8 na 18,5. Index zůstává kladný, ale vyšší ceny energií a francouzské fiskální riziko tlačí na růst.",
      "why": "Slabší očekávání a drahá energie brzdí euro, na koruně se dopad projeví hlavně přes eurodolar.",
      "published": "2026-10-20"
-    },
-    {
-     "source": "FXStreet",
-     "currency": "USD",
-     "title": "Warsh nepředjímá říjnové zasedání, dolarový index klesá",
-     "url": "https://fxstreet.com/news/dollar-index-slips-as-fed-chair-warsh-wont-prejudge-october-202610161624",
-     "summary": "Šéf Fedu Warsh uvedl, že nebude předjímat říjnové rozhodnutí; sázky na zvýšení sazeb klesly asi na 16 % z 28 %. Dolarový index padl na nejnižší úroveň od 1. října, i přes silnější americkou průmyslovou výrobu (+0,7 % proti očekávaným 0,4 %).",
-     "why": "Slabší dolar a nižší šance na zvýšení sazeb Fedu podporují euro i korunu vůči dolaru.",
-     "published": "2026-10-16"
     }
    ],
    "PLN/CZK": [
@@ -682,7 +682,7 @@
  },
  "summary": {
   "asOf": "2026-10-26",
-  "text": "Koruna drží u 24,37 za euro (fixing ECB), euro se obchoduje kolem 1,12 USD. Tento týden rozhodnou Fed (st) a ECB (čt), v pátek vyjde HDP; čeká se pohyb až po nich."
+  "text": "Koruna drží u 24,37 za euro (fixing ECB), euro slábne k 1,12 USD kvůli silnějšímu dolaru. Ve středu rozhodne Fed, ve čtvrtek ECB; trh čeká beze změny sazeb, důležitější bude tón."
  },
  "outlook": {
   "asOf": "2026-10-14",
