@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-10-23",
+  "asOf": "2026-10-26",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "Citfin",
+     "currency": "CZK",
+     "title": "Koruna startuje týden klidně, vše se rozhodne ve Fedu a ECB",
+     "url": "https://www.citfin.cz/ranni-fx-zpravy/kurz-koruny-fed-ecb-hdp-vyhled/",
+     "summary": "V pátek koruna vůči euru a dolaru téměř nezměnila (EUR/CZK 24,28→24,34), ale vůči zlotému uzavřela pod 5,53, nejsilněji za tři roky. Na pondělí se čeká klid kolem 24,35 za euro, volatilita přijde s Fedem, ECB a HDP.",
+     "why": "Koruna zůstává ve stabilním pásmu, větší pohyb může přinést až středeční Fed a čtvrteční ECB.",
+     "published": "2026-10-26"
+    },
     {
      "source": "Kurzy.cz (Citfin)",
      "currency": "CZK",
@@ -65,18 +74,18 @@
      "summary": "Koruna ráno posílila k 24,30 za euro, na nejsilnější úroveň za měsíc, po ponechání sazeb maďarskou centrální bankou. Analytici čekají pásmo 24,25–24,35; zisky brzdí drahá energie a nejistota kolem Francie.",
      "why": "Bez domácích dat koruna těží z regionální nálady, omezují ji ceny energií a francouzská rizika.",
      "published": "2026-10-21T07:05"
-    },
-    {
-     "source": "FXStreet.cz",
-     "currency": "CZK",
-     "title": "Koruna sílí na očekávání dalšího zvýšení sazeb ČNB",
-     "url": "https://fxstreet.cz/forex-koruna-dnes-posilila-k-euru-i-dolaru-o-jednotky-haleru.html",
-     "summary": "Koruna se v úterý odpoledne držela kolem 24,30 za euro a 21,62 za dolar; od začátku října posílila téměř o 1 % k euru. Analytik Purple Trading to vysvětluje hlavně sázkami na další růst sazeb ČNB kvůli zrychlující inflaci (ceny průmyslových výrobců v září +3,7 % meziročně).",
-     "why": "Očekávání zpřísňování ČNB podporuje korunu a může ji držet poblíž měsíčních maxim.",
-     "published": "2026-10-20T17:00"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Citfin",
+     "currency": "CZK",
+     "title": "Koruna startuje týden klidně, vše se rozhodne ve Fedu a ECB",
+     "url": "https://www.citfin.cz/ranni-fx-zpravy/kurz-koruny-fed-ecb-hdp-vyhled/",
+     "summary": "V pátek koruna vůči euru a dolaru téměř nezměnila (EUR/CZK 24,28→24,34), ale vůči zlotému uzavřela pod 5,53, nejsilněji za tři roky. Na pondělí se čeká klid kolem 24,35 za euro, volatilita přijde s Fedem, ECB a HDP.",
+     "why": "Koruna zůstává ve stabilním pásmu, větší pohyb může přinést až středeční Fed a čtvrteční ECB.",
+     "published": "2026-10-26"
+    },
     {
      "source": "Kurzy.cz (Citfin)",
      "currency": "CZK",
@@ -139,15 +148,6 @@
      "summary": "Koruna se v úterý odpoledne držela kolem 24,30 za euro a 21,62 za dolar; od začátku října posílila téměř o 1 % k euru. Analytik Purple Trading to vysvětluje hlavně sázkami na další růst sazeb ČNB kvůli zrychlující inflaci (ceny průmyslových výrobců v září +3,7 % meziročně).",
      "why": "Očekávání zpřísňování ČNB podporuje korunu a může ji držet poblíž měsíčních maxim.",
      "published": "2026-10-20T17:00"
-    },
-    {
-     "source": "FXStreet",
-     "currency": "USD",
-     "title": "Euro posiluje, ropa padá na nadějích na jednání USA s Íránem",
-     "url": "https://www.fxstreet.com/news/euro-climbs-as-oil-prices-tumble-on-us-iran-negotiation-hopes-202610201456",
-     "summary": "Ropa se po zprávách o pokroku k obnovení jednání USA s Íránem prudce otočila dolů, dolarový index klesl k 101,5 a výnosy amerických dluhopisů ustoupily. Část zisků euro se později vrátila, protože očekávání rychlé dohody se ukázala jako předčasná.",
-     "why": "Slabší dolar a levnější ropa podporují euro i koruna, ale křehké zprávy z Blízkého východu mohou trend rychle zvrátit.",
-     "published": "2026-10-20"
     }
    ],
    "EUR/USD": [
@@ -225,6 +225,15 @@
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "Citfin",
+     "currency": "CZK",
+     "title": "Koruna startuje týden klidně, vše se rozhodne ve Fedu a ECB",
+     "url": "https://www.citfin.cz/ranni-fx-zpravy/kurz-koruny-fed-ecb-hdp-vyhled/",
+     "summary": "V pátek koruna vůči euru a dolaru téměř nezměnila (EUR/CZK 24,28→24,34), ale vůči zlotému uzavřela pod 5,53, nejsilněji za tři roky. Na pondělí se čeká klid kolem 24,35 za euro, volatilita přijde s Fedem, ECB a HDP.",
+     "why": "Koruna zůstává ve stabilním pásmu, větší pohyb může přinést až středeční Fed a čtvrteční ECB.",
+     "published": "2026-10-26"
+    },
     {
      "currency": "PLN",
      "published": "2026-10-14T12:23",
@@ -544,36 +553,9 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-10-23",
+  "asOf": "2026-10-26",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
-   {
-    "at": "2026-10-22T10:00",
-    "country": "PL",
-    "event": "Maloobchodní tržby (září)",
-    "consensus": "",
-    "previous": "",
-    "actual": "",
-    "importance": 1
-   },
-   {
-    "at": "2026-10-23T10:00",
-    "country": "EA",
-    "event": "PMI flash (říjen)",
-    "consensus": "52,7 (kompozitní)",
-    "previous": "53,1 (kompozitní)",
-    "actual": "51,9 (kompozitní)",
-    "importance": 2
-   },
-   {
-    "at": "2026-10-23T15:45",
-    "country": "US",
-    "event": "PMI flash (říjen)",
-    "consensus": "",
-    "previous": "58,4 (kompozitní)",
-    "actual": "",
-    "importance": 2
-   },
    {
     "at": "2026-10-26T08:00",
     "country": "CZ",
@@ -584,10 +566,20 @@
     "importance": 1
    },
    {
+    "at": "2026-10-26T10:00",
+    "country": "DE",
+    "event": "Ifo index podnikatelského klimatu (říjen)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 2,
+    "why": "Slabší Ifo tlačí euro dolů, lepší číslo ho mírně podpoří."
+   },
+   {
     "at": "2026-10-28T19:00",
     "country": "US",
     "event": "Fed: rozhodnutí o sazbách",
-    "consensus": "",
+    "consensus": "ponechání 3,75–4,00 %",
     "previous": "3,75–4,00 %",
     "actual": "",
     "importance": 3
@@ -689,8 +681,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-23",
-  "text": "Koruna zeslábla k 24,34 za euro (kurz ČNB), po týdnu u 24,25, euro kleslo pod 1,12 USD kvůli Francii a energiím. Slabé flash PMI eurozóny (51,9 vs 52,7) tlačí euro; příští týden Fed a ECB."
+  "asOf": "2026-10-26",
+  "text": "Koruna drží u 24,33 za euro (fixing ECB z pátku), euro se obchoduje kolem 1,12 USD. Tento týden rozhodnou Fed (st) a ECB (čt), v pátek vyjde HDP; čeká se pohyb až po nich."
  },
  "outlook": {
   "asOf": "2026-10-14",
