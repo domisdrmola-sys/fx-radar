@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-10-26",
+  "asOf": "2026-10-27",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "Citfin",
+     "currency": "CZK",
+     "title": "Lepší německé Ifo korunu nepovzbudilo, domácí důvěra klesla",
+     "url": "https://www.citfin.cz/ranni-fx-zpravy/lepsi-nemecke-ifo-korunu-nepovzbudilo/",
+     "summary": "Koruna mírně oslabila k 24,40 za euro a k dolaru nad 21,80, ke zlotému drží okolo 5,53. Říjnová podnikatelská důvěra v ČR klesla na 96,6 a spotřebitelská na 104,3, německé Ifo vzrostlo na 90,2.",
+     "why": "Horší domácí důvěra a silnější dolar koruně nepomáhají, ale zásadní pohyb čeká až na Fed a ECB.",
+     "published": "2026-10-27"
+    },
     {
      "source": "Citfin",
      "currency": "CZK",
@@ -65,18 +74,18 @@
      "summary": "Euro vůči dolaru drží klid na zprávách o jednáních kolem Íránu a Ukrajiny, ropa zůstává vysoko a evropský plyn dál zdražuje. Koruna posílila k 24,25 za euro, nejsilněji od poloviny září.",
      "why": "Pokračující posilování koruny podporuje očekávání dalšího zvýšení sazeb ČNB; riziko představují drahé energie.",
      "published": "2026-10-21T17:00"
-    },
-    {
-     "source": "Kurzy.cz (Citfin)",
-     "currency": "CZK",
-     "title": "Koruna posílila k měsíčnímu maximu kolem 24,30 za euro",
-     "url": "https://zpravy.kurzy.cz/878956-koruna-posiluje-k-hladine-24-30-eurczk",
-     "summary": "Koruna ráno posílila k 24,30 za euro, na nejsilnější úroveň za měsíc, po ponechání sazeb maďarskou centrální bankou. Analytici čekají pásmo 24,25–24,35; zisky brzdí drahá energie a nejistota kolem Francie.",
-     "why": "Bez domácích dat koruna těží z regionální nálady, omezují ji ceny energií a francouzská rizika.",
-     "published": "2026-10-21T07:05"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Citfin",
+     "currency": "CZK",
+     "title": "Lepší německé Ifo korunu nepovzbudilo, domácí důvěra klesla",
+     "url": "https://www.citfin.cz/ranni-fx-zpravy/lepsi-nemecke-ifo-korunu-nepovzbudilo/",
+     "summary": "Koruna mírně oslabila k 24,40 za euro a k dolaru nad 21,80, ke zlotému drží okolo 5,53. Říjnová podnikatelská důvěra v ČR klesla na 96,6 a spotřebitelská na 104,3, německé Ifo vzrostlo na 90,2.",
+     "why": "Horší domácí důvěra a silnější dolar koruně nepomáhají, ale zásadní pohyb čeká až na Fed a ECB.",
+     "published": "2026-10-27"
+    },
     {
      "source": "StoneX",
      "currency": "EUR",
@@ -139,15 +148,6 @@
      "summary": "Euro vůči dolaru drží klid na zprávách o jednáních kolem Íránu a Ukrajiny, ropa zůstává vysoko a evropský plyn dál zdražuje. Koruna posílila k 24,25 za euro, nejsilněji od poloviny září.",
      "why": "Pokračující posilování koruny podporuje očekávání dalšího zvýšení sazeb ČNB; riziko představují drahé energie.",
      "published": "2026-10-21T17:00"
-    },
-    {
-     "source": "Kurzy.cz (Citfin)",
-     "currency": "CZK",
-     "title": "Koruna posílila k měsíčnímu maximu kolem 24,30 za euro",
-     "url": "https://zpravy.kurzy.cz/878956-koruna-posiluje-k-hladine-24-30-eurczk",
-     "summary": "Koruna ráno posílila k 24,30 za euro, na nejsilnější úroveň za měsíc, po ponechání sazeb maďarskou centrální bankou. Analytici čekají pásmo 24,25–24,35; zisky brzdí drahá energie a nejistota kolem Francie.",
-     "why": "Bez domácích dat koruna těží z regionální nálady, omezují ji ceny energií a francouzská rizika.",
-     "published": "2026-10-21T07:05"
     }
    ],
    "EUR/USD": [
@@ -225,6 +225,15 @@
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "Citfin",
+     "currency": "CZK",
+     "title": "Lepší německé Ifo korunu nepovzbudilo, domácí důvěra klesla",
+     "url": "https://www.citfin.cz/ranni-fx-zpravy/lepsi-nemecke-ifo-korunu-nepovzbudilo/",
+     "summary": "Koruna mírně oslabila k 24,40 za euro a k dolaru nad 21,80, ke zlotému drží okolo 5,53. Říjnová podnikatelská důvěra v ČR klesla na 96,6 a spotřebitelská na 104,3, německé Ifo vzrostlo na 90,2.",
+     "why": "Horší domácí důvěra a silnější dolar koruně nepomáhají, ale zásadní pohyb čeká až na Fed a ECB.",
+     "published": "2026-10-27"
+    },
     {
      "source": "Citfin",
      "currency": "CZK",
@@ -681,8 +690,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-26",
-  "text": "Koruna drží u 24,37 za euro (fixing ECB), euro slábne k 1,12 USD kvůli silnějšímu dolaru. Ve středu rozhodne Fed, ve čtvrtek ECB; trh čeká beze změny sazeb, důležitější bude tón."
+  "asOf": "2026-10-27",
+  "text": "Koruna mírně oslabuje k 24,40 za euro (ráno), dolar posiluje, EUR/USD pod 1,12. Ve středu rozhodne Fed, ve čtvrtek ECB; čeká se beze změny sazeb, hlavní bude tón a prosincové hikes."
  },
  "outlook": {
   "asOf": "2026-10-14",
