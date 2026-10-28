@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "Reuters / Yahoo Finance",
+     "currency": "USD",
+     "title": "Fed ponechal sazby na 3,75–4,00 %, dva členové chtěli zvýšení",
+     "url": "https://finance.yahoo.com/economy/policy/articles/fomc-holds-rates-steady-markets-182955276.html",
+     "summary": "Fed hlasováním 10:2 ponechal cílové pásmo, Cook a Hammack prosazovali zvýšení o 25 bb. Prohlášení označuje inflaci za stále zvýšenou a ekonomiku za silnou; dolarový index se po rozhodnutí o 0,2 % oslabil.",
+     "why": "Jestřábí tón a možné prosincové zvýšení drží dolar silný, což tlačí EUR/USD dolů a USD/CZK nahoru; EUR/CZK to ovlivní jen nepřímo.",
+     "published": "2026-10-28T20:40"
+    },
+    {
      "source": "Kurzy.cz",
      "currency": "CZK",
      "title": "Koruna o dvě haléře silnější, euro padá k 1,114 USD",
@@ -65,18 +74,18 @@
      "summary": "Koruna včera klesla pod 24,30 za euro a čeká na nové podněty. Domácí události tento týden chybí, trh sleduje eurodolar a růst výnosů francouzských dluhopisů nad 5 %.",
      "why": "Bez domácích impulsů se koruna odvíjí od eurodolaru a evropského rizikového sentimentu.",
      "published": "2026-10-22T09:35"
-    },
-    {
-     "source": "Kurzy.cz (ČSOB Dealing)",
-     "currency": "CZK",
-     "title": "Koruna bez domácích impulsů sleduje eurodolar a Francii",
-     "url": "https://zpravy.kurzy.cz/879098-koruna-pod-24-30-eur-czk/",
-     "summary": "Tuzemský kalendář je do konce týdne prázdný, takže koruna sleduje hlavně eurodolar. Negativem jsou rostoucí výnosy francouzských dluhopisů nad 5 %.",
-     "why": "Bez domácích dat se koruna řídí zahraničím; francouzské výnosy by ji mohly oslabit zpět nad 24,30.",
-     "published": "2026-10-22T08:19"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Reuters / Yahoo Finance",
+     "currency": "USD",
+     "title": "Fed ponechal sazby na 3,75–4,00 %, dva členové chtěli zvýšení",
+     "url": "https://finance.yahoo.com/economy/policy/articles/fomc-holds-rates-steady-markets-182955276.html",
+     "summary": "Fed hlasováním 10:2 ponechal cílové pásmo, Cook a Hammack prosazovali zvýšení o 25 bb. Prohlášení označuje inflaci za stále zvýšenou a ekonomiku za silnou; dolarový index se po rozhodnutí o 0,2 % oslabil.",
+     "why": "Jestřábí tón a možné prosincové zvýšení drží dolar silný, což tlačí EUR/USD dolů a USD/CZK nahoru; EUR/CZK to ovlivní jen nepřímo.",
+     "published": "2026-10-28T20:40"
+    },
     {
      "source": "Kurzy.cz",
      "currency": "CZK",
@@ -139,18 +148,18 @@
      "summary": "Euro kleslo pod 1,12 USD kvůli francouzským dluhopisům a dražší energii, koruna se držela kolem 24,25–24,30 za euro. Podporuje ji očekávané listopadové zvýšení sazeb ČNB.",
      "why": "Slabší euro tlačí USD/CZK nahoru, EUR/CZK drží očekávání sazeb ČNB.",
      "published": "2026-10-23T07:26"
-    },
-    {
-     "source": "FXStreet.cz",
-     "currency": "CZK",
-     "title": "Koruna se drží pod 24,30 a hledá impulsy v zahraničí",
-     "url": "https://fxstreet.cz/zpravodajstvi-209334.html",
-     "summary": "Koruna včera klesla pod 24,30 za euro a čeká na nové podněty. Domácí události tento týden chybí, trh sleduje eurodolar a růst výnosů francouzských dluhopisů nad 5 %.",
-     "why": "Bez domácích impulsů se koruna odvíjí od eurodolaru a evropského rizikového sentimentu.",
-     "published": "2026-10-22T09:35"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "Reuters / Yahoo Finance",
+     "currency": "USD",
+     "title": "Fed ponechal sazby na 3,75–4,00 %, dva členové chtěli zvýšení",
+     "url": "https://finance.yahoo.com/economy/policy/articles/fomc-holds-rates-steady-markets-182955276.html",
+     "summary": "Fed hlasováním 10:2 ponechal cílové pásmo, Cook a Hammack prosazovali zvýšení o 25 bb. Prohlášení označuje inflaci za stále zvýšenou a ekonomiku za silnou; dolarový index se po rozhodnutí o 0,2 % oslabil.",
+     "why": "Jestřábí tón a možné prosincové zvýšení drží dolar silný, což tlačí EUR/USD dolů a USD/CZK nahoru; EUR/CZK to ovlivní jen nepřímo.",
+     "published": "2026-10-28T20:40"
+    },
     {
      "source": "Kurzy.cz",
      "currency": "CZK",
@@ -213,15 +222,6 @@
      "summary": "Koruna ráno posílila k 24,25 za euro a analytici čekají pásmo 24,20–24,30. Eurodolar je stabilní, ale euro tlačí výnosy francouzských dluhopisů nad 5 % a inflace v eurozóně zrychlila na 3,8 %.",
      "why": "Očekávané zvýšení sazeb ČNB v listopadu korunu podporuje, riziko je horší nálada kolem Francie a dražší energie.",
      "published": "2026-10-22T07:11"
-    },
-    {
-     "source": "FXStreet.cz",
-     "currency": "CZK",
-     "title": "Koruna u 24,25 za euro poprvé od poloviny září",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-209303.html",
-     "summary": "Euro vůči dolaru drží klid na zprávách o jednáních kolem Íránu a Ukrajiny, ropa zůstává vysoko a evropský plyn dál zdražuje. Koruna posílila k 24,25 za euro, nejsilněji od poloviny září.",
-     "why": "Pokračující posilování koruny podporuje očekávání dalšího zvýšení sazeb ČNB; riziko představují drahé energie.",
-     "published": "2026-10-21T17:00"
     }
    ],
    "PLN/CZK": [
@@ -301,7 +301,7 @@
   }
  },
  "banks": {
-  "asOf": "2026-10-13",
+  "asOf": "2026-10-28",
   "banks": [
    {
     "id": "CNB",
@@ -338,12 +338,12 @@
     "rate": "3,75–4,00 %",
     "rateLabel": "Fed funds target",
     "next": "2026-10-28",
-    "bias": "pauza v říjnu je nyní základní scénář; případné další zvýšení se posouvá spíše na prosinec",
-    "outlook6m": "Fed 16. 9. 2026 zvýšil cílové pásmo o 25 bb na 3,75–4,00 %. Zápis zveřejněný 7. 10. potvrdil obavy z inflace, ale k 13. 10. trh výrazně více očekává říjnovou pauzu. Reuters uvádí přibližně 80% pravděpodobnost ponechání sazeb v říjnu; pozornost se přesouvá na americkou inflaci a prosincové zasedání.",
+    "bias": "jestřábí pauza; trh počítá s vysokou šancí zvýšení v prosinci",
+    "outlook6m": "Fed 28. 10. 2026 ponechal pásmo 3,75–4,00 % při hlasování 10:2 (Cook a Hammack chtěli +25 bb). Prohlášení říká, že inflace zůstává zvýšená a ekonomika je silná; analytici čekají možné prosincové zvýšení.",
     "expect": "Další zasedání FOMC proběhne 27.–28. 10. 2026. Klíčové budou CPI/PPI, maloobchod, trh práce, dlouhé výnosy a komentáře členů FOMC.",
     "drivers": "CPI/PCE, trh práce, dlouhé výnosy amerických dluhopisů, ropa, fiskální politika, finanční podmínky a geopolitika.",
     "url": "https://www.federalreserve.gov/monetarypolicy.htm",
-    "source": "Fed – sazby 3,75–4,00 %, zápis FOMC z 7. 10. a tržní očekávání k 13. 10. 2026"
+    "source": "Fed – prohlášení FOMC z 28. 10. 2026 a Reuters"
    },
    {
     "id": "NBP",
@@ -590,7 +590,7 @@
     "event": "Fed: rozhodnutí o sazbách",
     "consensus": "ponechání 3,75–4,00 %",
     "previous": "3,75–4,00 %",
-    "actual": "",
+    "actual": "beze změny 3,75–4,00 % (10:2)",
     "importance": 3
    },
    {
@@ -691,7 +691,7 @@
  },
  "summary": {
   "asOf": "2026-10-28",
-  "text": "Koruna je podle fixingu ECB na 24,367 za euro, euro stojí u 1,113 USD. Dnes večer rozhodne Fed (čeká se beze změny, rozhodne tón), ve čtvrtek ECB."
+  "text": "Koruna je podle fixingu ECB na 24,367 za euro. Fed ponechal sazby, ale jestřábím tónem (10:2) drží dolar silný; ve čtvrtek rozhoduje ECB, za týden ČNB."
  },
  "outlook": {
   "asOf": "2026-10-14",
