@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-10-27",
+  "asOf": "2026-10-28",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "Kurzy.cz",
+     "currency": "CZK",
+     "title": "Koruna o dvě haléře silnější, euro padá k 1,114 USD",
+     "url": "https://zpravy.kurzy.cz/879653-euro-v-utery-slabsi-koruna-silnejsi-komentar/",
+     "summary": "Euro kleslo o zhruba 0,5 % k 1,114 USD, nejníže od poloviny října, kvůli očekávání jestřábího Fedu a slabým datům z eurozóny. Koruna posílila asi o dvě haléře k 24,335 za euro; trh nereagoval na vyjádření člena bankovní rady ČNB, který by v listopadu podpořil zvýšení o 25 bb.",
+     "why": "Slabší euro vůči dolaru zatím korunu neoslabuje; případné zvýšení sazeb ČNB v listopadu by ji podpořilo.",
+     "published": "2026-10-27T15:22"
+    },
     {
      "source": "FXStreet.cz (ČSOB)",
      "currency": "CZK",
@@ -65,18 +74,18 @@
      "summary": "Tuzemský kalendář je do konce týdne prázdný, takže koruna sleduje hlavně eurodolar. Negativem jsou rostoucí výnosy francouzských dluhopisů nad 5 %.",
      "why": "Bez domácích dat se koruna řídí zahraničím; francouzské výnosy by ji mohly oslabit zpět nad 24,30.",
      "published": "2026-10-22T08:19"
-    },
-    {
-     "source": "Kurzy.cz (Citfin)",
-     "currency": "CZK",
-     "title": "Koruna ráno u 24,25 za euro, drží ji čekání na sazby ČNB",
-     "url": "https://zpravy.kurzy.cz/879094-stabilita-na-eurodolaru-koruna-zatim-dale-posiluje/",
-     "summary": "Koruna ráno posílila k 24,25 za euro a analytici čekají pásmo 24,20–24,30. Eurodolar je stabilní, ale euro tlačí výnosy francouzských dluhopisů nad 5 % a inflace v eurozóně zrychlila na 3,8 %.",
-     "why": "Očekávané zvýšení sazeb ČNB v listopadu korunu podporuje, riziko je horší nálada kolem Francie a dražší energie.",
-     "published": "2026-10-22T07:11"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Kurzy.cz",
+     "currency": "CZK",
+     "title": "Koruna o dvě haléře silnější, euro padá k 1,114 USD",
+     "url": "https://zpravy.kurzy.cz/879653-euro-v-utery-slabsi-koruna-silnejsi-komentar/",
+     "summary": "Euro kleslo o zhruba 0,5 % k 1,114 USD, nejníže od poloviny října, kvůli očekávání jestřábího Fedu a slabým datům z eurozóny. Koruna posílila asi o dvě haléře k 24,335 za euro; trh nereagoval na vyjádření člena bankovní rady ČNB, který by v listopadu podpořil zvýšení o 25 bb.",
+     "why": "Slabší euro vůči dolaru zatím korunu neoslabuje; případné zvýšení sazeb ČNB v listopadu by ji podpořilo.",
+     "published": "2026-10-27T15:22"
+    },
     {
      "source": "FXStreet.cz (ČSOB)",
      "currency": "CZK",
@@ -139,18 +148,18 @@
      "summary": "Koruna včera klesla pod 24,30 za euro a čeká na nové podněty. Domácí události tento týden chybí, trh sleduje eurodolar a růst výnosů francouzských dluhopisů nad 5 %.",
      "why": "Bez domácích impulsů se koruna odvíjí od eurodolaru a evropského rizikového sentimentu.",
      "published": "2026-10-22T09:35"
-    },
-    {
-     "source": "Kurzy.cz (ČSOB Dealing)",
-     "currency": "CZK",
-     "title": "Koruna bez domácích impulsů sleduje eurodolar a Francii",
-     "url": "https://zpravy.kurzy.cz/879098-koruna-pod-24-30-eur-czk/",
-     "summary": "Tuzemský kalendář je do konce týdne prázdný, takže koruna sleduje hlavně eurodolar. Negativem jsou rostoucí výnosy francouzských dluhopisů nad 5 %.",
-     "why": "Bez domácích dat se koruna řídí zahraničím; francouzské výnosy by ji mohly oslabit zpět nad 24,30.",
-     "published": "2026-10-22T08:19"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "Kurzy.cz",
+     "currency": "CZK",
+     "title": "Koruna o dvě haléře silnější, euro padá k 1,114 USD",
+     "url": "https://zpravy.kurzy.cz/879653-euro-v-utery-slabsi-koruna-silnejsi-komentar/",
+     "summary": "Euro kleslo o zhruba 0,5 % k 1,114 USD, nejníže od poloviny října, kvůli očekávání jestřábího Fedu a slabým datům z eurozóny. Koruna posílila asi o dvě haléře k 24,335 za euro; trh nereagoval na vyjádření člena bankovní rady ČNB, který by v listopadu podpořil zvýšení o 25 bb.",
+     "why": "Slabší euro vůči dolaru zatím korunu neoslabuje; případné zvýšení sazeb ČNB v listopadu by ji podpořilo.",
+     "published": "2026-10-27T15:22"
+    },
     {
      "source": "FX Leaders",
      "currency": "USD",
@@ -213,15 +222,6 @@
      "summary": "Euro vůči dolaru drží klid na zprávách o jednáních kolem Íránu a Ukrajiny, ropa zůstává vysoko a evropský plyn dál zdražuje. Koruna posílila k 24,25 za euro, nejsilněji od poloviny září.",
      "why": "Pokračující posilování koruny podporuje očekávání dalšího zvýšení sazeb ČNB; riziko představují drahé energie.",
      "published": "2026-10-21T17:00"
-    },
-    {
-     "source": "FXStreet",
-     "currency": "USD",
-     "title": "Euro posiluje, ropa padá na nadějích na jednání USA s Íránem",
-     "url": "https://www.fxstreet.com/news/euro-climbs-as-oil-prices-tumble-on-us-iran-negotiation-hopes-202610201456",
-     "summary": "Ropa se po zprávách o pokroku k obnovení jednání USA s Íránem prudce otočila dolů, dolarový index klesl k 101,5 a výnosy amerických dluhopisů ustoupily. Část zisků euro se později vrátila, protože očekávání rychlé dohody se ukázala jako předčasná.",
-     "why": "Slabší dolar a levnější ropa podporují euro i koruna, ale křehké zprávy z Blízkého východu mohou trend rychle zvrátit.",
-     "published": "2026-10-20"
     }
    ],
    "PLN/CZK": [
@@ -562,7 +562,7 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-10-26",
+  "asOf": "2026-10-28",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
    {
@@ -690,8 +690,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-27",
-  "text": "Koruna drží u 24,34 za euro (kurz ČNB), dolar posiluje a EUR/USD je pod 1,12. Ve středu večer rozhodne Fed, ve čtvrtek ECB; čeká se beze změny, trh sleduje tón a prosinec."
+  "asOf": "2026-10-28",
+  "text": "Koruna drží u 24,34 za euro (kurz ČNB), euro oslabilo k 1,114 USD. Dnes v 19:00 rozhodne Fed (čeká se beze změny, sleduje se tón), ve čtvrtek ECB."
  },
  "outlook": {
   "asOf": "2026-10-14",
