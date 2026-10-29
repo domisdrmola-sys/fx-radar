@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-10-28",
+  "asOf": "2026-10-29",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "Reuters / Yahoo Finance",
+     "currency": "EUR",
+     "title": "Euro před ECB drží kolem 1,1145 USD, dolar těží z Fedu",
+     "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-steady-fed-hold-leaves-015532151.html",
+     "summary": "Euro před čtvrtečním rozhodnutím ECB mírně oslabilo k 1,1145 USD a od začátku roku ztrácí 5,1 %. Dolarový index je kolem 102,18 po středečním Fedu (10:2) a investory zaměstnávají francouzské dluhopisy.",
+     "why": "Silný dolar a nejistota kolem Francie drží euro pod tlakem; koruna k euru by měla zůstat klidná, k dolaru je slabší.",
+     "published": "2026-10-29T06:35"
+    },
     {
      "source": "Reuters / Yahoo Finance",
      "currency": "USD",
@@ -65,18 +74,18 @@
      "summary": "Předběžný složený PMI eurozóny klesl na 51,9 z 53,1 a minul konsenzus 52,7; služby 51,7 proti očekávaným 52,5. Euro se drželo těsně pod 1,12 USD.",
      "why": "Slabší data tlumí euro a potvrzují opatrnost ECB, což tlačí EUR/USD dolů.",
      "published": "2026-10-23"
-    },
-    {
-     "source": "FXStreet.cz",
-     "currency": "CZK",
-     "title": "Koruna se drží pod 24,30 a hledá impulsy v zahraničí",
-     "url": "https://fxstreet.cz/zpravodajstvi-209334.html",
-     "summary": "Koruna včera klesla pod 24,30 za euro a čeká na nové podněty. Domácí události tento týden chybí, trh sleduje eurodolar a růst výnosů francouzských dluhopisů nad 5 %.",
-     "why": "Bez domácích impulsů se koruna odvíjí od eurodolaru a evropského rizikového sentimentu.",
-     "published": "2026-10-22T09:35"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Reuters / Yahoo Finance",
+     "currency": "EUR",
+     "title": "Euro před ECB drží kolem 1,1145 USD, dolar těží z Fedu",
+     "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-steady-fed-hold-leaves-015532151.html",
+     "summary": "Euro před čtvrtečním rozhodnutím ECB mírně oslabilo k 1,1145 USD a od začátku roku ztrácí 5,1 %. Dolarový index je kolem 102,18 po středečním Fedu (10:2) a investory zaměstnávají francouzské dluhopisy.",
+     "why": "Silný dolar a nejistota kolem Francie drží euro pod tlakem; koruna k euru by měla zůstat klidná, k dolaru je slabší.",
+     "published": "2026-10-29T06:35"
+    },
     {
      "source": "Reuters / Yahoo Finance",
      "currency": "USD",
@@ -139,18 +148,18 @@
      "summary": "V pátek koruna vůči euru a dolaru téměř nezměnila (EUR/CZK 24,28→24,34), ale vůči zlotému uzavřela pod 5,53, nejsilněji za tři roky. Na pondělí se čeká klid kolem 24,35 za euro, volatilita přijde s Fedem, ECB a HDP.",
      "why": "Koruna zůstává ve stabilním pásmu, větší pohyb může přinést až středeční Fed a čtvrteční ECB.",
      "published": "2026-10-26"
-    },
-    {
-     "source": "Kurzy.cz (Citfin)",
-     "currency": "CZK",
-     "title": "Koruna drží 24,25–24,30, euro klesá pod 1,12 USD kvůli Francii",
-     "url": "https://zpravy.kurzy.cz/879230-dolar-posiluje-a-napeti-na-evropskych-trzich-roste/",
-     "summary": "Euro kleslo pod 1,12 USD kvůli francouzským dluhopisům a dražší energii, koruna se držela kolem 24,25–24,30 za euro. Podporuje ji očekávané listopadové zvýšení sazeb ČNB.",
-     "why": "Slabší euro tlačí USD/CZK nahoru, EUR/CZK drží očekávání sazeb ČNB.",
-     "published": "2026-10-23T07:26"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "Reuters / Yahoo Finance",
+     "currency": "EUR",
+     "title": "Euro před ECB drží kolem 1,1145 USD, dolar těží z Fedu",
+     "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-steady-fed-hold-leaves-015532151.html",
+     "summary": "Euro před čtvrtečním rozhodnutím ECB mírně oslabilo k 1,1145 USD a od začátku roku ztrácí 5,1 %. Dolarový index je kolem 102,18 po středečním Fedu (10:2) a investory zaměstnávají francouzské dluhopisy.",
+     "why": "Silný dolar a nejistota kolem Francie drží euro pod tlakem; koruna k euru by měla zůstat klidná, k dolaru je slabší.",
+     "published": "2026-10-29T06:35"
+    },
     {
      "source": "Reuters / Yahoo Finance",
      "currency": "USD",
@@ -213,15 +222,6 @@
      "summary": "Předběžný složený PMI eurozóny klesl na 51,9 z 53,1 a minul konsenzus 52,7; služby 51,7 proti očekávaným 52,5. Euro se drželo těsně pod 1,12 USD.",
      "why": "Slabší data tlumí euro a potvrzují opatrnost ECB, což tlačí EUR/USD dolů.",
      "published": "2026-10-23"
-    },
-    {
-     "source": "Kurzy.cz (Citfin)",
-     "currency": "CZK",
-     "title": "Koruna ráno u 24,25 za euro, drží ji čekání na sazby ČNB",
-     "url": "https://zpravy.kurzy.cz/879094-stabilita-na-eurodolaru-koruna-zatim-dale-posiluje/",
-     "summary": "Koruna ráno posílila k 24,25 za euro a analytici čekají pásmo 24,20–24,30. Eurodolar je stabilní, ale euro tlačí výnosy francouzských dluhopisů nad 5 % a inflace v eurozóně zrychlila na 3,8 %.",
-     "why": "Očekávané zvýšení sazeb ČNB v listopadu korunu podporuje, riziko je horší nálada kolem Francie a dražší energie.",
-     "published": "2026-10-22T07:11"
     }
    ],
    "PLN/CZK": [
@@ -690,8 +690,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-28",
-  "text": "Koruna je podle fixingu ECB na 24,367 za euro. Fed ponechal sazby, ale jestřábím tónem (10:2) drží dolar silný; ve čtvrtek rozhoduje ECB, za týden ČNB."
+  "asOf": "2026-10-29",
+  "text": "Koruna je podle středečního fixingu ECB na 24,367 za euro a před dnešním rozhodnutím ECB (14:15) se drží v úzkém pásmu. Očekává se ponechání sazeb; pozornost patří Francii a Lagardové, euro je kolem 1,1145 USD."
  },
  "outlook": {
   "asOf": "2026-10-14",
