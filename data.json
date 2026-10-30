@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "Citfin",
+     "currency": "CZK",
+     "title": "Citfin: ČNB příští týden velmi pravděpodobně zvýší sazbu na 4 %",
+     "url": "https://www.citfin.cz/okenko-analytika/cnb-zvysi-sazby-trhy-ceka-volatilni-zacatek-listopadu/",
+     "summary": "Analytik Citfinu čeká na zasedání 5. 11. zvýšení základní sazby o 25 bb na 4 % a stagflačnější prognózu než v srpnu. EUR/CZK drží kolem 24,35, USD/CZK v pásmu 21,70–21,90.",
+     "why": "Zvýšení sazby je z velké části zahrnuto v kurzu; další posílení koruny je omezené a riziko eskalace na Blízkém východě by EUR/CZK táhlo k 24,40 a výš.",
+     "published": "2026-10-30"
+    },
+    {
      "source": "ČSÚ / Kurzy.cz",
      "currency": "CZK",
      "title": "České HDP ve 3. čtvrtletí vzrostlo o 0,5 % q/q",
@@ -65,18 +74,18 @@
      "summary": "Euro kleslo o zhruba 0,5 % k 1,114 USD, nejníže od poloviny října, kvůli očekávání jestřábího Fedu a slabým datům z eurozóny. Koruna posílila asi o dvě haléře k 24,335 za euro; trh nereagoval na vyjádření člena bankovní rady ČNB, který by v listopadu podpořil zvýšení o 25 bb.",
      "why": "Slabší euro vůči dolaru zatím korunu neoslabuje; případné zvýšení sazeb ČNB v listopadu by ji podpořilo.",
      "published": "2026-10-27T15:22"
-    },
-    {
-     "source": "FXStreet.cz (ČSOB)",
-     "currency": "CZK",
-     "title": "Koruna na začátku týdne drží těsně nad 24,30 za euro",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-209540.html",
-     "summary": "Koruna se podle ČSOB drží mírně nad hladinou 24,30 EUR/CZK a klidný vývoj se čeká i po zbytek týdne. Pozornost se obrací k Fedu, ECB a pátečnímu odhadu HDP ČR.",
-     "why": "Bez domácích impulsů zůstává koruna stabilní; hýbat jí mohou až zasedání Fedu a ECB a data o HDP.",
-     "published": "2026-10-27T09:28"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Citfin",
+     "currency": "CZK",
+     "title": "Citfin: ČNB příští týden velmi pravděpodobně zvýší sazbu na 4 %",
+     "url": "https://www.citfin.cz/okenko-analytika/cnb-zvysi-sazby-trhy-ceka-volatilni-zacatek-listopadu/",
+     "summary": "Analytik Citfinu čeká na zasedání 5. 11. zvýšení základní sazby o 25 bb na 4 % a stagflačnější prognózu než v srpnu. EUR/CZK drží kolem 24,35, USD/CZK v pásmu 21,70–21,90.",
+     "why": "Zvýšení sazby je z velké části zahrnuto v kurzu; další posílení koruny je omezené a riziko eskalace na Blízkém východě by EUR/CZK táhlo k 24,40 a výš.",
+     "published": "2026-10-30"
+    },
     {
      "source": "Eurostat",
      "currency": "EUR",
@@ -139,15 +148,6 @@
      "summary": "Koruna se podle ČSOB drží mírně nad hladinou 24,30 EUR/CZK a klidný vývoj se čeká i po zbytek týdne. Pozornost se obrací k Fedu, ECB a pátečnímu odhadu HDP ČR.",
      "why": "Bez domácích impulsů zůstává koruna stabilní; hýbat jí mohou až zasedání Fedu a ECB a data o HDP.",
      "published": "2026-10-27T09:28"
-    },
-    {
-     "source": "FX Leaders",
-     "currency": "USD",
-     "title": "Dolar nad 102 bodů před zasedáním Fedu, euro pod 1,12",
-     "url": "https://www.fxleaders.com/news/2026/10/27/dollar-climbs-above-102-as-investors-turn-cautious-ahead-of-fed-meeting/",
-     "summary": "Dolarový index překonal 102 bodů, EUR/USD klesl pod 1,12 a ropa WTI se krátce přiblížila 100 USD za barel. Trh čeká na rozhodnutí Fedu a zprávy o možné dohodě USA s Íránem.",
-     "why": "Silnější dolar tlačí EUR/USD dolů a USD/CZK nahoru, zatímco koruna vůči euru zůstává stabilní.",
-     "published": "2026-10-27"
     }
    ],
    "EUR/USD": [
@@ -674,7 +674,7 @@
  },
  "summary": {
   "asOf": "2026-10-30",
-  "text": "Koruna je podle kurzu ČNB na 24,360 za euro, o 2,5 haléře slabší než včera. České HDP vzrostlo o 0,5 % a eurozóna o 0,4 %; pozornost se upírá k ČNB 5. 11. a americkému trhu práce."
+  "text": "Koruna je podle ČNB na 24,360 za euro, o 2,5 haléře slabší než včera, ECB fixing 24,353. Hlavním tématem je zasedání ČNB 5. 11., kde analytici čekají zvýšení sazby na 4 %, a americký trh práce."
  },
  "outlook": {
   "asOf": "2026-10-14",
