@@ -1,8 +1,26 @@
 {
  "news": {
-  "asOf": "2026-10-29",
+  "asOf": "2026-10-30",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "ČSÚ / Kurzy.cz",
+     "currency": "CZK",
+     "title": "České HDP ve 3. čtvrtletí vzrostlo o 0,5 % q/q",
+     "url": "https://csu.gov.cz/rychle-informace/predbezny-odhad-hdp-3-ctvrtleti-2026",
+     "summary": "Podle předběžného odhadu ČSÚ HDP vzrostlo o 0,5 % čtvrtletně a 1,6 % meziročně (ve 2. čtvrtletí 1,8 %). Růst táhla spotřeba domácností a zahraniční obchod, investice ho brzdily.",
+     "why": "Údaj odpovídá očekávání, před zasedáním ČNB 5. 11. koruně nijak nepomáhá ani neškodí.",
+     "published": "2026-10-30"
+    },
+    {
+     "source": "Eurostat",
+     "currency": "EUR",
+     "title": "Eurozóna ve 3. čtvrtletí vzrostla o 0,4 % q/q",
+     "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-30102026-ap",
+     "summary": "Rychlý odhad Eurostatu ukázal růst HDP eurozóny o 0,4 % čtvrtletně a 1,3 % meziročně, proti 0,6 % ve 2. čtvrtletí. Podle médií to bylo nad očekáváním kolem 0,2 %.",
+     "why": "Silnější růst podporuje argumenty ECB pro případné prosincové zvýšení sazeb, což je pro euro mírně pozitivní.",
+     "published": "2026-10-30"
+    },
     {
      "source": "Reuters / Yahoo Finance",
      "currency": "EUR",
@@ -56,27 +74,18 @@
      "summary": "Koruna se podle ČSOB drží mírně nad hladinou 24,30 EUR/CZK a klidný vývoj se čeká i po zbytek týdne. Pozornost se obrací k Fedu, ECB a pátečnímu odhadu HDP ČR.",
      "why": "Bez domácích impulsů zůstává koruna stabilní; hýbat jí mohou až zasedání Fedu a ECB a data o HDP.",
      "published": "2026-10-27T09:28"
-    },
-    {
-     "source": "Citfin",
-     "currency": "CZK",
-     "title": "Lepší německé Ifo korunu nepovzbudilo, domácí důvěra klesla",
-     "url": "https://www.citfin.cz/ranni-fx-zpravy/lepsi-nemecke-ifo-korunu-nepovzbudilo/",
-     "summary": "Koruna mírně oslabila k 24,40 za euro a k dolaru nad 21,80, ke zlotému drží okolo 5,53. Říjnová podnikatelská důvěra v ČR klesla na 96,6 a spotřebitelská na 104,3, německé Ifo vzrostlo na 90,2.",
-     "why": "Horší domácí důvěra a silnější dolar koruně nepomáhají, ale zásadní pohyb čeká až na Fed a ECB.",
-     "published": "2026-10-27"
-    },
-    {
-     "source": "Citfin",
-     "currency": "CZK",
-     "title": "Koruna startuje týden klidně, vše se rozhodne ve Fedu a ECB",
-     "url": "https://www.citfin.cz/ranni-fx-zpravy/kurz-koruny-fed-ecb-hdp-vyhled/",
-     "summary": "V pátek koruna vůči euru a dolaru téměř nezměnila (EUR/CZK 24,28→24,34), ale vůči zlotému uzavřela pod 5,53, nejsilněji za tři roky. Na pondělí se čeká klid kolem 24,35 za euro, volatilita přijde s Fedem, ECB a HDP.",
-     "why": "Koruna zůstává ve stabilním pásmu, větší pohyb může přinést až středeční Fed a čtvrteční ECB.",
-     "published": "2026-10-26"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Eurostat",
+     "currency": "EUR",
+     "title": "Eurozóna ve 3. čtvrtletí vzrostla o 0,4 % q/q",
+     "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-30102026-ap",
+     "summary": "Rychlý odhad Eurostatu ukázal růst HDP eurozóny o 0,4 % čtvrtletně a 1,3 % meziročně, proti 0,6 % ve 2. čtvrtletí. Podle médií to bylo nad očekáváním kolem 0,2 %.",
+     "why": "Silnější růst podporuje argumenty ECB pro případné prosincové zvýšení sazeb, což je pro euro mírně pozitivní.",
+     "published": "2026-10-30"
+    },
     {
      "source": "Reuters / Yahoo Finance",
      "currency": "EUR",
@@ -138,20 +147,20 @@
      "url": "https://www.fxleaders.com/news/2026/10/27/dollar-climbs-above-102-as-investors-turn-cautious-ahead-of-fed-meeting/",
      "summary": "Dolarový index překonal 102 bodů, EUR/USD klesl pod 1,12 a ropa WTI se krátce přiblížila 100 USD za barel. Trh čeká na rozhodnutí Fedu a zprávy o možné dohodě USA s Íránem.",
      "why": "Silnější dolar tlačí EUR/USD dolů a USD/CZK nahoru, zatímco koruna vůči euru zůstává stabilní.",
-     "published": "2026-10-27"
-    },
-    {
-     "source": "Citfin",
-     "currency": "CZK",
-     "title": "Lepší německé Ifo korunu nepovzbudilo, domácí důvěra klesla",
-     "url": "https://www.citfin.cz/ranni-fx-zpravy/lepsi-nemecke-ifo-korunu-nepovzbudilo/",
-     "summary": "Koruna mírně oslabila k 24,40 za euro a k dolaru nad 21,80, ke zlotému drží okolo 5,53. Říjnová podnikatelská důvěra v ČR klesla na 96,6 a spotřebitelská na 104,3, německé Ifo vzrostlo na 90,2.",
-     "why": "Horší domácí důvěra a silnější dolar koruně nepomáhají, ale zásadní pohyb čeká až na Fed a ECB.",
      "published": "2026-10-27"
     }
    ],
    "EUR/USD": [
     {
+     "source": "Eurostat",
+     "currency": "EUR",
+     "title": "Eurozóna ve 3. čtvrtletí vzrostla o 0,4 % q/q",
+     "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-30102026-ap",
+     "summary": "Rychlý odhad Eurostatu ukázal růst HDP eurozóny o 0,4 % čtvrtletně a 1,3 % meziročně, proti 0,6 % ve 2. čtvrtletí. Podle médií to bylo nad očekáváním kolem 0,2 %.",
+     "why": "Silnější růst podporuje argumenty ECB pro případné prosincové zvýšení sazeb, což je pro euro mírně pozitivní.",
+     "published": "2026-10-30"
+    },
+    {
      "source": "Reuters / Yahoo Finance",
      "currency": "EUR",
      "title": "Euro před ECB drží kolem 1,1145 USD, dolar těží z Fedu",
@@ -213,18 +222,27 @@
      "summary": "Dolarový index překonal 102 bodů, EUR/USD klesl pod 1,12 a ropa WTI se krátce přiblížila 100 USD za barel. Trh čeká na rozhodnutí Fedu a zprávy o možné dohodě USA s Íránem.",
      "why": "Silnější dolar tlačí EUR/USD dolů a USD/CZK nahoru, zatímco koruna vůči euru zůstává stabilní.",
      "published": "2026-10-27"
-    },
-    {
-     "source": "StoneX",
-     "currency": "EUR",
-     "title": "Euro slábne před Fedem a ECB, dolarový index se blíží 102",
-     "url": "https://www.stonex.com/en-gb/news-and-analysis/eur-usd-update-euro-weakness-returns-ahead-of-central-bank-decisions-2026-10-26/",
-     "summary": "EUR/USD za poslední tři seance ztratil téměř 0,5 % kvůli návratu síly dolaru. Trh dává přes 90 % šanci, že Fed ponechá sazby na 4,00 %, a přes 97 %, že ECB ponechá depozitní sazbu na 2,50 %.",
-     "why": "Jestřábější tón Fedu než ECB by mohl tlačit eurodolar níž, což by mírně oslabovalo i korunu vůči dolaru.",
-     "published": "2026-10-26"
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "GUS / Finwire",
+     "currency": "PLN",
+     "title": "Polská inflace v říjnu klesla na 3,5 %",
+     "url": "https://finwire.pl/artykuly/inflacja-pazdziernik-2026-szybki-szacunek-gus",
+     "summary": "Rychlý odhad GUS ukázal říjnovou inflaci 3,5 % meziročně (v září 4,1 %), pod očekáváním analytiků kolem 3,7 %. Pokles táhly levnější pohonné hmoty díky balíčku CPN.",
+     "why": "Nižší inflace snižuje tlak na zvýšení sazeb NBP a mírně tlumí zlotý.",
+     "published": "2026-10-30"
+    },
+    {
+     "source": "ČSÚ / Kurzy.cz",
+     "currency": "CZK",
+     "title": "České HDP ve 3. čtvrtletí vzrostlo o 0,5 % q/q",
+     "url": "https://csu.gov.cz/rychle-informace/predbezny-odhad-hdp-3-ctvrtleti-2026",
+     "summary": "Podle předběžného odhadu ČSÚ HDP vzrostlo o 0,5 % čtvrtletně a 1,6 % meziročně (ve 2. čtvrtletí 1,8 %). Růst táhla spotřeba domácností a zahraniční obchod, investice ho brzdily.",
+     "why": "Údaj odpovídá očekávání, před zasedáním ČNB 5. 11. koruně nijak nepomáhá ani neškodí.",
+     "published": "2026-10-30"
+    },
     {
      "source": "Citfin",
      "currency": "CZK",
@@ -278,24 +296,6 @@
      "title": "NBP ponechala v říjnu referenční sazbu na 3,75 %",
      "url": "https://nbp.pl/en/",
      "why": "Polská i česká hlavní sazba jsou nyní shodně 3,75 %."
-    },
-    {
-     "currency": "PLN",
-     "published": "2026-10-02",
-     "source": "Reuters",
-     "summary": "Polská inflace v září zrychlila na 4,0 %, ale vládní cenové opatření u paliv může část tlaku dočasně snížit.",
-     "title": "Palivový cenový strop může zmírnit tlak na zvýšení sazeb NBP",
-     "url": "https://www.reuters.com/business/polands-fuel-price-cap-could-ease-pressure-central-bank-tighten-policy-2026-10-02/",
-     "why": "Snižuje bezprostřední potřebu zvýšení sazeb a může brzdit PLN."
-    },
-    {
-     "currency": "CZK",
-     "published": "2026-09-17",
-     "source": "ČNB",
-     "summary": "ČNB ponechala sazbu na 3,75 %, ale upozorňuje na rostoucí proinflační rizika.",
-     "title": "ČNB v listopadu připouští stabilitu i zvýšení sazeb",
-     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
-     "why": "Relativní jestřábí tón ČNB je důležitý pro PLN/CZK."
     }
    ]
   }
@@ -362,13 +362,13 @@
   ]
  },
  "cnb": {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.335,
-   "USD": 21.862,
-   "PLN": 5.539,
-   "HUF100": 6.65
+   "EUR": 24.36,
+   "USD": 21.814,
+   "PLN": 5.53,
+   "HUF100": 6.649
   }
  },
  "mm": {
@@ -376,24 +376,24 @@
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
-   "date": "2026-10-21",
+   "date": "2026-10-22",
    "basis": 360,
    "r": {
     "1M": 3.83,
     "3M": 3.94,
-    "6M": 4.08,
+    "6M": 4.09,
     "12M": 4.29
    }
   },
   "EUR": {
    "src": "EURIBOR",
-   "date": "2026-10-28",
+   "date": "2026-10-29",
    "basis": 360,
    "r": {
-    "1M": 2.446,
-    "3M": 2.618,
-    "6M": 2.96,
-    "12M": 3.29
+    "1M": 2.442,
+    "3M": 2.643,
+    "6M": 2.973,
+    "12M": 3.308
    }
   },
   "USD": {
@@ -564,7 +564,7 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-10-29",
+  "asOf": "2026-10-30",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
    {
@@ -591,7 +591,7 @@
     "event": "HDP předběžný odhad (3. čtvrtletí)",
     "consensus": "",
     "previous": "0,3 % q/q, 1,8 % r/r",
-    "actual": "",
+    "actual": "+0,5 % q/q, +1,6 % r/r",
     "importance": 3
    },
    {
@@ -600,7 +600,7 @@
     "event": "Inflace CPI – rychlý odhad (říjen)",
     "consensus": "",
     "previous": "",
-    "actual": "",
+    "actual": "3,5 % r/r (září 4,1 %)",
     "importance": 2
    },
    {
@@ -609,7 +609,7 @@
     "event": "HDP rychlý odhad (3. čtvrtletí) a nezaměstnanost",
     "consensus": "",
     "previous": "",
-    "actual": "",
+    "actual": "HDP +0,4 % q/q, +1,3 % r/r",
     "importance": 2
    },
    {
@@ -673,8 +673,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-29",
-  "text": "Koruna je podle kurzu ČNB na 24,335 za euro, o dvě haléře silnější než včera. ECB ponechala sazby, euro kleslo k 1,11 USD (minimum od května 2025); Lagardeová končí v únoru, trh sází na prosincové zvýšení."
+  "asOf": "2026-10-30",
+  "text": "Koruna je podle kurzu ČNB na 24,360 za euro, o 2,5 haléře slabší než včera. České HDP vzrostlo o 0,5 % a eurozóna o 0,4 %; pozornost se upírá k ČNB 5. 11. a americkému trhu práce."
  },
  "outlook": {
   "asOf": "2026-10-14",
