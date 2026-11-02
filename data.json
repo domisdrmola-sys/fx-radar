@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-10-30",
+  "asOf": "2026-11-02",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "FXstreet.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Týden ve znamení voleb v USA a zasedání ČNB",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-209819.html",
+     "summary": "Citfin čeká volatilní týden: americké volby do Kongresu 3. 11., zasedání ČNB ve čtvrtek a pátek data z trhu práce v USA. EUR/CZK by se měl držet v pásmu 24,30–24,40, USD/CZK 21,70–21,90.",
+     "why": "Zvýšení sazby ČNB na 4 % je v kurzu z velké části zahrnuto, o koruně tak rozhodnou spíše nová prognóza a komentář banky.",
+     "published": "2026-11-02"
+    },
     {
      "source": "Citfin",
      "currency": "CZK",
@@ -65,18 +74,18 @@
      "summary": "Fed hlasováním 10:2 ponechal cílové pásmo, Cook a Hammack prosazovali zvýšení o 25 bb. Prohlášení označuje inflaci za stále zvýšenou a ekonomiku za silnou; dolarový index se po rozhodnutí o 0,2 % oslabil.",
      "why": "Jestřábí tón a možné prosincové zvýšení drží dolar silný, což tlačí EUR/USD dolů a USD/CZK nahoru; EUR/CZK to ovlivní jen nepřímo.",
      "published": "2026-10-28T20:40"
-    },
-    {
-     "source": "Kurzy.cz",
-     "currency": "CZK",
-     "title": "Koruna o dvě haléře silnější, euro padá k 1,114 USD",
-     "url": "https://zpravy.kurzy.cz/879653-euro-v-utery-slabsi-koruna-silnejsi-komentar/",
-     "summary": "Euro kleslo o zhruba 0,5 % k 1,114 USD, nejníže od poloviny října, kvůli očekávání jestřábího Fedu a slabým datům z eurozóny. Koruna posílila asi o dvě haléře k 24,335 za euro; trh nereagoval na vyjádření člena bankovní rady ČNB, který by v listopadu podpořil zvýšení o 25 bb.",
-     "why": "Slabší euro vůči dolaru zatím korunu neoslabuje; případné zvýšení sazeb ČNB v listopadu by ji podpořilo.",
-     "published": "2026-10-27T15:22"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "FXstreet.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Týden ve znamení voleb v USA a zasedání ČNB",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-209819.html",
+     "summary": "Citfin čeká volatilní týden: americké volby do Kongresu 3. 11., zasedání ČNB ve čtvrtek a pátek data z trhu práce v USA. EUR/CZK by se měl držet v pásmu 24,30–24,40, USD/CZK 21,70–21,90.",
+     "why": "Zvýšení sazby ČNB na 4 % je v kurzu z velké části zahrnuto, o koruně tak rozhodnou spíše nová prognóza a komentář banky.",
+     "published": "2026-11-02"
+    },
     {
      "source": "Citfin",
      "currency": "CZK",
@@ -139,15 +148,6 @@
      "summary": "Euro kleslo o zhruba 0,5 % k 1,114 USD, nejníže od poloviny října, kvůli očekávání jestřábího Fedu a slabým datům z eurozóny. Koruna posílila asi o dvě haléře k 24,335 za euro; trh nereagoval na vyjádření člena bankovní rady ČNB, který by v listopadu podpořil zvýšení o 25 bb.",
      "why": "Slabší euro vůči dolaru zatím korunu neoslabuje; případné zvýšení sazeb ČNB v listopadu by ji podpořilo.",
      "published": "2026-10-27T15:22"
-    },
-    {
-     "source": "FXStreet.cz (ČSOB)",
-     "currency": "CZK",
-     "title": "Koruna na začátku týdne drží těsně nad 24,30 za euro",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-209540.html",
-     "summary": "Koruna se podle ČSOB drží mírně nad hladinou 24,30 EUR/CZK a klidný vývoj se čeká i po zbytek týdne. Pozornost se obrací k Fedu, ECB a pátečnímu odhadu HDP ČR.",
-     "why": "Bez domácích impulsů zůstává koruna stabilní; hýbat jí mohou až zasedání Fedu a ECB a data o HDP.",
-     "published": "2026-10-27T09:28"
     }
    ],
    "EUR/USD": [
@@ -673,8 +673,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-10-30",
-  "text": "Koruna je podle ČNB na 24,360 za euro, o 2,5 haléře slabší než včera, ECB fixing 24,353. Hlavním tématem je zasedání ČNB 5. 11., kde analytici čekají zvýšení sazby na 4 %, a americký trh práce."
+  "asOf": "2026-11-02",
+  "text": "Koruna se drží kolem 24,36 za euro (ČNB z pátku), v pásmu 24,30–24,40. Týden určí volby v USA 3. 11. a čtvrteční zasedání ČNB, kde se čeká zvýšení sazby na 4 %."
  },
  "outlook": {
   "asOf": "2026-10-14",
