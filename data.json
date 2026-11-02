@@ -78,6 +78,15 @@
    ],
    "USD/CZK": [
     {
+     "source": "CNBC / Reuters",
+     "currency": "USD",
+     "title": "Dolar před volbami do Kongresu slábne, euro nad 1,12",
+     "url": "https://cnbc.com/amp/2026/11/02/dollar-rangebound-ahead-of-us-midterms-bitcoin-reels-from-crypto-heist.html",
+     "summary": "Dolarový index klesl o 0,5 % na 101,45, nejníž za měsíc, a euro posílilo o 0,7 % na 1,1234 USD i přes snížení výhledu Francie agenturou Fitch na negativní.",
+     "why": "Slabší dolar tlačí USD/CZK níž a drží EUR/CZK v klidném pásmu; volby 3. 11. mohou pohyb zvrátit.",
+     "published": "2026-11-02T02:42"
+    },
+    {
      "source": "FXstreet.cz (Citfin)",
      "currency": "CZK",
      "title": "Týden ve znamení voleb v USA a zasedání ČNB",
@@ -139,18 +148,18 @@
      "summary": "Fed hlasováním 10:2 ponechal cílové pásmo, Cook a Hammack prosazovali zvýšení o 25 bb. Prohlášení označuje inflaci za stále zvýšenou a ekonomiku za silnou; dolarový index se po rozhodnutí o 0,2 % oslabil.",
      "why": "Jestřábí tón a možné prosincové zvýšení drží dolar silný, což tlačí EUR/USD dolů a USD/CZK nahoru; EUR/CZK to ovlivní jen nepřímo.",
      "published": "2026-10-28T20:40"
-    },
-    {
-     "source": "Kurzy.cz",
-     "currency": "CZK",
-     "title": "Koruna o dvě haléře silnější, euro padá k 1,114 USD",
-     "url": "https://zpravy.kurzy.cz/879653-euro-v-utery-slabsi-koruna-silnejsi-komentar/",
-     "summary": "Euro kleslo o zhruba 0,5 % k 1,114 USD, nejníže od poloviny října, kvůli očekávání jestřábího Fedu a slabým datům z eurozóny. Koruna posílila asi o dvě haléře k 24,335 za euro; trh nereagoval na vyjádření člena bankovní rady ČNB, který by v listopadu podpořil zvýšení o 25 bb.",
-     "why": "Slabší euro vůči dolaru zatím korunu neoslabuje; případné zvýšení sazeb ČNB v listopadu by ji podpořilo.",
-     "published": "2026-10-27T15:22"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "CNBC / Reuters",
+     "currency": "USD",
+     "title": "Dolar před volbami do Kongresu slábne, euro nad 1,12",
+     "url": "https://cnbc.com/amp/2026/11/02/dollar-rangebound-ahead-of-us-midterms-bitcoin-reels-from-crypto-heist.html",
+     "summary": "Dolarový index klesl o 0,5 % na 101,45, nejníž za měsíc, a euro posílilo o 0,7 % na 1,1234 USD i přes snížení výhledu Francie agenturou Fitch na negativní.",
+     "why": "Slabší dolar tlačí USD/CZK níž a drží EUR/CZK v klidném pásmu; volby 3. 11. mohou pohyb zvrátit.",
+     "published": "2026-11-02T02:42"
+    },
     {
      "source": "Eurostat",
      "currency": "EUR",
@@ -213,15 +222,6 @@
      "summary": "Euro kleslo o zhruba 0,5 % k 1,114 USD, nejníže od poloviny října, kvůli očekávání jestřábího Fedu a slabým datům z eurozóny. Koruna posílila asi o dvě haléře k 24,335 za euro; trh nereagoval na vyjádření člena bankovní rady ČNB, který by v listopadu podpořil zvýšení o 25 bb.",
      "why": "Slabší euro vůči dolaru zatím korunu neoslabuje; případné zvýšení sazeb ČNB v listopadu by ji podpořilo.",
      "published": "2026-10-27T15:22"
-    },
-    {
-     "source": "FX Leaders",
-     "currency": "USD",
-     "title": "Dolar nad 102 bodů před zasedáním Fedu, euro pod 1,12",
-     "url": "https://www.fxleaders.com/news/2026/10/27/dollar-climbs-above-102-as-investors-turn-cautious-ahead-of-fed-meeting/",
-     "summary": "Dolarový index překonal 102 bodů, EUR/USD klesl pod 1,12 a ropa WTI se krátce přiblížila 100 USD za barel. Trh čeká na rozhodnutí Fedu a zprávy o možné dohodě USA s Íránem.",
-     "why": "Silnější dolar tlačí EUR/USD dolů a USD/CZK nahoru, zatímco koruna vůči euru zůstává stabilní.",
-     "published": "2026-10-27"
     }
    ],
    "PLN/CZK": [
@@ -362,13 +362,13 @@
   ]
  },
  "cnb": {
-  "date": "2026-10-30",
+  "date": "2026-11-02",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.36,
-   "USD": 21.814,
-   "PLN": 5.53,
-   "HUF100": 6.649
+   "EUR": 24.35,
+   "USD": 21.706,
+   "PLN": 5.512,
+   "HUF100": 6.684
   }
  },
  "mm": {
@@ -376,13 +376,13 @@
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
-   "date": "2026-10-22",
+   "date": "2026-10-23",
    "basis": 360,
    "r": {
     "1M": 3.83,
     "3M": 3.94,
     "6M": 4.09,
-    "12M": 4.29
+    "12M": 4.27
    }
   },
   "EUR": {
@@ -674,7 +674,7 @@
  },
  "summary": {
   "asOf": "2026-11-02",
-  "text": "Koruna se drží kolem 24,36 za euro (ČNB z pátku), v pásmu 24,30–24,40. Týden určí volby v USA 3. 11. a čtvrteční zasedání ČNB, kde se čeká zvýšení sazby na 4 %."
+  "text": "Koruna zůstává klidná na 24,35 za euro (fixing ECB), dolar se před americkými volbami oslabil na 21,71 Kč. Úterní volby do Kongresu a čtvrteční ČNB, kde se čeká zvýšení sazby na 4 %, určí směr."
  },
  "outlook": {
   "asOf": "2026-10-14",
