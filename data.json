@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "FXstreet.cz (ČSOB)",
+     "currency": "CZK",
+     "title": "Levnější energie koruně zatím znatelně nepomohly",
+     "url": "https://fxstreet.cz/zpravodajstvi-209906.html",
+     "summary": "Pokles cen ropy a plynu a mírné oslabení dolaru koruně zatím výraznější úlevu nepřinesly, drží se kolem 24,30 za euro. Další posílení by přišlo při trvalejším zlevnění energií.",
+     "why": "Trvalé zlevnění energií by podpořilo korunu, zatím je však kurz kolem 24,30 považován za férový.",
+     "published": "2026-11-03T09:36"
+    },
+    {
      "source": "FXstreet.cz (Citfin)",
      "currency": "CZK",
      "title": "Týden ve znamení voleb v USA a zasedání ČNB",
@@ -65,18 +74,18 @@
      "summary": "ECB ponechala depozitní sazbu na 2,50 % a upozornila na rostoucí inflační rizika z energií. Euro kleslo zhruba na 1,113 USD a trh oceňuje možné prosincové zvýšení.",
      "why": "Jestřábí tón ECB brání výraznému propadu eura; koruna k euru by měla zůstat klidná, k dolaru je slabší.",
      "published": "2026-10-29"
-    },
-    {
-     "source": "Aktuálně.cz",
-     "currency": "EUR",
-     "title": "Lagardeová opustí čelo ECB předčasně v únoru 2027",
-     "url": "https://zpravy.aktualne.cz/ekonomika/lagardeova-predcasne-opusti-celo-ecb-o-nastupci-se-rozhodne-jeste-pred-volbami-ve-francii/r~aaa299ad7417bf6510977ecaea996354",
-     "summary": "Prezidentka ECB odejde 7. února, o nástupci mají rozhodnout Macron a Merz ještě před francouzskými volbami. Nejčastěji zmiňovaní kandidáti jsou Klaas Knot a Pablo Hernández de Cos.",
-     "why": "Nejistota kolem budoucího vedení ECB a francouzské politiky je další riziko pro euro; reakce trhu byla zatím mírná.",
-     "published": "2026-10-29"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "FXstreet.cz (ČSOB)",
+     "currency": "CZK",
+     "title": "Levnější energie koruně zatím znatelně nepomohly",
+     "url": "https://fxstreet.cz/zpravodajstvi-209906.html",
+     "summary": "Pokles cen ropy a plynu a mírné oslabení dolaru koruně zatím výraznější úlevu nepřinesly, drží se kolem 24,30 za euro. Další posílení by přišlo při trvalejším zlevnění energií.",
+     "why": "Trvalé zlevnění energií by podpořilo korunu, zatím je však kurz kolem 24,30 považován za férový.",
+     "published": "2026-11-03T09:36"
+    },
     {
      "source": "CNBC / Reuters",
      "currency": "USD",
@@ -138,15 +147,6 @@
      "url": "https://www.globalbankingandfinance.com/ecb-keeps-rates-unchanged-euro-slips/",
      "summary": "ECB ponechala depozitní sazbu na 2,50 % a upozornila na rostoucí inflační rizika z energií. Euro kleslo zhruba na 1,113 USD a trh oceňuje možné prosincové zvýšení.",
      "why": "Jestřábí tón ECB brání výraznému propadu eura; koruna k euru by měla zůstat klidná, k dolaru je slabší.",
-     "published": "2026-10-29"
-    },
-    {
-     "source": "FXStreet",
-     "currency": "EUR",
-     "title": "Euro na 17měsíčním minimu: ECB drží sazby, americká inflace PCE zrychlila",
-     "url": "https://www.fxstreet.com/news/euro-hits-17-month-low-as-ecb-holds-rates-us-pce-inflation-accelerates-202610291357",
-     "summary": "EUR/USD po rozhodnutí ECB klesl k 1,1105, nejníže od května 2025. Dolar podpořila vyšší americká inflace PCE a vysoká pravděpodobnost prosincového zvýšení Fedu.",
-     "why": "Silnější dolar tlačí EUR/USD dolů a zvyšuje USD/CZK; přes slabší euro zůstává EUR/CZK stabilní.",
      "published": "2026-10-29"
     }
    ],
@@ -362,13 +362,13 @@
   ]
  },
  "cnb": {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.35,
-   "USD": 21.706,
-   "PLN": 5.512,
-   "HUF100": 6.684
+   "EUR": 24.34,
+   "USD": 21.762,
+   "PLN": 5.509,
+   "HUF100": 6.68
   }
  },
  "mm": {
@@ -376,35 +376,35 @@
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
-   "date": "2026-10-23",
+   "date": "2026-10-26",
    "basis": 360,
    "r": {
-    "1M": 3.83,
-    "3M": 3.94,
-    "6M": 4.09,
-    "12M": 4.27
+    "1M": 3.84,
+    "3M": 3.95,
+    "6M": 4.1,
+    "12M": 4.29
    }
   },
   "EUR": {
    "src": "EURIBOR",
-   "date": "2026-10-29",
+   "date": "2026-11-02",
    "basis": 360,
    "r": {
-    "1M": 2.442,
-    "3M": 2.643,
-    "6M": 2.973,
-    "12M": 3.308
+    "1M": 2.448,
+    "3M": 2.714,
+    "6M": 2.994,
+    "12M": 3.304
    }
   },
   "USD": {
    "src": "US T-bill",
-   "date": "2026-10-28",
+   "date": "2026-11-02",
    "basis": 365,
    "r": {
     "1M": 3.97,
-    "3M": 4.11,
-    "6M": 4.33,
-    "12M": 4.47
+    "3M": 4.13,
+    "6M": 4.29,
+    "12M": 4.38
    }
   },
   "PLN": {
@@ -674,7 +674,7 @@
  },
  "summary": {
   "asOf": "2026-11-03",
-  "text": "Koruna zůstává klidná na 24,35 za euro (fixing ECB), dolar se před americkými volbami oslabil na 21,71 Kč. Úterní volby do Kongresu a čtvrteční ČNB, kde se čeká zvýšení sazby na 4 %, určí směr."
+  "text": "Koruna zůstává klidná kolem 24,34 za euro (kurz ČNB), dolar stojí 21,76 Kč. Úterní volby do Kongresu a čtvrteční ČNB, kde se čeká zvýšení sazby na 4 %, určí další směr."
  },
  "outlook": {
   "asOf": "2026-10-14",
