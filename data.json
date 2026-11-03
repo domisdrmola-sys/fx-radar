@@ -22,6 +22,15 @@
      "published": "2026-11-02"
     },
     {
+     "source": "Reuters / Yahoo Finance",
+     "currency": "EUR",
+     "title": "Fitch zhoršil výhled Francie, euro zůstává pod tlakem",
+     "url": "https://finance.yahoo.com/markets/currencies/articles/asian-currencies-mixed-yuan-holds-040237175.html",
+     "summary": "Fitch změnil výhled francouzského ratingu na negativní a euro se před americkými volbami drželo kolem 1,12 USD. Dolarový index mírně oslabil k 101,75.",
+     "why": "Fiskální obavy kolem Francie tlačí na euro, což může při slabším EUR/USD zvyšovat USD/CZK; EUR/CZK ovlivní spíš nepřímo přes náladu na trzích.",
+     "published": "2026-11-02"
+    },
+    {
      "source": "ČTK / České noviny",
      "currency": "CZK",
      "title": "Analytici: ČNB ve čtvrtek zvýší sazbu na 4 %",
@@ -65,15 +74,6 @@
      "summary": "Euro před čtvrtečním rozhodnutím ECB mírně oslabilo k 1,1145 USD a od začátku roku ztrácí 5,1 %. Dolarový index je kolem 102,18 po středečním Fedu (10:2) a investory zaměstnávají francouzské dluhopisy.",
      "why": "Silný dolar a nejistota kolem Francie drží euro pod tlakem; koruna k euru by měla zůstat klidná, k dolaru je slabší.",
      "published": "2026-10-29T06:35"
-    },
-    {
-     "source": "Global Banking & Finance (Reuters)",
-     "currency": "EUR",
-     "title": "ECB ponechala sazby, euro klesá k nejnižší hodnotě od května 2025",
-     "url": "https://www.globalbankingandfinance.com/ecb-keeps-rates-unchanged-euro-slips/",
-     "summary": "ECB ponechala depozitní sazbu na 2,50 % a upozornila na rostoucí inflační rizika z energií. Euro kleslo zhruba na 1,113 USD a trh oceňuje možné prosincové zvýšení.",
-     "why": "Jestřábí tón ECB brání výraznému propadu eura; koruna k euru by měla zůstat klidná, k dolaru je slabší.",
-     "published": "2026-10-29"
     }
    ],
    "USD/CZK": [
@@ -161,6 +161,15 @@
      "published": "2026-11-02T02:42"
     },
     {
+     "source": "Reuters / Yahoo Finance",
+     "currency": "EUR",
+     "title": "Fitch zhoršil výhled Francie, euro zůstává pod tlakem",
+     "url": "https://finance.yahoo.com/markets/currencies/articles/asian-currencies-mixed-yuan-holds-040237175.html",
+     "summary": "Fitch změnil výhled francouzského ratingu na negativní a euro se před americkými volbami drželo kolem 1,12 USD. Dolarový index mírně oslabil k 101,75.",
+     "why": "Fiskální obavy kolem Francie tlačí na euro, což může při slabším EUR/USD zvyšovat USD/CZK; EUR/CZK ovlivní spíš nepřímo přes náladu na trzích.",
+     "published": "2026-11-02"
+    },
+    {
      "source": "Eurostat",
      "currency": "EUR",
      "title": "Eurozóna ve 3. čtvrtletí vzrostla o 0,4 % q/q",
@@ -213,15 +222,6 @@
      "summary": "Fed hlasováním 10:2 ponechal cílové pásmo, Cook a Hammack prosazovali zvýšení o 25 bb. Prohlášení označuje inflaci za stále zvýšenou a ekonomiku za silnou; dolarový index se po rozhodnutí o 0,2 % oslabil.",
      "why": "Jestřábí tón a možné prosincové zvýšení drží dolar silný, což tlačí EUR/USD dolů a USD/CZK nahoru; EUR/CZK to ovlivní jen nepřímo.",
      "published": "2026-10-28T20:40"
-    },
-    {
-     "source": "Kurzy.cz",
-     "currency": "CZK",
-     "title": "Koruna o dvě haléře silnější, euro padá k 1,114 USD",
-     "url": "https://zpravy.kurzy.cz/879653-euro-v-utery-slabsi-koruna-silnejsi-komentar/",
-     "summary": "Euro kleslo o zhruba 0,5 % k 1,114 USD, nejníže od poloviny října, kvůli očekávání jestřábího Fedu a slabým datům z eurozóny. Koruna posílila asi o dvě haléře k 24,335 za euro; trh nereagoval na vyjádření člena bankovní rady ČNB, který by v listopadu podpořil zvýšení o 25 bb.",
-     "why": "Slabší euro vůči dolaru zatím korunu neoslabuje; případné zvýšení sazeb ČNB v listopadu by ji podpořilo.",
-     "published": "2026-10-27T15:22"
     }
    ],
    "PLN/CZK": [
