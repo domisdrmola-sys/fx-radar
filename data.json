@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-11-04",
+  "asOf": "2026-11-05",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "FXStreet.cz (Komerční banka)",
+     "currency": "CZK",
+     "title": "ČNB dnes pravděpodobně zvýší sazby na 4 %",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-210068.html",
+     "summary": "Analytik KB čeká zvýšení repo sazby o 25 bb na 4,0 % a poté delší pauzu; nová prognóza má ukázat slabší růst a vyšší inflaci. Koruna po amerických volbách k euru mírně posílila o 0,1–0,2 %.",
+     "why": "Zvýšení sazby je z velké části v ceně; jestřábí prognóza by korunu podpořila, holubí tón nebo ponechání sazby by ji oslabilo.",
+     "published": "2026-11-05T09:03"
+    },
     {
      "source": "FXStreet.cz (Patria)",
      "currency": "CZK",
@@ -65,18 +74,18 @@
      "summary": "Citfin čeká volatilní týden: americké volby do Kongresu 3. 11., zasedání ČNB ve čtvrtek a pátek data z trhu práce v USA. EUR/CZK by se měl držet v pásmu 24,30–24,40, USD/CZK 21,70–21,90.",
      "why": "Zvýšení sazby ČNB na 4 % je v kurzu z velké části zahrnuto, o koruně tak rozhodnou spíše nová prognóza a komentář banky.",
      "published": "2026-11-02"
-    },
-    {
-     "source": "Reuters / Yahoo Finance",
-     "currency": "EUR",
-     "title": "Fitch zhoršil výhled Francie, euro zůstává pod tlakem",
-     "url": "https://finance.yahoo.com/markets/currencies/articles/asian-currencies-mixed-yuan-holds-040237175.html",
-     "summary": "Fitch změnil výhled francouzského ratingu na negativní a euro se před americkými volbami drželo kolem 1,12 USD. Dolarový index mírně oslabil k 101,75.",
-     "why": "Fiskální obavy kolem Francie tlačí na euro, což může při slabším EUR/USD zvyšovat USD/CZK; EUR/CZK ovlivní spíš nepřímo přes náladu na trzích.",
-     "published": "2026-11-02"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "FXStreet.cz (Komerční banka)",
+     "currency": "CZK",
+     "title": "ČNB dnes pravděpodobně zvýší sazby na 4 %",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-210068.html",
+     "summary": "Analytik KB čeká zvýšení repo sazby o 25 bb na 4,0 % a poté delší pauzu; nová prognóza má ukázat slabší růst a vyšší inflaci. Koruna po amerických volbách k euru mírně posílila o 0,1–0,2 %.",
+     "why": "Zvýšení sazby je z velké části v ceně; jestřábí prognóza by korunu podpořila, holubí tón nebo ponechání sazby by ji oslabilo.",
+     "published": "2026-11-05T09:03"
+    },
     {
      "source": "FXStreet.cz",
      "currency": "USD",
@@ -139,15 +148,6 @@
      "summary": "EUR/CZK se držel těsně pod 24,35 a očekává se rozpětí 24,30–24,40, EUR/USD vyskočil k 1,126. Autor má za to, že ČNB už o zvýšení sazby ve čtvrtek rozhodla a slabší inflace to nezmění.",
      "why": "Potvrzuje klidný EUR/CZK před ČNB a slabší dolar po volbách.",
      "published": "2026-11-04"
-    },
-    {
-     "source": "FXstreet.cz (ČSOB)",
-     "currency": "CZK",
-     "title": "Levnější energie koruně zatím znatelně nepomohly",
-     "url": "https://fxstreet.cz/zpravodajstvi-209906.html",
-     "summary": "Pokles cen ropy a plynu a mírné oslabení dolaru koruně zatím výraznější úlevu nepřinesly, drží se kolem 24,30 za euro. Další posílení by přišlo při trvalejším zlevnění energií.",
-     "why": "Trvalé zlevnění energií by podpořilo korunu, zatím je však kurz kolem 24,30 považován za férový.",
-     "published": "2026-11-03T09:36"
     }
    ],
    "EUR/USD": [
@@ -564,54 +564,9 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-11-04",
+  "asOf": "2026-11-05",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
-   {
-    "at": "2026-10-28T19:00",
-    "country": "US",
-    "event": "Fed: rozhodnutí o sazbách",
-    "consensus": "ponechání 3,75–4,00 %",
-    "previous": "3,75–4,00 %",
-    "actual": "beze změny 3,75–4,00 % (10:2)",
-    "importance": 3
-   },
-   {
-    "at": "2026-10-29T14:15",
-    "country": "EA",
-    "event": "ECB: rozhodnutí o sazbách",
-    "consensus": "depo 2,50 %",
-    "previous": "2,50 %",
-    "actual": "depo 2,50 % (beze změny)",
-    "importance": 3
-   },
-   {
-    "at": "2026-10-30T09:00",
-    "country": "CZ",
-    "event": "HDP předběžný odhad (3. čtvrtletí)",
-    "consensus": "",
-    "previous": "0,3 % q/q, 1,8 % r/r",
-    "actual": "+0,5 % q/q, +1,6 % r/r",
-    "importance": 3
-   },
-   {
-    "at": "2026-10-30T10:00",
-    "country": "PL",
-    "event": "Inflace CPI – rychlý odhad (říjen)",
-    "consensus": "",
-    "previous": "",
-    "actual": "3,5 % r/r (září 4,1 %)",
-    "importance": 2
-   },
-   {
-    "at": "2026-10-30T11:00",
-    "country": "EA",
-    "event": "HDP rychlý odhad (3. čtvrtletí) a nezaměstnanost",
-    "consensus": "",
-    "previous": "",
-    "actual": "HDP +0,4 % q/q, +1,3 % r/r",
-    "importance": 2
-   },
    {
     "at": "2026-11-04T00:00",
     "country": "PL",
@@ -683,8 +638,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-11-04",
-  "text": "Koruna drží kolem 24,30 za euro (fixing ECB 24,31), dolar po vítězství demokratů slábne (EUR/USD ~1,124). Ve čtvrtek ČNB podle analytiků zvýší sazbu na 4 %; případné překvapení by hýbalo korunou."
+  "asOf": "2026-11-05",
+  "text": "Koruna drží kolem 24,31 za euro (fixing ECB 4. 11.), dolar po volbách v USA slábne (EUR/USD ~1,127). Dnes ve 14:30 ČNB podle analytiků zvýší sazbu na 4 %; rozhodne nová prognóza a tón."
  },
  "outlook": {
   "asOf": "2026-10-14",
