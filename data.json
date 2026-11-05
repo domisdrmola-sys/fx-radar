@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "ČTK / e15.cz",
+     "currency": "CZK",
+     "title": "ČNB zvýšila repo sazbu na 4 %, nejvíc od počátku roku 2025",
+     "url": "https://www.e15.cz/ekonomika/cnb-zvysila-zakladni-urokovou-sazbu-na-4-procenta-je-nejvyssi-za-temer-dva-roky-1437131",
+     "summary": "Bankovní rada zvýšila základní sazbu o 25 bb na 4 %, lombardní na 5 % a diskontní na 3 %. Pro zvýšení hlasovali čtyři členové, tři byli pro ponechání sazeb.",
+     "why": "Krok trh očekával, proto reakce koruny bývá omezená; směr určí tón guvernéra a nová prognóza.",
+     "published": "2026-11-05T15:10"
+    },
+    {
      "source": "FXStreet.cz (Komerční banka)",
      "currency": "CZK",
      "title": "ČNB dnes pravděpodobně zvýší sazby na 4 %",
@@ -65,18 +74,18 @@
      "summary": "Pokles cen ropy a plynu a mírné oslabení dolaru koruně zatím výraznější úlevu nepřinesly, drží se kolem 24,30 za euro. Další posílení by přišlo při trvalejším zlevnění energií.",
      "why": "Trvalé zlevnění energií by podpořilo korunu, zatím je však kurz kolem 24,30 považován za férový.",
      "published": "2026-11-03T09:36"
-    },
-    {
-     "source": "FXstreet.cz (Citfin)",
-     "currency": "CZK",
-     "title": "Týden ve znamení voleb v USA a zasedání ČNB",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-209819.html",
-     "summary": "Citfin čeká volatilní týden: americké volby do Kongresu 3. 11., zasedání ČNB ve čtvrtek a pátek data z trhu práce v USA. EUR/CZK by se měl držet v pásmu 24,30–24,40, USD/CZK 21,70–21,90.",
-     "why": "Zvýšení sazby ČNB na 4 % je v kurzu z velké části zahrnuto, o koruně tak rozhodnou spíše nová prognóza a komentář banky.",
-     "published": "2026-11-02"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "ČTK / e15.cz",
+     "currency": "CZK",
+     "title": "ČNB zvýšila repo sazbu na 4 %, nejvíc od počátku roku 2025",
+     "url": "https://www.e15.cz/ekonomika/cnb-zvysila-zakladni-urokovou-sazbu-na-4-procenta-je-nejvyssi-za-temer-dva-roky-1437131",
+     "summary": "Bankovní rada zvýšila základní sazbu o 25 bb na 4 %, lombardní na 5 % a diskontní na 3 %. Pro zvýšení hlasovali čtyři členové, tři byli pro ponechání sazeb.",
+     "why": "Krok trh očekával, proto reakce koruny bývá omezená; směr určí tón guvernéra a nová prognóza.",
+     "published": "2026-11-05T15:10"
+    },
     {
      "source": "FXStreet.cz (Komerční banka)",
      "currency": "CZK",
@@ -138,15 +147,6 @@
      "url": "https://csu.gov.cz/rychle-informace/predbezny-odhad-indexu-spotrebitelskych-cen-rijen-2026",
      "summary": "Předběžný odhad ČSÚ: spotřebitelské ceny v říjnu meziročně +2,4 %, meziměsíčně +0,4 %. Konečné údaje vyjdou 10. 11.",
      "why": "Mírně nižší inflace sama o sobě zvýšení sazby ČNB ve čtvrtek nemění, koruna reaguje klidně.",
-     "published": "2026-11-04"
-    },
-    {
-     "source": "Kurzy.cz",
-     "currency": "CZK",
-     "title": "Demokraté ovládli Kongres, koruna čeká na inflaci",
-     "url": "https://zpravy.kurzy.cz/880476-demokrate-ovladli-kongres-koruna-ceka-na-cpi-inflaci",
-     "summary": "EUR/CZK se držel těsně pod 24,35 a očekává se rozpětí 24,30–24,40, EUR/USD vyskočil k 1,126. Autor má za to, že ČNB už o zvýšení sazby ve čtvrtek rozhodla a slabší inflace to nezmění.",
-     "why": "Potvrzuje klidný EUR/CZK před ČNB a slabší dolar po volbách.",
      "published": "2026-11-04"
     }
    ],
@@ -226,6 +226,15 @@
    ],
    "PLN/CZK": [
     {
+     "source": "ČTK / e15.cz",
+     "currency": "CZK",
+     "title": "ČNB zvýšila repo sazbu na 4 %, nejvíc od počátku roku 2025",
+     "url": "https://www.e15.cz/ekonomika/cnb-zvysila-zakladni-urokovou-sazbu-na-4-procenta-je-nejvyssi-za-temer-dva-roky-1437131",
+     "summary": "Bankovní rada zvýšila základní sazbu o 25 bb na 4 %, lombardní na 5 % a diskontní na 3 %. Pro zvýšení hlasovali čtyři členové, tři byli pro ponechání sazeb.",
+     "why": "Krok trh očekával, proto reakce koruny bývá omezená; směr určí tón guvernéra a nová prognóza.",
+     "published": "2026-11-05T15:10"
+    },
+    {
      "source": "GUS / Finwire",
      "currency": "PLN",
      "title": "Polská inflace v říjnu klesla na 3,5 %",
@@ -287,35 +296,26 @@
      "title": "Nižší ropa a slabší dolar 13. 10. ulevují rizikovým měnám",
      "url": "https://www.reuters.com/world/asia-pacific/global-markets-wrapup-1-2026-10-13/",
      "why": "Pro PLN a CZK je slabší dolar a nižší energie zpravidla příznivější kombinací."
-    },
-    {
-     "currency": "PLN",
-     "published": "2026-10-07",
-     "source": "NBP",
-     "summary": "Polská hlavní sazba zůstává na 3,75 %. Další klíčový bod přijde s listopadovým zasedáním a novou projekcí.",
-     "title": "NBP ponechala v říjnu referenční sazbu na 3,75 %",
-     "url": "https://nbp.pl/en/",
-     "why": "Polská i česká hlavní sazba jsou nyní shodně 3,75 %."
     }
    ]
   }
  },
  "banks": {
-  "asOf": "2026-10-29",
+  "asOf": "2026-11-05",
   "banks": [
    {
     "id": "CNB",
     "name": "ČNB",
     "currency": "CZK",
-    "rate": "3,75 %",
+    "rate": "4,00 %",
     "rateLabel": "2T repo",
-    "next": "2026-11-05",
-    "bias": "stabilita až mírně jestřábí; listopadové rozhodnutí bude mezi ponecháním sazeb a zvýšením",
-    "outlook6m": "ČNB 17. 9. 2026 ponechala 2T repo sazbu na 3,75 %. Bankovní rada uvedla, že červnové zvýšení zatím měnové podmínky zpřísnilo dostatečně, zároveň ale zesílila proinflační rizika z komodit a jádrová inflace zůstává zvýšená. Na listopadovém zasedání bude rozhodovat mezi stabilitou a růstem sazeb.",
-    "expect": "Nejbližší měnověpolitické zasedání proběhne 5. 11. 2026. Rozhodnutí bude zveřejněno ve 14:30 a tisková konference začne v 15:00.",
+    "next": "2026-12-17",
+    "bias": "po zvýšení na 4 % opatrná pauza; další krok závisí na nové prognóze a inflaci",
+    "outlook6m": "ČNB 5. 11. 2026 zvýšila 2T repo sazbu o 25 bb na 4 % (hlasování 4:3), diskontní na 3 % a lombardní na 5 %. Důvodem je očekávané zrychlení inflace v roce 2027 vlivem energií a potravin.",
+    "expect": "Další zasedání bankovní rady je plánováno na 17. 12. 2026; ekonomové nevylučují další zvýšení na 4,25 % v příštím roce.",
     "drivers": "Jádrová inflace a služby, mzdy, spotřeba domácností, ceny energií a komodit, fiskální politika, úvěrová dynamika a kurz CZK.",
     "url": "https://www.cnb.cz/cs/menova-politika/br-zapisy-z-jednani/",
-    "source": "ČNB – rozhodnutí 17. 9. 2026, aktualizace prognózy a komunikace bankovní rady"
+    "source": "ČNB – rozhodnutí 5. 11. 2026 (ČTK, e15, Patria)"
    },
    {
     "id": "ECB",
@@ -362,13 +362,13 @@
   ]
  },
  "cnb": {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.31,
-   "USD": 21.57,
-   "PLN": 5.526,
-   "HUF100": 6.696
+   "EUR": 24.29,
+   "USD": 21.646,
+   "PLN": 5.534,
+   "HUF100": 6.69
   }
  },
  "mm": {
@@ -592,7 +592,7 @@
     "event": "ČNB: rozhodnutí o sazbách a nová prognóza",
     "consensus": "",
     "previous": "3,75 %",
-    "actual": "",
+    "actual": "4,00 % (+25 bb, hlasování 4:3)",
     "importance": 3
    },
    {
@@ -639,7 +639,7 @@
  },
  "summary": {
   "asOf": "2026-11-05",
-  "text": "Koruna drží kolem 24,31 za euro (fixing ECB 4. 11.), dolar po volbách v USA slábne (EUR/USD ~1,127). Dnes ve 14:30 ČNB podle analytiků zvýší sazbu na 4 %; rozhodne nová prognóza a tón."
+  "text": "Koruna drží kolem 24,3 za euro (kurz ČNB 24,29). ČNB podle očekávání zvýšila repo sazbu na 4 % (hlasování 4:3); trh to měl v ceně, další růst sazeb se zatím nepotvrzuje."
  },
  "outlook": {
   "asOf": "2026-10-14",
