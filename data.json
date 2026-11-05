@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "FXStreet.cz / Patria Online",
+     "currency": "CZK",
+     "title": "Koruna po zvýšení sazeb ČNB mírně oslabila, Michl nehlásí nový cyklus",
+     "url": "https://www.fxstreet.cz/forex-koruna-dnes-mirne-oslabila-k-euru-i-dolaru-cnb-zvysila-zakladni-urokovou-sazbu.html",
+     "summary": "Koruna kolem 17:00 stála na 24,33 za euro a 21,66 za dolar. Guvernér Michl řekl, že zvýšení není začátkem nového cyklu; nová prognóza počítá s kurzem kolem 24,30 v letech 2026–27.",
+     "why": "Jestřábí sazby byly v ceně a opatrný tón guvernéra koruně dál nepřidává; kurz se drží v úzkém pásmu.",
+     "published": "2026-11-05T17:00"
+    },
+    {
      "source": "ČTK / e15.cz",
      "currency": "CZK",
      "title": "ČNB zvýšila repo sazbu na 4 %, nejvíc od počátku roku 2025",
@@ -65,18 +74,18 @@
      "summary": "EUR/CZK se držel těsně pod 24,35 a očekává se rozpětí 24,30–24,40, EUR/USD vyskočil k 1,126. Autor má za to, že ČNB už o zvýšení sazby ve čtvrtek rozhodla a slabší inflace to nezmění.",
      "why": "Potvrzuje klidný EUR/CZK před ČNB a slabší dolar po volbách.",
      "published": "2026-11-04"
-    },
-    {
-     "source": "FXstreet.cz (ČSOB)",
-     "currency": "CZK",
-     "title": "Levnější energie koruně zatím znatelně nepomohly",
-     "url": "https://fxstreet.cz/zpravodajstvi-209906.html",
-     "summary": "Pokles cen ropy a plynu a mírné oslabení dolaru koruně zatím výraznější úlevu nepřinesly, drží se kolem 24,30 za euro. Další posílení by přišlo při trvalejším zlevnění energií.",
-     "why": "Trvalé zlevnění energií by podpořilo korunu, zatím je však kurz kolem 24,30 považován za férový.",
-     "published": "2026-11-03T09:36"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "FXStreet.cz / Patria Online",
+     "currency": "CZK",
+     "title": "Koruna po zvýšení sazeb ČNB mírně oslabila, Michl nehlásí nový cyklus",
+     "url": "https://www.fxstreet.cz/forex-koruna-dnes-mirne-oslabila-k-euru-i-dolaru-cnb-zvysila-zakladni-urokovou-sazbu.html",
+     "summary": "Koruna kolem 17:00 stála na 24,33 za euro a 21,66 za dolar. Guvernér Michl řekl, že zvýšení není začátkem nového cyklu; nová prognóza počítá s kurzem kolem 24,30 v letech 2026–27.",
+     "why": "Jestřábí sazby byly v ceně a opatrný tón guvernéra koruně dál nepřidává; kurz se drží v úzkém pásmu.",
+     "published": "2026-11-05T17:00"
+    },
     {
      "source": "ČTK / e15.cz",
      "currency": "CZK",
@@ -139,15 +148,6 @@
      "summary": "Dolarový index po prvních výsledcích voleb klesl k 101,7 a euro posílilo nad 1,12 USD. Investoři počítají se ziskem demokratů a analytici zmiňují možné omezení vládních výdajů.",
      "why": "Slabší dolar tlačí USD/CZK dolů a zvyšuje EUR/USD; EUR/CZK zůstává v klidném pásmu.",
      "published": "2026-11-04T04:49"
-    },
-    {
-     "source": "ČSÚ",
-     "currency": "CZK",
-     "title": "Říjnová inflace v ČR 2,4 % r/r, mírně pod očekáváním",
-     "url": "https://csu.gov.cz/rychle-informace/predbezny-odhad-indexu-spotrebitelskych-cen-rijen-2026",
-     "summary": "Předběžný odhad ČSÚ: spotřebitelské ceny v říjnu meziročně +2,4 %, meziměsíčně +0,4 %. Konečné údaje vyjdou 10. 11.",
-     "why": "Mírně nižší inflace sama o sobě zvýšení sazby ČNB ve čtvrtek nemění, koruna reaguje klidně.",
-     "published": "2026-11-04"
     }
    ],
    "EUR/USD": [
@@ -608,38 +608,38 @@
  },
  "forecast": {
   "cnb": {
-   "label": "Prognóza ČNB – léto 2026",
-   "published": "2026-08-06",
-   "url": "https://www.cnb.cz/cs/menova-politika/prognoza/",
+   "label": "Prognóza ČNB – podzim 2026",
+   "published": "2026-11-05",
+   "url": "https://www.cnb.cz/cs/menova-politika/prognóza/",
    "rows": [
     {
      "year": 2026,
-     "cpi": 2.0,
-     "gdp": 2.2,
-     "pribor3m": 3.7,
+     "cpi": 2.1,
+     "gdp": 1.7,
+     "pribor3m": 3.9,
      "eurczk": 24.3
     },
     {
      "year": 2027,
-     "cpi": 2.5,
-     "gdp": 2.7,
-     "pribor3m": 3.9,
-     "eurczk": 24.4
+     "cpi": 3.2,
+     "gdp": 2.5,
+     "pribor3m": 4.1,
+     "eurczk": 24.3
     },
     {
      "year": 2028,
-     "cpi": 2.4,
+     "cpi": 2.3,
      "gdp": 2.5,
-     "pribor3m": 3.7,
-     "eurczk": 24.3
+     "pribor3m": 3.6,
+     "eurczk": 24.2
     }
    ],
-   "note": "Další prognóza vyjde s rozhodnutím 5. 11. 2026."
+   "note": "Prognóza z 5. 11. 2026; inflace zůstane většinu roku 2027 nad 3 %, koruna má zůstat stabilní."
   }
  },
  "summary": {
   "asOf": "2026-11-05",
-  "text": "Koruna drží kolem 24,3 za euro (fixing ECB 24,289). ČNB zvýšila repo sazbu na 4 %, trh to měl v ceně; dolar se po včerejším propadu mírně vzpamatoval (EUR/USD 1,122), v pátek přijdou data z amerického trhu práce."
+  "text": "Koruna drží kolem 24,3 za euro (fixing ECB 24,289) a po zvýšení repa ČNB na 4 % (4:3) jen mírně oslabila na 24,33. Michl nehlásí další cyklus; v pátek přijdou data z amerického trhu práce."
  },
  "outlook": {
   "asOf": "2026-10-14",
@@ -658,7 +658,7 @@
       {
        "src": "ČBA Prognóza (konsenzus bank)",
        "date": "2026-08-19",
-       "url": "https://www.cbamonitor.cz/statistika/prognoza-menovy-kurz-vuci-euru",
+       "url": "https://www.cbamonitor.cz/statistika/prognóza-menovy-kurz-vuci-euru",
        "v": 24.2
       },
       {
