@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-11-05",
+  "asOf": "2026-11-06",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "FXStreet.cz (Citfin)",
+     "currency": "CZK",
+     "title": "ČNB i BoE nepřekvapily, koruna otevírá kolem 24,30",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-210152.html",
+     "summary": "ČNB zvýšila repo o 25 bb na 4 % a snížila odhad růstu HDP na 1,7 %; BoE zvýšila sazbu také na 4 %. Koruna otevírala u 24,30 za euro a 21,75 za dolar, autor čeká klidný den před americkými daty.",
+     "why": "Obě rozhodnutí byla v kurzech předem, koruna by se proto měla držet v úzkém pásmu a směr dnes určí americký trh práce.",
+     "published": "2026-11-06T07:15"
+    },
     {
      "source": "FXStreet.cz / Patria Online",
      "currency": "CZK",
@@ -65,18 +74,27 @@
      "summary": "Předběžný odhad ČSÚ: spotřebitelské ceny v říjnu meziročně +2,4 %, meziměsíčně +0,4 %. Konečné údaje vyjdou 10. 11.",
      "why": "Mírně nižší inflace sama o sobě zvýšení sazby ČNB ve čtvrtek nemění, koruna reaguje klidně.",
      "published": "2026-11-04"
-    },
-    {
-     "source": "Kurzy.cz",
-     "currency": "CZK",
-     "title": "Demokraté ovládli Kongres, koruna čeká na inflaci",
-     "url": "https://zpravy.kurzy.cz/880476-demokrate-ovladli-kongres-koruna-ceka-na-cpi-inflaci",
-     "summary": "EUR/CZK se držel těsně pod 24,35 a očekává se rozpětí 24,30–24,40, EUR/USD vyskočil k 1,126. Autor má za to, že ČNB už o zvýšení sazby ve čtvrtek rozhodla a slabší inflace to nezmění.",
-     "why": "Potvrzuje klidný EUR/CZK před ČNB a slabší dolar po volbách.",
-     "published": "2026-11-04"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "FXStreet.cz (Komerční banka)",
+     "currency": "USD",
+     "title": "Americký trh práce zůstává odolný, v pátek přijdou data",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-210160.html",
+     "summary": "Analytik KB čeká v říjnu přírůstek asi 75 tisíc pracovních míst proti konsenzu 70 tisíc a 29 tisícům v září, nezaměstnanost 4,2 %. Fed se podle něj dál soustředí na inflaci a v prosinci i v březnu by mohl zvýšit sazby o 25 bb.",
+     "why": "Silnější data by podpořila dolar a oslabila EUR/USD i korunu vůči dolaru, slabší čísla by dolar dále tlačila dolů.",
+     "published": "2026-11-06T09:01"
+    },
+    {
+     "source": "FXStreet.cz (Citfin)",
+     "currency": "CZK",
+     "title": "ČNB i BoE nepřekvapily, koruna otevírá kolem 24,30",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-210152.html",
+     "summary": "ČNB zvýšila repo o 25 bb na 4 % a snížila odhad růstu HDP na 1,7 %; BoE zvýšila sazbu také na 4 %. Koruna otevírala u 24,30 za euro a 21,75 za dolar, autor čeká klidný den před americkými daty.",
+     "why": "Obě rozhodnutí byla v kurzech předem, koruna by se proto měla držet v úzkém pásmu a směr dnes určí americký trh práce.",
+     "published": "2026-11-06T07:15"
+    },
     {
      "source": "FXStreet.cz / Patria Online",
      "currency": "CZK",
@@ -130,27 +148,18 @@
      "summary": "Koruna ráno posílila k asi 21,68 za dolar (z 21,75 večer), dolar slábl a klesly i výnosy amerických dluhopisů. Trh čeká, že demokratický Kongres omezí další Trumpovy škrty daní a výdaje.",
      "why": "Slabší dolar a nižší americké výnosy podporují korunu vůči dolaru, dopad je však podle autora omezený.",
      "published": "2026-11-04T09:45"
-    },
-    {
-     "source": "Kurzy.cz (ČSOB Dealing)",
-     "currency": "CZK",
-     "title": "Koruna může těžit ze slabšího dolaru",
-     "url": "https://zpravy.kurzy.cz/880480-koruna-muze-profitovat-ze-slabsiho-dolaru",
-     "summary": "Koruna zahájila den nad 24,30 za euro. Slabší dolar po amerických volbách by ji mohl podpořit; analytici čekají říjnovou inflaci 2,4 % po 2,5 %, mírně pod konsenzem.",
-     "why": "Pokud se ztráty dolaru prohloubí, koruna by mohla mírně posílit; nízká inflace by před zasedáním ČNB výrazněji nepřekvapila.",
-     "published": "2026-11-04T08:25"
-    },
-    {
-     "source": "Reuters / CNBC",
-     "currency": "USD",
-     "title": "Dolar slábne, trh sází na vítězství demokratů v Kongresu",
-     "url": "https://www.cnbc.com/2026/11/04/dollar-dips-with-us-midterm-results-in-focus.html",
-     "summary": "Dolarový index po prvních výsledcích voleb klesl k 101,7 a euro posílilo nad 1,12 USD. Investoři počítají se ziskem demokratů a analytici zmiňují možné omezení vládních výdajů.",
-     "why": "Slabší dolar tlačí USD/CZK dolů a zvyšuje EUR/USD; EUR/CZK zůstává v klidném pásmu.",
-     "published": "2026-11-04T04:49"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "FXStreet.cz (Komerční banka)",
+     "currency": "USD",
+     "title": "Americký trh práce zůstává odolný, v pátek přijdou data",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-210160.html",
+     "summary": "Analytik KB čeká v říjnu přírůstek asi 75 tisíc pracovních míst proti konsenzu 70 tisíc a 29 tisícům v září, nezaměstnanost 4,2 %. Fed se podle něj dál soustředí na inflaci a v prosinci i v březnu by mohl zvýšit sazby o 25 bb.",
+     "why": "Silnější data by podpořila dolar a oslabila EUR/USD i korunu vůči dolaru, slabší čísla by dolar dále tlačila dolů.",
+     "published": "2026-11-06T09:01"
+    },
     {
      "source": "FXStreet.cz",
      "currency": "USD",
@@ -213,15 +222,6 @@
      "summary": "Rychlý odhad Eurostatu ukázal růst HDP eurozóny o 0,4 % čtvrtletně a 1,3 % meziročně, proti 0,6 % ve 2. čtvrtletí. Podle médií to bylo nad očekáváním kolem 0,2 %.",
      "why": "Silnější růst podporuje argumenty ECB pro případné prosincové zvýšení sazeb, což je pro euro mírně pozitivní.",
      "published": "2026-10-30"
-    },
-    {
-     "source": "Reuters / Yahoo Finance",
-     "currency": "EUR",
-     "title": "Euro před ECB drží kolem 1,1145 USD, dolar těží z Fedu",
-     "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-steady-fed-hold-leaves-015532151.html",
-     "summary": "Euro před čtvrtečním rozhodnutím ECB mírně oslabilo k 1,1145 USD a od začátku roku ztrácí 5,1 %. Dolarový index je kolem 102,18 po středečním Fedu (10:2) a investory zaměstnávají francouzské dluhopisy.",
-     "why": "Silný dolar a nejistota kolem Francie drží euro pod tlakem; koruna k euru by měla zůstat klidná, k dolaru je slabší.",
-     "published": "2026-10-29T06:35"
     }
    ],
    "PLN/CZK": [
@@ -638,8 +638,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-11-05",
-  "text": "Koruna drží kolem 24,3 za euro (fixing ECB 24,289) a po zvýšení repa ČNB na 4 % (4:3) jen mírně oslabila na 24,33. Michl nehlásí další cyklus; v pátek přijdou data z amerického trhu práce."
+  "asOf": "2026-11-06",
+  "text": "Koruna drží kolem 24,3 za euro (fixing ECB 24,289) a po zvýšení repa ČNB na 4 % se pohybuje v úzkém pásmu. Dnes ve 14:30 přijdou data z amerického trhu práce (konsenzus kolem 70 tis. míst), která určí směr dolaru."
  },
  "outlook": {
   "asOf": "2026-10-14",
