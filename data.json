@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "FXStreet.cz / Patria",
+     "currency": "CZK",
+     "title": "Koruna k euru beze změny, k dolaru oslabila; průmysl nejrychleji za čtyři roky",
+     "url": "https://www.fxstreet.cz/forex-koruna-stagnovala-k-euru-a-oslabila-k-dolaru-06112026.html",
+     "summary": "V 17:00 koruna držela 24,33 za euro a k dolaru oslabila o 16 haléřů na 21,82. Český průmysl v září vzrostl o 6,2 % y/y, nejvíc za čtyři roky; ČNB zvýšila odhad deficitu veřejných financí na 2,8 % HDP.",
+     "why": "Silná průmyslová data koruně nahrávají, tlak ale dál vytváří silnější dolar a fiskální rizika.",
+     "published": "2026-11-06T17:00"
+    },
+    {
      "source": "FXStreet.cz (ČSOB)",
      "currency": "CZK",
      "title": "Koruna pod tlakem těsného hlasování ČNB a výprodeje akcií",
@@ -65,18 +74,18 @@
      "summary": "Koruna ráno posílila k asi 21,68 za dolar (z 21,75 večer), dolar slábl a klesly i výnosy amerických dluhopisů. Trh čeká, že demokratický Kongres omezí další Trumpovy škrty daní a výdaje.",
      "why": "Slabší dolar a nižší americké výnosy podporují korunu vůči dolaru, dopad je však podle autora omezený.",
      "published": "2026-11-04T09:45"
-    },
-    {
-     "source": "Kurzy.cz (ČSOB Dealing)",
-     "currency": "CZK",
-     "title": "Koruna může těžit ze slabšího dolaru",
-     "url": "https://zpravy.kurzy.cz/880480-koruna-muze-profitovat-ze-slabsiho-dolaru",
-     "summary": "Koruna zahájila den nad 24,30 za euro. Slabší dolar po amerických volbách by ji mohl podpořit; analytici čekají říjnovou inflaci 2,4 % po 2,5 %, mírně pod konsenzem.",
-     "why": "Pokud se ztráty dolaru prohloubí, koruna by mohla mírně posílit; nízká inflace by před zasedáním ČNB výrazněji nepřekvapila.",
-     "published": "2026-11-04T08:25"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "FXStreet.cz / Patria",
+     "currency": "CZK",
+     "title": "Koruna k euru beze změny, k dolaru oslabila; průmysl nejrychleji za čtyři roky",
+     "url": "https://www.fxstreet.cz/forex-koruna-stagnovala-k-euru-a-oslabila-k-dolaru-06112026.html",
+     "summary": "V 17:00 koruna držela 24,33 za euro a k dolaru oslabila o 16 haléřů na 21,82. Český průmysl v září vzrostl o 6,2 % y/y, nejvíc za čtyři roky; ČNB zvýšila odhad deficitu veřejných financí na 2,8 % HDP.",
+     "why": "Silná průmyslová data koruně nahrávají, tlak ale dál vytváří silnější dolar a fiskální rizika.",
+     "published": "2026-11-06T17:00"
+    },
     {
      "source": "FXStreet.cz (ČSOB)",
      "currency": "CZK",
@@ -139,15 +148,6 @@
      "summary": "Analytik KB čeká zvýšení repo sazby o 25 bb na 4,0 % a poté delší pauzu; nová prognóza má ukázat slabší růst a vyšší inflaci. Koruna po amerických volbách k euru mírně posílila o 0,1–0,2 %.",
      "why": "Zvýšení sazby je z velké části v ceně; jestřábí prognóza by korunu podpořila, holubí tón nebo ponechání sazby by ji oslabilo.",
      "published": "2026-11-05T09:03"
-    },
-    {
-     "source": "FXStreet.cz",
-     "currency": "USD",
-     "title": "Dolar klesá po volebním úspěchu demokratů",
-     "url": "https://www.fxstreet.cz/forex-dolar-klesa-vysledek-voleb-v-usa-podporil-poptavku-po-rizikovejsich-aktivech.html",
-     "summary": "Jasné vítězství demokratů ve volbách do Kongresu snížilo nejistotu a zvýšilo chuť do rizika; EUR/USD vzrostl o zhruba 0,4 % k 1,124. Trh nadále počítá s prosincovým zvýšením sazeb Fedu.",
-     "why": "Slabší dolar tlačí USD/CZK dolů a zvedá EUR/USD, což koruně pomáhá.",
-     "published": "2026-11-04T18:45"
     }
    ],
    "EUR/USD": [
@@ -640,7 +640,7 @@
  },
  "summary": {
   "asOf": "2026-11-06",
-  "text": "Koruna je kolem 24,35 za euro (fixing ECB) a mírně slábne po těsném rozhodnutí ČNB a výprodeji akcií. Silný americký trh práce (+165 tis. míst) posílil dolar, EUR/USD kleslo k 1,117."
+  "text": "Koruna je kolem 24,33–24,35 za euro (fixing ECB 24,35) a drží se po těsném rozhodnutí ČNB; k dolaru slábne, USD/CZK kolem 21,8. Silná data o českém průmyslu koruně pomáhají, dolar posiluje po americkém trhu práce."
  },
  "outlook": {
   "asOf": "2026-10-14",
