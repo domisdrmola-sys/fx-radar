@@ -78,6 +78,15 @@
    ],
    "USD/CZK": [
     {
+     "source": "CNBC",
+     "currency": "USD",
+     "title": "Americký trh práce v říjnu překvapil: +165 tisíc míst",
+     "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html",
+     "summary": "Ekonomika USA v říjnu přidala 165 tisíc míst proti konsenzu kolem 59 tisíc, nezaměstnanost klesla na 4,1 % a mzdy vzrostly o 0,4 % m/m. Výnosy dluhopisů vzrostly a pravděpodobnost prosincového zvýšení sazeb Fedu stoupla na zhruba 77 %.",
+     "why": "Silná data a jestřábí Fed podporují dolar, takže USD/CZK i EUR/USD mohou tlačit ve prospěch dolaru.",
+     "published": "2026-11-06T14:31"
+    },
+    {
      "source": "FXStreet.cz (Komerční banka)",
      "currency": "USD",
      "title": "Americký trh práce zůstává odolný, v pátek přijdou data",
@@ -139,18 +148,18 @@
      "summary": "Kolem 17:00 se koruna obchodovala na 24,30 za euro a 21,62 za dolar. Pomohl slabší dolar, levnější ropa a říjnová inflace 2,4 %; analytik čeká ve čtvrtek zvýšení sazby ČNB na 4 %.",
      "why": "Slabší dolar a očekávané utažení ČNB korunu podporují, hlavním rizikem je překvapení na čtvrtečním zasedání.",
      "published": "2026-11-04T17:00"
-    },
-    {
-     "source": "FXStreet.cz",
-     "currency": "CZK",
-     "title": "Koruna posiluje po volebním úspěchu demokratů",
-     "url": "https://fxstreet.cz/zpravodajstvi-209996.html",
-     "summary": "Koruna ráno posílila k asi 21,68 za dolar (z 21,75 večer), dolar slábl a klesly i výnosy amerických dluhopisů. Trh čeká, že demokratický Kongres omezí další Trumpovy škrty daní a výdaje.",
-     "why": "Slabší dolar a nižší americké výnosy podporují korunu vůči dolaru, dopad je však podle autora omezený.",
-     "published": "2026-11-04T09:45"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "CNBC",
+     "currency": "USD",
+     "title": "Americký trh práce v říjnu překvapil: +165 tisíc míst",
+     "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html",
+     "summary": "Ekonomika USA v říjnu přidala 165 tisíc míst proti konsenzu kolem 59 tisíc, nezaměstnanost klesla na 4,1 % a mzdy vzrostly o 0,4 % m/m. Výnosy dluhopisů vzrostly a pravděpodobnost prosincového zvýšení sazeb Fedu stoupla na zhruba 77 %.",
+     "why": "Silná data a jestřábí Fed podporují dolar, takže USD/CZK i EUR/USD mohou tlačit ve prospěch dolaru.",
+     "published": "2026-11-06T14:31"
+    },
     {
      "source": "FXStreet.cz (Komerční banka)",
      "currency": "USD",
@@ -213,15 +222,6 @@
      "summary": "Fitch změnil výhled francouzského ratingu na negativní a euro se před americkými volbami drželo kolem 1,12 USD. Dolarový index mírně oslabil k 101,75.",
      "why": "Fiskální obavy kolem Francie tlačí na euro, což může při slabším EUR/USD zvyšovat USD/CZK; EUR/CZK ovlivní spíš nepřímo přes náladu na trzích.",
      "published": "2026-11-02"
-    },
-    {
-     "source": "Eurostat",
-     "currency": "EUR",
-     "title": "Eurozóna ve 3. čtvrtletí vzrostla o 0,4 % q/q",
-     "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-30102026-ap",
-     "summary": "Rychlý odhad Eurostatu ukázal růst HDP eurozóny o 0,4 % čtvrtletně a 1,3 % meziročně, proti 0,6 % ve 2. čtvrtletí. Podle médií to bylo nad očekáváním kolem 0,2 %.",
-     "why": "Silnější růst podporuje argumenty ECB pro případné prosincové zvýšení sazeb, což je pro euro mírně pozitivní.",
-     "published": "2026-10-30"
     }
    ],
    "PLN/CZK": [
@@ -301,7 +301,7 @@
   }
  },
  "banks": {
-  "asOf": "2026-11-05",
+  "asOf": "2026-11-06",
   "banks": [
    {
     "id": "CNB",
@@ -337,10 +337,10 @@
     "currency": "USD",
     "rate": "3,75–4,00 %",
     "rateLabel": "Fed funds target",
-    "next": "2026-10-28",
+    "next": "2026-12-09",
     "bias": "jestřábí pauza; trh počítá s vysokou šancí zvýšení v prosinci",
     "outlook6m": "Fed 28. 10. 2026 ponechal pásmo 3,75–4,00 % při hlasování 10:2 (Cook a Hammack chtěli +25 bb). Prohlášení říká, že inflace zůstává zvýšená a ekonomika je silná; analytici čekají možné prosincové zvýšení.",
-    "expect": "Další zasedání FOMC proběhne 27.–28. 10. 2026. Klíčové budou CPI/PPI, maloobchod, trh práce, dlouhé výnosy a komentáře členů FOMC.",
+    "expect": "Další zasedání FOMC proběhne 8.–9. 12. 2026; trh po silném říjnovém trhu práce oceňuje zvýšení v prosinci zhruba na 77 %. Klíčové budou CPI/PPI, maloobchod, trh práce, dlouhé výnosy a komentáře členů FOMC.",
     "drivers": "CPI/PCE, trh práce, dlouhé výnosy amerických dluhopisů, ropa, fiskální politika, finanční podmínky a geopolitika.",
     "url": "https://www.federalreserve.gov/monetarypolicy.htm",
     "source": "Fed – prohlášení FOMC z 28. 10. 2026 a Reuters"
@@ -362,13 +362,13 @@
   ]
  },
  "cnb": {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.29,
-   "USD": 21.646,
-   "PLN": 5.534,
-   "HUF100": 6.69
+   "EUR": 24.345,
+   "USD": 21.804,
+   "PLN": 5.542,
+   "HUF100": 6.693
   }
  },
  "mm": {
@@ -599,10 +599,11 @@
     "at": "2026-11-06T14:30",
     "country": "US",
     "event": "Zaměstnanost mimo zemědělství (říjen)",
-    "consensus": "",
-    "previous": "",
-    "actual": "",
-    "importance": 3
+    "consensus": "cca 59–65 tis.",
+    "previous": "60 tis. (zpět. revize)",
+    "actual": "+165 tis., nezaměstnanost 4,1 %",
+    "importance": 3,
+    "why": "Silnější trh práce posiluje dolar a zvyšuje šanci zvýšení sazeb Fedu."
    }
   ]
  },
@@ -639,7 +640,7 @@
  },
  "summary": {
   "asOf": "2026-11-06",
-  "text": "Koruna drží kolem 24,3 za euro (fixing ECB 24,289) a po zvýšení repa ČNB na 4 % se pohybuje v úzkém pásmu. Dnes ve 14:30 přijdou data z amerického trhu práce (konsenzus kolem 70 tis. míst), která určí směr dolaru."
+  "text": "Koruna drží kolem 24,3 za euro (kurz ČNB 24,345, dolar 21,80). Americká data z trhu práce (+165 tis. míst proti konsenzu ~60 tis.) podpořila dolar a zvýšila šanci prosincového zvýšení sazeb Fedu."
  },
  "outlook": {
   "asOf": "2026-10-14",
