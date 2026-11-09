@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-09",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "Kurzy.cz",
+     "currency": "CZK",
+     "title": "Koruna čeká na nezaměstnanost, dolar těží z amerických dat",
+     "url": "https://zpravy.kurzy.cz/881088-koruna-vyhlizi-domaci-nezamestnanost-dolar-tezi-ze-silnych-dat/",
+     "summary": "Koruna zakončila týden u 24,35 za euro, k dolaru během pátku oslabila z 21,63 na přes 21,80. Dnes se čeká nezaměstnanost, která by podle očekávání mohla zůstat na 5 %.",
+     "why": "Stabilní trh práce a silný průmysl koruně pomáhají, silný dolar po americkém trhu práce ji ale tlačí k USD.",
+     "published": "2026-11-09T07:43"
+    },
     {
      "source": "FXStreet.cz / Patria",
      "currency": "CZK",
@@ -65,18 +74,18 @@
      "summary": "Kolem 17:00 se koruna obchodovala na 24,30 za euro a 21,62 za dolar. Pomohl slabší dolar, levnější ropa a říjnová inflace 2,4 %; analytik čeká ve čtvrtek zvýšení sazby ČNB na 4 %.",
      "why": "Slabší dolar a očekávané utažení ČNB korunu podporují, hlavním rizikem je překvapení na čtvrtečním zasedání.",
      "published": "2026-11-04T17:00"
-    },
-    {
-     "source": "FXStreet.cz",
-     "currency": "CZK",
-     "title": "Koruna posiluje po volebním úspěchu demokratů",
-     "url": "https://fxstreet.cz/zpravodajstvi-209996.html",
-     "summary": "Koruna ráno posílila k asi 21,68 za dolar (z 21,75 večer), dolar slábl a klesly i výnosy amerických dluhopisů. Trh čeká, že demokratický Kongres omezí další Trumpovy škrty daní a výdaje.",
-     "why": "Slabší dolar a nižší americké výnosy podporují korunu vůči dolaru, dopad je však podle autora omezený.",
-     "published": "2026-11-04T09:45"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Kurzy.cz",
+     "currency": "CZK",
+     "title": "Koruna čeká na nezaměstnanost, dolar těží z amerických dat",
+     "url": "https://zpravy.kurzy.cz/881088-koruna-vyhlizi-domaci-nezamestnanost-dolar-tezi-ze-silnych-dat/",
+     "summary": "Koruna zakončila týden u 24,35 za euro, k dolaru během pátku oslabila z 21,63 na přes 21,80. Dnes se čeká nezaměstnanost, která by podle očekávání mohla zůstat na 5 %.",
+     "why": "Stabilní trh práce a silný průmysl koruně pomáhají, silný dolar po americkém trhu práce ji ale tlačí k USD.",
+     "published": "2026-11-09T07:43"
+    },
     {
      "source": "FXStreet.cz / Patria",
      "currency": "CZK",
@@ -139,18 +148,18 @@
      "summary": "Bankovní rada zvýšila základní sazbu o 25 bb na 4 %, lombardní na 5 % a diskontní na 3 %. Pro zvýšení hlasovali čtyři členové, tři byli pro ponechání sazeb.",
      "why": "Krok trh očekával, proto reakce koruny bývá omezená; směr určí tón guvernéra a nová prognóza.",
      "published": "2026-11-05T15:10"
-    },
-    {
-     "source": "FXStreet.cz (Komerční banka)",
-     "currency": "CZK",
-     "title": "ČNB dnes pravděpodobně zvýší sazby na 4 %",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-210068.html",
-     "summary": "Analytik KB čeká zvýšení repo sazby o 25 bb na 4,0 % a poté delší pauzu; nová prognóza má ukázat slabší růst a vyšší inflaci. Koruna po amerických volbách k euru mírně posílila o 0,1–0,2 %.",
-     "why": "Zvýšení sazby je z velké části v ceně; jestřábí prognóza by korunu podpořila, holubí tón nebo ponechání sazby by ji oslabilo.",
-     "published": "2026-11-05T09:03"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "FXStreet",
+     "currency": "EUR",
+     "title": "Eurogroup řeší nástupce Lagardeové, ECB podle trhu možná v prosinci zvýší sazby",
+     "url": "https://www.fxstreet.com/analysis/eurogroup-discusses-lagardes-successor-202611090658",
+     "summary": "Do boje o post šéfa ECB se přihlásili Španěl de Cos a Nizozemec Knot. EUR/USD se obchoduje kolem 1,116 pod 100denním průměrem a trh počítá s přibližně 18 bb zvýšení ECB v prosinci.",
+     "why": "Vyhlídka zvýšení sazeb ECB drží euro nad tlakem a omezuje prostor koruny k dalšímu posilování vůči euru.",
+     "published": "2026-11-09"
+    },
     {
      "source": "CNBC",
      "currency": "USD",
@@ -213,15 +222,6 @@
      "summary": "Dolarový index klesl o 0,5 % na 101,45, nejníž za měsíc, a euro posílilo o 0,7 % na 1,1234 USD i přes snížení výhledu Francie agenturou Fitch na negativní.",
      "why": "Slabší dolar tlačí USD/CZK níž a drží EUR/CZK v klidném pásmu; volby 3. 11. mohou pohyb zvrátit.",
      "published": "2026-11-02T02:42"
-    },
-    {
-     "source": "Reuters / Yahoo Finance",
-     "currency": "EUR",
-     "title": "Fitch zhoršil výhled Francie, euro zůstává pod tlakem",
-     "url": "https://finance.yahoo.com/markets/currencies/articles/asian-currencies-mixed-yuan-holds-040237175.html",
-     "summary": "Fitch změnil výhled francouzského ratingu na negativní a euro se před americkými volbami drželo kolem 1,12 USD. Dolarový index mírně oslabil k 101,75.",
-     "why": "Fiskální obavy kolem Francie tlačí na euro, což může při slabším EUR/USD zvyšovat USD/CZK; EUR/CZK ovlivní spíš nepřímo přes náladu na trzích.",
-     "published": "2026-11-02"
     }
    ],
    "PLN/CZK": [
@@ -564,7 +564,7 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-11-05",
+  "asOf": "2026-11-09",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
    {
@@ -604,6 +604,16 @@
     "actual": "+165 tis., nezaměstnanost 4,1 %",
     "importance": 3,
     "why": "Silnější trh práce posiluje dolar a zvyšuje šanci zvýšení sazeb Fedu."
+   },
+   {
+    "at": "2026-11-09T09:00",
+    "country": "CZ",
+    "event": "Míra nezaměstnanosti (říjen)",
+    "consensus": "5,0 %",
+    "previous": "5,0 %",
+    "actual": "",
+    "importance": 2,
+    "why": "Nižší nezaměstnanost podporuje mzdy a inflaci, tedy koruně spíše pomáhá."
    }
   ]
  },
@@ -639,8 +649,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-11-06",
-  "text": "Koruna je kolem 24,33–24,35 za euro (fixing ECB 24,35) a drží se po těsném rozhodnutí ČNB; k dolaru slábne, USD/CZK kolem 21,8. Silná data o českém průmyslu koruně pomáhají, dolar posiluje po americkém trhu práce."
+  "asOf": "2026-11-09",
+  "text": "Koruna drží kolem 24,35 za euro (fixing ECB z pátku 24,35), k dolaru oslabila na zhruba 21,8. Dnes vyjde česká nezaměstnanost (čeká se 5 %); euro podporuje sázka na prosincové zvýšení sazeb ECB."
  },
  "outlook": {
   "asOf": "2026-10-14",
