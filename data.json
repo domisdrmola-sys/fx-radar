@@ -362,13 +362,13 @@
   ]
  },
  "cnb": {
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.345,
-   "USD": 21.804,
-   "PLN": 5.542,
-   "HUF100": 6.693
+   "EUR": 24.36,
+   "USD": 21.762,
+   "PLN": 5.556,
+   "HUF100": 6.711
   }
  },
  "mm": {
@@ -650,7 +650,7 @@
  },
  "summary": {
   "asOf": "2026-11-09",
-  "text": "Koruna drží kolem 24,35 za euro (fixing ECB z pátku 24,35), k dolaru oslabila na zhruba 21,8. Dnes vyjde česká nezaměstnanost (čeká se 5 %); euro podporuje sázka na prosincové zvýšení sazeb ECB."
+  "text": "Koruna drží kolem 24,36 za euro (kurz ČNB z pondělí, fixing ECB z pátku 24,35), k dolaru mírně posílila na 21,76. Dnes vyšla česká nezaměstnanost (čeká se 5 %); euro podporuje sázka na prosincové zvýšení sazeb ECB."
  },
  "outlook": {
   "asOf": "2026-10-14",
