@@ -78,6 +78,15 @@
    ],
    "USD/CZK": [
     {
+     "source": "FXEmpire",
+     "currency": "USD",
+     "title": "Dolar po horké inflaci posiluje, EUR/USD pod 1,1150",
+     "url": "https://www.fxempire.com/forecasts/article/u-s-dollar-rallies-as-cpi-exceeds-estimates-analysis-for-eur-usd-gbp-usd-usd-cad-usd-jpy-1643672",
+     "summary": "Po říjnovém CPI (+0,4 % m/m, jádro +0,3 % m/m, obojí nad odhady) trh ocenil jestřábější Fed a EUR/USD prolomil podporu 1,1175–1,1190; večer se drží kolem 1,1150.",
+     "why": "Sílící sázky na prosincové zvýšení sazeb Fedu posilují dolar vůči euru i koruně.",
+     "published": "2026-11-10T18:08"
+    },
+    {
      "source": "Kurzy.cz / Citfin",
      "currency": "CZK",
      "title": "Česká inflace v říjnu potvrzena na 2,4 %",
@@ -139,18 +148,18 @@
      "summary": "Analytik KB čeká v říjnu přírůstek asi 75 tisíc pracovních míst proti konsenzu 70 tisíc a 29 tisícům v září, nezaměstnanost 4,2 %. Fed se podle něj dál soustředí na inflaci a v prosinci i v březnu by mohl zvýšit sazby o 25 bb.",
      "why": "Silnější data by podpořila dolar a oslabila EUR/USD i korunu vůči dolaru, slabší čísla by dolar dále tlačila dolů.",
      "published": "2026-11-06T09:01"
-    },
-    {
-     "source": "FXStreet.cz (Citfin)",
-     "currency": "CZK",
-     "title": "ČNB i BoE nepřekvapily, koruna otevírá kolem 24,30",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-210152.html",
-     "summary": "ČNB zvýšila repo o 25 bb na 4 % a snížila odhad růstu HDP na 1,7 %; BoE zvýšila sazbu také na 4 %. Koruna otevírala u 24,30 za euro a 21,75 za dolar, autor čeká klidný den před americkými daty.",
-     "why": "Obě rozhodnutí byla v kurzech předem, koruna by se proto měla držet v úzkém pásmu a směr dnes určí americký trh práce.",
-     "published": "2026-11-06T07:15"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "FXEmpire",
+     "currency": "USD",
+     "title": "Dolar po horké inflaci posiluje, EUR/USD pod 1,1150",
+     "url": "https://www.fxempire.com/forecasts/article/u-s-dollar-rallies-as-cpi-exceeds-estimates-analysis-for-eur-usd-gbp-usd-usd-cad-usd-jpy-1643672",
+     "summary": "Po říjnovém CPI (+0,4 % m/m, jádro +0,3 % m/m, obojí nad odhady) trh ocenil jestřábější Fed a EUR/USD prolomil podporu 1,1175–1,1190; večer se drží kolem 1,1150.",
+     "why": "Sílící sázky na prosincové zvýšení sazeb Fedu posilují dolar vůči euru i koruně.",
+     "published": "2026-11-10T18:08"
+    },
     {
      "source": "CryptoBriefing / DeItaone",
      "currency": "USD",
@@ -213,15 +222,6 @@
      "summary": "Dolarový index po prvních výsledcích voleb klesl k 101,7 a euro posílilo nad 1,12 USD. Investoři počítají se ziskem demokratů a analytici zmiňují možné omezení vládních výdajů.",
      "why": "Slabší dolar tlačí USD/CZK dolů a zvyšuje EUR/USD; EUR/CZK zůstává v klidném pásmu.",
      "published": "2026-11-04T04:49"
-    },
-    {
-     "source": "Kurzy.cz",
-     "currency": "CZK",
-     "title": "Demokraté ovládli Kongres, koruna čeká na inflaci",
-     "url": "https://zpravy.kurzy.cz/880476-demokrate-ovladli-kongres-koruna-ceka-na-cpi-inflaci",
-     "summary": "EUR/CZK se držel těsně pod 24,35 a očekává se rozpětí 24,30–24,40, EUR/USD vyskočil k 1,126. Autor má za to, že ČNB už o zvýšení sazby ve čtvrtek rozhodla a slabší inflace to nezmění.",
-     "why": "Potvrzuje klidný EUR/CZK před ČNB a slabší dolar po volbách.",
-     "published": "2026-11-04"
     }
    ],
    "PLN/CZK": [
@@ -233,6 +233,15 @@
      "summary": "Bankovní rada zvýšila základní sazbu o 25 bb na 4 %, lombardní na 5 % a diskontní na 3 %. Pro zvýšení hlasovali čtyři členové, tři byli pro ponechání sazeb.",
      "why": "Krok trh očekával, proto reakce koruny bývá omezená; směr určí tón guvernéra a nová prognóza.",
      "published": "2026-11-05T15:10"
+    },
+    {
+     "source": "Stockwatch.pl",
+     "currency": "PLN",
+     "title": "NBP nechala sazby beze změny, referenční 3,75 %",
+     "url": "https://www.stockwatch.pl/wiadomosci/decyzja-rpp-listopad-2026-stopy-procentowe-nbp-bez-zmian-inflacja-cpn,gospodarka,384594",
+     "summary": "Rada měnové politiky na listopadovém zasedání ponechala referenční sazbu na 3,75 %, lombardní 4,25 % a depozitní 3,25 %. Analytici čekají stabilitu do konce roku, zvýšení nevylučují začátkem roku 2027.",
+     "why": "Stabilní polské sazby po zvýšení ČNB rozšiřují úrokový náskok koruny, což PLN/CZK spíše tlačí dolů.",
+     "published": "2026-11-04T15:14"
     },
     {
      "source": "GUS / Finwire",
@@ -287,21 +296,12 @@
      "title": "Commerzbank: zlotý tíží holubičí NBP a fiskální rizika",
      "url": "https://www.fxstreet.com/news/polish-zloty-pressured-by-policy-and-fiscal-risks-commerzbank-202610130928",
      "why": "Odklad zvýšení sazeb NBP a fiskální rizika oslabují zlotý vůči koruně."
-    },
-    {
-     "currency": "CEE",
-     "published": "2026-10-13",
-     "source": "Reuters",
-     "summary": "Pokles ropy a amerických výnosů spolu s ústupem dolaru částečně zlepšil prostředí pro rizikovější aktiva, i když technologické akcie zůstávají pod tlakem.",
-     "title": "Nižší ropa a slabší dolar 13. 10. ulevují rizikovým měnám",
-     "url": "https://www.reuters.com/world/asia-pacific/global-markets-wrapup-1-2026-10-13/",
-     "why": "Pro PLN a CZK je slabší dolar a nižší energie zpravidla příznivější kombinací."
     }
    ]
   }
  },
  "banks": {
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-10",
   "banks": [
    {
     "id": "CNB",
@@ -352,12 +352,12 @@
     "rate": "3,75 %",
     "rateLabel": "Referenční sazba",
     "next": "2026-11-04",
-    "bias": "stabilita s rostoucím jestřábím rizikem; říjnové sazby beze změny, listopad přinese novou projekci",
-    "outlook6m": "RPP 7. 10. 2026 ponechala referenční sazbu na 3,75 %. Zářijová inflace zrychlila na 4,0 % a část trhu začala znovu oceňovat možné zvýšení sazeb, zatímco jiní ekonomové čekají stabilitu až do začátku roku 2027. Klíčová bude listopadová projekce inflace a HDP.",
-    "expect": "Další rozhodovací zasedání RPP je plánováno na 3.–4. 11. 2026. Tisková konference guvernéra po říjnovém zasedání je 8. 10.",
+    "bias": "stabilita; zvýšení sazeb analytici nevylučují začátkem roku 2027",
+    "outlook6m": "RPP 4. 11. 2026 ponechala referenční sazbu na 3,75 % (lombardní 4,25 %, depozitní 3,25 %); rozhodnutí bylo očekávané. Říjnová inflace klesla na 3,5 %, část poklesu ale plyne z dočasného programu CPN, který končí s rokem.",
+    "expect": "Většina ekonomistů čeká sazby beze změny do konce roku 2026; termín prosincového zasedání ověřte v harmonogramu NBP.",
     "drivers": "Inflace a její jádrová složka, regulované ceny energií, mzdy, fiskální politika, růst HDP, sentiment vůči CEE a sazební diferenciál vůči ČNB a ECB.",
     "url": "https://nbp.pl/en/monetary-policy/schedule-of-mpc-meetings/",
-    "source": "RPP/NBP – říjnové rozhodnutí 7. 10. 2026 a harmonogram MPC 2026"
+    "source": "RPP/NBP – rozhodnutí 4. 11. 2026 (Stockwatch.pl, PAP)"
    }
   ]
  },
@@ -568,44 +568,6 @@
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
    {
-    "at": "2026-11-04T00:00",
-    "country": "PL",
-    "event": "NBP: rozhodnutí o sazbách",
-    "consensus": "",
-    "previous": "3,75 %",
-    "actual": "",
-    "importance": 3
-   },
-   {
-    "at": "2026-11-04T09:00",
-    "country": "CZ",
-    "event": "Inflace CPI – předběžný odhad (říjen)",
-    "consensus": "2,4 % r/r",
-    "previous": "2,5 % r/r",
-    "actual": "2,4 % r/r, +0,4 % m/m",
-    "importance": 3,
-    "why": "Nižší inflace než čekání oslabí jestřábí sázky před ČNB a mírně zatíží korunu; vyšší ji podpoří."
-   },
-   {
-    "at": "2026-11-05T14:30",
-    "country": "CZ",
-    "event": "ČNB: rozhodnutí o sazbách a nová prognóza",
-    "consensus": "",
-    "previous": "3,75 %",
-    "actual": "4,00 % (+25 bb, hlasování 4:3)",
-    "importance": 3
-   },
-   {
-    "at": "2026-11-06T14:30",
-    "country": "US",
-    "event": "Zaměstnanost mimo zemědělství (říjen)",
-    "consensus": "cca 59–65 tis.",
-    "previous": "60 tis. (zpět. revize)",
-    "actual": "+165 tis., nezaměstnanost 4,1 %",
-    "importance": 3,
-    "why": "Silnější trh práce posiluje dolar a zvyšuje šanci zvýšení sazeb Fedu."
-   },
-   {
     "at": "2026-11-09T09:00",
     "country": "CZ",
     "event": "Míra nezaměstnanosti (říjen)",
@@ -634,6 +596,106 @@
     "actual": "+0,4 % m/m, jádro +0,3 % m/m (nad konsenzem)",
     "importance": 3,
     "why": "Vyšší inflace než se čekalo zvyšuje sázky na přísnější Fed a obvykle posiluje dolar vůči euru i koruně."
+   },
+   {
+    "at": "2026-11-13T11:00",
+    "country": "EA",
+    "event": "HDP – 2. odhad (3Q, q/q)",
+    "consensus": "0,4 %",
+    "previous": "0,4 %",
+    "actual": "",
+    "importance": 2,
+    "why": "Revize HDP dolů by oslabila euro a sázky na zvýšení sazeb ECB."
+   },
+   {
+    "at": "2026-11-13T14:30",
+    "country": "US",
+    "event": "Ceny výrobců PPI (říjen)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 2,
+    "why": "Vyšší PPI po horkém CPI by dále podpořil dolar."
+   },
+   {
+    "at": "2026-11-17T11:00",
+    "country": "DE",
+    "event": "ZEW – očekávání (listopad)",
+    "consensus": "",
+    "previous": "14",
+    "actual": "",
+    "importance": 2,
+    "why": "Lepší sentiment obvykle podpoří euro i středoevropské měny."
+   },
+   {
+    "at": "2026-11-17T14:30",
+    "country": "US",
+    "event": "Maloobchodní tržby (říjen)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 3,
+    "why": "Silná spotřeba zvyšuje šanci zvýšení sazeb Fedu a posiluje dolar."
+   },
+   {
+    "at": "2026-11-18T11:00",
+    "country": "EA",
+    "event": "Inflace HICP – konečný údaj (říjen)",
+    "consensus": "4,0 % r/r",
+    "previous": "4,0 % r/r",
+    "actual": "",
+    "importance": 2,
+    "why": "Potvrzení vysoké inflace drží ve hře prosincové zvýšení sazeb ECB a podporuje euro."
+   },
+   {
+    "at": "2026-11-23T10:00",
+    "country": "EA",
+    "event": "PMI kompozitní – předběžný (listopad)",
+    "consensus": "51,5",
+    "previous": "",
+    "actual": "",
+    "importance": 2,
+    "why": "Lepší PMI podporuje euro a obvykle i korunu."
+   },
+   {
+    "at": "2026-11-25T14:30",
+    "country": "US",
+    "event": "HDP a PCE inflace (říjen)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 3,
+    "why": "Vyšší jádrová PCE inflace posílí sázky na přísnější Fed a dolar."
+   },
+   {
+    "at": "2026-11-26T13:30",
+    "country": "EA",
+    "event": "ECB: zápis z říjnového zasedání",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 2,
+    "why": "Jestřábí tón zápisu by podpořil euro."
+   },
+   {
+    "at": "2026-12-01T11:00",
+    "country": "EA",
+    "event": "Inflace HICP – rychlý odhad (listopad)",
+    "consensus": "",
+    "previous": "4,0 % r/r",
+    "actual": "",
+    "importance": 3,
+    "why": "Vyšší inflace zvyšuje šanci na prosincové zvýšení sazeb ECB a posiluje euro."
+   },
+   {
+    "at": "2026-12-01T16:00",
+    "country": "US",
+    "event": "ISM ve zpracovatelském průmyslu (listopad)",
+    "consensus": "",
+    "previous": "",
+    "actual": "",
+    "importance": 2,
+    "why": "Silnější ISM obvykle podpoří dolar."
    }
   ]
  },
@@ -670,7 +732,7 @@
  },
  "summary": {
   "asOf": "2026-11-10",
-  "text": "Koruna drží kolem 24,34 za euro (fixing ECB i kurz ČNB 24,34). Česká inflace potvrzena na 2,4 %, americký CPI vyšel nad očekáváním (+0,4 % m/m), což může dolaru pomoci."
+  "text": "Koruna drží kolem 24,34 za euro (fixing ECB 24,337). Americký CPI vyšel nad odhady (+0,4 % m/m), dolar posílil a EUR/USD spadl pod 1,1150, což koruně vůči dolaru ubírá."
  },
  "outlook": {
   "asOf": "2026-10-14",
