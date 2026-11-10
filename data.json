@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-10",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "Kurzy.cz",
+     "currency": "CZK",
+     "title": "Koruna čeká na české a americké inflační údaje",
+     "url": "https://zpravy.kurzy.cz/881243-dolar-ceka-dulezity-test-v-podobe-inflace",
+     "summary": "Koruna by měla zůstat poblíž 24,35 za euro a 21,70 za dolar. Dnes vychází konečná česká inflace (očekává se zpomalení na 2,4 %) a americká inflace, kterou trh čeká na 3,9 % z 3,7 %. Česká nezaměstnanost zůstala na 5,0 %.",
+     "why": "Americká inflace nad očekáváním by posílila dolar proti koruně, česká data by ji měla spíš stabilizovat.",
+     "published": "2026-11-10T07:26"
+    },
     {
      "source": "Kurzy.cz",
      "currency": "CZK",
@@ -65,18 +74,18 @@
      "summary": "Analytik KB čeká zvýšení repo sazby o 25 bb na 4,0 % a poté delší pauzu; nová prognóza má ukázat slabší růst a vyšší inflaci. Koruna po amerických volbách k euru mírně posílila o 0,1–0,2 %.",
      "why": "Zvýšení sazby je z velké části v ceně; jestřábí prognóza by korunu podpořila, holubí tón nebo ponechání sazby by ji oslabilo.",
      "published": "2026-11-05T09:03"
-    },
-    {
-     "source": "FXStreet.cz (Patria)",
-     "currency": "CZK",
-     "title": "Koruna k dolaru zpevnila o 12 haléřů, k euru o 4",
-     "url": "https://www.fxstreet.cz/forex-koruna-k-dolaru-zpevnila-o-12-haleru-mirne-si-polepsila-i-k-euru.html",
-     "summary": "Kolem 17:00 se koruna obchodovala na 24,30 za euro a 21,62 za dolar. Pomohl slabší dolar, levnější ropa a říjnová inflace 2,4 %; analytik čeká ve čtvrtek zvýšení sazby ČNB na 4 %.",
-     "why": "Slabší dolar a očekávané utažení ČNB korunu podporují, hlavním rizikem je překvapení na čtvrtečním zasedání.",
-     "published": "2026-11-04T17:00"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Kurzy.cz",
+     "currency": "CZK",
+     "title": "Koruna čeká na české a americké inflační údaje",
+     "url": "https://zpravy.kurzy.cz/881243-dolar-ceka-dulezity-test-v-podobe-inflace",
+     "summary": "Koruna by měla zůstat poblíž 24,35 za euro a 21,70 za dolar. Dnes vychází konečná česká inflace (očekává se zpomalení na 2,4 %) a americká inflace, kterou trh čeká na 3,9 % z 3,7 %. Česká nezaměstnanost zůstala na 5,0 %.",
+     "why": "Americká inflace nad očekáváním by posílila dolar proti koruně, česká data by ji měla spíš stabilizovat.",
+     "published": "2026-11-10T07:26"
+    },
     {
      "source": "Kurzy.cz",
      "currency": "CZK",
@@ -139,15 +148,6 @@
      "summary": "Koruna kolem 17:00 stála na 24,33 za euro a 21,66 za dolar. Guvernér Michl řekl, že zvýšení není začátkem nového cyklu; nová prognóza počítá s kurzem kolem 24,30 v letech 2026–27.",
      "why": "Jestřábí sazby byly v ceně a opatrný tón guvernéra koruně dál nepřidává; kurz se drží v úzkém pásmu.",
      "published": "2026-11-05T17:00"
-    },
-    {
-     "source": "ČTK / e15.cz",
-     "currency": "CZK",
-     "title": "ČNB zvýšila repo sazbu na 4 %, nejvíc od počátku roku 2025",
-     "url": "https://www.e15.cz/ekonomika/cnb-zvysila-zakladni-urokovou-sazbu-na-4-procenta-je-nejvyssi-za-temer-dva-roky-1437131",
-     "summary": "Bankovní rada zvýšila základní sazbu o 25 bb na 4 %, lombardní na 5 % a diskontní na 3 %. Pro zvýšení hlasovali čtyři členové, tři byli pro ponechání sazeb.",
-     "why": "Krok trh očekával, proto reakce koruny bývá omezená; směr určí tón guvernéra a nová prognóza.",
-     "published": "2026-11-05T15:10"
     }
    ],
    "EUR/USD": [
@@ -564,7 +564,7 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-10",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
    {
@@ -611,7 +611,7 @@
     "event": "Míra nezaměstnanosti (říjen)",
     "consensus": "5,0 %",
     "previous": "5,0 %",
-    "actual": "",
+    "actual": "5,0 %",
     "importance": 2,
     "why": "Nižší nezaměstnanost podporuje mzdy a inflaci, tedy koruně spíše pomáhá."
    }
@@ -649,8 +649,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-11-09",
-  "text": "Koruna drží kolem 24,36 za euro (fixing ECB z pondělí 24,365, kurz ČNB 24,36), k dolaru mírně posílila na 21,76. Euro podporuje sázka na prosincové zvýšení sazeb ECB; do konce týdne rozhodne vývoj kolem dolaru a ropy."
+  "asOf": "2026-11-10",
+  "text": "Koruna drží kolem 24,35 za euro (fixing ECB z pondělí 24,365), k dolaru kolem 21,7–21,8. Dnešní americká inflace (konsenzus 3,9 % r/r) rozhodne o směru dolaru; čeká se i konečná česká inflace."
  },
  "outlook": {
   "asOf": "2026-10-14",
