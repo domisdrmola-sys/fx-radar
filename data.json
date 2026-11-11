@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "Kurzy.cz (Komerční banka)",
+     "currency": "CZK",
+     "title": "Silný dolar táhne dolů euro, koruna mírně slábne",
+     "url": "https://zpravy.kurzy.cz/881554-sentiment-na-financnich-trzich-opet-nahraval-dolaru-komentar",
+     "summary": "Podle odpoledního komentáře KB koruna oslabila o 0,1 % na 24,38 za euro, euro ztratilo k dolaru 0,6 % a spadlo pod 1,11; zlotý odepsal zhruba 0,3 %. Dolar těží z vyšší americké inflace a sázek na další utažení Fedu, pohyby mohla zesílit nízká likvidita kvůli americkému svátku.",
+     "why": "Dokud trh sází na zvyšování sazeb Fedu, dolar posiluje a koruna i zlotý zůstávají pod mírným tlakem.",
+     "published": "2026-11-11T16:26"
+    },
+    {
      "source": "Kurzy.cz (ČSOB)",
      "currency": "CZK",
      "title": "Koruna se drží u 24,35, prostor pro zisky je omezený",
@@ -65,18 +74,18 @@
      "summary": "Hlavní ekonom ECB Lane nechce dávat předem signály o směru sazeb. Upozornil, že levnější energie mohou snížit celkovou inflaci, zatímco jádrová může růst, a rozhodovat bude, zda inflace překoná projekce ECB.",
      "why": "Opatrná ECB bez jasného příslibu zvýšení nepomáhá euru vůči dolaru.",
      "published": "2026-11-10"
-    },
-    {
-     "source": "Kurzy.cz",
-     "currency": "CZK",
-     "title": "Koruna čeká na nezaměstnanost, dolar těží z amerických dat",
-     "url": "https://zpravy.kurzy.cz/881088-koruna-vyhlizi-domaci-nezamestnanost-dolar-tezi-ze-silnych-dat/",
-     "summary": "Koruna zakončila týden u 24,35 za euro, k dolaru během pátku oslabila z 21,63 na přes 21,80. Dnes se čeká nezaměstnanost, která by podle očekávání mohla zůstat na 5 %.",
-     "why": "Stabilní trh práce a silný průmysl koruně pomáhají, silný dolar po americkém trhu práce ji ale tlačí k USD.",
-     "published": "2026-11-09T07:43"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Kurzy.cz (Komerční banka)",
+     "currency": "CZK",
+     "title": "Silný dolar táhne dolů euro, koruna mírně slábne",
+     "url": "https://zpravy.kurzy.cz/881554-sentiment-na-financnich-trzich-opet-nahraval-dolaru-komentar",
+     "summary": "Podle odpoledního komentáře KB koruna oslabila o 0,1 % na 24,38 za euro, euro ztratilo k dolaru 0,6 % a spadlo pod 1,11; zlotý odepsal zhruba 0,3 %. Dolar těží z vyšší americké inflace a sázek na další utažení Fedu, pohyby mohla zesílit nízká likvidita kvůli americkému svátku.",
+     "why": "Dokud trh sází na zvyšování sazeb Fedu, dolar posiluje a koruna i zlotý zůstávají pod mírným tlakem.",
+     "published": "2026-11-11T16:26"
+    },
     {
      "source": "Kurzy.cz (ČSOB)",
      "currency": "CZK",
@@ -139,18 +148,18 @@
      "summary": "Koruna v úterý ztratila dopolední zisky a večer se držela kolem 24,35 EUR/CZK, k dolaru oslabila o pět haléřů. Podle analytika Purple Trading už efekt zvýšení sazeb ČNB vyprchal a trh přehodnocuje další kroky.",
      "why": "Odeznívající podpora od ČNB a silný dolar brzdí další posilování koruny.",
      "published": "2026-11-10T17:00"
-    },
-    {
-     "source": "Kurzy.cz / Citfin",
-     "currency": "CZK",
-     "title": "Česká inflace v říjnu potvrzena na 2,4 %",
-     "url": "https://zpravy.kurzy.cz/881281-rijnova-inflace-v-cr-potvrzena-na-2-4-/",
-     "summary": "ČSÚ potvrdil říjnovou inflaci 2,4 % r/r a +0,4 % m/m, bez potravin to bylo 3,7 %; služby zdražily o 4,5 %.",
-     "why": "Stále vysoká jádrová inflace podporuje ostražitý postoj ČNB, což koruně pomáhá.",
-     "published": "2026-11-10T10:15"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "Kurzy.cz (Komerční banka)",
+     "currency": "CZK",
+     "title": "Silný dolar táhne dolů euro, koruna mírně slábne",
+     "url": "https://zpravy.kurzy.cz/881554-sentiment-na-financnich-trzich-opet-nahraval-dolaru-komentar",
+     "summary": "Podle odpoledního komentáře KB koruna oslabila o 0,1 % na 24,38 za euro, euro ztratilo k dolaru 0,6 % a spadlo pod 1,11; zlotý odepsal zhruba 0,3 %. Dolar těží z vyšší americké inflace a sázek na další utažení Fedu, pohyby mohla zesílit nízká likvidita kvůli americkému svátku.",
+     "why": "Dokud trh sází na zvyšování sazeb Fedu, dolar posiluje a koruna i zlotý zůstávají pod mírným tlakem.",
+     "published": "2026-11-11T16:26"
+    },
     {
      "source": "Yahoo Finance",
      "currency": "USD",
@@ -213,18 +222,18 @@
      "summary": "Spotřebitelské ceny v USA vzrostly o 0,4 % m/m proti očekávaným 0,3 %, jádro o 0,3 % proti 0,2 %.",
      "why": "Vyšší inflace zvyšuje obavy z přísnějšího Fedu a tlačí dolar nahoru proti euru i koruně.",
      "published": "2026-11-10"
-    },
-    {
-     "source": "InvestingLive",
-     "currency": "EUR",
-     "title": "Lane: laťka pro signály o směru sazeb je vysoko",
-     "url": "https://investinglive.com/central-banks/ecb-s-lane-says-the-bar-for-directional-rate-guidance-is-high",
-     "summary": "Hlavní ekonom ECB Lane nechce dávat předem signály o směru sazeb. Upozornil, že levnější energie mohou snížit celkovou inflaci, zatímco jádrová může růst, a rozhodovat bude, zda inflace překoná projekce ECB.",
-     "why": "Opatrná ECB bez jasného příslibu zvýšení nepomáhá euru vůči dolaru.",
-     "published": "2026-11-10"
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "Kurzy.cz (Komerční banka)",
+     "currency": "CZK",
+     "title": "Silný dolar táhne dolů euro, koruna mírně slábne",
+     "url": "https://zpravy.kurzy.cz/881554-sentiment-na-financnich-trzich-opet-nahraval-dolaru-komentar",
+     "summary": "Podle odpoledního komentáře KB koruna oslabila o 0,1 % na 24,38 za euro, euro ztratilo k dolaru 0,6 % a spadlo pod 1,11; zlotý odepsal zhruba 0,3 %. Dolar těží z vyšší americké inflace a sázek na další utažení Fedu, pohyby mohla zesílit nízká likvidita kvůli americkému svátku.",
+     "why": "Dokud trh sází na zvyšování sazeb Fedu, dolar posiluje a koruna i zlotý zůstávají pod mírným tlakem.",
+     "published": "2026-11-11T16:26"
+    },
     {
      "source": "InvestingCube",
      "currency": "PLN",
@@ -697,7 +706,7 @@
  },
  "summary": {
   "asOf": "2026-11-11",
-  "text": "Koruna mírně oslabila na 24,378 za euro (fixing ECB, včera 24,337), euro k dolaru spadlo na 1,1127 z 1,1214. Jestřábí Fed (Loganová chce dvě další zvýšení) drží dolar silný, v pátek přijde HDP eurozóny a americké PPI."
+  "text": "Koruna mírně oslabila na 24,378 za euro (fixing ECB, včera 24,337), euro k dolaru spadlo pod 1,11. Sázky na další zvýšení sazeb Fedu drží dolar silný; v pátek přijde HDP eurozóny a americké PPI."
  },
  "outlook": {
   "asOf": "2026-10-14",
