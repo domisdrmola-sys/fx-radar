@@ -105,6 +105,15 @@
      "published": "2026-11-12T07:44"
     },
     {
+     "source": "Reuters / Investing.com",
+     "currency": "USD",
+     "title": "Hammacková z Fedu nechce zrychlovat tempo zvyšování sazeb",
+     "url": "https://www.investing.com/news/economy-news/feds-hammack-signals-support-for-gradual-ratehike-path-5022530",
+     "summary": "Šéfka clevelandského Fedu Beth Hammacková podle svých slov preferuje menší a postupná zvýšení sazeb a krok o půl bodu nepovažuje za nutný, protože Fed podle ní za inflací nezaostává. Trh dál čeká v prosinci zvýšení o 0,25 bodu.",
+     "why": "Odmítnutí většího kroku mírně tlumí sázky na agresivní Fed, což může dolaru ubrat část zisků vůči euru i koruně.",
+     "published": "2026-11-12"
+    },
+    {
      "source": "Saxo Bank",
      "currency": "USD",
      "title": "Dolar nejsilnější od května 2025, trh oceňuje další zvýšení sazeb",
@@ -139,15 +148,6 @@
      "summary": "Šéfka Fedu v Dallasu Loganová uvedla, že Fed potřebuje nejméně dvě další zvýšení o 25 bb a v zimě by mohl postupovat i rychleji; Waller připustil v prosinci 50 bb. Výnos 10letého dluhopisu vzrostl na 5 %, FedWatch ukazuje 90,5 % pro +25 bb a 9,5 % pro +50 bb.",
      "why": "Jestřábí Fed a vyšší výnosy podporují dolar vůči euru i koruně.",
      "published": "2026-11-11T02:54"
-    },
-    {
-     "source": "Citfin",
-     "currency": "CZK",
-     "title": "Koruna otevírá klidně, trh čeká na německou inflaci",
-     "url": "https://www.citfin.cz/ranni-fx-zpravy/kurz-koruny-dnes-nemecka-inflace/",
-     "summary": "Koruna zahájila středu u úterních závěrečných úrovní; česká data i silnější americká inflace ji včera mírně oslabily. Domácí ani americký kalendář je dnes prázdný, hlavní je konečná německá inflace.",
-     "why": "Bez domácích impulzů zůstává koruna v úzkém pásmu a citlivá spíš na dolar a geopolitiku.",
-     "published": "2026-11-11"
     }
    ],
    "EUR/USD": [
@@ -168,6 +168,15 @@
      "summary": "Komentář ČSOB upozorňuje na růst USA nad 3 %, nezaměstnanost kolem 4 % a jádrovou PCE inflaci nad 3 %; při sazbách pod 4 % zůstává měnová politika stimulační. Guvernér Waller připustil v prosinci zvýšení o 50 bb.",
      "why": "Představa delšího cyklu zvyšování sazeb Fedu podporuje dolar vůči euru i koruně.",
      "published": "2026-11-12T08:45"
+    },
+    {
+     "source": "Reuters / Investing.com",
+     "currency": "USD",
+     "title": "Hammacková z Fedu nechce zrychlovat tempo zvyšování sazeb",
+     "url": "https://www.investing.com/news/economy-news/feds-hammack-signals-support-for-gradual-ratehike-path-5022530",
+     "summary": "Šéfka clevelandského Fedu Beth Hammacková podle svých slov preferuje menší a postupná zvýšení sazeb a krok o půl bodu nepovažuje za nutný, protože Fed podle ní za inflací nezaostává. Trh dál čeká v prosinci zvýšení o 0,25 bodu.",
+     "why": "Odmítnutí většího kroku mírně tlumí sázky na agresivní Fed, což může dolaru ubrat část zisků vůči euru i koruně.",
+     "published": "2026-11-12"
     },
     {
      "source": "Saxo Bank",
@@ -212,15 +221,6 @@
      "url": "https://za.investing.com/news/economy-news/dollar-gains-as-hot-inflation-hawkish-fed-talk-lift-ratehike-bets-4567318",
      "summary": "Dolarový index vzrostl o 0,3 % na 102,53, nejvýš za čtyři týdny, EUR/USD kleslo k 1,113. Podle CME FedWatch trh plně započítává zvýšení sazeb Fedu o 25 bb v prosinci a do září příštího roku zhruba 75 bb.",
      "why": "Rostoucí sázky na utahování Fedu posilují dolar vůči euru i koruně.",
-     "published": "2026-11-11"
-    },
-    {
-     "source": "FXStreet",
-     "currency": "USD",
-     "title": "Euro na dvoutýdenním minimu, trh čeká agresivní Fed",
-     "url": "https://fxstreet.com/news/euro-falls-to-two-week-low-amid-expectations-of-aggressive-fed-rate-hikes-202611111348",
-     "summary": "EUR/USD klesá druhý den za sebou k 1,1116 (−0,4 %), dolarový index se blíží k letošnímu maximu z října kolem 102,9. Důvodem je horká americká inflace a jestřábí komentáře Fedu.",
-     "why": "Silnější dolar tlačí EUR/USD dolů a zdražuje dolar i vůči koruně.",
      "published": "2026-11-11"
     }
    ],
@@ -706,7 +706,7 @@
  },
  "summary": {
   "asOf": "2026-11-12",
-  "text": "Koruna se drží u 24,38–24,40 za euro (kurz ČNB dnes 24,385), k dolaru oslabila nad 22 Kč (ČNB 22,014). Dolar je u 19měsíčního maxima kvůli sázkám na prosincové zvýšení Fedu; v pátek HDP eurozóny a americké PPI."
+  "text": "Koruna je stabilní u 24,38 za euro (fixing ECB 24,379, beze změny proti středě), k dolaru se drží nad 22 Kč. Dolar těží ze sázek na prosincové zvýšení Fedu, Hammacková ale krok o půl bodu odmítá; v pátek HDP eurozóny a americké PPI."
  },
  "outlook": {
   "asOf": "2026-10-14",
