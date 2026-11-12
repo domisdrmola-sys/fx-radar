@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "Kurzy.cz / ČSOB",
+     "currency": "CZK",
+     "title": "Koruna pod tlakem silného dolaru, blíží se 24,40",
+     "url": "https://zpravy.kurzy.cz/881593-koruna-pod-tlakem-silneho-dolaru-ceska-koruna-vcera-zhleka-ztracela-a-priblizila-se-hranici-24-40/",
+     "summary": "Koruna ve středu zlehka ztrácela a přiblížila se k 24,40 EUR/CZK v reakci na posilující dolar. Podporou je naopak pokles ropy Brent k 90 USD; trh čeká na podrobný zápis z rozděleného listopadového jednání ČNB.",
+     "why": "Silný dolar a globální averze k riziku brzdí korunu, levnější ropa a jestřábí tón zápisu ČNB by ji mohly podpořit.",
+     "published": "2026-11-12T08:41"
+    },
+    {
      "source": "Kurzy.cz (Citfin)",
      "currency": "CZK",
      "title": "Dolar nabírá sílu, koruna k dolaru oslabila nad 22 Kč",
@@ -65,18 +74,27 @@
      "summary": "ČSÚ potvrdil říjnovou inflaci 2,4 % r/r a +0,4 % m/m, bez potravin to bylo 3,7 %; služby zdražily o 4,5 %.",
      "why": "Stále vysoká jádrová inflace podporuje ostražitý postoj ČNB, což koruně pomáhá.",
      "published": "2026-11-10T10:15"
-    },
-    {
-     "source": "Kurzy.cz",
-     "currency": "CZK",
-     "title": "Koruna čeká na české a americké inflační údaje",
-     "url": "https://zpravy.kurzy.cz/881243-dolar-ceka-dulezity-test-v-podobe-inflace",
-     "summary": "Koruna by měla zůstat poblíž 24,35 za euro a 21,70 za dolar. Dnes vychází konečná česká inflace (očekává se zpomalení na 2,4 %) a americká inflace, kterou trh čeká na 3,9 % z 3,7 %. Česká nezaměstnanost zůstala na 5,0 %.",
-     "why": "Americká inflace nad očekáváním by posílila dolar proti koruně, česká data by ji měla spíš stabilizovat.",
-     "published": "2026-11-10T07:26"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "AP",
+     "currency": "USD",
+     "title": "Nové žádosti o podporu v USA vzrostly na 200 tisíc",
+     "url": "https://www.news4jax.com/business/2026/11/12/us-jobless-claims-tick-up-to-200000-but-remain-low-by-historic-standards/",
+     "summary": "Počet nových žádostí o podporu v nezaměstnanosti stoupl za týden do 7. 11. o 9 tisíc na 200 tisíc, mírně nad odhad 195 tisíc. Propouštění ale zůstává historicky nízké.",
+     "why": "Trh práce zůstává pevný, takže údaj nemění sázky na prosincové zvýšení sazeb Fedu a dolar drží silný.",
+     "published": "2026-11-12T14:31"
+    },
+    {
+     "source": "Kurzy.cz / ČSOB",
+     "currency": "USD",
+     "title": "Americká ekonomika sílí, jedno zvýšení sazeb nemusí stačit",
+     "url": "https://zpravy.kurzy.cz/881600-americka-ekonomika-sili-prihodit-jedno-zvyseni-sazeb-je-malo",
+     "summary": "Komentář ČSOB upozorňuje na růst USA nad 3 %, nezaměstnanost kolem 4 % a jádrovou PCE inflaci nad 3 %; při sazbách pod 4 % zůstává měnová politika stimulační. Guvernér Waller připustil v prosinci zvýšení o 50 bb.",
+     "why": "Představa delšího cyklu zvyšování sazeb Fedu podporuje dolar vůči euru i koruně.",
+     "published": "2026-11-12T08:45"
+    },
     {
      "source": "Kurzy.cz (Citfin)",
      "currency": "CZK",
@@ -130,27 +148,27 @@
      "summary": "Koruna zahájila středu u úterních závěrečných úrovní; česká data i silnější americká inflace ji včera mírně oslabily. Domácí ani americký kalendář je dnes prázdný, hlavní je konečná německá inflace.",
      "why": "Bez domácích impulzů zůstává koruna v úzkém pásmu a citlivá spíš na dolar a geopolitiku.",
      "published": "2026-11-11"
-    },
-    {
-     "source": "Reuters (Investing.com)",
-     "currency": "USD",
-     "title": "Dolar na čtyřtýdenním maximu, trh plně čeká prosincové zvýšení Fedu",
-     "url": "https://za.investing.com/news/economy-news/dollar-gains-as-hot-inflation-hawkish-fed-talk-lift-ratehike-bets-4567318",
-     "summary": "Dolarový index vzrostl o 0,3 % na 102,53, nejvýš za čtyři týdny, EUR/USD kleslo k 1,113. Podle CME FedWatch trh plně započítává zvýšení sazeb Fedu o 25 bb v prosinci a do září příštího roku zhruba 75 bb.",
-     "why": "Rostoucí sázky na utahování Fedu posilují dolar vůči euru i koruně.",
-     "published": "2026-11-11"
-    },
-    {
-     "source": "FXStreet",
-     "currency": "USD",
-     "title": "Euro na dvoutýdenním minimu, trh čeká agresivní Fed",
-     "url": "https://fxstreet.com/news/euro-falls-to-two-week-low-amid-expectations-of-aggressive-fed-rate-hikes-202611111348",
-     "summary": "EUR/USD klesá druhý den za sebou k 1,1116 (−0,4 %), dolarový index se blíží k letošnímu maximu z října kolem 102,9. Důvodem je horká americká inflace a jestřábí komentáře Fedu.",
-     "why": "Silnější dolar tlačí EUR/USD dolů a zdražuje dolar i vůči koruně.",
-     "published": "2026-11-11"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "AP",
+     "currency": "USD",
+     "title": "Nové žádosti o podporu v USA vzrostly na 200 tisíc",
+     "url": "https://www.news4jax.com/business/2026/11/12/us-jobless-claims-tick-up-to-200000-but-remain-low-by-historic-standards/",
+     "summary": "Počet nových žádostí o podporu v nezaměstnanosti stoupl za týden do 7. 11. o 9 tisíc na 200 tisíc, mírně nad odhad 195 tisíc. Propouštění ale zůstává historicky nízké.",
+     "why": "Trh práce zůstává pevný, takže údaj nemění sázky na prosincové zvýšení sazeb Fedu a dolar drží silný.",
+     "published": "2026-11-12T14:31"
+    },
+    {
+     "source": "Kurzy.cz / ČSOB",
+     "currency": "USD",
+     "title": "Americká ekonomika sílí, jedno zvýšení sazeb nemusí stačit",
+     "url": "https://zpravy.kurzy.cz/881600-americka-ekonomika-sili-prihodit-jedno-zvyseni-sazeb-je-malo",
+     "summary": "Komentář ČSOB upozorňuje na růst USA nad 3 %, nezaměstnanost kolem 4 % a jádrovou PCE inflaci nad 3 %; při sazbách pod 4 % zůstává měnová politika stimulační. Guvernér Waller připustil v prosinci zvýšení o 50 bb.",
+     "why": "Představa delšího cyklu zvyšování sazeb Fedu podporuje dolar vůči euru i koruně.",
+     "published": "2026-11-12T08:45"
+    },
     {
      "source": "Saxo Bank",
      "currency": "USD",
@@ -204,24 +222,6 @@
      "summary": "EUR/USD klesá druhý den za sebou k 1,1116 (−0,4 %), dolarový index se blíží k letošnímu maximu z října kolem 102,9. Důvodem je horká americká inflace a jestřábí komentáře Fedu.",
      "why": "Silnější dolar tlačí EUR/USD dolů a zdražuje dolar i vůči koruně.",
      "published": "2026-11-11"
-    },
-    {
-     "source": "FXEmpire",
-     "currency": "USD",
-     "title": "Dolar po horké inflaci posiluje, EUR/USD pod 1,1150",
-     "url": "https://www.fxempire.com/forecasts/article/u-s-dollar-rallies-as-cpi-exceeds-estimates-analysis-for-eur-usd-gbp-usd-usd-cad-usd-jpy-1643672",
-     "summary": "Po říjnovém CPI (+0,4 % m/m, jádro +0,3 % m/m, obojí nad odhady) trh ocenil jestřábější Fed a EUR/USD prolomil podporu 1,1175–1,1190; večer se drží kolem 1,1150.",
-     "why": "Sílící sázky na prosincové zvýšení sazeb Fedu posilují dolar vůči euru i koruně.",
-     "published": "2026-11-10T18:08"
-    },
-    {
-     "source": "Reuters (Yahoo Finance)",
-     "currency": "USD",
-     "title": "Anketa Reuters: všech 101 ekonomů čeká v prosinci zvýšení sazeb Fedu",
-     "url": "https://finance.yahoo.com/economy/policy/articles/fed-raise-rates-once-more-124512933.html",
-     "summary": "Všichni dotázaní ekonomové čekají v prosinci zvýšení o 25 bb na 4,00–4,25 %; 45 ze 101 počítá s alespoň dvěma dalšími kroky. Návrat inflace PCE ke 2 % čekají nejdřív v roce 2028.",
-     "why": "Jednoznačné očekávání dalšího utažení Fedu podporuje dolar vůči euru i koruně.",
-     "published": "2026-11-10T13:45"
     }
    ],
    "PLN/CZK": [
@@ -326,38 +326,38 @@
   ]
  },
  "cnb": {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.38,
-   "USD": 21.91,
-   "PLN": 5.535,
-   "HUF100": 6.679
+   "EUR": 24.385,
+   "USD": 22.014,
+   "PLN": 5.531,
+   "HUF100": 6.674
   }
  },
  "mm": {
-  "asOf": "2026-11-11",
+  "asOf": "2026-11-12",
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
-   "date": "2026-11-04",
+   "date": "2026-11-05",
    "basis": 360,
    "r": {
-    "1M": 3.88,
-    "3M": 3.98,
-    "6M": 4.12,
+    "1M": 3.91,
+    "3M": 4.0,
+    "6M": 4.13,
     "12M": 4.29
    }
   },
   "EUR": {
    "src": "EURIBOR",
-   "date": "2026-11-10",
+   "date": "2026-11-11",
    "basis": 360,
    "r": {
-    "1M": 2.475,
-    "3M": 2.738,
-    "6M": 3.018,
-    "12M": 3.217
+    "1M": 2.487,
+    "3M": 2.754,
+    "6M": 3.01,
+    "12M": 3.222
    }
   },
   "USD": {
@@ -373,10 +373,10 @@
   },
   "PLN": {
    "src": "WIBOR",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "basis": 365,
    "r": {
-    "1M": 3.79,
+    "1M": 3.82,
     "3M": 3.9,
     "6M": 3.98,
     "12M": 4.04
@@ -466,17 +466,17 @@
   ]
  },
  "risk": {
-  "asOf": "2026-10-29",
+  "asOf": "2026-11-12",
   "items": [
    {
     "id": "brent",
     "label": "Brent",
-    "value": 113.78,
+    "value": 93.29,
     "unit": "USD/bbl",
-    "chg1d": -1.34,
-    "chg1m": 16.06,
+    "chg1d": 0.57,
+    "chg1m": -11.74,
     "why": "Dražší ropa zhoršuje obchodní bilanci ČR i eurozóny a zvyšuje inflaci.",
-    "date": "2026-10-29"
+    "date": "2026-11-12"
    },
    {
     "id": "ttf",
@@ -558,6 +558,16 @@
     "consensus": "2,8 % r/r",
     "previous": "3,3 % r/r",
     "actual": "2,8 % r/r (potvrzeno, HICP 2,8 %)",
+    "importance": 1,
+    "why": ""
+   },
+   {
+    "at": "2026-11-12T14:30",
+    "country": "US",
+    "event": "Nové žádosti o podporu v nezaměstnanosti (týden)",
+    "consensus": "195 tis.",
+    "previous": "191 tis. (revize)",
+    "actual": "200 tis.",
     "importance": 1,
     "why": ""
    },
@@ -696,7 +706,7 @@
  },
  "summary": {
   "asOf": "2026-11-12",
-  "text": "Koruna se drží u 24,38–24,40 za euro (včerejší fixing ECB 24,378), k dolaru oslabila nad 22 Kč. Dolar je nejsilnější od května 2025 kvůli sázkám na prosincové zvýšení Fedu; v pátek přijde HDP eurozóny a americké PPI."
+  "text": "Koruna se drží u 24,38–24,40 za euro (kurz ČNB dnes 24,385), k dolaru oslabila nad 22 Kč (ČNB 22,014). Dolar je u 19měsíčního maxima kvůli sázkám na prosincové zvýšení Fedu; v pátek HDP eurozóny a americké PPI."
  },
  "outlook": {
   "asOf": "2026-10-14",
