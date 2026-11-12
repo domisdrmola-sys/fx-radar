@@ -1,8 +1,17 @@
 {
  "news": {
-  "asOf": "2026-11-11",
+  "asOf": "2026-11-12",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "Kurzy.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Dolar nabírá sílu, koruna k dolaru oslabila nad 22 Kč",
+     "url": "https://zpravy.kurzy.cz/881586-dolar-nabira-silu-koruna-oslabila-nad-22-usdczk/",
+     "summary": "Euro kleslo k dolaru zhruba na 1,1075, nejníž za 19 měsíců, a koruna k dolaru oslabila přes 22,00 Kč. Vůči euru Citfin čeká klidnější obchodování u 24,40.",
+     "why": "Silný dolar tlačí USD/CZK nahoru, zatímco vůči euru koruně pomáhají úvahy o dalším zvýšení sazeb ČNB.",
+     "published": "2026-11-12T07:44"
+    },
     {
      "source": "Kurzy.cz (Komerční banka)",
      "currency": "CZK",
@@ -65,18 +74,27 @@
      "summary": "Koruna by měla zůstat poblíž 24,35 za euro a 21,70 za dolar. Dnes vychází konečná česká inflace (očekává se zpomalení na 2,4 %) a americká inflace, kterou trh čeká na 3,9 % z 3,7 %. Česká nezaměstnanost zůstala na 5,0 %.",
      "why": "Americká inflace nad očekáváním by posílila dolar proti koruně, česká data by ji měla spíš stabilizovat.",
      "published": "2026-11-10T07:26"
-    },
-    {
-     "source": "InvestingLive",
-     "currency": "EUR",
-     "title": "Lane: laťka pro signály o směru sazeb je vysoko",
-     "url": "https://investinglive.com/central-banks/ecb-s-lane-says-the-bar-for-directional-rate-guidance-is-high",
-     "summary": "Hlavní ekonom ECB Lane nechce dávat předem signály o směru sazeb. Upozornil, že levnější energie mohou snížit celkovou inflaci, zatímco jádrová může růst, a rozhodovat bude, zda inflace překoná projekce ECB.",
-     "why": "Opatrná ECB bez jasného příslibu zvýšení nepomáhá euru vůči dolaru.",
-     "published": "2026-11-10"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Kurzy.cz (Citfin)",
+     "currency": "CZK",
+     "title": "Dolar nabírá sílu, koruna k dolaru oslabila nad 22 Kč",
+     "url": "https://zpravy.kurzy.cz/881586-dolar-nabira-silu-koruna-oslabila-nad-22-usdczk/",
+     "summary": "Euro kleslo k dolaru zhruba na 1,1075, nejníž za 19 měsíců, a koruna k dolaru oslabila přes 22,00 Kč. Vůči euru Citfin čeká klidnější obchodování u 24,40.",
+     "why": "Silný dolar tlačí USD/CZK nahoru, zatímco vůči euru koruně pomáhají úvahy o dalším zvýšení sazeb ČNB.",
+     "published": "2026-11-12T07:44"
+    },
+    {
+     "source": "Saxo Bank",
+     "currency": "USD",
+     "title": "Dolar nejsilnější od května 2025, trh oceňuje další zvýšení sazeb",
+     "url": "https://www.home.saxo/en-gb/content/articles/macro/asia-market-quick-take--12-november-2026-12112026",
+     "summary": "Dolarový index Bloombergu ve středu stoupl o 0,4 % na nejvyšší úroveň od května 2025 po horké inflaci a jestřábích výrocích Fedu. Paulsonová připustila rychlejší utahování, pokud se inflace zhorší.",
+     "why": "Rozevírající se úrokový rozdíl ve prospěch USA otevírá EUR/USD prostor k dalšímu poklesu.",
+     "published": "2026-11-12"
+    },
     {
      "source": "Kurzy.cz (Komerční banka)",
      "currency": "CZK",
@@ -130,27 +148,18 @@
      "summary": "EUR/USD klesá druhý den za sebou k 1,1116 (−0,4 %), dolarový index se blíží k letošnímu maximu z října kolem 102,9. Důvodem je horká americká inflace a jestřábí komentáře Fedu.",
      "why": "Silnější dolar tlačí EUR/USD dolů a zdražuje dolar i vůči koruně.",
      "published": "2026-11-11"
-    },
-    {
-     "source": "FXEmpire",
-     "currency": "USD",
-     "title": "Dolar po horké inflaci posiluje, EUR/USD pod 1,1150",
-     "url": "https://www.fxempire.com/forecasts/article/u-s-dollar-rallies-as-cpi-exceeds-estimates-analysis-for-eur-usd-gbp-usd-usd-cad-usd-jpy-1643672",
-     "summary": "Po říjnovém CPI (+0,4 % m/m, jádro +0,3 % m/m, obojí nad odhady) trh ocenil jestřábější Fed a EUR/USD prolomil podporu 1,1175–1,1190; večer se drží kolem 1,1150.",
-     "why": "Sílící sázky na prosincové zvýšení sazeb Fedu posilují dolar vůči euru i koruně.",
-     "published": "2026-11-10T18:08"
-    },
-    {
-     "source": "FXstreet.cz",
-     "currency": "CZK",
-     "title": "Koruna k euru stagnovala, k dolaru oslabila",
-     "url": "https://www.fxstreet.cz/forex-koruna-dnes-stagnovala-vuci-euru-k-dolaru-oslabila-o-pet-haleru.html",
-     "summary": "Koruna v úterý ztratila dopolední zisky a večer se držela kolem 24,35 EUR/CZK, k dolaru oslabila o pět haléřů. Podle analytika Purple Trading už efekt zvýšení sazeb ČNB vyprchal a trh přehodnocuje další kroky.",
-     "why": "Odeznívající podpora od ČNB a silný dolar brzdí další posilování koruny.",
-     "published": "2026-11-10T17:00"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "Saxo Bank",
+     "currency": "USD",
+     "title": "Dolar nejsilnější od května 2025, trh oceňuje další zvýšení sazeb",
+     "url": "https://www.home.saxo/en-gb/content/articles/macro/asia-market-quick-take--12-november-2026-12112026",
+     "summary": "Dolarový index Bloombergu ve středu stoupl o 0,4 % na nejvyšší úroveň od května 2025 po horké inflaci a jestřábích výrocích Fedu. Paulsonová připustila rychlejší utahování, pokud se inflace zhorší.",
+     "why": "Rozevírající se úrokový rozdíl ve prospěch USA otevírá EUR/USD prostor k dalšímu poklesu.",
+     "published": "2026-11-12"
+    },
     {
      "source": "Kurzy.cz (Komerční banka)",
      "currency": "CZK",
@@ -206,22 +215,13 @@
      "published": "2026-11-10T18:08"
     },
     {
-     "source": "CNBC",
+     "source": "Reuters (Yahoo Finance)",
      "currency": "USD",
-     "title": "Waller připouští v prosinci zvýšení o 50 bb",
-     "url": "https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html",
-     "summary": "Guvernér Fedu Waller podpoří v prosinci zvýšení sazeb nejméně o 25 bb a při horší inflaci zvažuje i 50 bb; Loganová z Dallasu čeká ještě dvě zvýšení. Po CPI trh plně ocenil prosincové zvýšení.",
-     "why": "Jestřábí Fed podporuje dolar a tlačí EUR/USD níž, koruna vůči dolaru slábne.",
-     "published": "2026-11-10T10:00"
-    },
-    {
-     "source": "CryptoBriefing / DeItaone",
-     "currency": "USD",
-     "title": "Americká inflace v říjnu překvapila nahoru",
-     "url": "https://cryptobriefing.com/us-october-cpi-rises-04-surpassing-03-consensus/",
-     "summary": "Spotřebitelské ceny v USA vzrostly o 0,4 % m/m proti očekávaným 0,3 %, jádro o 0,3 % proti 0,2 %.",
-     "why": "Vyšší inflace zvyšuje obavy z přísnějšího Fedu a tlačí dolar nahoru proti euru i koruně.",
-     "published": "2026-11-10"
+     "title": "Anketa Reuters: všech 101 ekonomů čeká v prosinci zvýšení sazeb Fedu",
+     "url": "https://finance.yahoo.com/economy/policy/articles/fed-raise-rates-once-more-124512933.html",
+     "summary": "Všichni dotázaní ekonomové čekají v prosinci zvýšení o 25 bb na 4,00–4,25 %; 45 ze 101 počítá s alespoň dvěma dalšími kroky. Návrat inflace PCE ke 2 % čekají nejdřív v roce 2028.",
+     "why": "Jednoznačné očekávání dalšího utažení Fedu podporuje dolar vůči euru i koruně.",
+     "published": "2026-11-10T13:45"
     }
    ],
    "PLN/CZK": [
@@ -528,19 +528,9 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-11-11",
+  "asOf": "2026-11-12",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
-   {
-    "at": "2026-11-09T09:00",
-    "country": "CZ",
-    "event": "Míra nezaměstnanosti (říjen)",
-    "consensus": "5,0 %",
-    "previous": "5,0 %",
-    "actual": "5,0 %",
-    "importance": 2,
-    "why": "Nižší nezaměstnanost podporuje mzdy a inflaci, tedy koruně spíše pomáhá."
-   },
    {
     "at": "2026-11-10T09:00",
     "country": "CZ",
@@ -705,8 +695,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-11-11",
-  "text": "Koruna mírně oslabila na 24,378 za euro (fixing ECB, včera 24,337), euro k dolaru spadlo pod 1,11. Sázky na další zvýšení sazeb Fedu drží dolar silný; v pátek přijde HDP eurozóny a americké PPI."
+  "asOf": "2026-11-12",
+  "text": "Koruna se drží u 24,38–24,40 za euro (včerejší fixing ECB 24,378), k dolaru oslabila nad 22 Kč. Dolar je nejsilnější od května 2025 kvůli sázkám na prosincové zvýšení Fedu; v pátek přijde HDP eurozóny a americké PPI."
  },
  "outlook": {
   "asOf": "2026-10-14",
