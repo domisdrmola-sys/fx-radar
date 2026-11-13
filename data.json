@@ -96,6 +96,24 @@
      "published": "2026-11-13T08:32"
     },
     {
+     "source": "investingLive",
+     "currency": "USD",
+     "title": "Goolsbee z Fedu: inflace nesměřuje ke 2 %, Fed má co dělat",
+     "url": "https://investinglive.com/central-banks/fed-s-goolsbee-we-re-not-on-the-way-to-2-inflation-and-we-have-to-deal-with-that/",
+     "summary": "Šéf chicagského Fedu Goolsbee uvedl, že cenové tlaky se rozšířily mimo energie do služeb a zdravotnictví a Fed musí jednat, aby si udržel důvěryhodnost. Na prosincové zvýšení sazeb se ale přímo nezavázal.",
+     "why": "Další jestřábí hlas z Fedu podporuje sázky na prosincové zvýšení sazeb a drží dolar silný vůči euru i koruně.",
+     "published": "2026-11-13"
+    },
+    {
+     "source": "FXStreet",
+     "currency": "EUR",
+     "title": "EUR/USD míří ke třetí ztrátové sérii, analytici vidí cestu pod 1,10",
+     "url": "https://www.fxstreet.com/analysis/eur-usd-weekly-forecast-hawkish-fed-likely-to-push-the-us-dollar-even-higher-202611131523",
+     "summary": "EUR/USD v pátek sestoupil na 1,1043, nejníž od dubna 2025, a obchoduje se pod 200týdenním průměrem 1,1111. Pokles táhnou rostoucí výnosy amerických dluhopisů a spekulace na výrazné zvýšení sazeb Fedu v prosinci.",
+     "why": "Prolomení dlouhodobého průměru otevírá prostor k dalšímu posílení dolaru, což by tlačilo USD/CZK výš.",
+     "published": "2026-11-13"
+    },
+    {
      "source": "Bloomberg / Rallies",
      "currency": "USD",
      "title": "Collinsová z Fedu: další utahování politiky je namístě",
@@ -130,24 +148,6 @@
      "summary": "V 17:00 se koruna obchodovala za 22,05 Kč za dolar (o 8 haléřů slabší) a 24,38 za euro (o haléř silnější). Dolar podporují sázky na zvýšení sazeb Fedu o 25–50 bb, akcie zatížila zpráva o odchodu šéfa Nvidie a ropa stoupla k 94 USD.",
      "why": "Dokud americká data zůstanou silná, hrozí koruně další oslabení k dolaru; k euru rozhodne páteční zápis ČNB.",
      "published": "2026-11-12T17:00"
-    },
-    {
-     "source": "AP",
-     "currency": "USD",
-     "title": "Nové žádosti o podporu v USA vzrostly na 200 tisíc",
-     "url": "https://www.news4jax.com/business/2026/11/12/us-jobless-claims-tick-up-to-200000-but-remain-low-by-historic-standards/",
-     "summary": "Počet nových žádostí o podporu v nezaměstnanosti stoupl za týden do 7. 11. o 9 tisíc na 200 tisíc, mírně nad odhad 195 tisíc. Propouštění ale zůstává historicky nízké.",
-     "why": "Trh práce zůstává pevný, takže údaj nemění sázky na prosincové zvýšení sazeb Fedu a dolar drží silný.",
-     "published": "2026-11-12T14:31"
-    },
-    {
-     "source": "Kurzy.cz / ČSOB",
-     "currency": "USD",
-     "title": "Americká ekonomika sílí, jedno zvýšení sazeb nemusí stačit",
-     "url": "https://zpravy.kurzy.cz/881600-americka-ekonomika-sili-prihodit-jedno-zvyseni-sazeb-je-malo",
-     "summary": "Komentář ČSOB upozorňuje na růst USA nad 3 %, nezaměstnanost kolem 4 % a jádrovou PCE inflaci nad 3 %; při sazbách pod 4 % zůstává měnová politika stimulační. Guvernér Waller připustil v prosinci zvýšení o 50 bb.",
-     "why": "Představa delšího cyklu zvyšování sazeb Fedu podporuje dolar vůči euru i koruně.",
-     "published": "2026-11-12T08:45"
     }
    ],
    "EUR/USD": [
@@ -168,6 +168,24 @@
      "summary": "Šéf newyorského Fedu Williams označil inflaci za stále příliš vysokou a řekl, že Fed bude muset jednat; americké výnosy druhý den vzrostly o 10–15 bb. EUR/USD kleslo na 1,1055 a trh oceňuje 3–4 zvýšení sazeb do poloviny 2027.",
      "why": "Další jestřábí signály Fedu drží dolar silný a tlačí EUR/USD i korunu k dolaru níž.",
      "published": "2026-11-13T08:32"
+    },
+    {
+     "source": "investingLive",
+     "currency": "USD",
+     "title": "Goolsbee z Fedu: inflace nesměřuje ke 2 %, Fed má co dělat",
+     "url": "https://investinglive.com/central-banks/fed-s-goolsbee-we-re-not-on-the-way-to-2-inflation-and-we-have-to-deal-with-that/",
+     "summary": "Šéf chicagského Fedu Goolsbee uvedl, že cenové tlaky se rozšířily mimo energie do služeb a zdravotnictví a Fed musí jednat, aby si udržel důvěryhodnost. Na prosincové zvýšení sazeb se ale přímo nezavázal.",
+     "why": "Další jestřábí hlas z Fedu podporuje sázky na prosincové zvýšení sazeb a drží dolar silný vůči euru i koruně.",
+     "published": "2026-11-13"
+    },
+    {
+     "source": "FXStreet",
+     "currency": "EUR",
+     "title": "EUR/USD míří ke třetí ztrátové sérii, analytici vidí cestu pod 1,10",
+     "url": "https://www.fxstreet.com/analysis/eur-usd-weekly-forecast-hawkish-fed-likely-to-push-the-us-dollar-even-higher-202611131523",
+     "summary": "EUR/USD v pátek sestoupil na 1,1043, nejníž od dubna 2025, a obchoduje se pod 200týdenním průměrem 1,1111. Pokles táhnou rostoucí výnosy amerických dluhopisů a spekulace na výrazné zvýšení sazeb Fedu v prosinci.",
+     "why": "Prolomení dlouhodobého průměru otevírá prostor k dalšímu posílení dolaru, což by tlačilo USD/CZK výš.",
+     "published": "2026-11-13"
     },
     {
      "source": "Bloomberg / Rallies",
@@ -204,24 +222,6 @@
      "summary": "Počet nových žádostí o podporu v nezaměstnanosti stoupl za týden do 7. 11. o 9 tisíc na 200 tisíc, mírně nad odhad 195 tisíc. Propouštění ale zůstává historicky nízké.",
      "why": "Trh práce zůstává pevný, takže údaj nemění sázky na prosincové zvýšení sazeb Fedu a dolar drží silný.",
      "published": "2026-11-12T14:31"
-    },
-    {
-     "source": "Kurzy.cz / ČSOB",
-     "currency": "USD",
-     "title": "Americká ekonomika sílí, jedno zvýšení sazeb nemusí stačit",
-     "url": "https://zpravy.kurzy.cz/881600-americka-ekonomika-sili-prihodit-jedno-zvyseni-sazeb-je-malo",
-     "summary": "Komentář ČSOB upozorňuje na růst USA nad 3 %, nezaměstnanost kolem 4 % a jádrovou PCE inflaci nad 3 %; při sazbách pod 4 % zůstává měnová politika stimulační. Guvernér Waller připustil v prosinci zvýšení o 50 bb.",
-     "why": "Představa delšího cyklu zvyšování sazeb Fedu podporuje dolar vůči euru i koruně.",
-     "published": "2026-11-12T08:45"
-    },
-    {
-     "source": "Reuters / Investing.com",
-     "currency": "USD",
-     "title": "Hammacková z Fedu nechce zrychlovat tempo zvyšování sazeb",
-     "url": "https://www.investing.com/news/economy-news/feds-hammack-signals-support-for-gradual-ratehike-path-5022530",
-     "summary": "Šéfka clevelandského Fedu Beth Hammacková podle svých slov preferuje menší a postupná zvýšení sazeb a krok o půl bodu nepovažuje za nutný, protože Fed podle ní za inflací nezaostává. Trh dál čeká v prosinci zvýšení o 0,25 bodu.",
-     "why": "Odmítnutí většího kroku mírně tlumí sázky na agresivní Fed, což může dolaru ubrat část zisků vůči euru i koruně.",
-     "published": "2026-11-12"
     }
    ],
    "PLN/CZK": [
@@ -704,7 +704,7 @@
  },
  "summary": {
   "asOf": "2026-11-13",
-  "text": "Koruna oslabila na 24,42 za euro (fixing ECB 24,424 po 24,379), k dolaru je na 22,10 Kč. Americké PPI zpomalily pod odhady, jestřábí Collinsová z Fedu ale drží dolar silný a EUR/USD u 1,105."
+  "text": "Koruna oslabila na 24,42 za euro (fixing ECB 24,424 po 24,379), k dolaru je na 22,10 Kč. Jestřábí Fed (Goolsbee, Collinsová) i přes mírnější PPI srazil EUR/USD na 1,104, nejníž od dubna 2025."
  },
  "outlook": {
   "asOf": "2026-10-14",
