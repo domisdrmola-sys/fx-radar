@@ -13,6 +13,15 @@
      "published": "2026-11-13"
     },
     {
+     "source": "Eurostat",
+     "currency": "EUR",
+     "title": "HDP eurozóny ve 3. čtvrtletí potvrzen na 0,4 %",
+     "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-13112026-ap",
+     "summary": "Druhý odhad potvrdil růst HDP eurozóny o 0,4 % q/q a 1,3 % r/r, zaměstnanost stagnovala. Česká ekonomika podle Eurostatu vzrostla o 0,5 % q/q.",
+     "why": "Bez revize dolů data euro nepodpořila ani nepoškodila; tlak na EUR/USD dál určuje silný dolar.",
+     "published": "2026-11-13"
+    },
+    {
      "source": "FXstreet.cz / Patria",
      "currency": "CZK",
      "title": "Koruna k dolaru nejslabší od května 2025, k euru stabilní",
@@ -65,18 +74,18 @@
      "summary": "Koruna zahájila středu u úterních závěrečných úrovní; česká data i silnější americká inflace ji včera mírně oslabily. Domácí ani americký kalendář je dnes prázdný, hlavní je konečná německá inflace.",
      "why": "Bez domácích impulzů zůstává koruna v úzkém pásmu a citlivá spíš na dolar a geopolitiku.",
      "published": "2026-11-11"
-    },
-    {
-     "source": "InvestingLive",
-     "currency": "EUR",
-     "title": "Německá inflace v říjnu potvrzena na 2,8 %",
-     "url": "https://investinglive.com/news/germany-october-inflation-slows-but-winter-energy-risks-keep-ecb-rate-hike-bets-alive/",
-     "summary": "Konečný údaj potvrdil zpomalení inflace CPI i HICP na 2,8 % r/r ze 3,3 %, jádrová inflace klesla na 2,1 %. Trh přesto dál oceňuje zhruba 79% šanci na prosincové zvýšení sazeb ECB.",
-     "why": "Bez revize nemění očekávání vůči ECB, euro tak dál určuje hlavně vývoj kolem Fedu.",
-     "published": "2026-11-11"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Stocktitan (BLS)",
+     "currency": "USD",
+     "title": "Americké ceny výrobců v říjnu zpomalily pod odhady",
+     "url": "https://www.stocktitan.net/articles/october-2026-ppi-report",
+     "summary": "Index PPI vzrostl v říjnu o 0,3 % m/m oproti čekaným 0,4 %, meziročně o 6,5 % (nejvíc od listopadu 2022). Jádrové PPI přidalo 0,3 % m/m v souladu s odhadem.",
+     "why": "Mírně slabší PPI nezvrátilo sázky na prosincové zvýšení sazeb Fedu, dolar zůstává silný a EUR/USD se drží u 1,105.",
+     "published": "2026-11-13T14:57"
+    },
     {
      "source": "KBC / ActionForex",
      "currency": "USD",
@@ -139,18 +148,18 @@
      "summary": "Šéfka clevelandského Fedu Beth Hammacková podle svých slov preferuje menší a postupná zvýšení sazeb a krok o půl bodu nepovažuje za nutný, protože Fed podle ní za inflací nezaostává. Trh dál čeká v prosinci zvýšení o 0,25 bodu.",
      "why": "Odmítnutí většího kroku mírně tlumí sázky na agresivní Fed, což může dolaru ubrat část zisků vůči euru i koruně.",
      "published": "2026-11-12"
-    },
-    {
-     "source": "Saxo Bank",
-     "currency": "USD",
-     "title": "Dolar nejsilnější od května 2025, trh oceňuje další zvýšení sazeb",
-     "url": "https://www.home.saxo/en-gb/content/articles/macro/asia-market-quick-take--12-november-2026-12112026",
-     "summary": "Dolarový index Bloombergu ve středu stoupl o 0,4 % na nejvyšší úroveň od května 2025 po horké inflaci a jestřábích výrocích Fedu. Paulsonová připustila rychlejší utahování, pokud se inflace zhorší.",
-     "why": "Rozevírající se úrokový rozdíl ve prospěch USA otevírá EUR/USD prostor k dalšímu poklesu.",
-     "published": "2026-11-12"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "Stocktitan (BLS)",
+     "currency": "USD",
+     "title": "Americké ceny výrobců v říjnu zpomalily pod odhady",
+     "url": "https://www.stocktitan.net/articles/october-2026-ppi-report",
+     "summary": "Index PPI vzrostl v říjnu o 0,3 % m/m oproti čekaným 0,4 %, meziročně o 6,5 % (nejvíc od listopadu 2022). Jádrové PPI přidalo 0,3 % m/m v souladu s odhadem.",
+     "why": "Mírně slabší PPI nezvrátilo sázky na prosincové zvýšení sazeb Fedu, dolar zůstává silný a EUR/USD se drží u 1,105.",
+     "published": "2026-11-13T14:57"
+    },
     {
      "source": "KBC / ActionForex",
      "currency": "USD",
@@ -159,6 +168,15 @@
      "summary": "Šéf newyorského Fedu Williams označil inflaci za stále příliš vysokou a řekl, že Fed bude muset jednat; americké výnosy druhý den vzrostly o 10–15 bb. EUR/USD kleslo na 1,1055 a trh oceňuje 3–4 zvýšení sazeb do poloviny 2027.",
      "why": "Další jestřábí signály Fedu drží dolar silný a tlačí EUR/USD i korunu k dolaru níž.",
      "published": "2026-11-13T08:32"
+    },
+    {
+     "source": "Eurostat",
+     "currency": "EUR",
+     "title": "HDP eurozóny ve 3. čtvrtletí potvrzen na 0,4 %",
+     "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-13112026-ap",
+     "summary": "Druhý odhad potvrdil růst HDP eurozóny o 0,4 % q/q a 1,3 % r/r, zaměstnanost stagnovala. Česká ekonomika podle Eurostatu vzrostla o 0,5 % q/q.",
+     "why": "Bez revize dolů data euro nepodpořila ani nepoškodila; tlak na EUR/USD dál určuje silný dolar.",
+     "published": "2026-11-13"
     },
     {
      "source": "AP",
@@ -204,27 +222,18 @@
      "summary": "Šéfka sanfranciského Fedu Mary Dalyová ve čtvrtek uvedla, že se kloní k dalšímu utažení politiky, protože inflace se přelévá z energií do služeb. Spěchat ale podle ní není nutné, vyšší výnosy dluhopisů dávají Fedu čas.",
      "why": "Jestřábí tón dalšího člena FOMC drží sázky na prosincové zvýšení a podporuje dolar vůči euru i koruně.",
      "published": "2026-11-12"
-    },
-    {
-     "source": "Kurzy.cz (Komerční banka)",
-     "currency": "CZK",
-     "title": "Silný dolar táhne dolů euro, koruna mírně slábne",
-     "url": "https://zpravy.kurzy.cz/881554-sentiment-na-financnich-trzich-opet-nahraval-dolaru-komentar",
-     "summary": "Podle odpoledního komentáře KB koruna oslabila o 0,1 % na 24,38 za euro, euro ztratilo k dolaru 0,6 % a spadlo pod 1,11; zlotý odepsal zhruba 0,3 %. Dolar těží z vyšší americké inflace a sázek na další utažení Fedu, pohyby mohla zesílit nízká likvidita kvůli americkému svátku.",
-     "why": "Dokud trh sází na zvyšování sazeb Fedu, dolar posiluje a koruna i zlotý zůstávají pod mírným tlakem.",
-     "published": "2026-11-11T16:26"
-    },
-    {
-     "source": "Yahoo Finance",
-     "currency": "USD",
-     "title": "Loganová chce ještě nejméně dvě zvýšení sazeb",
-     "url": "https://finance.yahoo.com/economy/policy/articles/jumbo-fed-rate-hike-warning-015453314.html",
-     "summary": "Šéfka Fedu v Dallasu Loganová uvedla, že Fed potřebuje nejméně dvě další zvýšení o 25 bb a v zimě by mohl postupovat i rychleji; Waller připustil v prosinci 50 bb. Výnos 10letého dluhopisu vzrostl na 5 %, FedWatch ukazuje 90,5 % pro +25 bb a 9,5 % pro +50 bb.",
-     "why": "Jestřábí Fed a vyšší výnosy podporují dolar vůči euru i koruně.",
-     "published": "2026-11-11T02:54"
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "RTTNews",
+     "currency": "PLN",
+     "title": "Polská ekonomika ve 3. čtvrtletí zpomalila víc, než se čekalo",
+     "url": "https://www.rttnews.com/3714448/poland-gdp-grows-3-5-in-q3-inflation-eases-as-estimated.aspx",
+     "summary": "Polské HDP vzrostlo ve 3. čtvrtletí o 3,5 % r/r po 4,1 % ve 2. čtvrtletí, odhad byl 3,7 %. Mezičtvrtletně růst činil 0,8 %.",
+     "why": "Slabší růst snižuje tlak na NBP a mírně oslabuje zlotý vůči koruně.",
+     "published": "2026-11-13T11:13"
+    },
     {
      "source": "Citfin",
      "currency": "CZK",
@@ -335,57 +344,57 @@
   ]
  },
  "cnb": {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.385,
-   "USD": 22.014,
-   "PLN": 5.531,
-   "HUF100": 6.674
+   "EUR": 24.425,
+   "USD": 22.101,
+   "PLN": 5.539,
+   "HUF100": 6.686
   }
  },
  "mm": {
-  "asOf": "2026-11-12",
+  "asOf": "2026-11-13",
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "basis": 360,
    "r": {
-    "1M": 3.91,
-    "3M": 4.0,
-    "6M": 4.13,
-    "12M": 4.29
+    "1M": 4.07,
+    "3M": 4.1,
+    "6M": 4.16,
+    "12M": 4.32
    }
   },
   "EUR": {
    "src": "EURIBOR",
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "basis": 360,
    "r": {
-    "1M": 2.487,
-    "3M": 2.754,
-    "6M": 3.01,
-    "12M": 3.222
+    "1M": 2.479,
+    "3M": 2.766,
+    "6M": 3.023,
+    "12M": 3.293
    }
   },
   "USD": {
    "src": "US T-bill",
-   "date": "2026-11-10",
+   "date": "2026-11-12",
    "basis": 365,
    "r": {
-    "1M": 3.94,
-    "3M": 4.22,
-    "6M": 4.41,
-    "12M": 4.54
+    "1M": 4.04,
+    "3M": 4.24,
+    "6M": 4.46,
+    "12M": 4.64
    }
   },
   "PLN": {
    "src": "WIBOR",
-   "date": "2026-11-10",
+   "date": "2026-11-12",
    "basis": 365,
    "r": {
-    "1M": 3.82,
+    "1M": 3.77,
     "3M": 3.9,
     "6M": 3.98,
     "12M": 4.04
@@ -475,64 +484,65 @@
   ]
  },
  "risk": {
-  "asOf": "2026-11-12",
+  "asOf": "2026-11-13",
   "items": [
    {
     "id": "brent",
     "label": "Brent",
-    "value": 93.29,
+    "value": 96.5,
     "unit": "USD/bbl",
-    "chg1d": 0.57,
-    "chg1m": -11.74,
+    "chg1d": 0.71,
+    "chg1m": -9.01,
     "why": "Dražší ropa zhoršuje obchodní bilanci ČR i eurozóny a zvyšuje inflaci.",
-    "date": "2026-11-12"
+    "date": "2026-11-13"
    },
    {
     "id": "ttf",
     "label": "Plyn TTF",
-    "value": 97.1,
+    "value": 90.82,
     "unit": "EUR/MWh",
-    "chg1d": -3.23,
-    "chg1m": 34.19,
+    "chg1d": -1.56,
+    "chg1m": 4.22,
     "why": "Koruna i zlotý jsou citlivé na ceny energií; drahý plyn je oslabuje.",
-    "date": "2026-10-29"
+    "date": "2026-11-13"
    },
    {
     "id": "czbund",
     "label": "Spread ČR 10Y–Bund",
-    "value": 204,
+    "value": 188,
     "unit": "bb",
-    "prev1m": 176,
-    "cz": 5.38,
-    "de": 3.34,
-    "date": "2026-10-29",
+    "prev1m": 186,
+    "cz": 5.25,
+    "de": 3.37,
+    "date": "2026-11-13",
     "why": "O kolik víc platí Česko za desetiletý dluh než Německo; rozšiřování obvykle oslabuje korunu."
    },
    {
     "id": "btp",
     "label": "Spread BTP–Bund 10Y",
-    "value": 110,
+    "value": 106,
     "unit": "bb",
-    "prev1m": 85,
-    "date": "2026-10-13",
+    "prev1m": 109,
+    "date": "2026-11-13",
     "why": "Měřítko fiskálního rizika eurozóny; rozšiřování tlačí na euro."
    },
    {
     "id": "oat",
     "label": "Spread OAT–Bund 10Y",
-    "value": 139.5,
+    "value": 151.8,
     "unit": "bb",
-    "prev1m": 89.8,
-    "date": "2026-10-12",
+    "prev1m": 139.3,
+    "date": "2026-11-13",
     "why": "Francouzské fiskální napětí je teď hlavní evropské riziko pro EUR."
    },
    {
     "id": "vix",
     "label": "VIX",
-    "value": 15.18,
+    "value": 20.71,
     "unit": "",
     "chg1d": null,
-    "why": "Index strachu na akciích; nad 20–25 obvykle slábnou CZK, PLN a HUF."
+    "why": "Index strachu na akciích; nad 20–25 obvykle slábnou CZK, PLN a HUF.",
+    "date": "2026-11-13"
    }
   ]
  },
@@ -540,16 +550,6 @@
   "asOf": "2026-11-13",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
-   {
-    "at": "2026-11-11T08:00",
-    "country": "DE",
-    "event": "Inflace CPI – konečný údaj (říjen)",
-    "consensus": "2,8 % r/r",
-    "previous": "3,3 % r/r",
-    "actual": "2,8 % r/r (potvrzeno, HICP 2,8 %)",
-    "importance": 1,
-    "why": ""
-   },
    {
     "at": "2026-11-12T14:30",
     "country": "US",
@@ -566,7 +566,7 @@
     "event": "HDP – 2. odhad (3Q, q/q)",
     "consensus": "0,4 %",
     "previous": "0,4 %",
-    "actual": "",
+    "actual": "0,4 % (potvrzeno)",
     "importance": 2,
     "why": "Revize HDP dolů by oslabila euro a sázky na zvýšení sazeb ECB."
    },
@@ -576,7 +576,7 @@
     "event": "Ceny výrobců PPI (říjen)",
     "consensus": "+0,4 % m/m, jádro +0,3 % m/m",
     "previous": "",
-    "actual": "",
+    "actual": "+0,3 % m/m, jádro +0,3 % m/m (6,5 % r/r)",
     "importance": 2,
     "why": "Vyšší PPI po horkém CPI by dále podpořil dolar."
    },
@@ -695,7 +695,7 @@
  },
  "summary": {
   "asOf": "2026-11-13",
-  "text": "Koruna se drží u 24,38 za euro (fixing ECB 24,379), k dolaru zůstává nad 22 Kč. Jestřábí Williams z Fedu poslal EUR/USD na 1,1055, minimum za 1,5 roku; odpoledne rozhodnou americké PPI."
+  "text": "Koruna oslabila na 24,42 za euro (fixing ECB 24,424 po 24,379), k dolaru je na 22,10 Kč. Americké PPI vzrostly o 0,3 % m/m, méně než čekaných 0,4 %, dolar ale zůstává silný."
  },
  "outlook": {
   "asOf": "2026-10-14",
