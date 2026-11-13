@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "ING Think",
+     "currency": "EUR",
+     "title": "ING: dolar zůstane silný, EUR/CZK by u 24,40 měl mít strop",
+     "url": "https://think.ing.com/articles/fx-daily-dont-mess-with-the-dollar",
+     "summary": "ING upozorňuje, že trh už oceňuje zhruba 85 bb zvýšení sazeb Fedu v prosinci a lednu a dolar zůstane podpořený; EUR/USD vidí ohrožený pod 1,10. Regionální měny jsou pod tlakem, EUR/CZK u 24,40 by podle banky měl být vrchol, pokud zápis z ČNB nevyzní holubičně.",
+     "why": "Rostoucí rozdíl sazeb mezi USA a eurozónou tlačí EUR/USD dolů a USD/CZK nahoru, koruna k euru by se měla stabilizovat.",
+     "published": "2026-11-13"
+    },
+    {
      "source": "Citfin",
      "currency": "CZK",
      "title": "Koruna drží úrovně, trh čeká na regionální HDP a americké PPI",
@@ -65,15 +74,6 @@
      "summary": "Koruna se drží kolem 24,35 EUR/CZK, potvrzená domácí inflace s ní téměř nepohnula. Horká americká inflace a vyšší americké sazby ji mohou mírně tlačit, podpora z levnější ropy a energií slábne.",
      "why": "Bez domácího impulsu zůstává EUR/CZK v úzkém pásmu, k dolaru koruna spíše ztrácí.",
      "published": "2026-11-11T08:24"
-    },
-    {
-     "source": "Citfin",
-     "currency": "CZK",
-     "title": "Koruna otevírá klidně, trh čeká na německou inflaci",
-     "url": "https://www.citfin.cz/ranni-fx-zpravy/kurz-koruny-dnes-nemecka-inflace/",
-     "summary": "Koruna zahájila středu u úterních závěrečných úrovní; česká data i silnější americká inflace ji včera mírně oslabily. Domácí ani americký kalendář je dnes prázdný, hlavní je konečná německá inflace.",
-     "why": "Bez domácích impulzů zůstává koruna v úzkém pásmu a citlivá spíš na dolar a geopolitiku.",
-     "published": "2026-11-11"
     }
    ],
    "USD/CZK": [
@@ -94,6 +94,24 @@
      "summary": "Šéf newyorského Fedu Williams označil inflaci za stále příliš vysokou a řekl, že Fed bude muset jednat; americké výnosy druhý den vzrostly o 10–15 bb. EUR/USD kleslo na 1,1055 a trh oceňuje 3–4 zvýšení sazeb do poloviny 2027.",
      "why": "Další jestřábí signály Fedu drží dolar silný a tlačí EUR/USD i korunu k dolaru níž.",
      "published": "2026-11-13T08:32"
+    },
+    {
+     "source": "Bloomberg / Rallies",
+     "currency": "USD",
+     "title": "Collinsová z Fedu: další utahování politiky je namístě",
+     "url": "https://rallies.ai/news/feds-collins-says-additional-rate-hikes-lie-ahead-for-central-bank-f813d387c8a0b4b0",
+     "summary": "Šéfka bostonského Fedu Susan Collinsová řekla, že inflace je stále vysoká a šíří se do ekonomiky, takže brzké další zpřísnění měnové politiky je vhodné.",
+     "why": "Další jestřábí hlas z Fedu podporuje sázky na prosincové zvýšení sazeb a drží dolar silný vůči euru i koruně.",
+     "published": "2026-11-13"
+    },
+    {
+     "source": "ING Think",
+     "currency": "EUR",
+     "title": "ING: dolar zůstane silný, EUR/CZK by u 24,40 měl mít strop",
+     "url": "https://think.ing.com/articles/fx-daily-dont-mess-with-the-dollar",
+     "summary": "ING upozorňuje, že trh už oceňuje zhruba 85 bb zvýšení sazeb Fedu v prosinci a lednu a dolar zůstane podpořený; EUR/USD vidí ohrožený pod 1,10. Regionální měny jsou pod tlakem, EUR/CZK u 24,40 by podle banky měl být vrchol, pokud zápis z ČNB nevyzní holubičně.",
+     "why": "Rostoucí rozdíl sazeb mezi USA a eurozónou tlačí EUR/USD dolů a USD/CZK nahoru, koruna k euru by se měla stabilizovat.",
+     "published": "2026-11-13"
     },
     {
      "source": "Citfin",
@@ -130,24 +148,6 @@
      "summary": "Komentář ČSOB upozorňuje na růst USA nad 3 %, nezaměstnanost kolem 4 % a jádrovou PCE inflaci nad 3 %; při sazbách pod 4 % zůstává měnová politika stimulační. Guvernér Waller připustil v prosinci zvýšení o 50 bb.",
      "why": "Představa delšího cyklu zvyšování sazeb Fedu podporuje dolar vůči euru i koruně.",
      "published": "2026-11-12T08:45"
-    },
-    {
-     "source": "Kurzy.cz (Citfin)",
-     "currency": "CZK",
-     "title": "Dolar nabírá sílu, koruna k dolaru oslabila nad 22 Kč",
-     "url": "https://zpravy.kurzy.cz/881586-dolar-nabira-silu-koruna-oslabila-nad-22-usdczk/",
-     "summary": "Euro kleslo k dolaru zhruba na 1,1075, nejníž za 19 měsíců, a koruna k dolaru oslabila přes 22,00 Kč. Vůči euru Citfin čeká klidnější obchodování u 24,40.",
-     "why": "Silný dolar tlačí USD/CZK nahoru, zatímco vůči euru koruně pomáhají úvahy o dalším zvýšení sazeb ČNB.",
-     "published": "2026-11-12T07:44"
-    },
-    {
-     "source": "Reuters / Investing.com",
-     "currency": "USD",
-     "title": "Hammacková z Fedu nechce zrychlovat tempo zvyšování sazeb",
-     "url": "https://www.investing.com/news/economy-news/feds-hammack-signals-support-for-gradual-ratehike-path-5022530",
-     "summary": "Šéfka clevelandského Fedu Beth Hammacková podle svých slov preferuje menší a postupná zvýšení sazeb a krok o půl bodu nepovažuje za nutný, protože Fed podle ní za inflací nezaostává. Trh dál čeká v prosinci zvýšení o 0,25 bodu.",
-     "why": "Odmítnutí většího kroku mírně tlumí sázky na agresivní Fed, což může dolaru ubrat část zisků vůči euru i koruně.",
-     "published": "2026-11-12"
     }
    ],
    "EUR/USD": [
@@ -168,6 +168,24 @@
      "summary": "Šéf newyorského Fedu Williams označil inflaci za stále příliš vysokou a řekl, že Fed bude muset jednat; americké výnosy druhý den vzrostly o 10–15 bb. EUR/USD kleslo na 1,1055 a trh oceňuje 3–4 zvýšení sazeb do poloviny 2027.",
      "why": "Další jestřábí signály Fedu drží dolar silný a tlačí EUR/USD i korunu k dolaru níž.",
      "published": "2026-11-13T08:32"
+    },
+    {
+     "source": "Bloomberg / Rallies",
+     "currency": "USD",
+     "title": "Collinsová z Fedu: další utahování politiky je namístě",
+     "url": "https://rallies.ai/news/feds-collins-says-additional-rate-hikes-lie-ahead-for-central-bank-f813d387c8a0b4b0",
+     "summary": "Šéfka bostonského Fedu Susan Collinsová řekla, že inflace je stále vysoká a šíří se do ekonomiky, takže brzké další zpřísnění měnové politiky je vhodné.",
+     "why": "Další jestřábí hlas z Fedu podporuje sázky na prosincové zvýšení sazeb a drží dolar silný vůči euru i koruně.",
+     "published": "2026-11-13"
+    },
+    {
+     "source": "ING Think",
+     "currency": "EUR",
+     "title": "ING: dolar zůstane silný, EUR/CZK by u 24,40 měl mít strop",
+     "url": "https://think.ing.com/articles/fx-daily-dont-mess-with-the-dollar",
+     "summary": "ING upozorňuje, že trh už oceňuje zhruba 85 bb zvýšení sazeb Fedu v prosinci a lednu a dolar zůstane podpořený; EUR/USD vidí ohrožený pod 1,10. Regionální měny jsou pod tlakem, EUR/CZK u 24,40 by podle banky měl být vrchol, pokud zápis z ČNB nevyzní holubičně.",
+     "why": "Rostoucí rozdíl sazeb mezi USA a eurozónou tlačí EUR/USD dolů a USD/CZK nahoru, koruna k euru by se měla stabilizovat.",
+     "published": "2026-11-13"
     },
     {
      "source": "Eurostat",
@@ -204,24 +222,6 @@
      "summary": "Šéfka clevelandského Fedu Beth Hammacková podle svých slov preferuje menší a postupná zvýšení sazeb a krok o půl bodu nepovažuje za nutný, protože Fed podle ní za inflací nezaostává. Trh dál čeká v prosinci zvýšení o 0,25 bodu.",
      "why": "Odmítnutí většího kroku mírně tlumí sázky na agresivní Fed, což může dolaru ubrat část zisků vůči euru i koruně.",
      "published": "2026-11-12"
-    },
-    {
-     "source": "Saxo Bank",
-     "currency": "USD",
-     "title": "Dolar nejsilnější od května 2025, trh oceňuje další zvýšení sazeb",
-     "url": "https://www.home.saxo/en-gb/content/articles/macro/asia-market-quick-take--12-november-2026-12112026",
-     "summary": "Dolarový index Bloombergu ve středu stoupl o 0,4 % na nejvyšší úroveň od května 2025 po horké inflaci a jestřábích výrocích Fedu. Paulsonová připustila rychlejší utahování, pokud se inflace zhorší.",
-     "why": "Rozevírající se úrokový rozdíl ve prospěch USA otevírá EUR/USD prostor k dalšímu poklesu.",
-     "published": "2026-11-12"
-    },
-    {
-     "source": "Investing.com / Bloomberg",
-     "currency": "USD",
-     "title": "Dalyová z Fedu: další zvyšování sazeb bude asi potřeba",
-     "url": "https://in.investing.com/news/economy-news/feds-daly-says-more-rate-hikes-likely-needed-to-fight-inflation-5700728",
-     "summary": "Šéfka sanfranciského Fedu Mary Dalyová ve čtvrtek uvedla, že se kloní k dalšímu utažení politiky, protože inflace se přelévá z energií do služeb. Spěchat ale podle ní není nutné, vyšší výnosy dluhopisů dávají Fedu čas.",
-     "why": "Jestřábí tón dalšího člena FOMC drží sázky na prosincové zvýšení a podporuje dolar vůči euru i koruně.",
-     "published": "2026-11-12"
     }
    ],
    "PLN/CZK": [
@@ -233,6 +233,15 @@
      "summary": "Polské HDP vzrostlo ve 3. čtvrtletí o 3,5 % r/r po 4,1 % ve 2. čtvrtletí, odhad byl 3,7 %. Mezičtvrtletně růst činil 0,8 %.",
      "why": "Slabší růst snižuje tlak na NBP a mírně oslabuje zlotý vůči koruně.",
      "published": "2026-11-13T11:13"
+    },
+    {
+     "source": "ING Think",
+     "currency": "EUR",
+     "title": "ING: dolar zůstane silný, EUR/CZK by u 24,40 měl mít strop",
+     "url": "https://think.ing.com/articles/fx-daily-dont-mess-with-the-dollar",
+     "summary": "ING upozorňuje, že trh už oceňuje zhruba 85 bb zvýšení sazeb Fedu v prosinci a lednu a dolar zůstane podpořený; EUR/USD vidí ohrožený pod 1,10. Regionální měny jsou pod tlakem, EUR/CZK u 24,40 by podle banky měl být vrchol, pokud zápis z ČNB nevyzní holubičně.",
+     "why": "Rostoucí rozdíl sazeb mezi USA a eurozónou tlačí EUR/USD dolů a USD/CZK nahoru, koruna k euru by se měla stabilizovat.",
+     "published": "2026-11-13"
     },
     {
      "source": "Citfin",
@@ -695,7 +704,7 @@
  },
  "summary": {
   "asOf": "2026-11-13",
-  "text": "Koruna oslabila na 24,42 za euro (fixing ECB 24,424 po 24,379), k dolaru je na 22,10 Kč. Americké PPI vzrostly o 0,3 % m/m, méně než čekaných 0,4 %, dolar ale zůstává silný."
+  "text": "Koruna oslabila na 24,42 za euro (fixing ECB 24,424 po 24,379), k dolaru je na 22,10 Kč. Americké PPI zpomalily pod odhady, jestřábí Collinsová z Fedu ale drží dolar silný a EUR/USD u 1,105."
  },
  "outlook": {
   "asOf": "2026-10-14",
