@@ -4,6 +4,24 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "ActionForex",
+     "currency": "USD",
+     "title": "Americké tržby rostly dle čekání, bez aut překvapily silou",
+     "url": "https://www.actionforex.com/action-insight/market-overview/661223-dollar-firms-after-retail-sales-as-markets-await-nvidia-and-trump-xi-putin-talks/",
+     "summary": "Maloobchodní tržby v USA v říjnu vzrostly o 0,2 % m/m (v září 0,8 %), v souladu s odhady; bez aut ale přidaly 0,6 % proti čekaným 0,4 %. Dolarový index se po zprávě držel kolem 103,7 a dolar posílil vůči většině měn.",
+     "why": "Solidní spotřeba podporuje sázky na prosincové zvýšení sazeb Fedu, a tím silnější dolar vůči euru i koruně.",
+     "published": "2026-11-17T15:02"
+    },
+    {
+     "source": "ActionForex",
+     "currency": "EUR",
+     "title": "Německý ZEW nečekaně vyskočil na 35,6",
+     "url": "https://www.actionforex.com/live-comments/661152-germany-zew-sentiment-jumps-to-35-6-but-recovery-remains-uneven/",
+     "summary": "Index očekávání ZEW v Německu v listopadu stoupl na 35,6 z 28,1 (odhad kolem 28), hodnocení současné situace se zlepšilo na −33,2. Za celou eurozónu se očekávání zvedla na 26,5 z 18,5.",
+     "why": "Lepší nálada v Německu mírně podporuje euro i středoevropské měny, sestupný trend EUR/USD ale zatím nezvrátila.",
+     "published": "2026-11-17T11:33"
+    },
+    {
      "source": "FXstreet.cz",
      "currency": "EUR/USD",
      "title": "Euro večer kleslo pod 1,10 za dolar",
@@ -56,28 +74,19 @@
      "summary": "Koruna podle KB minulý týden oslabila k euru zhruba o 0,4 % k 24,42. Z domácích dat vychází jen PPI, takže EUR/CZK budou řídit hlavně dolar a globální nálada; jestřábí zápis FOMC ve středu může dolar dál podpořit.",
      "why": "Silný dolar a slabší apetit k riziku drží korunu u slabší hranice pásma kolem 24,40–24,45.",
      "published": "2026-11-16T08:48"
-    },
-    {
-     "source": "ČSÚ",
-     "currency": "CZK",
-     "title": "Ceny průmyslových výrobců v říjnu zrychlily na 4,7 %",
-     "url": "https://csu.gov.cz/rychle-informace/indexy-cen-vyrobcu-rijen-2026",
-     "summary": "Ceny průmyslových výrobců vzrostly v říjnu o 0,9 % m/m a o 4,7 % r/r (září 3,7 %), tedy zhruba podle odhadů. Táhly je hlavně energie (+9,7 % r/r), chemie a kovy.",
-     "why": "Výsledek v souladu s očekáváním korunu nepohne, ale potvrzuje inflační tlaky, kvůli nimž ČNB zvyšovala sazby.",
-     "published": "2026-11-16"
-    },
-    {
-     "source": "ING Think",
-     "currency": "EUR",
-     "title": "ING: dolar zůstane silný, EUR/CZK by u 24,40 měl mít strop",
-     "url": "https://think.ing.com/articles/fx-daily-dont-mess-with-the-dollar",
-     "summary": "ING upozorňuje, že trh už oceňuje zhruba 85 bb zvýšení sazeb Fedu v prosinci a lednu a dolar zůstane podpořený; EUR/USD vidí ohrožený pod 1,10. Regionální měny jsou pod tlakem, EUR/CZK u 24,40 by podle banky měl být vrchol, pokud zápis z ČNB nevyzní holubičně.",
-     "why": "Rostoucí rozdíl sazeb mezi USA a eurozónou tlačí EUR/USD dolů a USD/CZK nahoru, koruna k euru by se měla stabilizovat.",
-     "published": "2026-11-13"
     }
    ],
    "USD/CZK": [
     {
+     "source": "ActionForex",
+     "currency": "USD",
+     "title": "Americké tržby rostly dle čekání, bez aut překvapily silou",
+     "url": "https://www.actionforex.com/action-insight/market-overview/661223-dollar-firms-after-retail-sales-as-markets-await-nvidia-and-trump-xi-putin-talks/",
+     "summary": "Maloobchodní tržby v USA v říjnu vzrostly o 0,2 % m/m (v září 0,8 %), v souladu s odhady; bez aut ale přidaly 0,6 % proti čekaným 0,4 %. Dolarový index se po zprávě držel kolem 103,7 a dolar posílil vůči většině měn.",
+     "why": "Solidní spotřeba podporuje sázky na prosincové zvýšení sazeb Fedu, a tím silnější dolar vůči euru i koruně.",
+     "published": "2026-11-17T15:02"
+    },
+    {
      "source": "XTB / FXstreet.cz",
      "currency": "USD",
      "title": "Dnes rozhodnou americké maloobchodní tržby a výsledky Nvidie",
@@ -139,18 +148,27 @@
      "summary": "Koruna podle KB minulý týden oslabila k euru zhruba o 0,4 % k 24,42. Z domácích dat vychází jen PPI, takže EUR/CZK budou řídit hlavně dolar a globální nálada; jestřábí zápis FOMC ve středu může dolar dál podpořit.",
      "why": "Silný dolar a slabší apetit k riziku drží korunu u slabší hranice pásma kolem 24,40–24,45.",
      "published": "2026-11-16T08:48"
-    },
-    {
-     "source": "XTB / FXstreet.cz",
-     "currency": "USD",
-     "title": "Slabá data z Číny a výprodej čipových akcií kazí náladu před projevem Warshe",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-210599.html",
-     "summary": "Čínská průmyslová výroba (4,8 % r/r) i maloobchod (0,4 %) v říjnu zaostaly za odhady, korejské čipové akcie propadly a futures na Nasdaq ztrácejí. EUR/USD se drží u 1,102; trh čeká na dnešní projev šéfa Fedu Warshe.",
-     "why": "Horší nálada na trzích obvykle podporuje dolar a škodí koruně i zlotému.",
-     "published": "2026-11-16T07:44"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "ActionForex",
+     "currency": "USD",
+     "title": "Americké tržby rostly dle čekání, bez aut překvapily silou",
+     "url": "https://www.actionforex.com/action-insight/market-overview/661223-dollar-firms-after-retail-sales-as-markets-await-nvidia-and-trump-xi-putin-talks/",
+     "summary": "Maloobchodní tržby v USA v říjnu vzrostly o 0,2 % m/m (v září 0,8 %), v souladu s odhady; bez aut ale přidaly 0,6 % proti čekaným 0,4 %. Dolarový index se po zprávě držel kolem 103,7 a dolar posílil vůči většině měn.",
+     "why": "Solidní spotřeba podporuje sázky na prosincové zvýšení sazeb Fedu, a tím silnější dolar vůči euru i koruně.",
+     "published": "2026-11-17T15:02"
+    },
+    {
+     "source": "ActionForex",
+     "currency": "EUR",
+     "title": "Německý ZEW nečekaně vyskočil na 35,6",
+     "url": "https://www.actionforex.com/live-comments/661152-germany-zew-sentiment-jumps-to-35-6-but-recovery-remains-uneven/",
+     "summary": "Index očekávání ZEW v Německu v listopadu stoupl na 35,6 z 28,1 (odhad kolem 28), hodnocení současné situace se zlepšilo na −33,2. Za celou eurozónu se očekávání zvedla na 26,5 z 18,5.",
+     "why": "Lepší nálada v Německu mírně podporuje euro i středoevropské měny, sestupný trend EUR/USD ale zatím nezvrátila.",
+     "published": "2026-11-17T11:33"
+    },
     {
      "source": "XTB / FXstreet.cz",
      "currency": "USD",
@@ -204,27 +222,18 @@
      "summary": "Čínská průmyslová výroba (4,8 % r/r) i maloobchod (0,4 %) v říjnu zaostaly za odhady, korejské čipové akcie propadly a futures na Nasdaq ztrácejí. EUR/USD se drží u 1,102; trh čeká na dnešní projev šéfa Fedu Warshe.",
      "why": "Horší nálada na trzích obvykle podporuje dolar a škodí koruně i zlotému.",
      "published": "2026-11-16T07:44"
-    },
-    {
-     "source": "FXStreet (Mitrade)",
-     "currency": "USD",
-     "title": "Trh oceňuje prosincové zvýšení Fedu na 93,5 %, euro u 1,1025",
-     "url": "https://www.mitrade.com/insights/forex-analysis/eur/fxstreet-EURUSDUSDOLLARFAUDUSD-202611160951",
-     "summary": "EUR/USD v pondělí v Asii klesl k 1,1025; podle CME FedWatch trh přisuzuje zvýšení sazeb Fedu 9. 12. pravděpodobnost 93,5 %. ING upozorňuje, že rozdíl krátkých swapových sazeb je nejširší za rok a úroveň 1,10 je do konce roku ohrožená.",
-     "why": "Rostoucí sázky na Fed tlačí EUR/USD k 1,10 a zdražují dolar vůči koruně.",
-     "published": "2026-11-16T02:51"
-    },
-    {
-     "source": "Federal Reserve Bank of New York",
-     "currency": "USD",
-     "title": "Index Empire State v listopadu spadl na 7,8",
-     "url": "https://www.newyorkfed.org/medialibrary/media/survey/empire/empire2026/2026_11_empire-state-manufacturing-survey.pdf",
-     "summary": "Hlavní index podmínek ve zpracovatelském průmyslu New Yorku klesl o 18 bodů na 7,8, zůstal ale v kladném pásmu. Rostly objednávky i dodávky, zaměstnanost se zvyšovala nejrychleji za více než čtyři roky.",
-     "why": "Slabší index může mírně krotit sázky na zpřísnění Fedu, silný trh práce v průmyslu je ale podporuje.",
-     "published": "2026-11-16"
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "ActionForex",
+     "currency": "EUR",
+     "title": "Německý ZEW nečekaně vyskočil na 35,6",
+     "url": "https://www.actionforex.com/live-comments/661152-germany-zew-sentiment-jumps-to-35-6-but-recovery-remains-uneven/",
+     "summary": "Index očekávání ZEW v Německu v listopadu stoupl na 35,6 z 28,1 (odhad kolem 28), hodnocení současné situace se zlepšilo na −33,2. Za celou eurozónu se očekávání zvedla na 26,5 z 18,5.",
+     "why": "Lepší nálada v Německu mírně podporuje euro i středoevropské měny, sestupný trend EUR/USD ale zatím nezvrátila.",
+     "published": "2026-11-17T11:33"
+    },
     {
      "source": "NBP / Finwire",
      "currency": "PLN",
@@ -287,15 +296,6 @@
      "summary": "Podle odpoledního komentáře KB koruna oslabila o 0,1 % na 24,38 za euro, euro ztratilo k dolaru 0,6 % a spadlo pod 1,11; zlotý odepsal zhruba 0,3 %. Dolar těží z vyšší americké inflace a sázek na další utažení Fedu, pohyby mohla zesílit nízká likvidita kvůli americkému svátku.",
      "why": "Dokud trh sází na zvyšování sazeb Fedu, dolar posiluje a koruna i zlotý zůstávají pod mírným tlakem.",
      "published": "2026-11-11T16:26"
-    },
-    {
-     "source": "InvestingCube",
-     "currency": "PLN",
-     "title": "Zlotý dál slábne, EUR/PLN se drží u 4,40",
-     "url": "https://www.investingcube.com/forex/eur-pln-up-again-and-heres-why-the-zlotys-slide-could-extend-after-losing-its-grip/",
-     "summary": "EUR/PLN vystoupal ke 4,40 poté, co NBP ponechala sazbu 3,75 % a zvýšila odhad inflace na rok 2027 ke 4,2 %. Zlotý tíží i rozpočet se schodkem 7,1 % HDP, negativní výhled S&P a spory o vedení NBP.",
-     "why": "Slabší zlotý tlačí kurz PLN/CZK dolů.",
-     "published": "2026-11-11T12:46"
     }
    ]
   }
@@ -372,7 +372,7 @@
   }
  },
  "mm": {
-  "asOf": "2026-11-16",
+  "asOf": "2026-11-17",
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
@@ -387,24 +387,24 @@
   },
   "EUR": {
    "src": "EURIBOR",
-   "date": "2026-11-13",
+   "date": "2026-11-16",
    "basis": 360,
    "r": {
-    "1M": 2.482,
-    "3M": 2.775,
-    "6M": 3.015,
-    "12M": 3.328
+    "1M": 2.479,
+    "3M": 2.779,
+    "6M": 3.008,
+    "12M": 3.35
    }
   },
   "USD": {
    "src": "US T-bill",
-   "date": "2026-11-13",
+   "date": "2026-11-16",
    "basis": 365,
    "r": {
     "1M": 4.02,
-    "3M": 4.23,
-    "6M": 4.47,
-    "12M": 4.63
+    "3M": 4.26,
+    "6M": 4.46,
+    "12M": 4.6
    }
   },
   "PLN": {
@@ -604,7 +604,7 @@
     "event": "ZEW – očekávání (listopad)",
     "consensus": "28,8",
     "previous": "28,1",
-    "actual": "",
+    "actual": "35,6",
     "importance": 2,
     "why": "Lepší sentiment obvykle podpoří euro i středoevropské měny."
    },
@@ -614,7 +614,7 @@
     "event": "Maloobchodní tržby (říjen)",
     "consensus": "+0,2 % m/m",
     "previous": "+0,8 % m/m",
-    "actual": "",
+    "actual": "+0,2 % m/m (bez aut +0,6 %)",
     "importance": 3,
     "why": "Silná spotřeba zvyšuje šanci zvýšení sazeb Fedu a posiluje dolar."
    },
@@ -733,7 +733,7 @@
  },
  "summary": {
   "asOf": "2026-11-17",
-  "text": "Koruna drží kolem 24,43 za euro (pondělní fixing ECB 24,428), euro ale večer kleslo pod 1,10 za dolar. Dnes ve 14:30 vyjdou tržby USA (konsenzus +0,2 % m/m) – silné číslo by dolar dál posílilo."
+  "text": "Koruna drží u 24,43 za euro (fixing ECB z pondělí 24,428), v ČR je dnes svátek. Tržby v USA rostly o 0,2 % dle čekání, bez aut o silných 0,6 % – dolar mírně posílil a sázky na zvýšení sazeb Fedu trvají."
  },
  "outlook": {
   "asOf": "2026-10-14",
