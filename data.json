@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "AP / BNN Bloomberg",
+     "currency": "USD",
+     "title": "Wall Street dál padá, Dow ztrácí přes 700 bodů před výsledky Nvidie",
+     "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/11/17/world-markets-mostly-drop-as-ai-stocks-remain-under-pressure/",
+     "summary": "Index S&P 500 odpoledne ztrácel přes 1 % a Dow 1,4 %, investoři se před večerními výsledky Nvidie stahovali do bezpečí; výnos 10letého Treasury se z 5,15 % vrátil k 5,10 %.",
+     "why": "Averze k riziku obvykle podporuje dolar a oslabuje korunu i zlotý.",
+     "published": "2026-11-17T19:48"
+    },
+    {
      "source": "ActionForex",
      "currency": "USD",
      "title": "Americké tržby rostly dle čekání, bez aut překvapily silou",
@@ -65,19 +74,19 @@
      "summary": "Průmyslová výroba eurozóny v září klesla o 1,5 % r/r proti čekanému poklesu o 0,2 %, zklamala i data z Číny a Japonska. EUR/USD se drží u 1,10, zlotý k dolaru mírně oslabil a výnos 10Y Treasuries je nad 5,1 %.",
      "why": "Slabá evropská data a vysoké americké výnosy drží euro i středoevropské měny pod tlakem vůči dolaru.",
      "published": "2026-11-16T13:53"
-    },
-    {
-     "source": "Raiffeisenbank / FXstreet.cz",
-     "currency": "CZK",
-     "title": "Raiffeisenbank: posilující dolar koruně škodí",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-210636.html",
-     "summary": "Koruna minulý týden ztratila k dolaru přes 1 % a dostala se za hranici 22 Kč, k euru oslabila jen o 0,3 % k 24,40. Zápis ČNB připustil další zvýšení sazeb, koruna na něj téměř nereagovala.",
-     "why": "Pro korunu bude tento týden rozhodující směr dolaru a data eurozóny; růst sazeb v eurozóně by jí nepomohl.",
-     "published": "2026-11-16T13:20"
     }
    ],
    "USD/CZK": [
     {
+     "source": "AP / BNN Bloomberg",
+     "currency": "USD",
+     "title": "Wall Street dál padá, Dow ztrácí přes 700 bodů před výsledky Nvidie",
+     "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/11/17/world-markets-mostly-drop-as-ai-stocks-remain-under-pressure/",
+     "summary": "Index S&P 500 odpoledne ztrácel přes 1 % a Dow 1,4 %, investoři se před večerními výsledky Nvidie stahovali do bezpečí; výnos 10letého Treasury se z 5,15 % vrátil k 5,10 %.",
+     "why": "Averze k riziku obvykle podporuje dolar a oslabuje korunu i zlotý.",
+     "published": "2026-11-17T19:48"
+    },
+    {
      "source": "ActionForex",
      "currency": "USD",
      "title": "Americké tržby rostly dle čekání, bez aut překvapily silou",
@@ -114,6 +123,15 @@
      "published": "2026-11-17T08:06"
     },
     {
+     "source": "Reuters / Investing.com",
+     "currency": "USD",
+     "title": "Williams z Fedu: další zvýšení sazeb asi přijde, ale bez dramatických kroků",
+     "url": "https://investing.com/news/economy-news/feds-williams-still-favors-tighter-monetary-policy-but-says-now-is-not-the-time-for-dramatic-action-5033893",
+     "summary": "Šéf newyorského Fedu John Williams řekl, že Fed bude kvůli vysoké inflaci zřejmě muset sazby znovu zvýšit, rychlejší tempo ale odmítl. Trh na prosincovém zasedání (8.–9. 12.) čeká zvýšení o 0,25 bodu.",
+     "why": "Potvrzuje očekávání dalšího utahování Fedu, což drží dolar silný; odmítnutí agresivnějšího postupu ale tlumí jeho další růst.",
+     "published": "2026-11-17"
+    },
+    {
      "source": "ING Think",
      "currency": "USD",
      "title": "ING: dolar se spíš stabilizuje, euro by mělo držet 1,10",
@@ -130,27 +148,18 @@
      "summary": "EUR/USD se večer drželo těsně nad 1,1000 po páté ztrátové seanci; dolar táhnou vyšší než čekaná říjnová inflace v USA a jestřábí výroky členů Fedu. ING varuje, že průlom pod 1,10 by dolar dál posílil, Macro Hive vidí 1,08 do konce roku.",
      "why": "Prolomení 1,10 by tlačilo EUR/USD níž a zdražovalo dolar i vůči koruně.",
      "published": "2026-11-16T18:30"
-    },
-    {
-     "source": "Komerční banka / FXstreet.cz",
-     "currency": "CZK",
-     "title": "KB: koruna mírně ztrácela, silný dolar přebil proinflační data",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-210649.html",
-     "summary": "Koruna v pondělí vůči euru mírně oslabila, i když říjnové ceny výrobců zrychlily na 4,7 % r/r a zemědělské ceny poprvé po deseti měsících meziročně rostly. Podle KB je to inflační riziko pro rok 2027, ČNB ale po listopadovém zvýšení nejspíš sazby nechá beze změny.",
-     "why": "Tlak na EUR/USD směrem k 1,10 brzdí posilování koruny, takže EUR/CZK zůstává u 24,43 a USD/CZK roste.",
-     "published": "2026-11-16T16:57"
-    },
-    {
-     "source": "Raiffeisenbank / FXstreet.cz",
-     "currency": "CZK",
-     "title": "Raiffeisenbank: posilující dolar koruně škodí",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-210636.html",
-     "summary": "Koruna minulý týden ztratila k dolaru přes 1 % a dostala se za hranici 22 Kč, k euru oslabila jen o 0,3 % k 24,40. Zápis ČNB připustil další zvýšení sazeb, koruna na něj téměř nereagovala.",
-     "why": "Pro korunu bude tento týden rozhodující směr dolaru a data eurozóny; růst sazeb v eurozóně by jí nepomohl.",
-     "published": "2026-11-16T13:20"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "AP / BNN Bloomberg",
+     "currency": "USD",
+     "title": "Wall Street dál padá, Dow ztrácí přes 700 bodů před výsledky Nvidie",
+     "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/11/17/world-markets-mostly-drop-as-ai-stocks-remain-under-pressure/",
+     "summary": "Index S&P 500 odpoledne ztrácel přes 1 % a Dow 1,4 %, investoři se před večerními výsledky Nvidie stahovali do bezpečí; výnos 10letého Treasury se z 5,15 % vrátil k 5,10 %.",
+     "why": "Averze k riziku obvykle podporuje dolar a oslabuje korunu i zlotý.",
+     "published": "2026-11-17T19:48"
+    },
     {
      "source": "ActionForex",
      "currency": "USD",
@@ -197,6 +206,15 @@
      "published": "2026-11-17T08:06"
     },
     {
+     "source": "Reuters / Investing.com",
+     "currency": "USD",
+     "title": "Williams z Fedu: další zvýšení sazeb asi přijde, ale bez dramatických kroků",
+     "url": "https://investing.com/news/economy-news/feds-williams-still-favors-tighter-monetary-policy-but-says-now-is-not-the-time-for-dramatic-action-5033893",
+     "summary": "Šéf newyorského Fedu John Williams řekl, že Fed bude kvůli vysoké inflaci zřejmě muset sazby znovu zvýšit, rychlejší tempo ale odmítl. Trh na prosincovém zasedání (8.–9. 12.) čeká zvýšení o 0,25 bodu.",
+     "why": "Potvrzuje očekávání dalšího utahování Fedu, což drží dolar silný; odmítnutí agresivnějšího postupu ale tlumí jeho další růst.",
+     "published": "2026-11-17"
+    },
+    {
      "source": "ING Think",
      "currency": "USD",
      "title": "ING: dolar se spíš stabilizuje, euro by mělo držet 1,10",
@@ -204,27 +222,18 @@
      "summary": "Dolar podle ING odolává výprodeji technologických akcií díky roli bezpečného přístavu; banka čeká spíš stabilizaci než další velký růst. Od maloobchodních tržeb za říjen čeká jen +0,1 % m/m, trh oceňuje asi 70 bb zvýšení sazeb ECB za 12 měsíců.",
      "why": "Pokud se dolar stabilizuje, tlak na korunu vůči dolaru by měl polevit.",
      "published": "2026-11-17"
-    },
-    {
-     "source": "FXstreet.cz (Reuters, ČTK, ING)",
-     "currency": "USD",
-     "title": "Euro u 1,10 za dolar, nejslabší za rok a půl",
-     "url": "https://www.fxstreet.cz/forex-dolar-mirne-posiluje-euro-sestoupilo-do-blizkosti-11000-eurusd.html",
-     "summary": "EUR/USD se večer drželo těsně nad 1,1000 po páté ztrátové seanci; dolar táhnou vyšší než čekaná říjnová inflace v USA a jestřábí výroky členů Fedu. ING varuje, že průlom pod 1,10 by dolar dál posílil, Macro Hive vidí 1,08 do konce roku.",
-     "why": "Prolomení 1,10 by tlačilo EUR/USD níž a zdražovalo dolar i vůči koruně.",
-     "published": "2026-11-16T18:30"
-    },
-    {
-     "source": "XTB / FXstreet.cz",
-     "currency": "EUR",
-     "title": "Průmysl eurozóny v září propadl, trh čeká na Warshe",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-210638.html",
-     "summary": "Průmyslová výroba eurozóny v září klesla o 1,5 % r/r proti čekanému poklesu o 0,2 %, zklamala i data z Číny a Japonska. EUR/USD se drží u 1,10, zlotý k dolaru mírně oslabil a výnos 10Y Treasuries je nad 5,1 %.",
-     "why": "Slabá evropská data a vysoké americké výnosy drží euro i středoevropské měny pod tlakem vůči dolaru.",
-     "published": "2026-11-16T13:53"
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "AP / BNN Bloomberg",
+     "currency": "USD",
+     "title": "Wall Street dál padá, Dow ztrácí přes 700 bodů před výsledky Nvidie",
+     "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/11/17/world-markets-mostly-drop-as-ai-stocks-remain-under-pressure/",
+     "summary": "Index S&P 500 odpoledne ztrácel přes 1 % a Dow 1,4 %, investoři se před večerními výsledky Nvidie stahovali do bezpečí; výnos 10letého Treasury se z 5,15 % vrátil k 5,10 %.",
+     "why": "Averze k riziku obvykle podporuje dolar a oslabuje korunu i zlotý.",
+     "published": "2026-11-17T19:48"
+    },
     {
      "source": "ActionForex",
      "currency": "EUR",
@@ -287,15 +296,6 @@
      "summary": "Koruna vstupuje do pátku u 24,39 za euro a 22,04 za dolar, PLN/CZK u 5,54. Dnes vychází HDP Polska a eurozóny, polská inflace a odpoledne americké ceny výrobců; ropa se drží nad 96 USD.",
      "why": "Citfin čeká, že koruna se udrží u ranních úrovní; volatilitu mohou přinést hlavně polská data a americké PPI.",
      "published": "2026-11-13"
-    },
-    {
-     "source": "Kurzy.cz (Komerční banka)",
-     "currency": "CZK",
-     "title": "Silný dolar táhne dolů euro, koruna mírně slábne",
-     "url": "https://zpravy.kurzy.cz/881554-sentiment-na-financnich-trzich-opet-nahraval-dolaru-komentar",
-     "summary": "Podle odpoledního komentáře KB koruna oslabila o 0,1 % na 24,38 za euro, euro ztratilo k dolaru 0,6 % a spadlo pod 1,11; zlotý odepsal zhruba 0,3 %. Dolar těží z vyšší americké inflace a sázek na další utažení Fedu, pohyby mohla zesílit nízká likvidita kvůli americkému svátku.",
-     "why": "Dokud trh sází na zvyšování sazeb Fedu, dolar posiluje a koruna i zlotý zůstávají pod mírným tlakem.",
-     "published": "2026-11-11T16:26"
     }
    ]
   }
@@ -733,7 +733,7 @@
  },
  "summary": {
   "asOf": "2026-11-17",
-  "text": "Koruna mírně zpevnila na 24,39 za euro (fixing ECB 24,387 po 24,428). Musalem z Fedu volá po dalším zvyšování sazeb, euro spadlo pod 1,10 USD – zítra zápis FOMC (20:00) může dolar dál posílit."
+  "text": "Koruna drží 24,39 za euro (fixing ECB 24,387 po 24,428), euro je těsně pod 1,10 USD. Jestřábí Fed a výprodej na Wall Street táhnou dolar nahoru; v noci výsledky Nvidie a zítra ve 20:00 zápis FOMC mohou riziko dál zvýšit."
  },
  "outlook": {
   "asOf": "2026-10-14",
