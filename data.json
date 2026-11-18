@@ -1,8 +1,35 @@
 {
  "news": {
-  "asOf": "2026-11-17",
+  "asOf": "2026-11-18",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "ČSOB Dealing / Kurzy.cz",
+     "currency": "USD",
+     "title": "Eurodolar znovu pod 1,10, trh čeká na zápis Fedu",
+     "url": "https://zpravy.kurzy.cz/882179-eurodolar-sklouzl-pod-1-10-trh-si-peclive-precte-podrobny-zapis-z-posledniho-sezeni-fedu/",
+     "summary": "EUR/USD včera krátce kleslo k 1,097, nejníž asi za 19 měsíců, večer se vrátilo nad 1,102 a ráno je opět pod 1,10. Ve 20:00 vyjde zápis z jednání Fedu.",
+     "why": "Potvrdí-li zápis prosincové zvýšení sazeb, dolar může dál posilovat vůči euru i koruně.",
+     "published": "2026-11-18T08:46"
+    },
+    {
+     "source": "ČSOB Dealing / Kurzy.cz",
+     "currency": "CZK",
+     "title": "Koruně krátce ulevil levnější plyn, dolar ji ale brzdí",
+     "url": "https://zpravy.kurzy.cz/882180-koruna-si-nacas-vydechla-diky-levnejsimu-plynu-silny-dolar-a-vysoke-sazby-v-usa-ale-korune/",
+     "summary": "Evropský plyn zlevnil díky mírnější předpovědi počasí a rekordním zásilkám LNG, což koruně na začátku týdne pomohlo. Silný dolar a vysoké americké sazby ale na středoevropské měny dál tlačí.",
+     "why": "Levnější energie podporují CZK a PLN, silný dolar je naopak oslabuje.",
+     "published": "2026-11-18T08:45"
+    },
+    {
+     "source": "Yahoo Finance",
+     "currency": "USD",
+     "title": "Nvidia překonala odhady a zvedla výhled",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-shares-rise-earnings-beat-221818886.html",
+     "summary": "Tržby Nvidie za čtvrtletí stouply o 103 % na 115,8 mld. USD (čekalo se asi 109 mld.) a výhled na další čtvrtletí 130 mld. USD převýšil odhady. Akcie po uzavření trhu přidaly zhruba 2 %.",
+     "why": "Uklidnění na akciových trzích snižuje poptávku po bezpečném dolaru a pomáhá rizikovějším měnám jako CZK a PLN.",
+     "published": "2026-11-17T23:18"
+    },
     {
      "source": "AP / BNN Bloomberg",
      "currency": "USD",
@@ -47,37 +74,37 @@
      "summary": "EUR/USD se v pondělí večer poprvé od loňského dubna dostal pod 1,10 (kolem 1,0995); dolar táhnou sázky na další zvyšování sazeb Fedu, euro tíží obavy o francouzské veřejné finance. Americké akcie ztratily kolem 2 %.",
      "why": "Slabší euro vůči dolaru zdražuje dolar i pro korunu, USD/CZK tak drží nad 22.",
      "published": "2026-11-17T08:06"
-    },
-    {
-     "source": "FXstreet.cz (Reuters, ČTK, ING)",
-     "currency": "USD",
-     "title": "Euro u 1,10 za dolar, nejslabší za rok a půl",
-     "url": "https://www.fxstreet.cz/forex-dolar-mirne-posiluje-euro-sestoupilo-do-blizkosti-11000-eurusd.html",
-     "summary": "EUR/USD se večer drželo těsně nad 1,1000 po páté ztrátové seanci; dolar táhnou vyšší než čekaná říjnová inflace v USA a jestřábí výroky členů Fedu. ING varuje, že průlom pod 1,10 by dolar dál posílil, Macro Hive vidí 1,08 do konce roku.",
-     "why": "Prolomení 1,10 by tlačilo EUR/USD níž a zdražovalo dolar i vůči koruně.",
-     "published": "2026-11-16T18:30"
-    },
-    {
-     "source": "Komerční banka / FXstreet.cz",
-     "currency": "CZK",
-     "title": "KB: koruna mírně ztrácela, silný dolar přebil proinflační data",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-210649.html",
-     "summary": "Koruna v pondělí vůči euru mírně oslabila, i když říjnové ceny výrobců zrychlily na 4,7 % r/r a zemědělské ceny poprvé po deseti měsících meziročně rostly. Podle KB je to inflační riziko pro rok 2027, ČNB ale po listopadovém zvýšení nejspíš sazby nechá beze změny.",
-     "why": "Tlak na EUR/USD směrem k 1,10 brzdí posilování koruny, takže EUR/CZK zůstává u 24,43 a USD/CZK roste.",
-     "published": "2026-11-16T16:57"
-    },
-    {
-     "source": "XTB / FXstreet.cz",
-     "currency": "EUR",
-     "title": "Průmysl eurozóny v září propadl, trh čeká na Warshe",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-210638.html",
-     "summary": "Průmyslová výroba eurozóny v září klesla o 1,5 % r/r proti čekanému poklesu o 0,2 %, zklamala i data z Číny a Japonska. EUR/USD se drží u 1,10, zlotý k dolaru mírně oslabil a výnos 10Y Treasuries je nad 5,1 %.",
-     "why": "Slabá evropská data a vysoké americké výnosy drží euro i středoevropské měny pod tlakem vůči dolaru.",
-     "published": "2026-11-16T13:53"
     }
    ],
    "USD/CZK": [
     {
+     "source": "ČSOB Dealing / Kurzy.cz",
+     "currency": "USD",
+     "title": "Eurodolar znovu pod 1,10, trh čeká na zápis Fedu",
+     "url": "https://zpravy.kurzy.cz/882179-eurodolar-sklouzl-pod-1-10-trh-si-peclive-precte-podrobny-zapis-z-posledniho-sezeni-fedu/",
+     "summary": "EUR/USD včera krátce kleslo k 1,097, nejníž asi za 19 měsíců, večer se vrátilo nad 1,102 a ráno je opět pod 1,10. Ve 20:00 vyjde zápis z jednání Fedu.",
+     "why": "Potvrdí-li zápis prosincové zvýšení sazeb, dolar může dál posilovat vůči euru i koruně.",
+     "published": "2026-11-18T08:46"
+    },
+    {
+     "source": "ČSOB Dealing / Kurzy.cz",
+     "currency": "CZK",
+     "title": "Koruně krátce ulevil levnější plyn, dolar ji ale brzdí",
+     "url": "https://zpravy.kurzy.cz/882180-koruna-si-nacas-vydechla-diky-levnejsimu-plynu-silny-dolar-a-vysoke-sazby-v-usa-ale-korune/",
+     "summary": "Evropský plyn zlevnil díky mírnější předpovědi počasí a rekordním zásilkám LNG, což koruně na začátku týdne pomohlo. Silný dolar a vysoké americké sazby ale na středoevropské měny dál tlačí.",
+     "why": "Levnější energie podporují CZK a PLN, silný dolar je naopak oslabuje.",
+     "published": "2026-11-18T08:45"
+    },
+    {
+     "source": "Yahoo Finance",
+     "currency": "USD",
+     "title": "Nvidia překonala odhady a zvedla výhled",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-shares-rise-earnings-beat-221818886.html",
+     "summary": "Tržby Nvidie za čtvrtletí stouply o 103 % na 115,8 mld. USD (čekalo se asi 109 mld.) a výhled na další čtvrtletí 130 mld. USD převýšil odhady. Akcie po uzavření trhu přidaly zhruba 2 %.",
+     "why": "Uklidnění na akciových trzích snižuje poptávku po bezpečném dolaru a pomáhá rizikovějším měnám jako CZK a PLN.",
+     "published": "2026-11-17T23:18"
+    },
+    {
      "source": "AP / BNN Bloomberg",
      "currency": "USD",
      "title": "Wall Street dál padá, Dow ztrácí přes 700 bodů před výsledky Nvidie",
@@ -121,36 +148,27 @@
      "summary": "EUR/USD se v pondělí večer poprvé od loňského dubna dostal pod 1,10 (kolem 1,0995); dolar táhnou sázky na další zvyšování sazeb Fedu, euro tíží obavy o francouzské veřejné finance. Americké akcie ztratily kolem 2 %.",
      "why": "Slabší euro vůči dolaru zdražuje dolar i pro korunu, USD/CZK tak drží nad 22.",
      "published": "2026-11-17T08:06"
-    },
-    {
-     "source": "Reuters / Investing.com",
-     "currency": "USD",
-     "title": "Williams z Fedu: další zvýšení sazeb asi přijde, ale bez dramatických kroků",
-     "url": "https://investing.com/news/economy-news/feds-williams-still-favors-tighter-monetary-policy-but-says-now-is-not-the-time-for-dramatic-action-5033893",
-     "summary": "Šéf newyorského Fedu John Williams řekl, že Fed bude kvůli vysoké inflaci zřejmě muset sazby znovu zvýšit, rychlejší tempo ale odmítl. Trh na prosincovém zasedání (8.–9. 12.) čeká zvýšení o 0,25 bodu.",
-     "why": "Potvrzuje očekávání dalšího utahování Fedu, což drží dolar silný; odmítnutí agresivnějšího postupu ale tlumí jeho další růst.",
-     "published": "2026-11-17"
-    },
-    {
-     "source": "ING Think",
-     "currency": "USD",
-     "title": "ING: dolar se spíš stabilizuje, euro by mělo držet 1,10",
-     "url": "https://think.ing.com/articles/fx-daily-dollar-showing-resilience-to-tech-stock-instability",
-     "summary": "Dolar podle ING odolává výprodeji technologických akcií díky roli bezpečného přístavu; banka čeká spíš stabilizaci než další velký růst. Od maloobchodních tržeb za říjen čeká jen +0,1 % m/m, trh oceňuje asi 70 bb zvýšení sazeb ECB za 12 měsíců.",
-     "why": "Pokud se dolar stabilizuje, tlak na korunu vůči dolaru by měl polevit.",
-     "published": "2026-11-17"
-    },
-    {
-     "source": "FXstreet.cz (Reuters, ČTK, ING)",
-     "currency": "USD",
-     "title": "Euro u 1,10 za dolar, nejslabší za rok a půl",
-     "url": "https://www.fxstreet.cz/forex-dolar-mirne-posiluje-euro-sestoupilo-do-blizkosti-11000-eurusd.html",
-     "summary": "EUR/USD se večer drželo těsně nad 1,1000 po páté ztrátové seanci; dolar táhnou vyšší než čekaná říjnová inflace v USA a jestřábí výroky členů Fedu. ING varuje, že průlom pod 1,10 by dolar dál posílil, Macro Hive vidí 1,08 do konce roku.",
-     "why": "Prolomení 1,10 by tlačilo EUR/USD níž a zdražovalo dolar i vůči koruně.",
-     "published": "2026-11-16T18:30"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "ČSOB Dealing / Kurzy.cz",
+     "currency": "USD",
+     "title": "Eurodolar znovu pod 1,10, trh čeká na zápis Fedu",
+     "url": "https://zpravy.kurzy.cz/882179-eurodolar-sklouzl-pod-1-10-trh-si-peclive-precte-podrobny-zapis-z-posledniho-sezeni-fedu/",
+     "summary": "EUR/USD včera krátce kleslo k 1,097, nejníž asi za 19 měsíců, večer se vrátilo nad 1,102 a ráno je opět pod 1,10. Ve 20:00 vyjde zápis z jednání Fedu.",
+     "why": "Potvrdí-li zápis prosincové zvýšení sazeb, dolar může dál posilovat vůči euru i koruně.",
+     "published": "2026-11-18T08:46"
+    },
+    {
+     "source": "Yahoo Finance",
+     "currency": "USD",
+     "title": "Nvidia překonala odhady a zvedla výhled",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-shares-rise-earnings-beat-221818886.html",
+     "summary": "Tržby Nvidie za čtvrtletí stouply o 103 % na 115,8 mld. USD (čekalo se asi 109 mld.) a výhled na další čtvrtletí 130 mld. USD převýšil odhady. Akcie po uzavření trhu přidaly zhruba 2 %.",
+     "why": "Uklidnění na akciových trzích snižuje poptávku po bezpečném dolaru a pomáhá rizikovějším měnám jako CZK a PLN.",
+     "published": "2026-11-17T23:18"
+    },
     {
      "source": "AP / BNN Bloomberg",
      "currency": "USD",
@@ -204,27 +222,27 @@
      "summary": "EUR/USD se v pondělí večer poprvé od loňského dubna dostal pod 1,10 (kolem 1,0995); dolar táhnou sázky na další zvyšování sazeb Fedu, euro tíží obavy o francouzské veřejné finance. Americké akcie ztratily kolem 2 %.",
      "why": "Slabší euro vůči dolaru zdražuje dolar i pro korunu, USD/CZK tak drží nad 22.",
      "published": "2026-11-17T08:06"
-    },
-    {
-     "source": "Reuters / Investing.com",
-     "currency": "USD",
-     "title": "Williams z Fedu: další zvýšení sazeb asi přijde, ale bez dramatických kroků",
-     "url": "https://investing.com/news/economy-news/feds-williams-still-favors-tighter-monetary-policy-but-says-now-is-not-the-time-for-dramatic-action-5033893",
-     "summary": "Šéf newyorského Fedu John Williams řekl, že Fed bude kvůli vysoké inflaci zřejmě muset sazby znovu zvýšit, rychlejší tempo ale odmítl. Trh na prosincovém zasedání (8.–9. 12.) čeká zvýšení o 0,25 bodu.",
-     "why": "Potvrzuje očekávání dalšího utahování Fedu, což drží dolar silný; odmítnutí agresivnějšího postupu ale tlumí jeho další růst.",
-     "published": "2026-11-17"
-    },
-    {
-     "source": "ING Think",
-     "currency": "USD",
-     "title": "ING: dolar se spíš stabilizuje, euro by mělo držet 1,10",
-     "url": "https://think.ing.com/articles/fx-daily-dollar-showing-resilience-to-tech-stock-instability",
-     "summary": "Dolar podle ING odolává výprodeji technologických akcií díky roli bezpečného přístavu; banka čeká spíš stabilizaci než další velký růst. Od maloobchodních tržeb za říjen čeká jen +0,1 % m/m, trh oceňuje asi 70 bb zvýšení sazeb ECB za 12 měsíců.",
-     "why": "Pokud se dolar stabilizuje, tlak na korunu vůči dolaru by měl polevit.",
-     "published": "2026-11-17"
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "ČSOB Dealing / Kurzy.cz",
+     "currency": "CZK",
+     "title": "Koruně krátce ulevil levnější plyn, dolar ji ale brzdí",
+     "url": "https://zpravy.kurzy.cz/882180-koruna-si-nacas-vydechla-diky-levnejsimu-plynu-silny-dolar-a-vysoke-sazby-v-usa-ale-korune/",
+     "summary": "Evropský plyn zlevnil díky mírnější předpovědi počasí a rekordním zásilkám LNG, což koruně na začátku týdne pomohlo. Silný dolar a vysoké americké sazby ale na středoevropské měny dál tlačí.",
+     "why": "Levnější energie podporují CZK a PLN, silný dolar je naopak oslabuje.",
+     "published": "2026-11-18T08:45"
+    },
+    {
+     "source": "Yahoo Finance",
+     "currency": "USD",
+     "title": "Nvidia překonala odhady a zvedla výhled",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-shares-rise-earnings-beat-221818886.html",
+     "summary": "Tržby Nvidie za čtvrtletí stouply o 103 % na 115,8 mld. USD (čekalo se asi 109 mld.) a výhled na další čtvrtletí 130 mld. USD převýšil odhady. Akcie po uzavření trhu přidaly zhruba 2 %.",
+     "why": "Uklidnění na akciových trzích snižuje poptávku po bezpečném dolaru a pomáhá rizikovějším měnám jako CZK a PLN.",
+     "published": "2026-11-17T23:18"
+    },
     {
      "source": "AP / BNN Bloomberg",
      "currency": "USD",
@@ -278,24 +296,6 @@
      "summary": "Polské HDP vzrostlo ve 3. čtvrtletí o 3,5 % r/r po 4,1 % ve 2. čtvrtletí, odhad byl 3,7 %. Mezičtvrtletně růst činil 0,8 %.",
      "why": "Slabší růst snižuje tlak na NBP a mírně oslabuje zlotý vůči koruně.",
      "published": "2026-11-13T11:13"
-    },
-    {
-     "source": "ING Think",
-     "currency": "EUR",
-     "title": "ING: dolar zůstane silný, EUR/CZK by u 24,40 měl mít strop",
-     "url": "https://think.ing.com/articles/fx-daily-dont-mess-with-the-dollar",
-     "summary": "ING upozorňuje, že trh už oceňuje zhruba 85 bb zvýšení sazeb Fedu v prosinci a lednu a dolar zůstane podpořený; EUR/USD vidí ohrožený pod 1,10. Regionální měny jsou pod tlakem, EUR/CZK u 24,40 by podle banky měl být vrchol, pokud zápis z ČNB nevyzní holubičně.",
-     "why": "Rostoucí rozdíl sazeb mezi USA a eurozónou tlačí EUR/USD dolů a USD/CZK nahoru, koruna k euru by se měla stabilizovat.",
-     "published": "2026-11-13"
-    },
-    {
-     "source": "Citfin",
-     "currency": "CZK",
-     "title": "Koruna drží úrovně, trh čeká na regionální HDP a americké PPI",
-     "url": "https://www.citfin.cz/ranni-fx-zpravy/koruna-hdp-inflace-zloty-devizovy-trh/",
-     "summary": "Koruna vstupuje do pátku u 24,39 za euro a 22,04 za dolar, PLN/CZK u 5,54. Dnes vychází HDP Polska a eurozóny, polská inflace a odpoledne americké ceny výrobců; ropa se drží nad 96 USD.",
-     "why": "Citfin čeká, že koruna se udrží u ranních úrovní; volatilitu mohou přinést hlavně polská data a americké PPI.",
-     "published": "2026-11-13"
     }
    ]
   }
@@ -502,27 +502,27 @@
   ]
  },
  "risk": {
-  "asOf": "2026-11-16",
+  "asOf": "2026-11-18",
   "items": [
    {
     "id": "brent",
     "label": "Brent",
-    "value": 93.86,
+    "value": 91.78,
     "unit": "USD/bbl",
-    "chg1d": -2.07,
-    "chg1m": -14.32,
+    "chg1d": -1.47,
+    "chg1m": -16.23,
     "why": "Dražší ropa zhoršuje obchodní bilanci ČR i eurozóny a zvyšuje inflaci.",
-    "date": "2026-11-16"
+    "date": "2026-11-18"
    },
    {
     "id": "ttf",
     "label": "Plyn TTF",
-    "value": 86.82,
+    "value": 84.1,
     "unit": "EUR/MWh",
-    "chg1d": -4.54,
-    "chg1m": -1.38,
+    "chg1d": -1.52,
+    "chg1m": -4.47,
     "why": "Koruna i zlotý jsou citlivé na ceny energií; drahý plyn je oslabuje.",
-    "date": "2026-11-16"
+    "date": "2026-11-18"
    },
    {
     "id": "czbund",
@@ -556,11 +556,11 @@
    {
     "id": "vix",
     "label": "VIX",
-    "value": 20.71,
+    "value": 24.21,
     "unit": "",
     "chg1d": null,
     "why": "Index strachu na akciích; nad 20–25 obvykle slábnou CZK, PLN a HUF.",
-    "date": "2026-11-13"
+    "date": "2026-11-17"
    }
   ]
  },
@@ -732,8 +732,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-11-17",
-  "text": "Koruna drží 24,39 za euro (fixing ECB 24,387 po 24,428), euro je těsně pod 1,10 USD. Jestřábí Fed a výprodej na Wall Street táhnou dolar nahoru; v noci výsledky Nvidie a zítra ve 20:00 zápis FOMC mohou riziko dál zvýšit."
+  "asOf": "2026-11-18",
+  "text": "Koruna drží 24,39 za euro (fixing ECB 24,387), ráno jí pomohl levnější plyn, euro je znovu pod 1,10 USD. Nvidia překonala odhady a uklidnila trhy; ve 20:00 zápis FOMC rozhodne, zda dolar dál posílí."
  },
  "outlook": {
   "asOf": "2026-10-14",
