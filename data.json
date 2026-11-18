@@ -4,6 +4,24 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "CNBC",
+     "currency": "USD",
+     "title": "Waller z Fedu volá po zvýšení sazeb o půl bodu",
+     "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+     "summary": "Guvernér Fedu Christopher Waller řekl, že na prosincovém zasedání bude nejspíš nutné zvýšit sazby o 50 bb, protože inflace se podle něj zhoršuje a šíří. Futures už plně oceňují prosincové zvýšení o 25 bb a další krok v lednu.",
+     "why": "Úvahy o větším kroku Fedu posilují dolar a tlačí na euro i středoevropské měny.",
+     "published": "2026-11-18T13:20"
+    },
+    {
+     "source": "ActionForex / Eurostat",
+     "currency": "EUR",
+     "title": "Inflace v eurozóně potvrzena na 4 %, jádro revidováno nahoru",
+     "url": "https://www.actionforex.com/live-comments/661283-eurozone-inflation-confirmed-at-4-0-as-energy-surges-core-cpi-revised-higher/",
+     "summary": "Eurostat potvrdil říjnovou inflaci v eurozóně na 4,0 % (září 3,8 %), energie zdražily o 21 %. Jádrová inflace byla revidována z 2,5 na 2,6 %, služby zrychlily na 3,3 %.",
+     "why": "Vyšší jádro podporuje prosincové zvýšení sazeb ECB a dává euru oporu vůči dolaru.",
+     "published": "2026-11-18T12:20"
+    },
+    {
      "source": "ČSOB Dealing / Kurzy.cz",
      "currency": "USD",
      "title": "Eurodolar znovu pod 1,10, trh čeká na zápis Fedu",
@@ -56,28 +74,19 @@
      "summary": "Šéf Fedu v St. Louis Musalem uvedl, že do jara 2027 bude nejspíš potřeba několik dalších zvýšení sazeb, protože měnové podmínky jsou podle něj stále příliš volné. EUR/USD sklouzl pod 1,10 na nejnižší úroveň od dubna 2025.",
      "why": "Jestřábí tón Fedu posiluje dolar, což tlačí EUR/USD dolů a USD/CZK nahoru.",
      "published": "2026-11-17T14:38"
-    },
-    {
-     "source": "ActionForex",
-     "currency": "EUR",
-     "title": "Německý ZEW nečekaně vyskočil na 35,6",
-     "url": "https://www.actionforex.com/live-comments/661152-germany-zew-sentiment-jumps-to-35-6-but-recovery-remains-uneven/",
-     "summary": "Index očekávání ZEW v Německu v listopadu stoupl na 35,6 z 28,1 (odhad kolem 28), hodnocení současné situace se zlepšilo na −33,2. Za celou eurozónu se očekávání zvedla na 26,5 z 18,5.",
-     "why": "Lepší nálada v Německu mírně podporuje euro i středoevropské měny, sestupný trend EUR/USD ale zatím nezvrátila.",
-     "published": "2026-11-17T11:33"
-    },
-    {
-     "source": "FXstreet.cz",
-     "currency": "EUR/USD",
-     "title": "Euro večer kleslo pod 1,10 za dolar",
-     "url": "https://www.fxstreet.cz/ranni-zprava-pro-tradery-co-se-deje-na-financnich-trzich-17112026.html",
-     "summary": "EUR/USD se v pondělí večer poprvé od loňského dubna dostal pod 1,10 (kolem 1,0995); dolar táhnou sázky na další zvyšování sazeb Fedu, euro tíží obavy o francouzské veřejné finance. Americké akcie ztratily kolem 2 %.",
-     "why": "Slabší euro vůči dolaru zdražuje dolar i pro korunu, USD/CZK tak drží nad 22.",
-     "published": "2026-11-17T08:06"
     }
    ],
    "USD/CZK": [
     {
+     "source": "CNBC",
+     "currency": "USD",
+     "title": "Waller z Fedu volá po zvýšení sazeb o půl bodu",
+     "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+     "summary": "Guvernér Fedu Christopher Waller řekl, že na prosincovém zasedání bude nejspíš nutné zvýšit sazby o 50 bb, protože inflace se podle něj zhoršuje a šíří. Futures už plně oceňují prosincové zvýšení o 25 bb a další krok v lednu.",
+     "why": "Úvahy o větším kroku Fedu posilují dolar a tlačí na euro i středoevropské měny.",
+     "published": "2026-11-18T13:20"
+    },
+    {
      "source": "ČSOB Dealing / Kurzy.cz",
      "currency": "USD",
      "title": "Eurodolar znovu pod 1,10, trh čeká na zápis Fedu",
@@ -139,18 +148,27 @@
      "summary": "Ve 14:30 vyjdou maloobchodní tržby USA za říjen (konsenzus +0,2 % m/m po +0,8 %), v 11:00 německý ZEW (konsenzus 28,8). Odpoledne vystoupí Waller z Fedu, po zavření trhu reportuje Nvidia.",
      "why": "Silnější tržby by podpořily sázky na zvýšení sazeb Fedu a dolar, slabší by euru i koruně ulevily.",
      "published": "2026-11-17T09:00"
-    },
-    {
-     "source": "FXstreet.cz",
-     "currency": "EUR/USD",
-     "title": "Euro večer kleslo pod 1,10 za dolar",
-     "url": "https://www.fxstreet.cz/ranni-zprava-pro-tradery-co-se-deje-na-financnich-trzich-17112026.html",
-     "summary": "EUR/USD se v pondělí večer poprvé od loňského dubna dostal pod 1,10 (kolem 1,0995); dolar táhnou sázky na další zvyšování sazeb Fedu, euro tíží obavy o francouzské veřejné finance. Americké akcie ztratily kolem 2 %.",
-     "why": "Slabší euro vůči dolaru zdražuje dolar i pro korunu, USD/CZK tak drží nad 22.",
-     "published": "2026-11-17T08:06"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "CNBC",
+     "currency": "USD",
+     "title": "Waller z Fedu volá po zvýšení sazeb o půl bodu",
+     "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+     "summary": "Guvernér Fedu Christopher Waller řekl, že na prosincovém zasedání bude nejspíš nutné zvýšit sazby o 50 bb, protože inflace se podle něj zhoršuje a šíří. Futures už plně oceňují prosincové zvýšení o 25 bb a další krok v lednu.",
+     "why": "Úvahy o větším kroku Fedu posilují dolar a tlačí na euro i středoevropské měny.",
+     "published": "2026-11-18T13:20"
+    },
+    {
+     "source": "ActionForex / Eurostat",
+     "currency": "EUR",
+     "title": "Inflace v eurozóně potvrzena na 4 %, jádro revidováno nahoru",
+     "url": "https://www.actionforex.com/live-comments/661283-eurozone-inflation-confirmed-at-4-0-as-energy-surges-core-cpi-revised-higher/",
+     "summary": "Eurostat potvrdil říjnovou inflaci v eurozóně na 4,0 % (září 3,8 %), energie zdražily o 21 %. Jádrová inflace byla revidována z 2,5 na 2,6 %, služby zrychlily na 3,3 %.",
+     "why": "Vyšší jádro podporuje prosincové zvýšení sazeb ECB a dává euru oporu vůči dolaru.",
+     "published": "2026-11-18T12:20"
+    },
     {
      "source": "ČSOB Dealing / Kurzy.cz",
      "currency": "USD",
@@ -204,27 +222,18 @@
      "summary": "Index očekávání ZEW v Německu v listopadu stoupl na 35,6 z 28,1 (odhad kolem 28), hodnocení současné situace se zlepšilo na −33,2. Za celou eurozónu se očekávání zvedla na 26,5 z 18,5.",
      "why": "Lepší nálada v Německu mírně podporuje euro i středoevropské měny, sestupný trend EUR/USD ale zatím nezvrátila.",
      "published": "2026-11-17T11:33"
-    },
-    {
-     "source": "XTB / FXstreet.cz",
-     "currency": "USD",
-     "title": "Dnes rozhodnou americké maloobchodní tržby a výsledky Nvidie",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-210669.html",
-     "summary": "Ve 14:30 vyjdou maloobchodní tržby USA za říjen (konsenzus +0,2 % m/m po +0,8 %), v 11:00 německý ZEW (konsenzus 28,8). Odpoledne vystoupí Waller z Fedu, po zavření trhu reportuje Nvidia.",
-     "why": "Silnější tržby by podpořily sázky na zvýšení sazeb Fedu a dolar, slabší by euru i koruně ulevily.",
-     "published": "2026-11-17T09:00"
-    },
-    {
-     "source": "FXstreet.cz",
-     "currency": "EUR/USD",
-     "title": "Euro večer kleslo pod 1,10 za dolar",
-     "url": "https://www.fxstreet.cz/ranni-zprava-pro-tradery-co-se-deje-na-financnich-trzich-17112026.html",
-     "summary": "EUR/USD se v pondělí večer poprvé od loňského dubna dostal pod 1,10 (kolem 1,0995); dolar táhnou sázky na další zvyšování sazeb Fedu, euro tíží obavy o francouzské veřejné finance. Americké akcie ztratily kolem 2 %.",
-     "why": "Slabší euro vůči dolaru zdražuje dolar i pro korunu, USD/CZK tak drží nad 22.",
-     "published": "2026-11-17T08:06"
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "CNBC",
+     "currency": "USD",
+     "title": "Waller z Fedu volá po zvýšení sazeb o půl bodu",
+     "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+     "summary": "Guvernér Fedu Christopher Waller řekl, že na prosincovém zasedání bude nejspíš nutné zvýšit sazby o 50 bb, protože inflace se podle něj zhoršuje a šíří. Futures už plně oceňují prosincové zvýšení o 25 bb a další krok v lednu.",
+     "why": "Úvahy o větším kroku Fedu posilují dolar a tlačí na euro i středoevropské měny.",
+     "published": "2026-11-18T13:20"
+    },
     {
      "source": "ČSOB Dealing / Kurzy.cz",
      "currency": "CZK",
@@ -287,15 +296,6 @@
      "summary": "Čínská průmyslová výroba (4,8 % r/r) i maloobchod (0,4 %) v říjnu zaostaly za odhady, korejské čipové akcie propadly a futures na Nasdaq ztrácejí. EUR/USD se drží u 1,102; trh čeká na dnešní projev šéfa Fedu Warshe.",
      "why": "Horší nálada na trzích obvykle podporuje dolar a škodí koruně i zlotému.",
      "published": "2026-11-16T07:44"
-    },
-    {
-     "source": "RTTNews",
-     "currency": "PLN",
-     "title": "Polská ekonomika ve 3. čtvrtletí zpomalila víc, než se čekalo",
-     "url": "https://www.rttnews.com/3714448/poland-gdp-grows-3-5-in-q3-inflation-eases-as-estimated.aspx",
-     "summary": "Polské HDP vzrostlo ve 3. čtvrtletí o 3,5 % r/r po 4,1 % ve 2. čtvrtletí, odhad byl 3,7 %. Mezičtvrtletně růst činil 0,8 %.",
-     "why": "Slabší růst snižuje tlak na NBP a mírně oslabuje zlotý vůči koruně.",
-     "published": "2026-11-13T11:13"
     }
    ]
   }
@@ -362,49 +362,49 @@
   ]
  },
  "cnb": {
-  "date": "2026-11-16",
+  "date": "2026-11-18",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.43,
-   "USD": 22.182,
-   "PLN": 5.548,
-   "HUF100": 6.702
+   "EUR": 24.385,
+   "USD": 22.23,
+   "PLN": 5.528,
+   "HUF100": 6.622
   }
  },
  "mm": {
-  "asOf": "2026-11-17",
+  "asOf": "2026-11-18",
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "basis": 360,
    "r": {
     "1M": 4.07,
-    "3M": 4.09,
+    "3M": 4.1,
     "6M": 4.17,
-    "12M": 4.33
+    "12M": 4.34
    }
   },
   "EUR": {
    "src": "EURIBOR",
-   "date": "2026-11-16",
+   "date": "2026-11-17",
    "basis": 360,
    "r": {
-    "1M": 2.479,
-    "3M": 2.779,
-    "6M": 3.008,
-    "12M": 3.35
+    "1M": 2.483,
+    "3M": 2.784,
+    "6M": 3.007,
+    "12M": 3.361
    }
   },
   "USD": {
    "src": "US T-bill",
-   "date": "2026-11-16",
+   "date": "2026-11-17",
    "basis": 365,
    "r": {
-    "1M": 4.02,
-    "3M": 4.26,
-    "6M": 4.46,
-    "12M": 4.6
+    "1M": 3.99,
+    "3M": 4.25,
+    "6M": 4.45,
+    "12M": 4.57
    }
   },
   "PLN": {
@@ -565,7 +565,7 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-11-17",
+  "asOf": "2026-11-18",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
    {
@@ -634,7 +634,7 @@
     "event": "Inflace HICP – konečný údaj (říjen)",
     "consensus": "4,0 % r/r",
     "previous": "4,0 % r/r",
-    "actual": "",
+    "actual": "4,0 % r/r (jádro 2,6 %)",
     "importance": 2,
     "why": "Potvrzení vysoké inflace drží ve hře prosincové zvýšení sazeb ECB a podporuje euro."
    },
@@ -733,7 +733,7 @@
  },
  "summary": {
   "asOf": "2026-11-18",
-  "text": "Koruna drží 24,39 za euro (fixing ECB 24,387), ráno jí pomohl levnější plyn, euro je znovu pod 1,10 USD. Nvidia překonala odhady a uklidnila trhy; ve 20:00 zápis FOMC rozhodne, zda dolar dál posílí."
+  "text": "Koruna drží 24,39 za euro (kurz ČNB 24,385), k dolaru je slabší na 22,23 Kč. Waller z Fedu zmínil prosincové zvýšení o půl bodu; ve 20:00 zápis FOMC může dolar dál posílit."
  },
  "outlook": {
   "asOf": "2026-10-14",
