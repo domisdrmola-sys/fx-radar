@@ -226,6 +226,15 @@
    ],
    "PLN/CZK": [
     {
+     "source": "Forex Club",
+     "currency": "PLN",
+     "title": "Zlotý pod tlakem jestřábího Fedu, RPP sazby nehne",
+     "url": "https://forexclub.pl/kurs-zlotego-pod-presja-fed-dolar-za-401-zl-euro-po-442-zl/",
+     "summary": "Dolar se drží nad 4,01 zlotého a euro kolem 4,41–4,42 PLN, protože trh plně oceňuje prosincové zvýšení sazeb Fedu. Člen RPP Dąbrowski čeká stabilní polské sazby nejméně jedno až dvě čtvrtletí.",
+     "why": "Rozevírající se rozdíl sazeb mezi Fedem a NBP oslabuje zlotý, což u PLN/CZK spíše podporuje korunu.",
+     "published": "2026-11-19"
+    },
+    {
      "source": "ČSOB Dealing / Kurzy.cz",
      "currency": "CZK",
      "title": "Koruna se drží u 24,40 za euro, domácí kalendář je prázdný",
@@ -287,15 +296,6 @@
      "summary": "Index očekávání ZEW v Německu v listopadu stoupl na 35,6 z 28,1 (odhad kolem 28), hodnocení současné situace se zlepšilo na −33,2. Za celou eurozónu se očekávání zvedla na 26,5 z 18,5.",
      "why": "Lepší nálada v Německu mírně podporuje euro i středoevropské měny, sestupný trend EUR/USD ale zatím nezvrátila.",
      "published": "2026-11-17T11:33"
-    },
-    {
-     "source": "NBP / Finwire",
-     "currency": "PLN",
-     "title": "Polská jádrová inflace v říjnu klesla na 2,9 %",
-     "url": "https://finwire.pl/artykuly/inflacja-bazowa-pazdziernik-2026-nbp",
-     "summary": "Jádrová inflace bez potravin a energií podle NBP klesla v říjnu na 2,9 % r/r z 3,1 %, celková inflace činila 3,5 %. Výsledek odpovídal očekávání ekonomů.",
-     "why": "Zpomalující inflace dává NBP prostor k uvolnění, což zlotý vůči koruně spíš oslabuje.",
-     "published": "2026-11-16T14:00"
     }
    ]
   }
@@ -723,7 +723,7 @@
  },
  "summary": {
   "asOf": "2026-11-19",
-  "text": "Koruna mírně oslabila, ČNB ji fixovala na 24,425 Kč/EUR (včera 24,385), k dolaru 22,22 Kč. Index Philadelphia Fed nečekaně spadl na 6,3 (odhad ~20), což může přibrzdit dolar; rostoucí ceny ale drží sázky na zvýšení sazeb Fedu."
+  "text": "Koruna mírně oslabila, ECB ji fixovala na 24,427 Kč/EUR (včera 24,386), eurodolar na 1,099. Slabý index Philadelphia Fed (6,3 vs. ~20) dolar přibrzdil, trh ale dál plně počítá s prosincovým zvýšením sazeb Fedu."
  },
  "outlook": {
   "asOf": "2026-10-14",
