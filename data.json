@@ -78,6 +78,15 @@
    ],
    "USD/CZK": [
     {
+     "source": "Newsquawk",
+     "currency": "USD",
+     "title": "Index Philadelphia Fed spadl na půlroční minimum, ceny ale rostou",
+     "url": "https://www.newsquawk.com/headlines/us-philadelphia-fed-manufacturing-index-nov-63-vs-exp-20-prev-209",
+     "summary": "Listopadový index průmyslu Philadelphia Fed klesl na 6,3 z 20,9 při očekávání kolem 20, složka placených cen ale vyskočila na 58,2. Týdenní žádosti o podporu v nezaměstnanosti vzrostly na 203 tis. (odhad 197 tis.).",
+     "why": "Slabší aktivita může přibrzdit sílu dolaru, rostoucí ceny ale drží sázky na prosincové zvýšení sazeb Fedu.",
+     "published": "2026-11-19T14:50"
+    },
+    {
      "source": "ČSOB Dealing / Kurzy.cz",
      "currency": "CZK",
      "title": "Koruna se drží u 24,40 za euro, domácí kalendář je prázdný",
@@ -139,18 +148,18 @@
      "summary": "EUR/USD včera krátce kleslo k 1,097, nejníž asi za 19 měsíců, večer se vrátilo nad 1,102 a ráno je opět pod 1,10. Ve 20:00 vyjde zápis z jednání Fedu.",
      "why": "Potvrdí-li zápis prosincové zvýšení sazeb, dolar může dál posilovat vůči euru i koruně.",
      "published": "2026-11-18T08:46"
-    },
-    {
-     "source": "ČSOB Dealing / Kurzy.cz",
-     "currency": "CZK",
-     "title": "Koruně krátce ulevil levnější plyn, dolar ji ale brzdí",
-     "url": "https://zpravy.kurzy.cz/882180-koruna-si-nacas-vydechla-diky-levnejsimu-plynu-silny-dolar-a-vysoke-sazby-v-usa-ale-korune/",
-     "summary": "Evropský plyn zlevnil díky mírnější předpovědi počasí a rekordním zásilkám LNG, což koruně na začátku týdne pomohlo. Silný dolar a vysoké americké sazby ale na středoevropské měny dál tlačí.",
-     "why": "Levnější energie podporují CZK a PLN, silný dolar je naopak oslabuje.",
-     "published": "2026-11-18T08:45"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "Newsquawk",
+     "currency": "USD",
+     "title": "Index Philadelphia Fed spadl na půlroční minimum, ceny ale rostou",
+     "url": "https://www.newsquawk.com/headlines/us-philadelphia-fed-manufacturing-index-nov-63-vs-exp-20-prev-209",
+     "summary": "Listopadový index průmyslu Philadelphia Fed klesl na 6,3 z 20,9 při očekávání kolem 20, složka placených cen ale vyskočila na 58,2. Týdenní žádosti o podporu v nezaměstnanosti vzrostly na 203 tis. (odhad 197 tis.).",
+     "why": "Slabší aktivita může přibrzdit sílu dolaru, rostoucí ceny ale drží sázky na prosincové zvýšení sazeb Fedu.",
+     "published": "2026-11-19T14:50"
+    },
     {
      "source": "ČSOB Dealing / Kurzy.cz",
      "currency": "USD",
@@ -213,15 +222,6 @@
      "summary": "EUR/USD včera krátce kleslo k 1,097, nejníž asi za 19 měsíců, večer se vrátilo nad 1,102 a ráno je opět pod 1,10. Ve 20:00 vyjde zápis z jednání Fedu.",
      "why": "Potvrdí-li zápis prosincové zvýšení sazeb, dolar může dál posilovat vůči euru i koruně.",
      "published": "2026-11-18T08:46"
-    },
-    {
-     "source": "Yahoo Finance",
-     "currency": "USD",
-     "title": "Nvidia překonala odhady a zvedla výhled",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-shares-rise-earnings-beat-221818886.html",
-     "summary": "Tržby Nvidie za čtvrtletí stouply o 103 % na 115,8 mld. USD (čekalo se asi 109 mld.) a výhled na další čtvrtletí 130 mld. USD převýšil odhady. Akcie po uzavření trhu přidaly zhruba 2 %.",
-     "why": "Uklidnění na akciových trzích snižuje poptávku po bezpečném dolaru a pomáhá rizikovějším měnám jako CZK a PLN.",
-     "published": "2026-11-17T23:18"
     }
    ],
    "PLN/CZK": [
@@ -362,49 +362,49 @@
   ]
  },
  "cnb": {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.385,
-   "USD": 22.23,
-   "PLN": 5.528,
-   "HUF100": 6.622
+   "EUR": 24.425,
+   "USD": 22.219,
+   "PLN": 5.529,
+   "HUF100": 6.61
   }
  },
  "mm": {
-  "asOf": "2026-11-18",
+  "asOf": "2026-11-19",
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
-   "date": "2026-11-10",
+   "date": "2026-11-11",
    "basis": 360,
    "r": {
     "1M": 4.07,
     "3M": 4.1,
-    "6M": 4.17,
-    "12M": 4.34
+    "6M": 4.18,
+    "12M": 4.36
    }
   },
   "EUR": {
    "src": "EURIBOR",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "basis": 360,
    "r": {
-    "1M": 2.483,
-    "3M": 2.784,
-    "6M": 3.007,
-    "12M": 3.361
+    "1M": 2.519,
+    "3M": 2.825,
+    "6M": 3.016,
+    "12M": 3.351
    }
   },
   "USD": {
    "src": "US T-bill",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "basis": 365,
    "r": {
-    "1M": 3.99,
-    "3M": 4.25,
-    "6M": 4.45,
-    "12M": 4.57
+    "1M": 3.98,
+    "3M": 4.26,
+    "6M": 4.47,
+    "12M": 4.6
    }
   },
   "PLN": {
@@ -623,8 +623,8 @@
     "country": "US",
     "event": "Žádosti o podporu v nezaměstnanosti (týdenní)",
     "consensus": "198 tis.",
-    "previous": "200 tis.",
-    "actual": "",
+    "previous": "202 tis. (revize)",
+    "actual": "203 tis.",
     "importance": 1,
     "why": ""
    },
@@ -634,7 +634,7 @@
     "event": "Index Philadelphia Fed (listopad)",
     "consensus": "20,6",
     "previous": "20,9",
-    "actual": "",
+    "actual": "6,3 (ceny vstupů 58,2)",
     "importance": 2,
     "why": "Silnější výsledek obvykle posílí dolar vůči euru i koruně."
    },
@@ -723,7 +723,7 @@
  },
  "summary": {
   "asOf": "2026-11-19",
-  "text": "Koruna drží 24,39 za euro (fixing ECB 24,386), k dolaru je kvůli jeho síle kolem 22,2 Kč. Dnes ve 14:30 vyjde index Philadelphia Fed; silné číslo by eurodolar stlačilo k 1,095 a korunu vůči dolaru dál oslabilo."
+  "text": "Koruna mírně oslabila, ČNB ji fixovala na 24,425 Kč/EUR (včera 24,385), k dolaru 22,22 Kč. Index Philadelphia Fed nečekaně spadl na 6,3 (odhad ~20), což může přibrzdit dolar; rostoucí ceny ale drží sázky na zvýšení sazeb Fedu."
  },
  "outlook": {
   "asOf": "2026-10-14",
