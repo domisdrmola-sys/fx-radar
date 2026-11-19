@@ -78,6 +78,24 @@
    ],
    "USD/CZK": [
     {
+     "source": "investingLive",
+     "currency": "USD",
+     "title": "Goolsbee: inflace je stále výrazně nad cílem Fedu",
+     "url": "https://investinglive.com/central-banks/fed-s-goolsbee-job-market-is-stable-but-inflation-is-way-higher-than-fed-s-2-target/",
+     "summary": "Šéf chicagského Fedu Goolsbee řekl, že trh práce je stabilní a poptávka silná, inflace je ale „mnohem výš“ než 2% cíl a dopad cel je trvalejší, než se čekalo. Trh přitom snížil šanci na prosincové zvýšení o 50 bb asi na 6 %.",
+     "why": "Potvrzuje očekávání prosincového zvýšení sazeb Fedu o 25 bb, což drží dolar silný vůči euru i koruně.",
+     "published": "2026-11-19"
+    },
+    {
+     "source": "Reuters (Investing.com)",
+     "currency": "USD",
+     "title": "Jefferson: boom AI zatím zvyšuje poptávku i inflaci",
+     "url": "https://investing.com/news/economy-news/feds-jefferson-says-ai-boosting-inflation-productivity-impact-possible-in-the-future-5039268",
+     "summary": "Místopředseda Fedu Jefferson na konferenci brazilské centrální banky uvedl, že výstavba AI infrastruktury nyní tlačí nahoru poptávku a inflaci; úleva díky vyšší produktivitě přijde až v budoucnu. K sazbám se nevyjádřil.",
+     "why": "Další jestřábí signál z Fedu podporuje dolar a tlačí EUR/USD k 19měsíčním minimům.",
+     "published": "2026-11-19"
+    },
+    {
      "source": "Newsquawk",
      "currency": "USD",
      "title": "Index Philadelphia Fed spadl na půlroční minimum, ceny ale rostou",
@@ -130,27 +148,27 @@
      "summary": "Dolar dál posiluje, eurodolar se drží pod 1,10 a forint ztratil 0,4 % po holubičím tónu maďarské centrální banky, zlotý 0,2 %. Koruna je odolnější a drží se pod 24,40 za euro; Waller z Fedu znovu zmínil možné prosincové zvýšení o 50 bb.",
      "why": "Rostoucí rozdíl sazeb Fed–ECB podporuje dolar, koruna k euru zůstává stabilní, ale k dolaru je pod tlakem.",
      "published": "2026-11-18T16:28"
-    },
-    {
-     "source": "CNBC",
-     "currency": "USD",
-     "title": "Waller z Fedu volá po zvýšení sazeb o půl bodu",
-     "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
-     "summary": "Guvernér Fedu Christopher Waller řekl, že na prosincovém zasedání bude nejspíš nutné zvýšit sazby o 50 bb, protože inflace se podle něj zhoršuje a šíří. Futures už plně oceňují prosincové zvýšení o 25 bb a další krok v lednu.",
-     "why": "Úvahy o větším kroku Fedu posilují dolar a tlačí na euro i středoevropské měny.",
-     "published": "2026-11-18T13:20"
-    },
-    {
-     "source": "ČSOB Dealing / Kurzy.cz",
-     "currency": "USD",
-     "title": "Eurodolar znovu pod 1,10, trh čeká na zápis Fedu",
-     "url": "https://zpravy.kurzy.cz/882179-eurodolar-sklouzl-pod-1-10-trh-si-peclive-precte-podrobny-zapis-z-posledniho-sezeni-fedu/",
-     "summary": "EUR/USD včera krátce kleslo k 1,097, nejníž asi za 19 měsíců, večer se vrátilo nad 1,102 a ráno je opět pod 1,10. Ve 20:00 vyjde zápis z jednání Fedu.",
-     "why": "Potvrdí-li zápis prosincové zvýšení sazeb, dolar může dál posilovat vůči euru i koruně.",
-     "published": "2026-11-18T08:46"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "investingLive",
+     "currency": "USD",
+     "title": "Goolsbee: inflace je stále výrazně nad cílem Fedu",
+     "url": "https://investinglive.com/central-banks/fed-s-goolsbee-job-market-is-stable-but-inflation-is-way-higher-than-fed-s-2-target/",
+     "summary": "Šéf chicagského Fedu Goolsbee řekl, že trh práce je stabilní a poptávka silná, inflace je ale „mnohem výš“ než 2% cíl a dopad cel je trvalejší, než se čekalo. Trh přitom snížil šanci na prosincové zvýšení o 50 bb asi na 6 %.",
+     "why": "Potvrzuje očekávání prosincového zvýšení sazeb Fedu o 25 bb, což drží dolar silný vůči euru i koruně.",
+     "published": "2026-11-19"
+    },
+    {
+     "source": "Reuters (Investing.com)",
+     "currency": "USD",
+     "title": "Jefferson: boom AI zatím zvyšuje poptávku i inflaci",
+     "url": "https://investing.com/news/economy-news/feds-jefferson-says-ai-boosting-inflation-productivity-impact-possible-in-the-future-5039268",
+     "summary": "Místopředseda Fedu Jefferson na konferenci brazilské centrální banky uvedl, že výstavba AI infrastruktury nyní tlačí nahoru poptávku a inflaci; úleva díky vyšší produktivitě přijde až v budoucnu. K sazbám se nevyjádřil.",
+     "why": "Další jestřábí signál z Fedu podporuje dolar a tlačí EUR/USD k 19měsíčním minimům.",
+     "published": "2026-11-19"
+    },
     {
      "source": "Newsquawk",
      "currency": "USD",
@@ -204,24 +222,6 @@
      "summary": "Guvernér Fedu Christopher Waller řekl, že na prosincovém zasedání bude nejspíš nutné zvýšit sazby o 50 bb, protože inflace se podle něj zhoršuje a šíří. Futures už plně oceňují prosincové zvýšení o 25 bb a další krok v lednu.",
      "why": "Úvahy o větším kroku Fedu posilují dolar a tlačí na euro i středoevropské měny.",
      "published": "2026-11-18T13:20"
-    },
-    {
-     "source": "ActionForex / Eurostat",
-     "currency": "EUR",
-     "title": "Inflace v eurozóně potvrzena na 4 %, jádro revidováno nahoru",
-     "url": "https://www.actionforex.com/live-comments/661283-eurozone-inflation-confirmed-at-4-0-as-energy-surges-core-cpi-revised-higher/",
-     "summary": "Eurostat potvrdil říjnovou inflaci v eurozóně na 4,0 % (září 3,8 %), energie zdražily o 21 %. Jádrová inflace byla revidována z 2,5 na 2,6 %, služby zrychlily na 3,3 %.",
-     "why": "Vyšší jádro podporuje prosincové zvýšení sazeb ECB a dává euru oporu vůči dolaru.",
-     "published": "2026-11-18T12:20"
-    },
-    {
-     "source": "ČSOB Dealing / Kurzy.cz",
-     "currency": "USD",
-     "title": "Eurodolar znovu pod 1,10, trh čeká na zápis Fedu",
-     "url": "https://zpravy.kurzy.cz/882179-eurodolar-sklouzl-pod-1-10-trh-si-peclive-precte-podrobny-zapis-z-posledniho-sezeni-fedu/",
-     "summary": "EUR/USD včera krátce kleslo k 1,097, nejníž asi za 19 měsíců, večer se vrátilo nad 1,102 a ráno je opět pod 1,10. Ve 20:00 vyjde zápis z jednání Fedu.",
-     "why": "Potvrdí-li zápis prosincové zvýšení sazeb, dolar může dál posilovat vůči euru i koruně.",
-     "published": "2026-11-18T08:46"
     }
    ],
    "PLN/CZK": [
@@ -723,7 +723,7 @@
  },
  "summary": {
   "asOf": "2026-11-19",
-  "text": "Koruna mírně oslabila, ECB ji fixovala na 24,427 Kč/EUR (včera 24,386), eurodolar na 1,099. Slabý index Philadelphia Fed (6,3 vs. ~20) dolar přibrzdil, trh ale dál plně počítá s prosincovým zvýšením sazeb Fedu."
+  "text": "Koruna mírně oslabila, ECB ji fixovala na 24,427 Kč/EUR (včera 24,386), eurodolar na 1,099. Goolsbee a Jefferson z Fedu varovali před vysokou inflací, trh tak dál téměř jistě čeká prosincové zvýšení sazeb Fedu, což drží dolar silný."
  },
  "outlook": {
   "asOf": "2026-10-14",
