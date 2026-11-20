@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "ČTK / České noviny",
+     "currency": "CZK",
+     "title": "Koruna poprvé překročila 24,45 za euro, burza klesla",
+     "url": "https://www.ceskenoviny.cz/zpravy/-koruna-nepatrne-oslabila-k-euru-i-dolaru-ztracela-take-prazska-burza/2904559",
+     "summary": "Koruna v pátek oslabila o 4 haléře na 24,47 Kč/EUR a o 3 haléře na 22,28 Kč/USD; index PX ztratil 2,56 % a za týden 3,15 %. Podle Purple Trading za tím stojí negativní nálada na trzích a silný dolar.",
+     "why": "Prolomení hranice 24,45 Kč/EUR otevírá prostor k dalšímu oslabení koruny vůči euru i dolaru.",
+     "published": "2026-11-20T17:25"
+    },
+    {
      "source": "CNBC",
      "currency": "EUR",
      "title": "Lagardeová se loučila projevem o investicích, sazby nezmínila",
@@ -65,18 +74,36 @@
      "summary": "Podle zápisu z říjnového zasedání téměř všichni členové FOMC považují další zvýšení sazeb za pravděpodobně vhodné a několik z nich připustilo v prosinci i krok větší než 0,25 b. Rozmach AI označili za významné inflační riziko.",
      "why": "Jestřábí tón byl z velké části v cenách, potvrzuje ale prosincové zvýšení a podporu silného dolaru vůči euru i koruně.",
      "published": "2026-11-18T20:00"
-    },
-    {
-     "source": "FXstreet.cz (Komerční banka)",
-     "currency": "CZK",
-     "title": "Silný dolar tlačí na středoevropské měny, koruna drží pod 24,40",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-210755.html",
-     "summary": "Dolar dál posiluje, eurodolar se drží pod 1,10 a forint ztratil 0,4 % po holubičím tónu maďarské centrální banky, zlotý 0,2 %. Koruna je odolnější a drží se pod 24,40 za euro; Waller z Fedu znovu zmínil možné prosincové zvýšení o 50 bb.",
-     "why": "Rostoucí rozdíl sazeb Fed–ECB podporuje dolar, koruna k euru zůstává stabilní, ale k dolaru je pod tlakem.",
-     "published": "2026-11-18T16:28"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "ČTK / České noviny",
+     "currency": "CZK",
+     "title": "Koruna poprvé překročila 24,45 za euro, burza klesla",
+     "url": "https://www.ceskenoviny.cz/zpravy/-koruna-nepatrne-oslabila-k-euru-i-dolaru-ztracela-take-prazska-burza/2904559",
+     "summary": "Koruna v pátek oslabila o 4 haléře na 24,47 Kč/EUR a o 3 haléře na 22,28 Kč/USD; index PX ztratil 2,56 % a za týden 3,15 %. Podle Purple Trading za tím stojí negativní nálada na trzích a silný dolar.",
+     "why": "Prolomení hranice 24,45 Kč/EUR otevírá prostor k dalšímu oslabení koruny vůči euru i dolaru.",
+     "published": "2026-11-20T17:25"
+    },
+    {
+     "source": "Federal Reserve",
+     "currency": "USD",
+     "title": "Cooková: inflace je nepřijatelně vysoká, čekání je riskantní",
+     "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm",
+     "summary": "Guvernérka Fedu Lisa Cooková v Santiagu označila inflaci za nepřijatelně vysokou a finanční podmínky za příliš uvolněné. Varovala, že otálení se zvyšováním sazeb by si později vyžádalo větší kroky.",
+     "why": "Další jestřábí hlas Fedu podporuje sázky na prosincové zvýšení a silný dolar vůči euru i koruně.",
+     "published": "2026-11-20"
+    },
+    {
+     "source": "Kitco",
+     "currency": "USD",
+     "title": "Spotřebitelská nálada v USA na tříměsíčním maximu, inflační očekávání klesla",
+     "url": "https://www.kitco.com/news/article/2026-11-20/gold-price-trades-near-3568oz-after-final-consumer-sentiment-rises-515",
+     "summary": "Konečný index Michiganské univerzity za listopad vzrostl na 51,5 bodu (konsenzus 51,5, říjen 48,0). Roční inflační očekávání klesla ze 4,7 % na 3,7 %, dlouhodobá z 3,5 % na 3,3 %.",
+     "why": "Nižší inflační očekávání mírně tlumí jestřábí sázky na Fed, a tím i růst dolaru.",
+     "published": "2026-11-20"
+    },
     {
      "source": "investingLive",
      "currency": "USD",
@@ -114,39 +141,12 @@
      "published": "2026-11-19T14:50"
     },
     {
-     "source": "ČSOB Dealing / Kurzy.cz",
-     "currency": "CZK",
-     "title": "Koruna se drží u 24,40 za euro, domácí kalendář je prázdný",
-     "url": "https://zpravy.kurzy.cz/882341-koruna-okupuje-uroven-24-40-eur-czk/",
-     "summary": "Koruna se pohybuje kolem 24,40 EUR/CZK pod tlakem silného dolaru. Domácí data do konce týdne nevycházejí, takže ji budou řídit hlavně eurodolar a ceny evropského plynu.",
-     "why": "Bez domácích impulsů zůstává EUR/CZK v úzkém pásmu a další pohyb určí dolar a energie.",
-     "published": "2026-11-19T08:34"
-    },
-    {
-     "source": "ČSOB Dealing / Kurzy.cz",
-     "currency": "USD",
-     "title": "Dva členové Fedu chtěli v prosinci zvýšit o půl bodu",
-     "url": "https://zpravy.kurzy.cz/882338-dva-hlasy-pro-50bps-v-prosinci-zapis-ze-zasedani-fedu/",
-     "summary": "Ze zápisu Fedu plyne, že téměř všichni čekají další zvýšení sazeb a dva členové podporují v prosinci krok o 0,5 b. Eurodolar stojí u 1,097; dnes ve 14:30 vyjde index Philadelphia Fed.",
-     "why": "Silný index z Philadelphie by mohl eurodolar stlačit k 1,095 a oslabit korunu vůči dolaru.",
-     "published": "2026-11-19T08:31"
-    },
-    {
      "source": "investingLive",
      "currency": "USD",
      "title": "Goolsbee: inflace je stále výrazně nad cílem Fedu",
      "url": "https://investinglive.com/central-banks/fed-s-goolsbee-job-market-is-stable-but-inflation-is-way-higher-than-fed-s-2-target/",
      "summary": "Šéf chicagského Fedu Goolsbee řekl, že trh práce je stabilní a poptávka silná, inflace je ale „mnohem výš“ než 2% cíl a dopad cel je trvalejší, než se čekalo. Trh přitom snížil šanci na prosincové zvýšení o 50 bb asi na 6 %.",
      "why": "Potvrzuje očekávání prosincového zvýšení sazeb Fedu o 25 bb, což drží dolar silný vůči euru i koruně.",
-     "published": "2026-11-19"
-    },
-    {
-     "source": "Reuters (Investing.com)",
-     "currency": "USD",
-     "title": "Jefferson: boom AI zatím zvyšuje poptávku i inflaci",
-     "url": "https://investing.com/news/economy-news/feds-jefferson-says-ai-boosting-inflation-productivity-impact-possible-in-the-future-5039268",
-     "summary": "Místopředseda Fedu Jefferson na konferenci brazilské centrální banky uvedl, že výstavba AI infrastruktury nyní tlačí nahoru poptávku a inflaci; úleva díky vyšší produktivitě přijde až v budoucnu. K sazbám se nevyjádřil.",
-     "why": "Další jestřábí signál z Fedu podporuje dolar a tlačí EUR/USD k 19měsíčním minimům.",
      "published": "2026-11-19"
     }
    ],
@@ -161,13 +161,22 @@
      "published": "2026-11-20T13:52"
     },
     {
-     "source": "Newsquawk",
-     "currency": "EUR",
-     "title": "Německé ceny výrobců rostou rychleji, než se čekalo",
-     "url": "https://www.newsquawk.com/headlines/german-ppi-oct-mm-14-vs-exp-09-prev-19",
-     "summary": "Ceny výrobců v Německu za říjen vzrostly o 1,4 % m/m (odhad 0,9 %) a meziročně zrychlily na 8,1 % ze 6,7 % (odhad 7,2 %).",
-     "why": "Silné cenové tlaky v Německu podporují prosincové zvýšení sazeb ECB a tím i euro.",
-     "published": "2026-11-20T08:20"
+     "source": "Federal Reserve",
+     "currency": "USD",
+     "title": "Cooková: inflace je nepřijatelně vysoká, čekání je riskantní",
+     "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm",
+     "summary": "Guvernérka Fedu Lisa Cooková v Santiagu označila inflaci za nepřijatelně vysokou a finanční podmínky za příliš uvolněné. Varovala, že otálení se zvyšováním sazeb by si později vyžádalo větší kroky.",
+     "why": "Další jestřábí hlas Fedu podporuje sázky na prosincové zvýšení a silný dolar vůči euru i koruně.",
+     "published": "2026-11-20"
+    },
+    {
+     "source": "Kitco",
+     "currency": "USD",
+     "title": "Spotřebitelská nálada v USA na tříměsíčním maximu, inflační očekávání klesla",
+     "url": "https://www.kitco.com/news/article/2026-11-20/gold-price-trades-near-3568oz-after-final-consumer-sentiment-rises-515",
+     "summary": "Konečný index Michiganské univerzity za listopad vzrostl na 51,5 bodu (konsenzus 51,5, říjen 48,0). Roční inflační očekávání klesla ze 4,7 % na 3,7 %, dlouhodobá z 3,5 % na 3,3 %.",
+     "why": "Nižší inflační očekávání mírně tlumí jestřábí sázky na Fed, a tím i růst dolaru.",
+     "published": "2026-11-20"
     },
     {
      "source": "investingLive",
@@ -189,30 +198,21 @@
     },
     {
      "source": "Newsquawk",
+     "currency": "EUR",
+     "title": "Německé ceny výrobců rostou rychleji, než se čekalo",
+     "url": "https://www.newsquawk.com/headlines/german-ppi-oct-mm-14-vs-exp-09-prev-19",
+     "summary": "Ceny výrobců v Německu za říjen vzrostly o 1,4 % m/m (odhad 0,9 %) a meziročně zrychlily na 8,1 % ze 6,7 % (odhad 7,2 %).",
+     "why": "Silné cenové tlaky v Německu podporují prosincové zvýšení sazeb ECB a tím i euro.",
+     "published": "2026-11-20T08:20"
+    },
+    {
+     "source": "Newsquawk",
      "currency": "USD",
      "title": "Index Philadelphia Fed spadl na půlroční minimum, ceny ale rostou",
      "url": "https://www.newsquawk.com/headlines/us-philadelphia-fed-manufacturing-index-nov-63-vs-exp-20-prev-209",
      "summary": "Listopadový index průmyslu Philadelphia Fed klesl na 6,3 z 20,9 při očekávání kolem 20, složka placených cen ale vyskočila na 58,2. Týdenní žádosti o podporu v nezaměstnanosti vzrostly na 203 tis. (odhad 197 tis.).",
      "why": "Slabší aktivita může přibrzdit sílu dolaru, rostoucí ceny ale drží sázky na prosincové zvýšení sazeb Fedu.",
      "published": "2026-11-19T14:50"
-    },
-    {
-     "source": "ČSOB Dealing / Kurzy.cz",
-     "currency": "USD",
-     "title": "Dva členové Fedu chtěli v prosinci zvýšit o půl bodu",
-     "url": "https://zpravy.kurzy.cz/882338-dva-hlasy-pro-50bps-v-prosinci-zapis-ze-zasedani-fedu/",
-     "summary": "Ze zápisu Fedu plyne, že téměř všichni čekají další zvýšení sazeb a dva členové podporují v prosinci krok o 0,5 b. Eurodolar stojí u 1,097; dnes ve 14:30 vyjde index Philadelphia Fed.",
-     "why": "Silný index z Philadelphie by mohl eurodolar stlačit k 1,095 a oslabit korunu vůči dolaru.",
-     "published": "2026-11-19T08:31"
-    },
-    {
-     "source": "CNBC",
-     "currency": "USD",
-     "title": "Dolar se drží u nejvyššího kurzu za 19 měsíců",
-     "url": "https://www.cnbc.com/2026/11/19/us-dollar-currency-bonds-eu-asia-price.html",
-     "summary": "Dolarový index stál v asijském obchodování na 103,81, blízko maxima od dubna 2025, eurodolar u 1,0977. Podporu mu dal zápis Fedu i výrok guvernéra Wallera, že by Fed měl v prosinci zvýšit o 50 bb nebo naznačit rychlejší zvyšování v roce 2027.",
-     "why": "Vyhlídka na další růst amerických sazeb drží eurodolar u minim a dolar silný i vůči koruně.",
-     "published": "2026-11-19T04:24"
     },
     {
      "source": "investingLive",
@@ -244,15 +244,6 @@
      "published": "2026-11-20"
     },
     {
-     "source": "ČSOB Dealing / Kurzy.cz",
-     "currency": "CZK",
-     "title": "Koruna se drží u 24,40 za euro, domácí kalendář je prázdný",
-     "url": "https://zpravy.kurzy.cz/882341-koruna-okupuje-uroven-24-40-eur-czk/",
-     "summary": "Koruna se pohybuje kolem 24,40 EUR/CZK pod tlakem silného dolaru. Domácí data do konce týdne nevycházejí, takže ji budou řídit hlavně eurodolar a ceny evropského plynu.",
-     "why": "Bez domácích impulsů zůstává EUR/CZK v úzkém pásmu a další pohyb určí dolar a energie.",
-     "published": "2026-11-19T08:34"
-    },
-    {
      "source": "Forex Club",
      "currency": "PLN",
      "title": "Zlotý pod tlakem jestřábího Fedu, RPP sazby nehne",
@@ -260,6 +251,15 @@
      "summary": "Dolar se drží nad 4,01 zlotého a euro kolem 4,41–4,42 PLN, protože trh plně oceňuje prosincové zvýšení sazeb Fedu. Člen RPP Dąbrowski čeká stabilní polské sazby nejméně jedno až dvě čtvrtletí.",
      "why": "Rozevírající se rozdíl sazeb mezi Fedem a NBP oslabuje zlotý, což u PLN/CZK spíše podporuje korunu.",
      "published": "2026-11-19"
+    },
+    {
+     "source": "ČSOB Dealing / Kurzy.cz",
+     "currency": "CZK",
+     "title": "Koruna se drží u 24,40 za euro, domácí kalendář je prázdný",
+     "url": "https://zpravy.kurzy.cz/882341-koruna-okupuje-uroven-24-40-eur-czk/",
+     "summary": "Koruna se pohybuje kolem 24,40 EUR/CZK pod tlakem silného dolaru. Domácí data do konce týdne nevycházejí, takže ji budou řídit hlavně eurodolar a ceny evropského plynu.",
+     "why": "Bez domácích impulsů zůstává EUR/CZK v úzkém pásmu a další pohyb určí dolar a energie.",
+     "published": "2026-11-19T08:34"
     },
     {
      "source": "FXstreet.cz (Komerční banka)",
@@ -624,7 +624,7 @@
     "event": "Projev guvernéra Fedu Wallera",
     "consensus": "",
     "previous": "",
-    "actual": "",
+    "actual": "úvodní slovo na College Fed Challenge, bez komentáře k sazbám",
     "importance": 2,
     "why": "Další volání po razantním zvýšení sazeb by posílilo dolar."
    },
@@ -634,7 +634,7 @@
     "event": "Spotřebitelská důvěra Michiganské univerzity – konečná (listopad)",
     "consensus": "51,5",
     "previous": "51,0",
-    "actual": "",
+    "actual": "51,5 (inflační očekávání na 1 rok 3,7 %)",
     "importance": 1,
     "why": ""
    },
@@ -723,7 +723,7 @@
  },
  "summary": {
   "asOf": "2026-11-20",
-  "text": "Koruna dál slábne, ČNB dnes stanovila 24,47 Kč/EUR (včera 24,43) a dolar 22,26 Kč. Rychlejší růst německých cen výrobců (8,1 % r/r) drží prosincové zvýšení ECB, dolar ale táhnou jestřábí signály Fedu."
+  "text": "Koruna se v pátek poprvé dostala přes 24,45 – fixing ECB 24,469 Kč/EUR (před týdnem 24,42), dolar 22,28 Kč. Jestřábí Cooková drží sázky na prosincové zvýšení Fedu, příští týden rozhodnou PMI (23. 11.) a PCE (25. 11.)."
  },
  "outlook": {
   "asOf": "2026-10-14",
