@@ -22,6 +22,15 @@
      "published": "2026-11-23"
     },
     {
+     "source": "kurzy.cz",
+     "currency": "CZK",
+     "title": "Návrat Huanga do Nvidie zvedl trhy i dolar, koruna k dolaru slábne",
+     "url": "https://zpravy.kurzy.cz/882866-souhrn-23-11-nvidia-cvici-s-trhy-po-cernem-patku-prichazi-svetle-pondeli-bcpp-se-take-svezla/",
+     "summary": "Akcie Nvidie po návratu Jensena Huanga do čela firmy prudce posílily a rozjely zotavení amerických i evropských trhů. Koruna podle souhrnu oslabila k dolaru a k euru mírně zpevnila, Brent klesl pod 88 USD.",
+     "why": "Návrat investorů do amerických aktiv podporuje dolar, takže USD/CZK roste, zatímco EUR/CZK zůstává stabilní.",
+     "published": "2026-11-23T17:09"
+    },
+    {
      "source": "ActionForex / S&P Global",
      "currency": "EUR",
      "title": "PMI eurozóny stagnuje, Německo roste nejrychleji za čtyři roky",
@@ -65,18 +74,18 @@
      "summary": "Šéfka ECB na frankfurtském bankovním kongresu vyzvala, aby fondy EU nesly první ztráty u čipových továren a datových center. K měnové politice ani sazbám se nevyjádřila.",
      "why": "Bez nového signálu k prosinci zůstává euro závislé na datech a na síle dolaru.",
      "published": "2026-11-20T13:52"
-    },
-    {
-     "source": "Newsquawk",
-     "currency": "EUR",
-     "title": "Německé ceny výrobců rostou rychleji, než se čekalo",
-     "url": "https://www.newsquawk.com/headlines/german-ppi-oct-mm-14-vs-exp-09-prev-19",
-     "summary": "Ceny výrobců v Německu za říjen vzrostly o 1,4 % m/m (odhad 0,9 %) a meziročně zrychlily na 8,1 % ze 6,7 % (odhad 7,2 %).",
-     "why": "Silné cenové tlaky v Německu podporují prosincové zvýšení sazeb ECB a tím i euro.",
-     "published": "2026-11-20T08:20"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "FXStreet",
+     "currency": "EUR",
+     "title": "Euro nejníž od dubna 2025, Fed s prosincovým zvýšením téměř jistě",
+     "url": "https://www.fxstreet.com/news/euro-slides-to-lowest-level-since-april-2025-as-nvidia-led-stock-rally-lifts-sentiment-202611231606",
+     "summary": "EUR/USD kleslo k 1,0897 (−0,6 %) na nejnižší úroveň od dubna 2025, když rally vedená Nvidií posílila dolar. CME FedWatch ukazuje 99% šanci na zvýšení sazeb Fedu o 25 bb v prosinci; euro tíží i francouzská politika.",
+     "why": "Rozevírající se rozdíl v očekávání sazeb mezi Fedem a ECB tlačí EUR/USD dolů a USD/CZK nahoru.",
+     "published": "2026-11-23"
+    },
     {
      "source": "InstaForex",
      "currency": "USD",
@@ -105,6 +114,24 @@
      "published": "2026-11-23"
     },
     {
+     "source": "Investing.com",
+     "currency": "USD",
+     "title": "Dolarový index na 19měsíčním maximu, technicky překoupený",
+     "url": "https://www.investing.com/news/forex-news/dollar-index-technical-outlook-rally-extended-but-overbought-signals-flash-caution-93CH-5046271",
+     "summary": "Dolarový index vystoupal ke 104,3 (+0,5 %), trh oceňuje asi 70 bb zvýšení sazeb Fedu do září 2027. Goldman Sachs čeká podporu dolaru v příštích měsících a pozdější mírné oslabení, technické ukazatele ale signalizují překoupenost.",
+     "why": "Silný dolar drží EUR/USD u 1,09 a USD/CZK vysoko; překoupenost zvyšuje riziko korekce po středečních datech PCE.",
+     "published": "2026-11-23T20:26"
+    },
+    {
+     "source": "kurzy.cz",
+     "currency": "CZK",
+     "title": "Návrat Huanga do Nvidie zvedl trhy i dolar, koruna k dolaru slábne",
+     "url": "https://zpravy.kurzy.cz/882866-souhrn-23-11-nvidia-cvici-s-trhy-po-cernem-patku-prichazi-svetle-pondeli-bcpp-se-take-svezla/",
+     "summary": "Akcie Nvidie po návratu Jensena Huanga do čela firmy prudce posílily a rozjely zotavení amerických i evropských trhů. Koruna podle souhrnu oslabila k dolaru a k euru mírně zpevnila, Brent klesl pod 88 USD.",
+     "why": "Návrat investorů do amerických aktiv podporuje dolar, takže USD/CZK roste, zatímco EUR/CZK zůstává stabilní.",
+     "published": "2026-11-23T17:09"
+    },
+    {
      "source": "Patria / Kurzy.cz",
      "currency": "CZK",
      "title": "Technologický výprodej dál tlačí na korunu",
@@ -121,36 +148,18 @@
      "summary": "Koruna v pondělí ráno oslabila do blízkosti 24,50 EUR/CZK. Tlačí na ni výprodej technologických akcií v USA a pokles amerických výnosů; domácí kalendář je tento týden prázdný.",
      "why": "Bez domácích dat bude koruna kopírovat globální sentiment, takže další propad akcií může EUR/CZK posunout nad 24,50.",
      "published": "2026-11-23T08:16"
-    },
-    {
-     "source": "Federal Reserve",
-     "currency": "USD",
-     "title": "Cooková: inflace je nepřijatelně vysoká, čekání je riskantní",
-     "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm",
-     "summary": "Guvernérka Fedu Lisa Cooková v Santiagu označila inflaci za nepřijatelně vysokou a finanční podmínky za příliš uvolněné. Varovala, že otálení se zvyšováním sazeb by si později vyžádalo větší kroky.",
-     "why": "Další jestřábí hlas Fedu podporuje sázky na prosincové zvýšení a silný dolar vůči euru i koruně.",
-     "published": "2026-11-20"
-    },
-    {
-     "source": "Kitco",
-     "currency": "USD",
-     "title": "Spotřebitelská nálada v USA na tříměsíčním maximu, inflační očekávání klesla",
-     "url": "https://www.kitco.com/news/article/2026-11-20/gold-price-trades-near-3568oz-after-final-consumer-sentiment-rises-515",
-     "summary": "Konečný index Michiganské univerzity za listopad vzrostl na 51,5 bodu (konsenzus 51,5, říjen 48,0). Roční inflační očekávání klesla ze 4,7 % na 3,7 %, dlouhodobá z 3,5 % na 3,3 %.",
-     "why": "Nižší inflační očekávání mírně tlumí jestřábí sázky na Fed, a tím i růst dolaru.",
-     "published": "2026-11-20"
-    },
-    {
-     "source": "investingLive",
-     "currency": "USD",
-     "title": "Asie v červených číslech, Paulson z Fedu chce dál utahovat",
-     "url": "https://investinglive.com/news/investinglive-asia-pacific-market-news-red-friday-as-asia-s-ai-trade-unravels/",
-     "summary": "Nikkei ztratil asi 4,7 % a KOSPI přes 5 % po obratu v AI akciích na Wall Street, euro se drží kolem 1,098 USD. Šéfka Philadelphia Fed Paulsonová uvedla, že Fed má před sebou ještě další utahování.",
-     "why": "Útlum chuti k riziku spolu s jestřábím Fedem obvykle podpoří dolar a tlačí na CZK a PLN.",
-     "published": "2026-11-20"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "FXStreet",
+     "currency": "EUR",
+     "title": "Euro nejníž od dubna 2025, Fed s prosincovým zvýšením téměř jistě",
+     "url": "https://www.fxstreet.com/news/euro-slides-to-lowest-level-since-april-2025-as-nvidia-led-stock-rally-lifts-sentiment-202611231606",
+     "summary": "EUR/USD kleslo k 1,0897 (−0,6 %) na nejnižší úroveň od dubna 2025, když rally vedená Nvidií posílila dolar. CME FedWatch ukazuje 99% šanci na zvýšení sazeb Fedu o 25 bb v prosinci; euro tíží i francouzská politika.",
+     "why": "Rozevírající se rozdíl v očekávání sazeb mezi Fedem a ECB tlačí EUR/USD dolů a USD/CZK nahoru.",
+     "published": "2026-11-23"
+    },
     {
      "source": "InstaForex",
      "currency": "USD",
@@ -179,6 +188,15 @@
      "published": "2026-11-23"
     },
     {
+     "source": "Investing.com",
+     "currency": "USD",
+     "title": "Dolarový index na 19měsíčním maximu, technicky překoupený",
+     "url": "https://www.investing.com/news/forex-news/dollar-index-technical-outlook-rally-extended-but-overbought-signals-flash-caution-93CH-5046271",
+     "summary": "Dolarový index vystoupal ke 104,3 (+0,5 %), trh oceňuje asi 70 bb zvýšení sazeb Fedu do září 2027. Goldman Sachs čeká podporu dolaru v příštích měsících a pozdější mírné oslabení, technické ukazatele ale signalizují překoupenost.",
+     "why": "Silný dolar drží EUR/USD u 1,09 a USD/CZK vysoko; překoupenost zvyšuje riziko korekce po středečních datech PCE.",
+     "published": "2026-11-23T20:26"
+    },
+    {
      "source": "ActionForex / S&P Global",
      "currency": "EUR",
      "title": "PMI eurozóny stagnuje, Německo roste nejrychleji za čtyři roky",
@@ -203,24 +221,6 @@
      "url": "https://www.kitco.com/news/article/2026-11-20/gold-price-trades-near-3568oz-after-final-consumer-sentiment-rises-515",
      "summary": "Konečný index Michiganské univerzity za listopad vzrostl na 51,5 bodu (konsenzus 51,5, říjen 48,0). Roční inflační očekávání klesla ze 4,7 % na 3,7 %, dlouhodobá z 3,5 % na 3,3 %.",
      "why": "Nižší inflační očekávání mírně tlumí jestřábí sázky na Fed, a tím i růst dolaru.",
-     "published": "2026-11-20"
-    },
-    {
-     "source": "investingLive",
-     "currency": "USD",
-     "title": "Asie v červených číslech, Paulson z Fedu chce dál utahovat",
-     "url": "https://investinglive.com/news/investinglive-asia-pacific-market-news-red-friday-as-asia-s-ai-trade-unravels/",
-     "summary": "Nikkei ztratil asi 4,7 % a KOSPI přes 5 % po obratu v AI akciích na Wall Street, euro se drží kolem 1,098 USD. Šéfka Philadelphia Fed Paulsonová uvedla, že Fed má před sebou ještě další utahování.",
-     "why": "Útlum chuti k riziku spolu s jestřábím Fedem obvykle podpoří dolar a tlačí na CZK a PLN.",
-     "published": "2026-11-20"
-    },
-    {
-     "source": "Investing.com",
-     "currency": "USD",
-     "title": "Dolar míří ke čtvrtému týdennímu zisku v řadě",
-     "url": "https://www.investing.com/news/forex-news/asia-fx-struggles-as-dollar-holds-near-19mth-high-aussie-hits-11month-low-5040667",
-     "summary": "Dolarový index se drží kolem 103,7, blízko nejsilnější úrovně od dubna 2025. Trh podle CME FedWatch přisuzuje prosincovému zvýšení sazeb Fedu o 25 bb pravděpodobnost asi 97 %.",
-     "why": "Téměř jisté zvýšení sazeb Fedu drží eurodolar pod 1,10 a podporuje dolar i vůči koruně.",
      "published": "2026-11-20"
     }
    ],
@@ -663,7 +663,7 @@
  },
  "summary": {
   "asOf": "2026-11-23",
-  "text": "Koruna se drží u 24,46 Kč/EUR (fixing ECB 24,455), EUR/USD kleslo na 1,094. Americké PMI zpomalilo na 54,6, dolar ale zůstává silný; rozhodnou středeční PCE a HDP z USA."
+  "text": "Koruna se drží u 24,46 Kč/EUR (fixing ECB 24,455), dolar ale posílil na 19měsíční maximum a EUR/USD kleslo k 1,09. Trh téměř jistě čeká prosincové zvýšení sazeb Fedu; rozhodnou středeční PCE a HDP z USA."
  },
  "outlook": {
   "asOf": "2026-10-14",
