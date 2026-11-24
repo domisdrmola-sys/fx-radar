@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "FXstreet.cz (Komerční banka)",
+     "currency": "CZK",
+     "title": "Koruna králem regionu, pomohla důvěra i jestřábí ČNB",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-211045.html",
+     "summary": "Koruna během dne posílila z 24,45 pod 24,42 Kč/EUR. Podnikatelská důvěra v ČR vzrostla na 99,4 bodu (z 96,6) a Seidler z ČNB podle Bloombergu řekl, že rada zvažuje další zvýšení sazeb.",
+     "why": "Možnost dalšího zvýšení sazeb ČNB a slabší dolar podporují korunu i vůči euru a dolaru.",
+     "published": "2026-11-24T16:55"
+    },
+    {
      "source": "ActionForex / ifo",
      "currency": "EUR",
      "title": "Německé Ifo nejvýš od jara 2023, průmysl ale ztrácí dech",
@@ -65,18 +74,27 @@
      "summary": "Koruna v pondělí ráno oslabila do blízkosti 24,50 EUR/CZK. Tlačí na ni výprodej technologických akcií v USA a pokles amerických výnosů; domácí kalendář je tento týden prázdný.",
      "why": "Bez domácích dat bude koruna kopírovat globální sentiment, takže další propad akcií může EUR/CZK posunout nad 24,50.",
      "published": "2026-11-23T08:16"
-    },
-    {
-     "source": "Citfin",
-     "currency": "CZK",
-     "title": "Koruna může zůstat pod tlakem i na konci listopadu",
-     "url": "https://www.citfin.cz/ranni-fx-zpravy/czk-muze-zustat-pod-prodejnim-tlakem-i-v-zaveru-listopadu/",
-     "summary": "Citfin čeká tento týden EUR/CZK v pásmu 24,35–24,50 a USD/CZK 22,00–22,50; při dalších výprodejích akcií může koruna oslabit nad 24,50. Klíčová jsou středeční data o PCE inflaci a HDP z USA.",
-     "why": "Rizikový sentiment a americká inflace rozhodnou, zda koruna prolomí 24,50 Kč/EUR a dolar zůstane silný.",
-     "published": "2026-11-23"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "FXstreet.cz (Komerční banka)",
+     "currency": "CZK",
+     "title": "Koruna králem regionu, pomohla důvěra i jestřábí ČNB",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-211045.html",
+     "summary": "Koruna během dne posílila z 24,45 pod 24,42 Kč/EUR. Podnikatelská důvěra v ČR vzrostla na 99,4 bodu (z 96,6) a Seidler z ČNB podle Bloombergu řekl, že rada zvažuje další zvýšení sazeb.",
+     "why": "Možnost dalšího zvýšení sazeb ČNB a slabší dolar podporují korunu i vůči euru a dolaru.",
+     "published": "2026-11-24T16:55"
+    },
+    {
+     "source": "CNBC",
+     "currency": "USD",
+     "title": "Americká spotřebitelská důvěra vyskočila nejvýš od ledna 2025",
+     "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
+     "summary": "Index Conference Board vzrostl v listopadu o 11,4 bodu na 103,3 při konsenzu 92,2. Inflační očekávání na 12 měsíců klesla na 5,7 %.",
+     "why": "Silná data podporují prosincové zvýšení sazeb Fedu, a tím dolar vůči euru i koruně.",
+     "published": "2026-11-24T16:42"
+    },
     {
      "source": "Patria / Kurzy.cz",
      "currency": "EUR",
@@ -130,27 +148,18 @@
      "summary": "Koruna se v pondělí ráno blížila k 24,50 za euro a vůči dolaru je nejslabší od jara 2025; v pátek ale ztratila méně než 0,2 %, zatímco zlotý a forint kolem 1 %. Oporou zůstává konzervativní ČNB a rezervy kolem 160 mld. EUR.",
      "why": "Bez domácích dat bude koruna kopírovat globální akcie a výnosy v USA; při zhoršení nálady hrozí test nad 24,50.",
      "published": "2026-11-23T09:10"
-    },
-    {
-     "source": "kurzy.cz",
-     "currency": "CZK",
-     "title": "Koruna se kvůli špatné globální náladě blíží 24,50 za euro",
-     "url": "https://zpravy.kurzy.cz/882749-koruna-v-blizkosti-24-50-eur-czk-23-11-2026/",
-     "summary": "Koruna v pondělí ráno oslabila do blízkosti 24,50 EUR/CZK. Tlačí na ni výprodej technologických akcií v USA a pokles amerických výnosů; domácí kalendář je tento týden prázdný.",
-     "why": "Bez domácích dat bude koruna kopírovat globální sentiment, takže další propad akcií může EUR/CZK posunout nad 24,50.",
-     "published": "2026-11-23T08:16"
-    },
-    {
-     "source": "FXStreet",
-     "currency": "EUR",
-     "title": "Euro nejníž od dubna 2025, Fed s prosincovým zvýšením téměř jistě",
-     "url": "https://www.fxstreet.com/news/euro-slides-to-lowest-level-since-april-2025-as-nvidia-led-stock-rally-lifts-sentiment-202611231606",
-     "summary": "EUR/USD kleslo k 1,0897 (−0,6 %) na nejnižší úroveň od dubna 2025, když rally vedená Nvidií posílila dolar. CME FedWatch ukazuje 99% šanci na zvýšení sazeb Fedu o 25 bb v prosinci; euro tíží i francouzská politika.",
-     "why": "Rozevírající se rozdíl v očekávání sazeb mezi Fedem a ECB tlačí EUR/USD dolů a USD/CZK nahoru.",
-     "published": "2026-11-23"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "CNBC",
+     "currency": "USD",
+     "title": "Americká spotřebitelská důvěra vyskočila nejvýš od ledna 2025",
+     "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
+     "summary": "Index Conference Board vzrostl v listopadu o 11,4 bodu na 103,3 při konsenzu 92,2. Inflační očekávání na 12 měsíců klesla na 5,7 %.",
+     "why": "Silná data podporují prosincové zvýšení sazeb Fedu, a tím dolar vůči euru i koruně.",
+     "published": "2026-11-24T16:42"
+    },
     {
      "source": "ActionForex / ifo",
      "currency": "EUR",
@@ -213,18 +222,18 @@
      "summary": "EUR/USD zakončil minulý týden na novém minimu bez korekce. Šéf Fedu Warsh se v San Francisku k politice nevyjádřil a trh spolu s jestřábím zápisem FOMC považuje prosincové zvýšení sazeb za započtené; očekávané pásmo na pondělí 1,0920–1,1016.",
      "why": "Dokud trh sází na zvýšení sazeb Fedu, zůstává EUR/USD pod tlakem a dolar silný i vůči koruně.",
      "published": "2026-11-23"
-    },
-    {
-     "source": "Reuters",
-     "currency": "EUR",
-     "title": "Simkus z ECB: prosincové zvýšení o 25 bb nemusí stačit",
-     "url": "https://1027wbow.com/2026/11/23/december-rate-hike-may-not-be-enough-but-not-in-a-rush-to-move-again-ecbs-simkus/",
-     "summary": "Litevský guvernér Simkus řekl Reuters, že si není jistý, zda prosincové zvýšení o 25 bb inflaci kolem 4 % zkrotí; po prosinci ale nevidí tlak jednat rychle znovu. Další utahování bude podle něj záviset hlavně na mzdových vyjednáváních.",
-     "why": "Jestřábí hlasy z ECB podpírají euro vůči dolaru i koruně.",
-     "published": "2026-11-23"
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "FXstreet.cz (Komerční banka)",
+     "currency": "CZK",
+     "title": "Koruna králem regionu, pomohla důvěra i jestřábí ČNB",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-211045.html",
+     "summary": "Koruna během dne posílila z 24,45 pod 24,42 Kč/EUR. Podnikatelská důvěra v ČR vzrostla na 99,4 bodu (z 96,6) a Seidler z ČNB podle Bloombergu řekl, že rada zvažuje další zvýšení sazeb.",
+     "why": "Možnost dalšího zvýšení sazeb ČNB a slabší dolar podporují korunu i vůči euru a dolaru.",
+     "published": "2026-11-24T16:55"
+    },
     {
      "source": "ČSOB / Kurzy.cz",
      "currency": "CZK",
@@ -287,15 +296,6 @@
      "summary": "Dolar dál posiluje, eurodolar se drží pod 1,10 a forint ztratil 0,4 % po holubičím tónu maďarské centrální banky, zlotý 0,2 %. Koruna je odolnější a drží se pod 24,40 za euro; Waller z Fedu znovu zmínil možné prosincové zvýšení o 50 bb.",
      "why": "Rostoucí rozdíl sazeb Fed–ECB podporuje dolar, koruna k euru zůstává stabilní, ale k dolaru je pod tlakem.",
      "published": "2026-11-18T16:28"
-    },
-    {
-     "source": "CNBC",
-     "currency": "USD",
-     "title": "Waller z Fedu volá po zvýšení sazeb o půl bodu",
-     "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
-     "summary": "Guvernér Fedu Christopher Waller řekl, že na prosincovém zasedání bude nejspíš nutné zvýšit sazby o 50 bb, protože inflace se podle něj zhoršuje a šíří. Futures už plně oceňují prosincové zvýšení o 25 bb a další krok v lednu.",
-     "why": "Úvahy o větším kroku Fedu posilují dolar a tlačí na euro i středoevropské měny.",
-     "published": "2026-11-18T13:20"
     }
    ]
   }
@@ -603,8 +603,8 @@
     "country": "US",
     "event": "Spotřebitelská důvěra Conference Board (listopad)",
     "consensus": "",
-    "previous": "",
-    "actual": "",
+    "previous": "91,9",
+    "actual": "103,3",
     "importance": 2,
     "why": "Slabší důvěra by mírnila sázky na jestřábí Fed a přibrzdila dolar."
    },
@@ -683,7 +683,7 @@
  },
  "summary": {
   "asOf": "2026-11-24",
-  "text": "Koruna mírně zpevnila na 24,43 Kč/EUR (kurz ČNB, v pondělí 24,455), dolar stojí 22,28 Kč. Ifo vzrostl na 90,6 (konsenzus 90,5) bez vlivu na euro; klíčová je středeční PCE inflace kvůli prosincovému Fedu."
+  "text": "Koruna posílila na 24,43 Kč/EUR (fixing ECB, v pondělí 24,455), pomohla jestřábí slova ČNB. Důvěra v USA vyskočila na 103,3 (konsenzus 92,2), což podpoří prosincové zvýšení Fedu; zítra rozhodne PCE inflace."
  },
  "outlook": {
   "asOf": "2026-10-14",
