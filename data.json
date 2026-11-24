@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "ActionForex / ifo",
+     "currency": "EUR",
+     "title": "Německé Ifo nejvýš od jara 2023, průmysl ale ztrácí dech",
+     "url": "https://www.actionforex.com/live-comments/661933-germany-ifo-business-climate-rises-to-90-6-but-manufacturing-recovery-loses-momentum/",
+     "summary": "Index podnikatelského klimatu Ifo vzrostl v listopadu na 90,6 z revidovaných 90,1, těsně nad konsenzem 90,5. Zlepšily se služby a obchod, ve zpracovatelském průmyslu klima po šesti růstech kleslo.",
+     "why": "Mírně lepší německá nálada euro podrží, na posílení vůči silnému dolaru ale nestačí.",
+     "published": "2026-11-24T10:36"
+    },
+    {
      "source": "Patria / Kurzy.cz",
      "currency": "EUR",
      "title": "EUR/USD pod 1,09 nejníž od března 2025, dnes Ifo a americká důvěra",
@@ -64,15 +73,6 @@
      "url": "https://www.citfin.cz/ranni-fx-zpravy/czk-muze-zustat-pod-prodejnim-tlakem-i-v-zaveru-listopadu/",
      "summary": "Citfin čeká tento týden EUR/CZK v pásmu 24,35–24,50 a USD/CZK 22,00–22,50; při dalších výprodejích akcií může koruna oslabit nad 24,50. Klíčová jsou středeční data o PCE inflaci a HDP z USA.",
      "why": "Rizikový sentiment a americká inflace rozhodnou, zda koruna prolomí 24,50 Kč/EUR a dolar zůstane silný.",
-     "published": "2026-11-23"
-    },
-    {
-     "source": "Reuters",
-     "currency": "EUR",
-     "title": "Simkus z ECB: prosincové zvýšení o 25 bb nemusí stačit",
-     "url": "https://1027wbow.com/2026/11/23/december-rate-hike-may-not-be-enough-but-not-in-a-rush-to-move-again-ecbs-simkus/",
-     "summary": "Litevský guvernér Simkus řekl Reuters, že si není jistý, zda prosincové zvýšení o 25 bb inflaci kolem 4 % zkrotí; po prosinci ale nevidí tlak jednat rychle znovu. Další utahování bude podle něj záviset hlavně na mzdových vyjednáváních.",
-     "why": "Jestřábí hlasy z ECB podpírají euro vůči dolaru i koruně.",
      "published": "2026-11-23"
     }
    ],
@@ -152,6 +152,15 @@
    ],
    "EUR/USD": [
     {
+     "source": "ActionForex / ifo",
+     "currency": "EUR",
+     "title": "Německé Ifo nejvýš od jara 2023, průmysl ale ztrácí dech",
+     "url": "https://www.actionforex.com/live-comments/661933-germany-ifo-business-climate-rises-to-90-6-but-manufacturing-recovery-loses-momentum/",
+     "summary": "Index podnikatelského klimatu Ifo vzrostl v listopadu na 90,6 z revidovaných 90,1, těsně nad konsenzem 90,5. Zlepšily se služby a obchod, ve zpracovatelském průmyslu klima po šesti růstech kleslo.",
+     "why": "Mírně lepší německá nálada euro podrží, na posílení vůči silnému dolaru ale nestačí.",
+     "published": "2026-11-24T10:36"
+    },
+    {
      "source": "Patria / Kurzy.cz",
      "currency": "EUR",
      "title": "EUR/USD pod 1,09 nejníž od března 2025, dnes Ifo a americká důvěra",
@@ -212,15 +221,6 @@
      "url": "https://1027wbow.com/2026/11/23/december-rate-hike-may-not-be-enough-but-not-in-a-rush-to-move-again-ecbs-simkus/",
      "summary": "Litevský guvernér Simkus řekl Reuters, že si není jistý, zda prosincové zvýšení o 25 bb inflaci kolem 4 % zkrotí; po prosinci ale nevidí tlak jednat rychle znovu. Další utahování bude podle něj záviset hlavně na mzdových vyjednáváních.",
      "why": "Jestřábí hlasy z ECB podpírají euro vůči dolaru i koruně.",
-     "published": "2026-11-23"
-    },
-    {
-     "source": "Pound Sterling Live / S&P Global",
-     "currency": "USD",
-     "title": "Americké PMI na čtyřměsíčním minimu, dolar si zisky drží",
-     "url": "https://www.poundsterlinglive.com/usd/23919-pound-to-dollar-rate-us-flash-pmi-november-fed",
-     "summary": "Předběžný index služeb v USA klesl v listopadu na 54,7 (čekalo se 55,5–55,7, předtím 56,1), průmysl na 54,5 podle očekávání. Dolar zisky neodevzdal, EUR/USD se drželo u 1,0937.",
-     "why": "Růst v USA zůstává solidní a cenové tlaky vysoké, takže sázky na prosincové zvýšení Fedu a silný dolar trvají.",
      "published": "2026-11-23"
     }
    ],
@@ -301,7 +301,7 @@
   }
  },
  "banks": {
-  "asOf": "2026-11-16",
+  "asOf": "2026-11-24",
   "banks": [
    {
     "id": "CNB",
@@ -340,10 +340,10 @@
     "next": "2026-12-09",
     "bias": "jestřábí pauza; trh počítá s vysokou šancí zvýšení v prosinci",
     "outlook6m": "Fed 28. 10. 2026 ponechal pásmo 3,75–4,00 % při hlasování 10:2 (Cook a Hammack chtěli +25 bb). Prohlášení říká, že inflace zůstává zvýšená a ekonomika je silná; analytici čekají možné prosincové zvýšení.",
-    "expect": "Další zasedání FOMC proběhne 8.–9. 12. 2026; podle CME FedWatch (16. 11.) trh přisuzuje zvýšení o 25 bb pravděpodobnost asi 93,5 % a čeká další krok v lednu. Klíčové budou maloobchodní tržby (17. 11.), zápis FOMC (18. 11.), PCE (25. 11.) a vystoupení předsedy Warshe.",
+    "expect": "Další zasedání FOMC proběhne 8.–9. 12. 2026; podle CME FedWatch (24. 11.) trh přisuzuje zvýšení o 25 bb pravděpodobnost asi 95 % a zbytek připadá na krok o 50 bb. Williams z New Yorku (23. 11.) nevylučuje zvýšení na po sobě jdoucích zasedáních; klíčová bude PCE inflace (25. 11.).",
     "drivers": "CPI/PCE, trh práce, dlouhé výnosy amerických dluhopisů, ropa, fiskální politika, finanční podmínky a geopolitika.",
     "url": "https://www.federalreserve.gov/monetarypolicy.htm",
-    "source": "Fed – prohlášení FOMC z 28. 10. 2026; CNBC (Waller, 10. 11.); FXStreet/CME FedWatch (16. 11. 2026)"
+    "source": "Fed – prohlášení FOMC z 28. 10. 2026; CNBC (Waller, 10. 11.); FXStreet/CME FedWatch (16. 11. 2026); investingLive (Williams, 23. 11.); Tradingpedia/CME FedWatch (24. 11. 2026)"
    },
    {
     "id": "NBP",
@@ -362,21 +362,21 @@
   ]
  },
  "cnb": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.455,
-   "USD": 22.358,
-   "PLN": 5.487,
-   "HUF100": 6.573
+   "EUR": 24.43,
+   "USD": 22.279,
+   "PLN": 5.476,
+   "HUF100": 6.606
   }
  },
  "mm": {
-  "asOf": "2026-11-23",
+  "asOf": "2026-11-24",
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
-   "date": "2026-11-13",
+   "date": "2026-11-16",
    "basis": 360,
    "r": {
     "1M": 4.07,
@@ -387,24 +387,24 @@
   },
   "EUR": {
    "src": "EURIBOR",
-   "date": "2026-11-20",
+   "date": "2026-11-23",
    "basis": 360,
    "r": {
-    "1M": 2.484,
-    "3M": 2.849,
-    "6M": 3.071,
-    "12M": 3.372
+    "1M": 2.454,
+    "3M": 2.809,
+    "6M": 3.079,
+    "12M": 3.37
    }
   },
   "USD": {
    "src": "US T-bill",
-   "date": "2026-11-20",
+   "date": "2026-11-23",
    "basis": 365,
    "r": {
     "1M": 4.11,
-    "3M": 4.23,
-    "6M": 4.41,
-    "12M": 4.5
+    "3M": 4.28,
+    "6M": 4.49,
+    "12M": 4.55
    }
   },
   "PLN": {
@@ -592,9 +592,9 @@
     "at": "2026-11-24T10:00",
     "country": "DE",
     "event": "Index podnikatelského klimatu Ifo (listopad)",
-    "consensus": "",
-    "previous": "90,2",
-    "actual": "",
+    "consensus": "90,5",
+    "previous": "90,1",
+    "actual": "90,6",
     "importance": 2,
     "why": "Slabší Ifo obvykle oslabuje euro vůči dolaru."
    },
@@ -683,7 +683,7 @@
  },
  "summary": {
   "asOf": "2026-11-24",
-  "text": "Koruna se drží u 24,46 Kč/EUR (fixing ECB 24,455), z pondělní akciové rally nevytěžila; EUR/USD je pod 1,09 nejníž od března 2025. Dnes Ifo a důvěra v USA, klíčová je středeční PCE inflace kvůli prosincovému Fedu."
+  "text": "Koruna mírně zpevnila na 24,43 Kč/EUR (kurz ČNB, v pondělí 24,455), dolar stojí 22,28 Kč. Ifo vzrostl na 90,6 (konsenzus 90,5) bez vlivu na euro; klíčová je středeční PCE inflace kvůli prosincovému Fedu."
  },
  "outlook": {
   "asOf": "2026-10-14",
