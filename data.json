@@ -1,8 +1,35 @@
 {
  "news": {
-  "asOf": "2026-11-24",
+  "asOf": "2026-11-25",
   "pairs": {
    "EUR/CZK": [
+    {
+     "source": "kurzy.cz / ČSOB-Dealing",
+     "currency": "CZK",
+     "title": "Koruna dva týdny stojí u 24,40 za euro",
+     "url": "https://zpravy.kurzy.cz/883081-koruna-zaparkovana-u-24-40-eur-czk/",
+     "summary": "Koruna zakončila úterý kolem 24,40 EUR/CZK, kde se drží zhruba dva týdny i přes globální růst chuti k riziku. Průzkumy důvěry vyšly podle očekávání a domácí kalendář je tento týden prázdný.",
+     "why": "Bez domácích impulzů může koruna dnes pohnout hlavně vývoj dolaru po amerických datech; volatilita by měla zůstat nízká.",
+     "published": "2026-11-25T08:21"
+    },
+    {
+     "source": "kurzy.cz / Komerční banka",
+     "currency": "CZK",
+     "title": "Seidler z ČNB připouští další zvýšení sazeb, trhy čekají na PCE",
+     "url": "https://zpravy.kurzy.cz/883074-trhy-ceka-pred-ctvrtecnim-dnem-dikuvzdani-zaplava-americkych-dat-ranni-zprava-z-financniho-trhu/",
+     "summary": "Člen bankovní rady Jakub Seidler podle Bloombergu uvedl, že rada zvažuje další, možná i opakované zvýšení sazeb kvůli přetrvávajícím inflačním rizikům. KB pro dnešní říjnovou PCE odhaduje jádro 3,3 % r/r a revizi růstu HDP USA za 3Q na 3,5 %.",
+     "why": "Jestřábí ČNB podporuje korunu, vyšší americká inflace by ale posílila dolar a sázky na prosincové zvýšení Fedu.",
+     "published": "2026-11-25T06:01"
+    },
+    {
+     "source": "Global Banking & Finance Review",
+     "currency": "EUR",
+     "title": "Německé HDP za 3Q revidováno dolů na 0,1 %",
+     "url": "https://www.globalbankingandfinance.com/german-economy-grows-0-1-q3-stats-office/",
+     "summary": "Německá ekonomika ve 3. čtvrtletí podle Destatisu vzrostla jen o 0,1 % q/q místo předběžných 0,2 %. Investice klesly o 1,2 % a export o 1,0 %, spotřeba domácností přidala 0,1 %.",
+     "why": "Slabší německý růst mírně tlačí na euro vůči dolaru, sázky na zvýšení sazeb ECB ale zatím nemění.",
+     "published": "2026-11-25"
+    },
     {
      "source": "FXstreet.cz (Komerční banka)",
      "currency": "CZK",
@@ -47,37 +74,19 @@
      "summary": "EUR/USD se v úterý vrátilo z letošního minima 1,0884 k 1,0964 (+0,6 %), pomohlo lepší Ifo. Futures přitom dál oceňují zhruba 95% šanci prosincového zvýšení Fedu.",
      "why": "Odraz eura ulevuje koruně vůči dolaru, rozhodne ale středeční PCE inflace.",
      "published": "2026-11-24"
-    },
-    {
-     "source": "kurzy.cz",
-     "currency": "CZK",
-     "title": "Návrat Huanga do Nvidie zvedl trhy i dolar, koruna k dolaru slábne",
-     "url": "https://zpravy.kurzy.cz/882866-souhrn-23-11-nvidia-cvici-s-trhy-po-cernem-patku-prichazi-svetle-pondeli-bcpp-se-take-svezla/",
-     "summary": "Akcie Nvidie po návratu Jensena Huanga do čela firmy prudce posílily a rozjely zotavení amerických i evropských trhů. Koruna podle souhrnu oslabila k dolaru a k euru mírně zpevnila, Brent klesl pod 88 USD.",
-     "why": "Návrat investorů do amerických aktiv podporuje dolar, takže USD/CZK roste, zatímco EUR/CZK zůstává stabilní.",
-     "published": "2026-11-23T17:09"
-    },
-    {
-     "source": "ActionForex / S&P Global",
-     "currency": "EUR",
-     "title": "PMI eurozóny stagnuje, Německo roste nejrychleji za čtyři roky",
-     "url": "https://www.actionforex.com/live-comments/661769-eurozone-pmi-holds-steady-as-german-growth-hits-four-year-high-france-slumps-further/",
-     "summary": "Předběžný kompozitní PMI eurozóny zůstal v listopadu na 51,7 (Reuters čekal 51,9); služby klesly na 51,2 místo očekávaných 51,8. Německý index vyskočil na 55,0, francouzský spadl na 46,2.",
-     "why": "Ekonomika eurozóny dál roste, což ECB nechává prostor k prosincovému zvýšení sazeb a brání hlubšímu poklesu EUR/USD.",
-     "published": "2026-11-23T10:08"
-    },
-    {
-     "source": "Patria / Kurzy.cz",
-     "currency": "CZK",
-     "title": "Technologický výprodej dál tlačí na korunu",
-     "url": "https://zpravy.kurzy.cz/882767-technologicky-vyprodej-korunu-dal-oslabuje-rozbresk/",
-     "summary": "Koruna se v pondělí ráno blížila k 24,50 za euro a vůči dolaru je nejslabší od jara 2025; v pátek ale ztratila méně než 0,2 %, zatímco zlotý a forint kolem 1 %. Oporou zůstává konzervativní ČNB a rezervy kolem 160 mld. EUR.",
-     "why": "Bez domácích dat bude koruna kopírovat globální akcie a výnosy v USA; při zhoršení nálady hrozí test nad 24,50.",
-     "published": "2026-11-23T09:10"
     }
    ],
    "USD/CZK": [
     {
+     "source": "kurzy.cz / Komerční banka",
+     "currency": "CZK",
+     "title": "Seidler z ČNB připouští další zvýšení sazeb, trhy čekají na PCE",
+     "url": "https://zpravy.kurzy.cz/883074-trhy-ceka-pred-ctvrtecnim-dnem-dikuvzdani-zaplava-americkych-dat-ranni-zprava-z-financniho-trhu/",
+     "summary": "Člen bankovní rady Jakub Seidler podle Bloombergu uvedl, že rada zvažuje další, možná i opakované zvýšení sazeb kvůli přetrvávajícím inflačním rizikům. KB pro dnešní říjnovou PCE odhaduje jádro 3,3 % r/r a revizi růstu HDP USA za 3Q na 3,5 %.",
+     "why": "Jestřábí ČNB podporuje korunu, vyšší americká inflace by ale posílila dolar a sázky na prosincové zvýšení Fedu.",
+     "published": "2026-11-25T06:01"
+    },
+    {
      "source": "FXstreet.cz (Komerční banka)",
      "currency": "CZK",
      "title": "Koruna králem regionu, pomohla důvěra i jestřábí ČNB",
@@ -139,18 +148,27 @@
      "summary": "Dolarový index vystoupal ke 104,3 (+0,5 %), trh oceňuje asi 70 bb zvýšení sazeb Fedu do září 2027. Goldman Sachs čeká podporu dolaru v příštích měsících a pozdější mírné oslabení, technické ukazatele ale signalizují překoupenost.",
      "why": "Silný dolar drží EUR/USD u 1,09 a USD/CZK vysoko; překoupenost zvyšuje riziko korekce po středečních datech PCE.",
      "published": "2026-11-23T20:26"
-    },
-    {
-     "source": "kurzy.cz",
-     "currency": "CZK",
-     "title": "Návrat Huanga do Nvidie zvedl trhy i dolar, koruna k dolaru slábne",
-     "url": "https://zpravy.kurzy.cz/882866-souhrn-23-11-nvidia-cvici-s-trhy-po-cernem-patku-prichazi-svetle-pondeli-bcpp-se-take-svezla/",
-     "summary": "Akcie Nvidie po návratu Jensena Huanga do čela firmy prudce posílily a rozjely zotavení amerických i evropských trhů. Koruna podle souhrnu oslabila k dolaru a k euru mírně zpevnila, Brent klesl pod 88 USD.",
-     "why": "Návrat investorů do amerických aktiv podporuje dolar, takže USD/CZK roste, zatímco EUR/CZK zůstává stabilní.",
-     "published": "2026-11-23T17:09"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "kurzy.cz / Komerční banka",
+     "currency": "CZK",
+     "title": "Seidler z ČNB připouští další zvýšení sazeb, trhy čekají na PCE",
+     "url": "https://zpravy.kurzy.cz/883074-trhy-ceka-pred-ctvrtecnim-dnem-dikuvzdani-zaplava-americkych-dat-ranni-zprava-z-financniho-trhu/",
+     "summary": "Člen bankovní rady Jakub Seidler podle Bloombergu uvedl, že rada zvažuje další, možná i opakované zvýšení sazeb kvůli přetrvávajícím inflačním rizikům. KB pro dnešní říjnovou PCE odhaduje jádro 3,3 % r/r a revizi růstu HDP USA za 3Q na 3,5 %.",
+     "why": "Jestřábí ČNB podporuje korunu, vyšší americká inflace by ale posílila dolar a sázky na prosincové zvýšení Fedu.",
+     "published": "2026-11-25T06:01"
+    },
+    {
+     "source": "Global Banking & Finance Review",
+     "currency": "EUR",
+     "title": "Německé HDP za 3Q revidováno dolů na 0,1 %",
+     "url": "https://www.globalbankingandfinance.com/german-economy-grows-0-1-q3-stats-office/",
+     "summary": "Německá ekonomika ve 3. čtvrtletí podle Destatisu vzrostla jen o 0,1 % q/q místo předběžných 0,2 %. Investice klesly o 1,2 % a export o 1,0 %, spotřeba domácností přidala 0,1 %.",
+     "why": "Slabší německý růst mírně tlačí na euro vůči dolaru, sázky na zvýšení sazeb ECB ale zatím nemění.",
+     "published": "2026-11-25"
+    },
     {
      "source": "CNBC",
      "currency": "USD",
@@ -204,27 +222,18 @@
      "summary": "Dolarový index vystoupal ke 104,3 (+0,5 %), trh oceňuje asi 70 bb zvýšení sazeb Fedu do září 2027. Goldman Sachs čeká podporu dolaru v příštích měsících a pozdější mírné oslabení, technické ukazatele ale signalizují překoupenost.",
      "why": "Silný dolar drží EUR/USD u 1,09 a USD/CZK vysoko; překoupenost zvyšuje riziko korekce po středečních datech PCE.",
      "published": "2026-11-23T20:26"
-    },
-    {
-     "source": "ActionForex / S&P Global",
-     "currency": "EUR",
-     "title": "PMI eurozóny stagnuje, Německo roste nejrychleji za čtyři roky",
-     "url": "https://www.actionforex.com/live-comments/661769-eurozone-pmi-holds-steady-as-german-growth-hits-four-year-high-france-slumps-further/",
-     "summary": "Předběžný kompozitní PMI eurozóny zůstal v listopadu na 51,7 (Reuters čekal 51,9); služby klesly na 51,2 místo očekávaných 51,8. Německý index vyskočil na 55,0, francouzský spadl na 46,2.",
-     "why": "Ekonomika eurozóny dál roste, což ECB nechává prostor k prosincovému zvýšení sazeb a brání hlubšímu poklesu EUR/USD.",
-     "published": "2026-11-23T10:08"
-    },
-    {
-     "source": "FXStreet",
-     "currency": "EUR",
-     "title": "Euro nejníž od dubna 2025, Fed s prosincovým zvýšením téměř jistě",
-     "url": "https://www.fxstreet.com/news/euro-slides-to-lowest-level-since-april-2025-as-nvidia-led-stock-rally-lifts-sentiment-202611231606",
-     "summary": "EUR/USD kleslo k 1,0897 (−0,6 %) na nejnižší úroveň od dubna 2025, když rally vedená Nvidií posílila dolar. CME FedWatch ukazuje 99% šanci na zvýšení sazeb Fedu o 25 bb v prosinci; euro tíží i francouzská politika.",
-     "why": "Rozevírající se rozdíl v očekávání sazeb mezi Fedem a ECB tlačí EUR/USD dolů a USD/CZK nahoru.",
-     "published": "2026-11-23"
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "kurzy.cz / ČSOB-Dealing",
+     "currency": "CZK",
+     "title": "Koruna dva týdny stojí u 24,40 za euro",
+     "url": "https://zpravy.kurzy.cz/883081-koruna-zaparkovana-u-24-40-eur-czk/",
+     "summary": "Koruna zakončila úterý kolem 24,40 EUR/CZK, kde se drží zhruba dva týdny i přes globální růst chuti k riziku. Průzkumy důvěry vyšly podle očekávání a domácí kalendář je tento týden prázdný.",
+     "why": "Bez domácích impulzů může koruna dnes pohnout hlavně vývoj dolaru po amerických datech; volatilita by měla zůstat nízká.",
+     "published": "2026-11-25T08:21"
+    },
     {
      "source": "FXstreet.cz (Komerční banka)",
      "currency": "CZK",
@@ -287,15 +296,6 @@
      "summary": "Koruna se pohybuje kolem 24,40 EUR/CZK pod tlakem silného dolaru. Domácí data do konce týdne nevycházejí, takže ji budou řídit hlavně eurodolar a ceny evropského plynu.",
      "why": "Bez domácích impulsů zůstává EUR/CZK v úzkém pásmu a další pohyb určí dolar a energie.",
      "published": "2026-11-19T08:34"
-    },
-    {
-     "source": "Forex Club",
-     "currency": "PLN",
-     "title": "Zlotý pod tlakem jestřábího Fedu, RPP sazby nehne",
-     "url": "https://forexclub.pl/kurs-zlotego-pod-presja-fed-dolar-za-401-zl-euro-po-442-zl/",
-     "summary": "Dolar se drží nad 4,01 zlotého a euro kolem 4,41–4,42 PLN, protože trh plně oceňuje prosincové zvýšení sazeb Fedu. Člen RPP Dąbrowski čeká stabilní polské sazby nejméně jedno až dvě čtvrtletí.",
-     "why": "Rozevírající se rozdíl sazeb mezi Fedem a NBP oslabuje zlotý, což u PLN/CZK spíše podporuje korunu.",
-     "published": "2026-11-19"
     }
    ]
   }
@@ -565,7 +565,7 @@
   ]
  },
  "calendar": {
-  "asOf": "2026-11-24",
+  "asOf": "2026-11-25",
   "note": "Časy jsou pražské. Konsenzus podle veřejných kalendářů, orientačně.",
   "items": [
    {
@@ -607,6 +607,16 @@
     "actual": "103,3",
     "importance": 2,
     "why": "Slabší důvěra by mírnila sázky na jestřábí Fed a přibrzdila dolar."
+   },
+   {
+    "at": "2026-11-25T08:00",
+    "country": "DE",
+    "event": "HDP – 2. odhad (3Q)",
+    "consensus": "",
+    "previous": "0,2 % q/q (předběžně)",
+    "actual": "0,1 % q/q",
+    "importance": 2,
+    "why": "Slabší německý růst obvykle oslabuje euro."
    },
    {
     "at": "2026-11-25T14:30",
@@ -682,8 +692,8 @@
   }
  },
  "summary": {
-  "asOf": "2026-11-24",
-  "text": "Koruna posílila na 24,43 Kč/EUR (fixing ECB, v pondělí 24,455) díky jestřábí ČNB. Silná americká důvěra (103,3 vs. 92,2) drží sázky na zvýšení Fedu, EUR/USD se ale odrazilo k 1,096; zítra PCE."
+  "asOf": "2026-11-25",
+  "text": "Koruna se drží u 24,43 Kč/EUR (úterní fixing ECB, týden zpět 24,47), dva týdny stojí kolem 24,40. Dnes ve 14:30 rozhodnou americká PCE a HDP – vyšší inflace by posílila sázky na prosincové zvýšení Fedu i dolar."
  },
  "outlook": {
   "asOf": "2026-10-14",
