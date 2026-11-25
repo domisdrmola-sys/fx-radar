@@ -49,6 +49,15 @@
      "published": "2026-11-25T06:01"
     },
     {
+     "source": "piQ Markets",
+     "currency": "EUR",
+     "title": "EU odmítá americké zdůvodnění 15% cel",
+     "url": "https://piqmarkets.com/story/eu-rejects-us-overcapacity-finding-behind-proposed-15-tariff",
+     "summary": "Evropská komise odmítla závěr USTR, že Evropa je zdrojem globálních nadkapacit; USA navrhují clo 15 % na zboží z EU, platné nejdříve od ledna. Brusel chce s Washingtonem dál jednat.",
+     "why": "Riziko obchodního sporu s USA tlačí na euro a nepřímo i na korunu jako exportní měnu.",
+     "published": "2026-11-25"
+    },
+    {
      "source": "Global Banking & Finance Review",
      "currency": "EUR",
      "title": "Německé HDP za 3Q revidováno dolů na 0,1 %",
@@ -65,15 +74,6 @@
      "summary": "Koruna během dne posílila z 24,45 pod 24,42 Kč/EUR. Podnikatelská důvěra v ČR vzrostla na 99,4 bodu (z 96,6) a Seidler z ČNB podle Bloombergu řekl, že rada zvažuje další zvýšení sazeb.",
      "why": "Možnost dalšího zvýšení sazeb ČNB a slabší dolar podporují korunu i vůči euru a dolaru.",
      "published": "2026-11-24T16:55"
-    },
-    {
-     "source": "ActionForex / ifo",
-     "currency": "EUR",
-     "title": "Německé Ifo nejvýš od jara 2023, průmysl ale ztrácí dech",
-     "url": "https://www.actionforex.com/live-comments/661933-germany-ifo-business-climate-rises-to-90-6-but-manufacturing-recovery-loses-momentum/",
-     "summary": "Index podnikatelského klimatu Ifo vzrostl v listopadu na 90,6 z revidovaných 90,1, těsně nad konsenzem 90,5. Zlepšily se služby a obchod, ve zpracovatelském průmyslu klima po šesti růstech kleslo.",
-     "why": "Mírně lepší německá nálada euro podrží, na posílení vůči silnému dolaru ale nestačí.",
-     "published": "2026-11-24T10:36"
     }
    ],
    "USD/CZK": [
@@ -105,6 +105,15 @@
      "published": "2026-11-25T06:01"
     },
     {
+     "source": "Reuters (přes KFGO)",
+     "currency": "USD",
+     "title": "Žádosti o podporu v USA klesly na 189 tisíc",
+     "url": "https://kfgo.com/2026/11/25/us-weekly-jobless-claims-fall-more-than-expected-7/",
+     "summary": "Nové žádosti o podporu v nezaměstnanosti klesly v týdnu do 21. 11. o 13 tisíc na 189 tisíc, ekonomové čekali 200 tisíc. Pokračující žádosti se snížily o 95 tisíc na 1,697 milionu.",
+     "why": "Pevný trh práce spolu s vyšší PCE podporuje prosincové zvýšení sazeb Fedu a silnější dolar.",
+     "published": "2026-11-25"
+    },
+    {
      "source": "Briefs.co",
      "currency": "USD",
      "title": "Růst amerického HDP za 3Q revidován na 4,3 %",
@@ -139,15 +148,6 @@
      "summary": "EUR/USD v pondělí spadlo z okolí 1,10 pod 1,09, na nejnižší úroveň od března 2025, koruna se držela nad 24,40 Kč/EUR. Dnes vychází německý index Ifo a americká spotřebitelská důvěra, konsenzus čeká mírné poklesy.",
      "why": "Slabší Ifo by euro dál oslabilo vůči dolaru, slabší americká důvěra by naopak dolar přibrzdila.",
      "published": "2026-11-24T08:59"
-    },
-    {
-     "source": "ČSOB / Kurzy.cz",
-     "currency": "USD",
-     "title": "Uklidnění trhů po návratu Huanga uvolňuje Fedu ruce",
-     "url": "https://zpravy.kurzy.cz/882927-navrat-j-huanga-do-cela-nvidie-rozvazuje-fedu-ruce-k-jestrabi-akci/",
-     "summary": "Návrat Jensena Huanga do čela Nvidie vrátil americkým akciím zhruba 4,5 bil. USD tržní hodnoty. Podle analýzy se Fed může znovu soustředit na inflaci a zvýšení sazeb 9. prosince je velmi pravděpodobné.",
-     "why": "Jestřábí Fed podporuje dolar, což tlačí EUR/USD dolů a USD/CZK nahoru.",
-     "published": "2026-11-24T08:44"
     }
    ],
    "EUR/USD": [
@@ -179,6 +179,24 @@
      "published": "2026-11-25T06:01"
     },
     {
+     "source": "piQ Markets",
+     "currency": "EUR",
+     "title": "EU odmítá americké zdůvodnění 15% cel",
+     "url": "https://piqmarkets.com/story/eu-rejects-us-overcapacity-finding-behind-proposed-15-tariff",
+     "summary": "Evropská komise odmítla závěr USTR, že Evropa je zdrojem globálních nadkapacit; USA navrhují clo 15 % na zboží z EU, platné nejdříve od ledna. Brusel chce s Washingtonem dál jednat.",
+     "why": "Riziko obchodního sporu s USA tlačí na euro a nepřímo i na korunu jako exportní měnu.",
+     "published": "2026-11-25"
+    },
+    {
+     "source": "Reuters (přes KFGO)",
+     "currency": "USD",
+     "title": "Žádosti o podporu v USA klesly na 189 tisíc",
+     "url": "https://kfgo.com/2026/11/25/us-weekly-jobless-claims-fall-more-than-expected-7/",
+     "summary": "Nové žádosti o podporu v nezaměstnanosti klesly v týdnu do 21. 11. o 13 tisíc na 189 tisíc, ekonomové čekali 200 tisíc. Pokračující žádosti se snížily o 95 tisíc na 1,697 milionu.",
+     "why": "Pevný trh práce spolu s vyšší PCE podporuje prosincové zvýšení sazeb Fedu a silnější dolar.",
+     "published": "2026-11-25"
+    },
+    {
      "source": "Global Banking & Finance Review",
      "currency": "EUR",
      "title": "Německé HDP za 3Q revidováno dolů na 0,1 %",
@@ -204,24 +222,6 @@
      "summary": "Index Conference Board vzrostl v listopadu o 11,4 bodu na 103,3 při konsenzu 92,2. Inflační očekávání na 12 měsíců klesla na 5,7 %.",
      "why": "Silná data podporují prosincové zvýšení sazeb Fedu, a tím dolar vůči euru i koruně.",
      "published": "2026-11-24T16:42"
-    },
-    {
-     "source": "ActionForex / ifo",
-     "currency": "EUR",
-     "title": "Německé Ifo nejvýš od jara 2023, průmysl ale ztrácí dech",
-     "url": "https://www.actionforex.com/live-comments/661933-germany-ifo-business-climate-rises-to-90-6-but-manufacturing-recovery-loses-momentum/",
-     "summary": "Index podnikatelského klimatu Ifo vzrostl v listopadu na 90,6 z revidovaných 90,1, těsně nad konsenzem 90,5. Zlepšily se služby a obchod, ve zpracovatelském průmyslu klima po šesti růstech kleslo.",
-     "why": "Mírně lepší německá nálada euro podrží, na posílení vůči silnému dolaru ale nestačí.",
-     "published": "2026-11-24T10:36"
-    },
-    {
-     "source": "Patria / Kurzy.cz",
-     "currency": "EUR",
-     "title": "EUR/USD pod 1,09 nejníž od března 2025, dnes Ifo a americká důvěra",
-     "url": "https://zpravy.kurzy.cz/882933-akcie-behem-pondelni-seance-vymazaly-ztraty-rovne-13-6--americkeho-hdp-rozbresk/",
-     "summary": "EUR/USD v pondělí spadlo z okolí 1,10 pod 1,09, na nejnižší úroveň od března 2025, koruna se držela nad 24,40 Kč/EUR. Dnes vychází německý index Ifo a americká spotřebitelská důvěra, konsenzus čeká mírné poklesy.",
-     "why": "Slabší Ifo by euro dál oslabilo vůči dolaru, slabší americká důvěra by naopak dolar přibrzdila.",
-     "published": "2026-11-24T08:59"
     }
    ],
    "PLN/CZK": [
@@ -693,7 +693,7 @@
  },
  "summary": {
   "asOf": "2026-11-25",
-  "text": "Koruna se drží u 24,43 Kč/EUR (fixing ECB z úterý, týden zpět 24,47), ČNB dnes 24,435. Jádrová PCE v USA 3,3 % (odhad 3,2 %) a HDP 4,3 % potvrzují prosincové zvýšení Fedu; nová americká cla tlačí na euro."
+  "text": "Koruna se drží u 24,435 Kč/EUR (fixing ECB, týden zpět 24,47), euro vůči dolaru kleslo na 1,0935. Vyšší jádrová PCE (3,3 %) a nízké žádosti o podporu (189 tis.) potvrzují prosincové zvýšení Fedu a podporují dolar."
  },
  "outlook": {
   "asOf": "2026-10-14",
