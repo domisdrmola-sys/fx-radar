@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "ECB",
+     "currency": "EUR",
+     "title": "Zápis ECB: řada členů už v říjnu zvažovala zvýšení",
+     "summary": "Zápis z říjnového zasedání ukazuje, že velká část Rady guvernérů viděla v nových datech argumenty pro další utažení a mohla podpořit zvýšení už v říjnu; inflační rizika kvůli energiím a Blízkému východu označila za vyšší než v září.",
+     "why": "Potvrzuje očekávání prosincového zvýšení sazeb ECB, což podpírá euro, i když reakce EUR/USD byla minimální.",
+     "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261126~ccf28c8071.en.html",
+     "published": "2026-11-26T13:30"
+    },
+    {
      "source": "ActionForex",
      "currency": "EUR",
      "title": "Německá spotřebitelská nálada GfK stagnuje na −30,2",
@@ -65,15 +74,6 @@
      "summary": "Cenový index PCE vzrostl v říjnu o 0,3 % m/m a meziročně na 3,8 % (z 3,6 %), v souladu s odhady. Jádrová složka vzrostla na 3,3 % r/r proti očekávaným 3,2 %.",
      "why": "Mírně vyšší jádrová inflace potvrzuje prosincové zvýšení sazeb Fedu a podporuje dolar.",
      "published": "2026-11-25T14:33"
-    },
-    {
-     "source": "FXStreet.cz / ČSOB",
-     "currency": "CZK",
-     "title": "Důvěra v české ekonomice se zvedla, rostou ale inflační očekávání",
-     "url": "https://www.fxstreet.cz/zpravodajstvi-211074.html",
-     "summary": "Souhrnný indikátor důvěry vzrostl v listopadu o 2,3 bodu na 100,2 a ukončil tříměsíční pokles, hlavně díky průmyslu. Inflační očekávání domácností jsou nejvýš od konce roku 2022.",
-     "why": "Lepší nálada a vyšší inflační očekávání podporují jestřábí ČNB a tím korunu.",
-     "published": "2026-11-25T09:39"
     }
    ],
    "USD/CZK": [
@@ -85,6 +85,15 @@
      "summary": "EUR/USD po dalším výprodeji amerických akcií krátce kleslo pod 1,10 a vrátilo se k 1,096. Dolar podpořil růst výnosu 10letých Treasuries k 4,8 % a solidní data (jádrová PCE +0,3 % m/m, HDP 3Q 4,3 %).",
      "why": "Silná americká data upevňují sázky na prosincové zvýšení sazeb Fedu, což drží EUR/USD pod tlakem; dnes je v USA svátek a tenký trh.",
      "published": "2026-11-26T08:23"
+    },
+    {
+     "source": "Reuters (Kitco)",
+     "currency": "USD",
+     "title": "Rally dolaru se o Dni díkůvzdání zastavil",
+     "summary": "Euro se drží kolem 1,097 USD a míří ke třetímu dni zotavení po dubnovém minimu z roku 2025; dolarový index je na 103,76, těsně pod nejvyšší úrovní od března 2025. Analytici dolar dál podporují kvůli silné ekonomice, vyšší jádrové PCE a sázkám na zvýšení sazeb Fedu.",
+     "why": "Tenký sváteční trh zatím brzdí pohyby, výhled ale dál nahrává silnějšímu dolaru vůči euru i koruně.",
+     "url": "https://www.kitco.com/news/off-the-wire/2026-11-26/dollar-rally-takes-pause-thanksgiving",
+     "published": "2026-11-26"
     },
     {
      "source": "Citfin",
@@ -139,18 +148,18 @@
      "summary": "Nasdaq odpoledne ztrácel asi 0,9 % a S&P 500 0,4 %, Nvidia ve dne padala až o 8 %. Výnos 10letého dluhopisu USA klesl o 7 bb na 4,82 %, trh po jádrové PCE 3,3 % oceňuje prosincové zvýšení Fedu na zhruba 98 %.",
      "why": "Nižší výnosy USA mírní sílu dolaru, ale riziková averze drží pod tlakem korunu a měny regionu.",
      "published": "2026-11-25"
-    },
-    {
-     "source": "Reuters (přes KFGO)",
-     "currency": "USD",
-     "title": "Žádosti o podporu v USA klesly na 189 tisíc",
-     "url": "https://kfgo.com/2026/11/25/us-weekly-jobless-claims-fall-more-than-expected-7/",
-     "summary": "Nové žádosti o podporu v nezaměstnanosti klesly v týdnu do 21. 11. o 13 tisíc na 189 tisíc, ekonomové čekali 200 tisíc. Pokračující žádosti se snížily o 95 tisíc na 1,697 milionu.",
-     "why": "Pevný trh práce spolu s vyšší PCE podporuje prosincové zvýšení sazeb Fedu a silnější dolar.",
-     "published": "2026-11-25"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "ECB",
+     "currency": "EUR",
+     "title": "Zápis ECB: řada členů už v říjnu zvažovala zvýšení",
+     "summary": "Zápis z říjnového zasedání ukazuje, že velká část Rady guvernérů viděla v nových datech argumenty pro další utažení a mohla podpořit zvýšení už v říjnu; inflační rizika kvůli energiím a Blízkému východu označila za vyšší než v září.",
+     "why": "Potvrzuje očekávání prosincového zvýšení sazeb ECB, což podpírá euro, i když reakce EUR/USD byla minimální.",
+     "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261126~ccf28c8071.en.html",
+     "published": "2026-11-26T13:30"
+    },
     {
      "source": "ActionForex",
      "currency": "EUR",
@@ -168,6 +177,15 @@
      "summary": "EUR/USD po dalším výprodeji amerických akcií krátce kleslo pod 1,10 a vrátilo se k 1,096. Dolar podpořil růst výnosu 10letých Treasuries k 4,8 % a solidní data (jádrová PCE +0,3 % m/m, HDP 3Q 4,3 %).",
      "why": "Silná americká data upevňují sázky na prosincové zvýšení sazeb Fedu, což drží EUR/USD pod tlakem; dnes je v USA svátek a tenký trh.",
      "published": "2026-11-26T08:23"
+    },
+    {
+     "source": "Reuters (Kitco)",
+     "currency": "USD",
+     "title": "Rally dolaru se o Dni díkůvzdání zastavil",
+     "summary": "Euro se drží kolem 1,097 USD a míří ke třetímu dni zotavení po dubnovém minimu z roku 2025; dolarový index je na 103,76, těsně pod nejvyšší úrovní od března 2025. Analytici dolar dál podporují kvůli silné ekonomice, vyšší jádrové PCE a sázkám na zvýšení sazeb Fedu.",
+     "why": "Tenký sváteční trh zatím brzdí pohyby, výhled ale dál nahrává silnějšímu dolaru vůči euru i koruně.",
+     "url": "https://www.kitco.com/news/off-the-wire/2026-11-26/dollar-rally-takes-pause-thanksgiving",
+     "published": "2026-11-26"
     },
     {
      "source": "Newsquawk",
@@ -204,24 +222,6 @@
      "summary": "Člen bankovní rady Jakub Seidler podle Bloombergu uvedl, že rada zvažuje další, možná i opakované zvýšení sazeb kvůli přetrvávajícím inflačním rizikům. KB pro dnešní říjnovou PCE odhaduje jádro 3,3 % r/r a revizi růstu HDP USA za 3Q na 3,5 %.",
      "why": "Jestřábí ČNB podporuje korunu, vyšší americká inflace by ale posílila dolar a sázky na prosincové zvýšení Fedu.",
      "published": "2026-11-25T06:01"
-    },
-    {
-     "source": "Yahoo Finance",
-     "currency": "USD",
-     "title": "Wall Street pod tlakem výprodeje AI, výnosy Treasuries klesly",
-     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html",
-     "summary": "Nasdaq odpoledne ztrácel asi 0,9 % a S&P 500 0,4 %, Nvidia ve dne padala až o 8 %. Výnos 10letého dluhopisu USA klesl o 7 bb na 4,82 %, trh po jádrové PCE 3,3 % oceňuje prosincové zvýšení Fedu na zhruba 98 %.",
-     "why": "Nižší výnosy USA mírní sílu dolaru, ale riziková averze drží pod tlakem korunu a měny regionu.",
-     "published": "2026-11-25"
-    },
-    {
-     "source": "piQ Markets",
-     "currency": "EUR",
-     "title": "EU odmítá americké zdůvodnění 15% cel",
-     "url": "https://piqmarkets.com/story/eu-rejects-us-overcapacity-finding-behind-proposed-15-tariff",
-     "summary": "Evropská komise odmítla závěr USTR, že Evropa je zdrojem globálních nadkapacit; USA navrhují clo 15 % na zboží z EU, platné nejdříve od ledna. Brusel chce s Washingtonem dál jednat.",
-     "why": "Riziko obchodního sporu s USA tlačí na euro a nepřímo i na korunu jako exportní měnu.",
-     "published": "2026-11-25"
     }
    ],
    "PLN/CZK": [
@@ -362,38 +362,38 @@
   ]
  },
  "cnb": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.435,
-   "USD": 22.329,
-   "PLN": 5.456,
-   "HUF100": 6.549
+   "EUR": 24.455,
+   "USD": 22.283,
+   "PLN": 5.455,
+   "HUF100": 6.57
   }
  },
  "mm": {
-  "asOf": "2026-11-25",
+  "asOf": "2026-11-26",
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "basis": 360,
    "r": {
     "1M": 4.07,
-    "3M": 4.1,
+    "3M": 4.11,
     "6M": 4.18,
     "12M": 4.38
    }
   },
   "EUR": {
    "src": "EURIBOR",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "basis": 360,
    "r": {
-    "1M": 2.404,
-    "3M": 2.794,
-    "6M": 3.085,
-    "12M": 3.376
+    "1M": 2.432,
+    "3M": 2.809,
+    "6M": 3.077,
+    "12M": 3.351
    }
   },
   "USD": {
@@ -507,41 +507,41 @@
    {
     "id": "brent",
     "label": "Brent",
-    "value": 94.61,
+    "value": 96.16,
     "unit": "USD/bbl",
-    "chg1d": 3.5,
-    "chg1m": -21.65,
+    "chg1d": 1.64,
+    "chg1m": -12.11,
     "why": "Dražší ropa zhoršuje obchodní bilanci ČR i eurozóny a zvyšuje inflaci.",
-    "date": "2026-11-25"
+    "date": "2026-11-26"
    },
    {
     "id": "ttf",
     "label": "Plyn TTF",
-    "value": 91.09,
+    "value": 87.09,
     "unit": "EUR/MWh",
-    "chg1d": 2.98,
-    "chg1m": -5.65,
+    "chg1d": 0.03,
+    "chg1m": -9.12,
     "why": "Koruna i zlotý jsou citlivé na ceny energií; drahý plyn je oslabuje.",
-    "date": "2026-11-23"
+    "date": "2026-11-26"
    },
    {
     "id": "czbund",
     "label": "Spread ČR 10Y–Bund",
-    "value": 188,
+    "value": 199,
     "unit": "bb",
-    "prev1m": 186,
-    "cz": 5.25,
-    "de": 3.37,
-    "date": "2026-11-13",
+    "prev1m": 201,
+    "cz": 5.26,
+    "de": 3.27,
+    "date": "2026-11-26",
     "why": "O kolik víc platí Česko za desetiletý dluh než Německo; rozšiřování obvykle oslabuje korunu."
    },
    {
     "id": "btp",
     "label": "Spread BTP–Bund 10Y",
-    "value": 106,
+    "value": 109,
     "unit": "bb",
-    "prev1m": 109,
-    "date": "2026-11-13",
+    "prev1m": 114,
+    "date": "2026-11-26",
     "why": "Měřítko fiskálního rizika eurozóny; rozšiřování tlačí na euro."
    },
    {
@@ -624,9 +624,19 @@
     "event": "ECB: zápis z říjnového zasedání",
     "consensus": "",
     "previous": "",
-    "actual": "",
+    "actual": "řada členů byla připravena zvýšit už v říjnu",
     "importance": 2,
     "why": "Jestřábí tón zápisu by podpořil euro."
+   },
+   {
+    "at": "2026-11-30T14:00",
+    "country": "DE",
+    "event": "Inflace HICP – předběžný odhad (listopad)",
+    "consensus": "",
+    "previous": "2,8 % r/r",
+    "actual": "",
+    "importance": 2,
+    "why": "Vyšší německá inflace posiluje sázky na zvýšení sazeb ECB a podporuje euro."
    },
    {
     "at": "2026-12-01T11:00",
@@ -647,6 +657,66 @@
     "actual": "",
     "importance": 2,
     "why": "Silnější ISM obvykle podpoří dolar."
+   },
+   {
+    "at": "2026-12-02T14:15",
+    "country": "US",
+    "event": "Zaměstnanost ADP (listopad)",
+    "consensus": "",
+    "previous": "86 tis.",
+    "actual": "",
+    "importance": 2,
+    "why": "Silnější data o zaměstnanosti obvykle podpoří dolar."
+   },
+   {
+    "at": "2026-12-03T16:00",
+    "country": "US",
+    "event": "ISM ve službách (listopad)",
+    "consensus": "",
+    "previous": "54,5",
+    "actual": "",
+    "importance": 2,
+    "why": "Silnější ISM ve službách podpoří dolar."
+   },
+   {
+    "at": "2026-12-04T14:30",
+    "country": "US",
+    "event": "Zpráva o trhu práce – nová pracovní místa, nezaměstnanost (listopad)",
+    "consensus": "",
+    "previous": "165 tis.; 4,1 %",
+    "actual": "",
+    "importance": 3,
+    "why": "Silný trh práce zpevní sázky na prosincové zvýšení sazeb Fedu a posílí dolar."
+   },
+   {
+    "at": "2026-12-09T20:00",
+    "country": "US",
+    "event": "Fed: rozhodnutí o sazbách",
+    "consensus": "",
+    "previous": "3,75–4,00 %",
+    "actual": "",
+    "importance": 3,
+    "why": "Zvýšení sazeb a jestřábí výhled by posílily dolar vůči euru i koruně."
+   },
+   {
+    "at": "2026-12-17T14:15",
+    "country": "EA",
+    "event": "ECB: rozhodnutí o sazbách a nová prognóza",
+    "consensus": "",
+    "previous": "2,50 % (depozitní)",
+    "actual": "",
+    "importance": 3,
+    "why": "Zvýšení sazeb a jestřábí tón podpoří euro."
+   },
+   {
+    "at": "2026-12-17T14:30",
+    "country": "CZ",
+    "event": "ČNB: rozhodnutí o sazbách",
+    "consensus": "",
+    "previous": "4,00 %",
+    "actual": "",
+    "importance": 3,
+    "why": "Jestřábí signál ČNB by podpořil korunu."
    }
   ]
  },
@@ -683,7 +753,7 @@
  },
  "summary": {
   "asOf": "2026-11-26",
-  "text": "Koruna ráno drží 24,40–24,50 Kč/EUR (fixing ECB 24,435), euro u 1,096 USD. V USA je svátek a tenký trh; v 13:30 vyjde zápis ECB a ropu nad 94 USD zdražil útok Hútíů na saúdskou rafinerii."
+  "text": "Koruna drží u 24,45 Kč/EUR (kurz ČNB 24,455) a k dolaru posílila na 22,28. Zápis ECB potvrdil jestřábí náladu a prosincové zvýšení; tenký sváteční trh v USA zatím pohyby brzdí."
  },
  "outlook": {
   "asOf": "2026-10-14",
