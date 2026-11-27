@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "FXstreet.cz (ČSOB)",
+     "currency": "CZK",
+     "title": "Koruna přešlapuje, příští týden přinese data",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-211216.html",
+     "summary": "Koruna se na konci týdne drží nad 24,40 Kč/EUR, kde stagnuje už téměř tři týdny. Příští týden přijdou domácí inflace, mzdy, PMI a HDP; nejistotou zůstávají ceny plynu s nástupem zimy.",
+     "why": "Překvapení v domácích datech nebo skok cen plynu může korunu vyvést z úzkého pásma kolem 24,40–24,50.",
+     "published": "2026-11-27T09:32"
+    },
+    {
      "source": "Xinhua",
      "currency": "EUR",
      "title": "Eurozóna doporučuje Hernándeze de Cose do čela ECB",
@@ -65,18 +74,18 @@
      "summary": "Bankovní rada ČNB ponechala sazbu proticyklické kapitálové rezervy na 1,5 % (jeden člen chtěl zvýšení) a nezměnila ani limit LTV 80 % pro hypotéky. Úvěrování se podle ČNB zpomalilo.",
      "why": "Pro kurz jde o neutrální zprávu; měnovou politiku a sazby neovlivňuje.",
      "published": "2026-11-26T08:36"
-    },
-    {
-     "source": "kurzy.cz / ČSOB-Dealing",
-     "currency": "CZK",
-     "title": "Koruna osciluje pod 24,50 za euro",
-     "url": "https://zpravy.kurzy.cz/883278-koruna-osciluje-pod-24-50-eur-czk/",
-     "summary": "Koruna zakončila středu bez výraznějších změn a drží se těsně pod 24,50 Kč/EUR. Tlačil na ni prudký výprodej amerických akcií a silný dolar, solidní domácí průzkumy důvěry měly jen malý vliv.",
-     "why": "Koruna zůstává závislá na globální náladě, blízkost 24,50 ale podle ČSOB krátkodobě omezuje další oslabení.",
-     "published": "2026-11-26T08:25"
     }
    ],
    "USD/CZK": [
+    {
+     "source": "Reuters (The Star)",
+     "currency": "USD",
+     "title": "Dolar míří ke třetímu měsíčnímu zisku",
+     "url": "https://www.thestar.com.my/business/business-news/2026/11/27/shares-find-footing-after-bruising-month-dollar-set-for-third-monthly-gain",
+     "summary": "Dolarový index kolem 103,8 je za listopad o 1,8 % výš, futures dávají 99% šanci na zvýšení sazeb Fedu o 25 bb v prosinci. Euro stojí na 1,0964, výnos 10Y Treasury vzrostl na 4,89 %.",
+     "why": "Téměř jisté prosincové zvýšení Fedu drží dolar silný vůči euru i koruně.",
+     "published": "2026-11-27T04:12"
+    },
     {
      "source": "Citfin",
      "currency": "CZK",
@@ -139,18 +148,27 @@
      "summary": "Koruna v 17:00 oslabila k euru na 24,44 Kč/EUR a k dolaru na 22,32 Kč/USD, index PX klesl o 1,84 % hlavně kvůli bankám (Erste −4,2 %). Podle analytika Purple Trading koruna reaguje spíše na světové trhy, domácí kalendář je do konce týdne prázdný.",
      "why": "Bez domácích dat bude koruna kopírovat globální náladu; další výprodej akcií by ji mohl dál oslabovat.",
      "published": "2026-11-25T17:26"
-    },
-    {
-     "source": "NBC News",
-     "currency": "USD",
-     "title": "USA navrhují nová cla na Čínu, EU a další partnery",
-     "url": "https://www.nbcnews.com/business/economy/trump-country-specific-tariffs-excess-capacity-rcna611087",
-     "summary": "Americká vláda podle oddílu 301 navrhla cla na Čínu (nejméně 20 %), EU (strop 15 % podle dohody z roku 2025) a další země kvůli nadměrným kapacitám. Účinnost se čeká nejdříve za několik měsíců po veřejném připomínkování.",
-     "why": "Obchodní napětí zhoršuje náladu na trzích a obvykle oslabuje euro i rizikovější měny jako koruna.",
-     "published": "2026-11-25T14:48"
     }
    ],
    "EUR/USD": [
+    {
+     "source": "FXstreet.cz (ČSOB)",
+     "currency": "EUR",
+     "title": "Eurodolar těsně pod 1,10, volba šéfa ECB trh nezajímá",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-211215.html",
+     "summary": "EUR/USD se ráno drží těsně pod 1,1000. Podporou je jestřábí zápis ECB a Brent nad 95 USD, výběr Hernándeze de Cose trh nepohnul; sleduje se tenká likvidita a možná revize ratingu Francie.",
+     "why": "Případné zhoršení ratingu Francie by mohlo euro vůči dolaru přibrzdit.",
+     "published": "2026-11-27T09:32"
+    },
+    {
+     "source": "Reuters (The Star)",
+     "currency": "USD",
+     "title": "Dolar míří ke třetímu měsíčnímu zisku",
+     "url": "https://www.thestar.com.my/business/business-news/2026/11/27/shares-find-footing-after-bruising-month-dollar-set-for-third-monthly-gain",
+     "summary": "Dolarový index kolem 103,8 je za listopad o 1,8 % výš, futures dávají 99% šanci na zvýšení sazeb Fedu o 25 bb v prosinci. Euro stojí na 1,0964, výnos 10Y Treasury vzrostl na 4,89 %.",
+     "why": "Téměř jisté prosincové zvýšení Fedu drží dolar silný vůči euru i koruně.",
+     "published": "2026-11-27T04:12"
+    },
     {
      "source": "Xinhua",
      "currency": "EUR",
@@ -204,27 +222,18 @@
      "why": "Tenký sváteční trh zatím brzdí pohyby, výhled ale dál nahrává silnějšímu dolaru vůči euru i koruně.",
      "url": "https://www.kitco.com/news/off-the-wire/2026-11-26/dollar-rally-takes-pause-thanksgiving",
      "published": "2026-11-26"
-    },
-    {
-     "source": "Newsquawk",
-     "currency": "EUR",
-     "title": "Kocher z ECB čeká sekundární inflační efekty v 1. pololetí 2027",
-     "url": "https://www.newsquawk.com/headlines/newsquawk-european-market-wrap---25th-november-2026",
-     "summary": "Člen Rady guvernérů ECB Kocher uvedl, že sekundární efekty se projeví v první polovině roku 2027 a tržní ocenění sazeb označil za ne zcela nerozumné. Euro se po slabším německém HDP obchodovalo v pásmu 1,0931–1,0967 USD.",
-     "why": "Podpora tržních sázek na prosincové zvýšení sazeb ECB brzdí pokles eura vůči dolaru.",
-     "published": "2026-11-25T16:20"
-    },
-    {
-     "source": "NBC News",
-     "currency": "USD",
-     "title": "USA navrhují nová cla na Čínu, EU a další partnery",
-     "url": "https://www.nbcnews.com/business/economy/trump-country-specific-tariffs-excess-capacity-rcna611087",
-     "summary": "Americká vláda podle oddílu 301 navrhla cla na Čínu (nejméně 20 %), EU (strop 15 % podle dohody z roku 2025) a další země kvůli nadměrným kapacitám. Účinnost se čeká nejdříve za několik měsíců po veřejném připomínkování.",
-     "why": "Obchodní napětí zhoršuje náladu na trzích a obvykle oslabuje euro i rizikovější měny jako koruna.",
-     "published": "2026-11-25T14:48"
     }
    ],
    "PLN/CZK": [
+    {
+     "source": "FXstreet.cz (ČSOB)",
+     "currency": "CZK",
+     "title": "Koruna přešlapuje, příští týden přinese data",
+     "url": "https://www.fxstreet.cz/zpravodajstvi-211216.html",
+     "summary": "Koruna se na konci týdne drží nad 24,40 Kč/EUR, kde stagnuje už téměř tři týdny. Příští týden přijdou domácí inflace, mzdy, PMI a HDP; nejistotou zůstávají ceny plynu s nástupem zimy.",
+     "why": "Překvapení v domácích datech nebo skok cen plynu může korunu vyvést z úzkého pásma kolem 24,40–24,50.",
+     "published": "2026-11-27T09:32"
+    },
     {
      "source": "Citfin",
      "currency": "CZK",
@@ -287,15 +296,6 @@
      "summary": "Koruna během dne posílila z 24,45 pod 24,42 Kč/EUR. Podnikatelská důvěra v ČR vzrostla na 99,4 bodu (z 96,6) a Seidler z ČNB podle Bloombergu řekl, že rada zvažuje další zvýšení sazeb.",
      "why": "Možnost dalšího zvýšení sazeb ČNB a slabší dolar podporují korunu i vůči euru a dolaru.",
      "published": "2026-11-24T16:55"
-    },
-    {
-     "source": "ČSOB / Kurzy.cz",
-     "currency": "CZK",
-     "title": "Koruna z akciové euforie nevytěžila",
-     "url": "https://zpravy.kurzy.cz/882919-koruna-akciovou-euforii-neocenila/",
-     "summary": "Koruna i přes pondělní rally akcií zůstala nad 24,40 Kč/EUR, brzdil ji další růst dolaru, který se dostal pod 1,09 za euro. Dnešní konjunkturální průzkumy považují dealeři pro korunu za druhořadé.",
-     "why": "Pokud vydrží chuť k riziku a dolar dál neposílí, může koruna mírně zpevnit; jinak zůstane u 24,45 Kč/EUR.",
-     "published": "2026-11-24T08:40"
     }
    ]
   }
@@ -362,49 +362,49 @@
   ]
  },
  "cnb": {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "source": "ČNB – kurzy devizového trhu",
   "rates": {
-   "EUR": 24.455,
-   "USD": 22.283,
-   "PLN": 5.455,
-   "HUF100": 6.57
+   "EUR": 24.435,
+   "USD": 22.312,
+   "PLN": 5.468,
+   "HUF100": 6.608
   }
  },
  "mm": {
-  "asOf": "2026-11-26",
+  "asOf": "2026-11-27",
   "note": "Mezibankové sazby p.a. v %, pro orientační výpočet forwardů.",
   "CZK": {
    "src": "PRIBOR",
-   "date": "2026-11-19",
+   "date": "2026-11-20",
    "basis": 360,
    "r": {
     "1M": 4.07,
-    "3M": 4.11,
+    "3M": 4.1,
     "6M": 4.18,
     "12M": 4.38
    }
   },
   "EUR": {
    "src": "EURIBOR",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "basis": 360,
    "r": {
-    "1M": 2.432,
-    "3M": 2.809,
-    "6M": 3.077,
-    "12M": 3.351
+    "1M": 2.475,
+    "3M": 2.811,
+    "6M": 3.074,
+    "12M": 3.328
    }
   },
   "USD": {
    "src": "US T-bill",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "basis": 365,
    "r": {
-    "1M": 4.11,
-    "3M": 4.28,
-    "6M": 4.5,
-    "12M": 4.59
+    "1M": 4.19,
+    "3M": 4.26,
+    "6M": 4.48,
+    "12M": 4.56
    }
   },
   "PLN": {
@@ -733,7 +733,7 @@
  },
  "summary": {
   "asOf": "2026-11-27",
-  "text": "Koruna ráno stagnuje kolem 24,45 Kč/EUR (fixing ECB ve čtvrtek 24,453) a 22,29 za dolar. Black Friday v USA slibuje klidný den; další impuls přinese inflace v Německu 30. 11. a v eurozóně 1. 12."
+  "text": "Koruna se třetí týden drží v pásmu 24,40–24,50 Kč/EUR (ČNB dnes 24,435), k dolaru 22,31. Klid po Black Friday prolomí příští týden inflace v eurozóně a česká data; Fed v prosinci téměř jistě zvýší."
  },
  "outlook": {
   "asOf": "2026-10-14",
