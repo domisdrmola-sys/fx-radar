@@ -4,6 +4,15 @@
   "pairs": {
    "EUR/CZK": [
     {
+     "source": "ActionForex",
+     "currency": "EUR",
+     "title": "Inflační očekávání domácností v eurozóně prudce vzrostla",
+     "url": "https://www.actionforex.com/live-comments/662287-eurozone-inflation-expectations-rise-sharply-five-year-outlook-stays-at-record-high/",
+     "summary": "Podle říjnového šetření ECB čekají spotřebitelé za rok inflaci 3,5 % místo 3,1 %, tříletá očekávání vzrostla na 3,0 % a pětiletá zůstala na rekordních 2,5 %.",
+     "why": "Rostoucí inflační očekávání podporují prosincové zvýšení sazeb ECB, euro ale nad 1,10 k dolaru zatím nevyneslo.",
+     "published": "2026-11-27T12:22"
+    },
+    {
      "source": "FXstreet.cz (ČSOB)",
      "currency": "CZK",
      "title": "Koruna přešlapuje, příští týden přinese data",
@@ -28,6 +37,15 @@
      "url": "https://www.citfin.cz/ranni-fx-zpravy/kurz-koruny-black-friday-27-11-2026/",
      "summary": "Koruna začíná pátek kolem 24,45 za euro a 22,29 za dolar. Analytici čekají klidnou seanci s nízkou likviditou, protože americké trhy mají kvůli Black Friday zkrácený den; k zlotému koruna drží silné pozice kolem 5,46.",
      "why": "Bez amerických dat by se koruna měla držet v úzkém pásmu, pohyb mohou přinést jen evropská data o nezaměstnanosti a důvěře.",
+     "published": "2026-11-27"
+    },
+    {
+     "source": "Pound Sterling Live",
+     "currency": "EUR",
+     "title": "Inflace ve Francii a Španělsku zpomalila víc, než se čekalo",
+     "url": "https://www.poundsterlinglive.com/eur/23947-pound-to-euro-rate-french-spanish-inflation-ecb",
+     "summary": "Harmonizovaná inflace ve Francii v listopadu klesla na 3,2 % z 3,7 % (konsenzus 3,6 %), ve Španělsku na 4,1 % z 4,9 %, jádro tam spadlo na 2,6 %. Eurodolar po zveřejnění mírně klesl.",
+     "why": "Měkčí inflace snižuje tlak na další zvyšování sazeb ECB a může euro oslabit, pokud ji potvrdí úterní údaj za eurozónu.",
      "published": "2026-11-27"
     },
     {
@@ -56,24 +74,6 @@
      "why": "Potvrzuje očekávání prosincového zvýšení sazeb ECB, což podpírá euro, i když reakce EUR/USD byla minimální.",
      "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261126~ccf28c8071.en.html",
      "published": "2026-11-26T13:30"
-    },
-    {
-     "source": "ActionForex",
-     "currency": "EUR",
-     "title": "Německá spotřebitelská nálada GfK stagnuje na −30,2",
-     "url": "https://www.actionforex.com/live-comments/662156-germany-gfk-confidence-stays-depressed-at-30-2-as-inflation-fears-rise-and-economic-optimism-fades/",
-     "summary": "Index GfK na prosinec se zlepšil jen o 0,7 bodu na −30,2 a zaostal za očekáváním (−29,0). Ekonomická očekávání klesla, cenová očekávání vzrostla.",
-     "why": "Slabá německá spotřeba neposkytuje euru oporu, rostoucí cenová očekávání ale podporují jestřábí ECB.",
-     "published": "2026-11-26T08:37"
-    },
-    {
-     "source": "kurzy.cz / ČNB",
-     "currency": "CZK",
-     "title": "ČNB nechala proticyklickou rezervu na 1,5 %",
-     "url": "https://zpravy.kurzy.cz/883303-cnb-se-rozhodla-neskrtit-poskytovani-uveru-a-hypotek-novymi-brzdami-nastaveni-proticyklicke/",
-     "summary": "Bankovní rada ČNB ponechala sazbu proticyklické kapitálové rezervy na 1,5 % (jeden člen chtěl zvýšení) a nezměnila ani limit LTV 80 % pro hypotéky. Úvěrování se podle ČNB zpomalilo.",
-     "why": "Pro kurz jde o neutrální zprávu; měnovou politiku a sazby neovlivňuje.",
-     "published": "2026-11-26T08:36"
     }
    ],
    "USD/CZK": [
@@ -152,6 +152,15 @@
    ],
    "EUR/USD": [
     {
+     "source": "ActionForex",
+     "currency": "EUR",
+     "title": "Inflační očekávání domácností v eurozóně prudce vzrostla",
+     "url": "https://www.actionforex.com/live-comments/662287-eurozone-inflation-expectations-rise-sharply-five-year-outlook-stays-at-record-high/",
+     "summary": "Podle říjnového šetření ECB čekají spotřebitelé za rok inflaci 3,5 % místo 3,1 %, tříletá očekávání vzrostla na 3,0 % a pětiletá zůstala na rekordních 2,5 %.",
+     "why": "Rostoucí inflační očekávání podporují prosincové zvýšení sazeb ECB, euro ale nad 1,10 k dolaru zatím nevyneslo.",
+     "published": "2026-11-27T12:22"
+    },
+    {
      "source": "FXstreet.cz (ČSOB)",
      "currency": "EUR",
      "title": "Eurodolar těsně pod 1,10, volba šéfa ECB trh nezajímá",
@@ -176,6 +185,15 @@
      "url": "https://english.news.cn/20261127/250460ad0af44bdea5cdc93ea8ddfe7a/c.html",
      "summary": "Členské státy eurozóny se shodly, že Lagarde, která odchází 7. 2. 2027, nahradí Španěl Pablo Hernández de Cos; do výkonné rady míří Laurence Boone a Markus Brunnermeier. Formální jmenování se čeká v prosinci po konzultaci s Evropským parlamentem a ECB.",
      "why": "Jasnost ohledně nástupce snižuje nejistotu kolem ECB; trh ho vnímá spíš jako umírněného, takže vliv na euro je omezený.",
+     "published": "2026-11-27"
+    },
+    {
+     "source": "Pound Sterling Live",
+     "currency": "EUR",
+     "title": "Inflace ve Francii a Španělsku zpomalila víc, než se čekalo",
+     "url": "https://www.poundsterlinglive.com/eur/23947-pound-to-euro-rate-french-spanish-inflation-ecb",
+     "summary": "Harmonizovaná inflace ve Francii v listopadu klesla na 3,2 % z 3,7 % (konsenzus 3,6 %), ve Španělsku na 4,1 % z 4,9 %, jádro tam spadlo na 2,6 %. Eurodolar po zveřejnění mírně klesl.",
+     "why": "Měkčí inflace snižuje tlak na další zvyšování sazeb ECB a může euro oslabit, pokud ji potvrdí úterní údaj za eurozónu.",
      "published": "2026-11-27"
     },
     {
@@ -204,24 +222,6 @@
      "summary": "Index GfK na prosinec se zlepšil jen o 0,7 bodu na −30,2 a zaostal za očekáváním (−29,0). Ekonomická očekávání klesla, cenová očekávání vzrostla.",
      "why": "Slabá německá spotřeba neposkytuje euru oporu, rostoucí cenová očekávání ale podporují jestřábí ECB.",
      "published": "2026-11-26T08:37"
-    },
-    {
-     "source": "kurzy.cz / ČSOB-Dealing",
-     "currency": "USD",
-     "title": "Dolar před Dnem díkůvzdání zůstává silný",
-     "url": "https://zpravy.kurzy.cz/883279-dolar-pred-dnem-dikuvzdani-zustava-silny/",
-     "summary": "EUR/USD po dalším výprodeji amerických akcií krátce kleslo pod 1,10 a vrátilo se k 1,096. Dolar podpořil růst výnosu 10letých Treasuries k 4,8 % a solidní data (jádrová PCE +0,3 % m/m, HDP 3Q 4,3 %).",
-     "why": "Silná americká data upevňují sázky na prosincové zvýšení sazeb Fedu, což drží EUR/USD pod tlakem; dnes je v USA svátek a tenký trh.",
-     "published": "2026-11-26T08:23"
-    },
-    {
-     "source": "Reuters (Kitco)",
-     "currency": "USD",
-     "title": "Rally dolaru se o Dni díkůvzdání zastavil",
-     "summary": "Euro se drží kolem 1,097 USD a míří ke třetímu dni zotavení po dubnovém minimu z roku 2025; dolarový index je na 103,76, těsně pod nejvyšší úrovní od března 2025. Analytici dolar dál podporují kvůli silné ekonomice, vyšší jádrové PCE a sázkám na zvýšení sazeb Fedu.",
-     "why": "Tenký sváteční trh zatím brzdí pohyby, výhled ale dál nahrává silnějšímu dolaru vůči euru i koruně.",
-     "url": "https://www.kitco.com/news/off-the-wire/2026-11-26/dollar-rally-takes-pause-thanksgiving",
-     "published": "2026-11-26"
     }
    ],
    "PLN/CZK": [
@@ -733,7 +733,7 @@
  },
  "summary": {
   "asOf": "2026-11-27",
-  "text": "Koruna se třetí týden drží v pásmu 24,40–24,50 Kč/EUR (ČNB dnes 24,435), k dolaru 22,31. Klid po Black Friday prolomí příští týden inflace v eurozóně a česká data; Fed v prosinci téměř jistě zvýší."
+  "text": "Koruna se třetí týden drží v pásmu 24,40–24,50 Kč/EUR (fixing ECB 24,435), k dolaru kolem 22,3. Měkčí inflace ve Francii a Španělsku tlumí euro před úterním údajem za eurozónu; Fed v prosinci téměř jistě zvýší."
  },
  "outlook": {
   "asOf": "2026-10-14",
